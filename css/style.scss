@@ -1,10 +1,15 @@
+@import "mixin";
+
 @font-face {
     font-family: helveticaMedium;
     src: url(../font/HelveticaNeueMedium.otf);
 }
+
 $yellow_header: #ffcc00;
 $blue_font: #152b59;
 $black_font: #212427;
+$skyBlue: #207CDE;
+$lightGreen: #5DAFAE;
 $font_family: 'helveticaMedium', sans-serif;
 
 * {
@@ -58,7 +63,7 @@ header {
 .banner {
     width: 100%;
     height: 100vh;
-    background: rgb(35, 126, 222);
+    background: $skyBlue;
     background: linear-gradient(295deg, rgba(35, 126, 222, 1) 0%, rgba(255, 255, 255, 0) 29%, rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: visible;
@@ -82,7 +87,7 @@ header {
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
-                margin-left: -10px;
+                margin-left: -5px;
                 display: inline-block;
             }
         }
@@ -113,4 +118,239 @@ header {
             z-index: 9;
         }
     }
+
+    .blinkArea {
+        width: 100%;
+
+        .blink_text {
+            font-family: $font_family;
+            font-size: 5rem;
+            color: #fff;
+            font-weight: 600;
+            opacity: 0.4;
+
+            span:nth-child(1) {
+                position: absolute;
+                top: 10%;
+            }
+
+            span:nth-child(2) {
+                position: absolute;
+                bottom: 10%;
+            }
+
+            span:nth-child(3) {
+                position: absolute;
+                right: 20%;
+            }
+
+            span:nth-child(4) {
+                position: absolute;
+                right: 20%;
+                bottom: 10%;
+            }
+
+            span:nth-child(5) {
+                position: absolute;
+                right: 50%;
+                bottom: 50%;
+            }
+
+            span:nth-child(6) {
+                position: absolute;
+                right: 10%;
+                bottom: 50%;
+            }
+
+            span:nth-child(7) {
+                position: absolute;
+                left: 10%;
+                bottom: 50%;
+            }
+        }
+    }
 }
+
+.yourScalps {
+    .sayGoodbyeParent {
+        @include yourScalps($yellow_header);
+
+        .sayGoodbye {
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: rotate(346deg);
+            }
+        }
+    }
+
+    .gentleEnoughParent {
+        @include yourScalps($skyBlue);
+        justify-content: center;
+
+        .gentleEnough {
+            height: 100%;
+            display: flex;
+            align-items: end;
+            margin: 0;
+
+            img {
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .hydrateParent {
+        @include yourScalps($lightGreen);
+        justify-content: end;
+
+        .hydrate {
+            height: 100%;
+            display: flex;
+            justify-content: right;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: rotate(15deg);
+            }
+        }
+    }
+
+    .yourScalpsBottomParent {
+        margin-top: -8rem;
+
+        .yourScalpsBottom {
+            background-color: $yellow_header;
+            padding: 4rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9;
+            p{
+                font-size: 1.5rem;
+                font-weight: 500;
+                font-family: $font_family;
+            }
+            button{
+                background-color: transparent;
+                border: 2px solid #fff;
+                padding: 1rem 3rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $black_font;
+            }
+        }
+    }
+
+}
+
+// Animations 
+.blink_text span {
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+//   hover animation 
+.sprinkles {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sprinkles:before,
+.sprinkles:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+}
+
+.sprinkles:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, $blue_font 20%, transparent 30%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, $blue_font 15%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+        10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.sprinkles:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, $blue_font 15%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+//   hover animation end

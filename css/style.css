@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: helveticaMedium;
+  src: url(../font/HelveticaNeueMedium.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "helveticaMedium", sans-serif;
   color: #212427;
   overflow-x: hidden;
 }
@@ -42,14 +45,14 @@ header .buyNow button {
 .banner {
   width: 100%;
   height: 100vh;
-  background: rgb(35, 126, 222);
+  background: #207CDE;
   background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(255, 255, 255, 0) 29%, rgb(35, 126, 222) 100%);
   position: relative;
   overflow: visible;
 }
 .banner .bannerTextArea {
   color: #152b59;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "helveticaMedium", sans-serif;
   margin-top: 5rem;
 }
 .banner .bannerTextArea span {
@@ -65,7 +68,7 @@ header .buyNow button {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
-  margin-left: -10px;
+  margin-left: -5px;
   display: inline-block;
 }
 .banner .bannerTextArea h2 {
@@ -88,4 +91,197 @@ header .buyNow button {
   bottom: 0;
   right: -50px;
   z-index: 9;
+}
+.banner .blinkArea {
+  width: 100%;
+}
+.banner .blinkArea .blink_text {
+  font-family: "helveticaMedium", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.4;
+}
+.banner .blinkArea .blink_text span:nth-child(1) {
+  position: absolute;
+  top: 10%;
+}
+.banner .blinkArea .blink_text span:nth-child(2) {
+  position: absolute;
+  bottom: 10%;
+}
+.banner .blinkArea .blink_text span:nth-child(3) {
+  position: absolute;
+  right: 20%;
+}
+.banner .blinkArea .blink_text span:nth-child(4) {
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+}
+.banner .blinkArea .blink_text span:nth-child(5) {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+}
+.banner .blinkArea .blink_text span:nth-child(6) {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+}
+.banner .blinkArea .blink_text span:nth-child(7) {
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+}
+
+.yourScalps .sayGoodbyeParent {
+  background-color: #ffcc00;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye {
+  height: 100%;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotate(346deg);
+}
+.yourScalps .gentleEnoughParent {
+  background-color: #207CDE;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.yourScalps .gentleEnoughParent .gentleEnough {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  margin: 0;
+}
+.yourScalps .gentleEnoughParent .gentleEnough img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.yourScalps .hydrateParent {
+  background-color: #5DAFAE;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.yourScalps .hydrateParent .hydrate {
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+.yourScalps .hydrateParent .hydrate img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotate(15deg);
+}
+.yourScalps .yourScalpsBottomParent {
+  margin-top: -8rem;
+}
+.yourScalps .yourScalpsBottomParent .yourScalpsBottom {
+  background-color: #ffcc00;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+.yourScalps .yourScalpsBottomParent .yourScalpsBottom p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "helveticaMedium", sans-serif;
+}
+.yourScalps .yourScalpsBottomParent .yourScalpsBottom button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #212427;
+}
+
+.blink_text span {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+.sprinkles {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sprinkles:before,
+.sprinkles:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.sprinkles:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, transparent 20%, #152b59 20%, transparent 30%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, transparent 10%, #152b59 15%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.sprinkles:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, transparent 10%, #152b59 15%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%), radial-gradient(circle, #152b59 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
 }/*# sourceMappingURL=style.css.map */

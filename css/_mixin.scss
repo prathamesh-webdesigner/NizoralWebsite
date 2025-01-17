@@ -1,0 +1,6 @@
+@mixin yourScalps($bgColor){
+    background-color: $bgColor;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
