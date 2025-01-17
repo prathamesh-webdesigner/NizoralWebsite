@@ -1,5 +1,30 @@
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+  header{
+    padding: 0;
   }
+
+  .bannerTextArea span {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+
+  .mo_goodbye {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .banner .bannerTextArea h2{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .banner .bannerTextArea p{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .banner .bannerBoy img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+}
+}
