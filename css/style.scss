@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$yellow_header: #ffcc00;
+$blue_font: #152b59;
+$black_font: #212427;
+$font_family: Arial, Helvetica, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font_family;
+    color: $black_font;
+    overflow-x: hidden;
+}
+
+.container-custom {
+    max-width: 90%;
+    /* Adjust this percentage as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: $yellow_header;
+    padding-bottom: 5rem;
+    position: relative;
+    /* To ensure stacking context */
+    z-index: 1;
+
+    /* Lower priority */
+    .navbar-nav {
+        li {
+            a {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .buyNow {
+        button {
+            background-color: transparent;
+            border: 2px solid $black_font;
+            font-size: 18px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 12px 30px 12px 30px;
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: rgb(35, 126, 222);
+    background: linear-gradient(295deg, rgba(35, 126, 222, 1) 0%, rgba(255, 255, 255, 0) 29%, rgba(35, 126, 222, 1) 100%);
+    position: relative;
+    overflow: visible;
+
+    .bannerTextArea {
+        color: $blue_font;
+        font-family: $font_family;
+        margin-top: 5rem;
+
+        span {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        h1 {
+            overflow: hidden;
+
+            span {
+                font-size: 12rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -10px;
+                display: inline-block;
+            }
+        }
+
+        h2 {
+            overflow: hidden;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: 40%;
+        }
+    }
+
+    .bannerBoy {
+        width: 100%;
+
+        img {
+            width: 65%;
+            position: absolute;
+            bottom: 0;
+            right: -50px;
+            z-index: 9;
+        }
+    }
+}
