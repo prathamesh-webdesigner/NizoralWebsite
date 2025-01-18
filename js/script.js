@@ -1,6 +1,6 @@
 // Text Animation 
 function breakTheText() {
-    var elements = document.querySelectorAll(".bannerTextArea h1, .bestfriend h2, .bestfriend h3");
+    var elements = document.querySelectorAll(".md_goodbye, .bestfriend h2, .bestfriend h3, .md_dandruffAndItching");
 
     elements.forEach(function(element) {
         var text = element.textContent;
@@ -29,15 +29,22 @@ breakTheText();
 
 
 
-gsap.from(".bannerTextArea h1 span", {
+gsap.from(".md_goodbye span", {
     y: 70,
     opacity: 0,
     duration: 0.5,
     delay: 1.5,
     stagger: 0.1,
 })
+gsap.from(".md_dandruffAndItching span", {
+    y: 50,
+    opacity: 0,
+    duration: 0.2,
+    delay: 1.5,
+    stagger: 0.02,
+})
 
-gsap.from(".bannerTextArea p, .bannerTextArea h2, .sayAni, .mo_goodbye", {
+gsap.from(".bannerTextArea p, .mo_dandruffAndItching, .sayAni, .mo_goodbye", {
     x: -70,
     opacity: 0,
     duration: 1,
@@ -126,3 +133,8 @@ setTimeout(() => {
     const blinkText = document.getElementById('blinkText');
     blinkText.style.display = 'none';
 }, 1000);
+
+// FullPage
+new fullpage("#fullPage",{
+    autoScrolling:true
+})
