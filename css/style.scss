@@ -8,9 +8,9 @@
 $yellow_header: #ffcc00;
 $blue_font: #152b59;
 $black_font: #212427;
-$skyBlue: #207CDE;
-$lightGreen: #5DAFAE;
-$font_family: 'helveticaMedium', sans-serif;
+$skyBlue: #207cde;
+$lightGreen: #5dafae;
+$font_family: "helveticaMedium", sans-serif;
 
 * {
     margin: 0;
@@ -64,7 +64,12 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(295deg, rgba(35, 126, 222, 1) 0%, rgba(255, 255, 255, 0) 29%, rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
     position: relative;
     overflow: visible;
 
@@ -97,7 +102,6 @@ header {
             font-size: 3rem;
             font-weight: 700;
             line-height: 1;
-
         }
 
         p {
@@ -141,7 +145,8 @@ header {
 
             span:nth-child(3) {
                 position: absolute;
-                right: 20%;
+                right: 10%;
+                top: 10%;
             }
 
             span:nth-child(4) {
@@ -152,8 +157,8 @@ header {
 
             span:nth-child(5) {
                 position: absolute;
-                right: 50%;
-                bottom: 50%;
+                right: 42%;
+                bottom: 30%;
             }
 
             span:nth-child(6) {
@@ -164,7 +169,7 @@ header {
 
             span:nth-child(7) {
                 position: absolute;
-                left: 10%;
+                left: 20%;
                 bottom: 50%;
             }
         }
@@ -172,17 +177,68 @@ header {
 }
 
 .yourScalps {
+    overflow: hidden;
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
+    .bestfriend {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40px;
+        margin-inline: auto;
+        width: fit-content;
+        color: #fff;
+        font-family: $font_family;
+        text-align: center;
+        z-index: 9;
+        h2 {
+            span{
+                font-size: 4rem;
+                display: inline-block;
+            }
+        }
+        h3 {
+            span{
+                font-size: 10rem;
+                font-weight: bold;
+                display: inline-block;
+            }
+            
+        }
+    }
     .sayGoodbyeParent {
         @include yourScalps($yellow_header);
-
         .sayGoodbye {
             height: 100%;
-
-            img {
+            .round_featureParent {
+                @include round_featureParent(46%, 65%);
+                .round_feature_sub {
+                    @include round_feature_sub;
+                    .icon_area {
+                        @include icon_area;
+                        img {
+                            width: 60px;
+                        }
+                    }
+                    .text_area {
+                        @include text_area(#f6eab9);
+                        p {
+                            @include textAreaP(55%);
+                        }
+                    }
+                }
+            }
+            .shampoo_image {
                 width: 100%;
-                height: 100%;
+                height: 90%;
                 object-fit: cover;
                 transform: rotate(346deg);
+                z-index: 9;
+                position: relative;
             }
         }
     }
@@ -196,11 +252,30 @@ header {
             display: flex;
             align-items: end;
             margin: 0;
-
-            img {
+            .round_featureParent {
+                @include round_featureParent(36%, 12%);
+                .round_feature_sub {
+                    @include round_feature_sub;
+                    .icon_area {
+                        @include icon_area;
+                        img {
+                            width: 60px;
+                        }
+                    }
+                    .text_area {
+                        @include text_area(#9fcbf9);
+                        p {
+                            @include textAreaP(65%);
+                        }
+                    }
+                }
+            }
+            .gentleEnoughImage {
                 width: 100%;
-                height: 90%;
+                height: 60%;
                 object-fit: cover;
+                z-index: 9;
+                transform: scale(1.4);
             }
         }
     }
@@ -213,12 +288,30 @@ header {
             height: 100%;
             display: flex;
             justify-content: right;
-
-            img {
+            .round_featureParent {
+                @include round_featureParent(46%, 12%);
+                .round_feature_sub {
+                    @include round_feature_sub;
+                    .icon_area {
+                        @include icon_area;
+                        img {
+                            width: 60px;
+                        }
+                    }
+                    .text_area {
+                        @include text_area(#b8eded);
+                        p {
+                            @include textAreaP(65%);
+                        }
+                    }
+                }
+            }
+            .hydrateImage {
                 width: 100%;
-                height: 100%;
+                height: 90%;
                 object-fit: cover;
                 transform: rotate(15deg);
+                z-index: 9;
             }
         }
     }
@@ -228,31 +321,31 @@ header {
 
         .yourScalpsBottom {
             background-color: $yellow_header;
-            padding: 4rem 0;
+            padding: 2rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             z-index: 9;
-            p{
+            box-shadow: #00000040 -1px -1px 20px 0px;
+            p {
                 font-size: 1.5rem;
                 font-weight: 500;
                 font-family: $font_family;
             }
-            button{
+            button {
                 background-color: transparent;
                 border: 2px solid #fff;
-                padding: 1rem 3rem;
+                padding: 8px 25px;
                 font-size: 1.2rem;
                 font-weight: 500;
                 color: $black_font;
             }
         }
     }
-
 }
 
-// Animations 
+// Animations
 .blink_text span {
     animation: blinker 0.5s linear infinite;
 }
@@ -267,7 +360,7 @@ header {
     }
 }
 
-//   hover animation 
+//   hover animation
 .sprinkles {
     position: relative;
     cursor: pointer;
@@ -297,27 +390,65 @@ header {
         radial-gradient(circle, $blue_font 20%, transparent 20%),
         radial-gradient(circle, $blue_font 20%, transparent 20%),
         radial-gradient(circle, $blue_font 20%, transparent 20%);
-    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
-        10% 10%, 18% 18%;
+    background-size:
+        10% 10%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        10% 10%,
+        15% 15%,
+        10% 10%,
+        18% 18%;
     background-position: 50% 120%;
     animation: greentopBubbles 0.6s ease;
 }
 
 @keyframes greentopBubbles {
     0% {
-        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
-            40% 90%, 55% 90%, 70% 90%;
+        background-position:
+            5% 90%,
+            10% 90%,
+            10% 90%,
+            15% 90%,
+            25% 90%,
+            25% 90%,
+            40% 90%,
+            55% 90%,
+            70% 90%;
     }
 
     50% {
-        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
-            50% 50%, 65% 20%, 90% 30%;
+        background-position:
+            0% 80%,
+            0% 20%,
+            10% 40%,
+            20% 0%,
+            30% 30%,
+            22% 50%,
+            50% 50%,
+            65% 20%,
+            90% 30%;
     }
 
     100% {
-        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
-            50% 40%, 65% 10%, 90% 20%;
-        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        background-position:
+            0% 70%,
+            0% 10%,
+            10% 30%,
+            20% -10%,
+            30% 20%,
+            22% 40%,
+            50% 40%,
+            65% 10%,
+            90% 20%;
+        background-size:
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%;
     }
 }
 
@@ -330,27 +461,68 @@ header {
         radial-gradient(circle, $blue_font 20%, transparent 20%),
         radial-gradient(circle, $blue_font 20%, transparent 20%),
         radial-gradient(circle, $blue_font 20%, transparent 20%);
-    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-size:
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%;
     background-position: 50% 0%;
     animation: greenbottomBubbles 0.6s ease;
 }
 
 @keyframes greenbottomBubbles {
     0% {
-        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
-            70% -10%, 70% 0%;
+        background-position:
+            10% -10%,
+            30% 10%,
+            55% -10%,
+            70% -10%,
+            85% -10%,
+            70% -10%,
+            70% 0%;
     }
 
     50% {
-        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        background-position:
+            0% 80%,
+            20% 80%,
+            45% 60%,
+            60% 100%,
+            75% 70%,
+            95% 60%,
             105% 0%;
     }
 
     100% {
-        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        background-position:
+            0% 90%,
+            20% 90%,
+            45% 70%,
+            60% 110%,
+            75% 80%,
+            95% 70%,
             110% 10%;
-        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        background-size:
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%;
     }
 }
 
 //   hover animation end
+.sayGoodbyeParent::before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Start from below the parent */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow; /* Target background color */
+    z-index: -1; /* Ensure it doesn't cover content */
+}

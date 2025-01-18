@@ -45,8 +45,8 @@ header .buyNow button {
 .banner {
   width: 100%;
   height: 100vh;
-  background: #207CDE;
-  background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(255, 255, 255, 0) 29%, rgb(35, 126, 222) 100%);
+  background: #207cde;
+  background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(35, 126, 222, 0.36) 29%, rgb(35, 126, 222) 100%);
   position: relative;
   overflow: visible;
 }
@@ -112,7 +112,8 @@ header .buyNow button {
 }
 .banner .blinkArea .blink_text span:nth-child(3) {
   position: absolute;
-  right: 20%;
+  right: 10%;
+  top: 10%;
 }
 .banner .blinkArea .blink_text span:nth-child(4) {
   position: absolute;
@@ -121,8 +122,8 @@ header .buyNow button {
 }
 .banner .blinkArea .blink_text span:nth-child(5) {
   position: absolute;
-  right: 50%;
-  bottom: 50%;
+  right: 42%;
+  bottom: 30%;
 }
 .banner .blinkArea .blink_text span:nth-child(6) {
   position: absolute;
@@ -131,31 +132,105 @@ header .buyNow button {
 }
 .banner .blinkArea .blink_text span:nth-child(7) {
   position: absolute;
-  left: 10%;
+  left: 20%;
   bottom: 50%;
 }
 
+.yourScalps {
+  overflow: hidden;
+  background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(35, 126, 222, 0.36) 29%, rgb(35, 126, 222) 100%);
+}
+.yourScalps .bestfriend {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  margin-inline: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-family: "helveticaMedium", sans-serif;
+  text-align: center;
+  z-index: 9;
+}
+.yourScalps .bestfriend h2 span {
+  font-size: 4rem;
+  display: inline-block;
+}
+.yourScalps .bestfriend h3 span {
+  font-size: 10rem;
+  font-weight: bold;
+  display: inline-block;
+}
 .yourScalps .sayGoodbyeParent {
   background-color: #ffcc00;
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  position: relative;
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye {
   height: 100%;
 }
-.yourScalps .sayGoodbyeParent .sayGoodbye img {
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent {
+  position: absolute;
+  top: 46%;
+  left: 65%;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 99;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: -1px 13px 4px 1px rgba(0, 0, 0, 0.2392156863);
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub {
+  display: flex;
+  flex-direction: column;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .icon_area img {
+  width: 60px;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .text_area {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: #f6eab9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .text_area p {
+  width: 55%;
+  font-size: 10px;
+  font-weight: 600;
+}
+.yourScalps .sayGoodbyeParent .sayGoodbye .shampoo_image {
+  width: 100%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   transform: rotate(346deg);
+  z-index: 9;
+  position: relative;
 }
 .yourScalps .gentleEnoughParent {
-  background-color: #207CDE;
+  background-color: #207cde;
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  position: relative;
   justify-content: center;
 }
 .yourScalps .gentleEnoughParent .gentleEnough {
@@ -164,17 +239,63 @@ header .buyNow button {
   align-items: end;
   margin: 0;
 }
-.yourScalps .gentleEnoughParent .gentleEnough img {
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent {
+  position: absolute;
+  top: 36%;
+  left: 12%;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 99;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: -1px 13px 4px 1px rgba(0, 0, 0, 0.2392156863);
+}
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub {
+  display: flex;
+  flex-direction: column;
+}
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 90%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .icon_area img {
+  width: 60px;
+}
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .text_area {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: #9fcbf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .text_area p {
+  width: 65%;
+  font-size: 10px;
+  font-weight: 600;
+}
+.yourScalps .gentleEnoughParent .gentleEnough .gentleEnoughImage {
+  width: 100%;
+  height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 9;
+  transform: scale(1.4);
 }
 .yourScalps .hydrateParent {
-  background-color: #5DAFAE;
+  background-color: #5dafae;
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  position: relative;
   justify-content: end;
 }
 .yourScalps .hydrateParent .hydrate {
@@ -182,24 +303,68 @@ header .buyNow button {
   display: flex;
   justify-content: right;
 }
-.yourScalps .hydrateParent .hydrate img {
+.yourScalps .hydrateParent .hydrate .round_featureParent {
+  position: absolute;
+  top: 46%;
+  left: 12%;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 99;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: -1px 13px 4px 1px rgba(0, 0, 0, 0.2392156863);
+}
+.yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub {
+  display: flex;
+  flex-direction: column;
+}
+.yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .icon_area img {
+  width: 60px;
+}
+.yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .text_area {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: #b8eded;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .text_area p {
+  width: 65%;
+  font-size: 10px;
+  font-weight: 600;
+}
+.yourScalps .hydrateParent .hydrate .hydrateImage {
+  width: 100%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   transform: rotate(15deg);
+  z-index: 9;
 }
 .yourScalps .yourScalpsBottomParent {
   margin-top: -8rem;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom {
   background-color: #ffcc00;
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.2509803922) -1px -1px 20px 0px;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom p {
   font-size: 1.5rem;
@@ -209,7 +374,7 @@ header .buyNow button {
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom button {
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 1rem 3rem;
+  padding: 8px 25px;
   font-size: 1.2rem;
   font-weight: 500;
   color: #212427;
@@ -284,4 +449,14 @@ header .buyNow button {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
+}
+.sayGoodbyeParent::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Start from below the parent */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellow; /* Target background color */
+  z-index: -1; /* Ensure it doesn't cover content */
 }/*# sourceMappingURL=style.css.map */
