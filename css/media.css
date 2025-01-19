@@ -1,7 +1,26 @@
 @media only screen and (max-width: 600px) {
-  .blinkArea{display: none;}
-  header{
+  .blinkArea {
+    display: none;
+  }
+  .yourScalps .yourScalpsBottomParent .yourScalpsBottom p{
+    text-align: center;
+  }
+
+  header {
     padding: 0;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .yourScalps .sayGoodbyeParent, .yourScalps .gentleEnoughParent, .yourScalps .hydrateParent {
+    height: 60vh;
+  }
+
+  .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent, .yourScalps .hydrateParent .hydrate .round_featureParent {
+    top: 6%;
+    left: 2%;
   }
 
   .bannerTextArea span {
@@ -13,37 +32,44 @@
     font-size: 4rem;
     font-weight: bold;
   }
-  .banner .bannerTextArea h2{
+
+  .banner .bannerTextArea h2 {
     font-size: 1.5rem;
     width: 100%;
   }
-  .banner .bannerTextArea p{
+
+  .banner .bannerTextArea p {
     font-size: 1rem;
     width: 100%;
   }
+
   .banner .bannerBoy img {
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     z-index: 9;
-}
-.yourScalps .bestfriend {
-  position: inherit;
-  background-color: #ffcc00;
-  width: 100%;
-  padding: 30px;
-}
-.yourScalps .bestfriend h2 span {
-  font-size: 1.5rem;
-}
-.yourScalps .bestfriend h3 span {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent {
-  position: absolute;
-  top: 0%;
-  left: 45%;
-}
+  }
+
+  .yourScalps .bestfriend {
+    position: inherit;
+    background-color: #ffcc00;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .yourScalps .bestfriend h2 span {
+    font-size: 1.5rem;
+  }
+
+  .yourScalps .bestfriend h3 span {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+  }
 }
