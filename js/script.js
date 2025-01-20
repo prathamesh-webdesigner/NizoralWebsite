@@ -1,6 +1,6 @@
 // Text Animation 
 function breakTheText() {
-    var elements = document.querySelectorAll(".md_goodbye, .bestfriend h2, .bestfriend h3, .md_dandruffAndItching");
+    var elements = document.querySelectorAll(".md_goodbye, .bestfriend h2, .bestfriend h3, .md_dandruffAndItching, .theNezroralDiffrenceParent h2");
 
     elements.forEach(function(element) {
         var text = element.textContent;
@@ -118,7 +118,7 @@ gsap.from(".yourScalpsBottomParent",{
     delay:1,
     scrollTrigger: ".bestfriend"
 })
-gsap.from(".bestfriend h2 span, .bestfriend h3 span", {
+gsap.from(".bestfriend h2 span, .bestfriend h3 span, .theNezroralDiffrenceParent h2 span", {
     y: 70,
     opacity: 0,
     duration: 0.5,

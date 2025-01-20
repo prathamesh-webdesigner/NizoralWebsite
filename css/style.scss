@@ -349,6 +349,17 @@ header {
     }
 }
 
+.theNezroralDiffrenceParent{
+    font-family: $font_family;
+    h2{
+        span{
+            font-size: 3vw;
+            color: $blue_font;
+            display: inline-block;
+        }
+
+    }
+}
 // Animations
 .blink_text span {
     animation: blinker 0.5s linear infinite;
