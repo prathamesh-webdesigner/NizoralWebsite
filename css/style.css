@@ -64,7 +64,7 @@ header .buyNow button {
   overflow: hidden;
 }
 .banner .bannerTextArea h1 span {
-  font-size: 12rem;
+  font-size: 12vw;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
@@ -155,11 +155,11 @@ header .buyNow button {
   z-index: 9;
 }
 .yourScalps .bestfriend h2 span {
-  font-size: 4rem;
+  font-size: 4vw;
   display: inline-block;
 }
 .yourScalps .bestfriend h3 span {
-  font-size: 10rem;
+  font-size: 10vw;
   font-weight: bold;
   display: inline-block;
 }
