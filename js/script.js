@@ -58,17 +58,11 @@ gsap.from(".bannerBoy img", {
 })
 
 // ScrollTrigger 
-gsap.from(".bestfriend h2 span, .bestfriend h3 span", {
-    y: 70,
-    opacity: 0,
-    duration: 0.5,
-    delay: 0.8,
-    stagger: 0.1,
-    scrollTrigger: ".bestfriend"
-})
+
 // Shampoo
 gsap.from(".sayGoodbyeParent", {
-    y:"100%",
+    // y:"100%",
+    clipPath: "inset(100% 0 0 0)",
     duration: 1,
     delay:2,
     scrollTrigger: ".bestfriend"
@@ -83,7 +77,7 @@ gsap.from(".shampoo_image", {
 // Shampoo end
 // Daily Care
 gsap.from(".gentleEnoughParent", {
-    y:"100%",
+    clipPath: "inset(100% 0 0 0)",
     duration: 1,
     delay:2.2,
     scrollTrigger: ".bestfriend"
@@ -97,7 +91,7 @@ gsap.from(".gentleEnoughImage", {
 // Daily care end
 // Care
 gsap.from(".hydrateParent", {
-    y:"100%",
+    clipPath: "inset(100% 0 0 0)",
     duration: 1,
     delay:2.4,
     scrollTrigger: ".bestfriend"
@@ -119,10 +113,17 @@ gsap.from(".round_featureParent",{
 })
 // Round Feature End
 gsap.from(".yourScalpsBottomParent",{
-    y:50,
-    opacity:0.8,     // Start fully transparent
+    clipPath: "inset(70% 0 0 0)",
     duration:1,
-    delay:4,
+    delay:1,
+    scrollTrigger: ".bestfriend"
+})
+gsap.from(".bestfriend h2 span, .bestfriend h3 span", {
+    y: 70,
+    opacity: 0,
+    duration: 0.5,
+    delay: 0.8,
+    stagger: 0.1,
     scrollTrigger: ".bestfriend"
 })
 // ScrollTrigger End
