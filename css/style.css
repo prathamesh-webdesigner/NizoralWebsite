@@ -391,7 +391,6 @@ header .buyNow button {
 }
 
 .scientificallyBacked {
-  height: 100vh;
   overflow: hidden;
 }
 .scientificallyBacked .scientificallyBackedYellow {
@@ -402,7 +401,7 @@ header .buyNow button {
   overflow: hidden;
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText {
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText h3 {
   color: #fff;
@@ -427,17 +426,17 @@ header .buyNow button {
 .scientificallyBacked .scientificallyBackedImage {
   padding: 0;
   position: absolute;
-  top: 28%;
+  top: 45%;
 }
 .scientificallyBacked .scientificallyBackedImage img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 .fastLongLastingParent {
   height: 100vh;
   overflow: hidden;
-  margin-top: -8rem;
+  margin-top: -4rem;
 }
 .fastLongLastingParent .fastLongLasting {
   font-family: "helveticaMedium", sans-serif;

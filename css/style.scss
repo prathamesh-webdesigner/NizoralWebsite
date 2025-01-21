@@ -387,7 +387,7 @@ header {
 }
 
 .scientificallyBacked {
-    height: 100vh;
+    // height: 100vh;
     overflow: hidden;
 
     .scientificallyBackedYellow {
@@ -398,7 +398,7 @@ header {
         overflow: hidden;
 
         .scientificText {
-            margin-top: 8rem;
+            margin-top: 3rem;
 
             h3 {
                 color: #fff;
@@ -428,10 +428,10 @@ header {
     .scientificallyBackedImage {
         padding: 0;
         position: absolute;
-        top: 28%;
+        top: 45%;
 
         img {
-            width: 100%;
+            width: 90%;
             height: auto;
         }
     }
@@ -441,7 +441,7 @@ header {
 .fastLongLastingParent {
     height: 100vh;
     overflow: hidden;
-    margin-top: -8rem;
+    margin-top: -4rem;
 
     .fastLongLasting {
         font-family: $font_family;
