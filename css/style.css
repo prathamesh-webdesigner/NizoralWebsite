@@ -390,6 +390,145 @@ header .buyNow button {
   display: inline-block;
 }
 
+.scientificallyBacked {
+  height: 100vh;
+  overflow: hidden;
+}
+.scientificallyBacked .scientificallyBackedYellow {
+  font-family: "helveticaMedium", sans-serif;
+  background-color: #ffcc00;
+  width: 90%;
+  height: 100vh;
+  overflow: hidden;
+}
+.scientificallyBacked .scientificallyBackedYellow .scientificText {
+  margin-top: 8rem;
+}
+.scientificallyBacked .scientificallyBackedYellow .scientificText h3 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.scientificallyBacked .scientificallyBackedYellow .scientificText h2 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.scientificallyBacked .scientificallyBackedYellow .scientificText p {
+  font-size: 1.5rem;
+  width: 30%;
+}
+.scientificallyBacked .scientificallyBackedImage {
+  padding: 0;
+  position: absolute;
+  top: 28%;
+}
+.scientificallyBacked .scientificallyBackedImage img {
+  width: 100%;
+  height: auto;
+}
+
+.fastLongLastingParent {
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -8rem;
+}
+.fastLongLastingParent .fastLongLasting {
+  font-family: "helveticaMedium", sans-serif;
+  background-color: #207cde;
+  width: 90%;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 0;
+}
+.fastLongLastingParent .fastLongLasting .fastLongLastingText {
+  margin-top: 8rem;
+}
+.fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.fastLongLastingParent .fastLongLasting .fastLongLastingText h2 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.fastLongLastingParent .fastLongLasting .fastLongLastingText p {
+  font-size: 1.5rem;
+  width: 30%;
+  margin-left: auto;
+}
+.fastLongLastingParent .fastLongLastingImage {
+  padding: 0;
+  position: absolute;
+  top: 28%;
+}
+.fastLongLastingParent .fastLongLastingImage img {
+  width: 60%;
+  height: 100%;
+  transform: scaleX(-1);
+}
+
+.toughOnDandruffButNotOn {
+  height: 100vh;
+  overflow: hidden;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow {
+  font-family: "helveticaMedium", sans-serif;
+  background-color: #ffcc00;
+  width: 90%;
+  height: 100vh;
+  overflow: hidden;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText {
+  margin-top: 8rem;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h2 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
+  font-size: 1.5rem;
+  width: 30%;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnImage {
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+.toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img {
+  width: 65%;
+  height: auto;
+  position: absolute;
+  right: 0;
+}
+
 .blink_text span {
   animation: blinker 0.5s linear infinite;
 }

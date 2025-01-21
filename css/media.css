@@ -1,8 +1,17 @@
 @media only screen and (max-width: 600px) {
+
+  .scientificallyBacked .scientificallyBackedYellow .scientificText p,
+  .scientificallyBacked .scientificallyBackedYellow,
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText p,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img, .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
+    width: 100%;
+  }
+
   .blinkArea {
     display: none;
   }
-  .yourScalps .yourScalpsBottomParent .yourScalpsBottom p{
+
+  .yourScalps .yourScalpsBottomParent .yourScalpsBottom p {
     text-align: center;
   }
 
@@ -10,15 +19,25 @@
     padding: 0;
   }
 
-  .banner {
+  .banner,
+  .scientificallyBackedYellow,
+  .scientificallyBacked .scientificallyBackedYellow,
+  .fastLongLastingParent .fastLongLasting,
+  .scientificallyBacked,
+  .toughOnDandruffButNotOn,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow {
+    width: 100%;
     height: 100%;
   }
 
-  .yourScalps .sayGoodbyeParent, .yourScalps .gentleEnoughParent, .yourScalps .hydrateParent {
+  .yourScalps .sayGoodbyeParent,
+  .yourScalps .gentleEnoughParent,
+  .yourScalps .hydrateParent {
     height: 60vh;
   }
 
-  .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent, .yourScalps .hydrateParent .hydrate .round_featureParent {
+  .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent,
+  .yourScalps .hydrateParent .hydrate .round_featureParent {
     top: 6%;
     left: 2%;
   }
@@ -33,7 +52,7 @@
     font-weight: bold;
   }
 
-  .banner .bannerTextArea h2 {
+  .banner .bannerTextArea h2, .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
     font-size: 1.5rem;
     width: 100%;
   }
@@ -58,7 +77,8 @@
     padding: 30px;
   }
 
-  .yourScalps .bestfriend h2 span {
+  .yourScalps .bestfriend h2 span,
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
     font-size: 1.5rem;
   }
 
@@ -71,5 +91,40 @@
     position: absolute;
     top: 0%;
     left: 45%;
+  }
+
+  /* scientificallyBacked */
+  .scientificallyBacked .scientificallyBackedYellow .scientificText {
+    margin-top: 3rem;
+  }
+
+  .scientificallyBacked .scientificallyBackedYellow .scientificText h3,
+  .scientificallyBacked .scientificallyBackedYellow .scientificText p {
+    font-size: 1rem;
+  }
+
+  .scientificallyBacked .scientificallyBackedImage, .toughOnDandruffButNotOnImage {
+    position: inherit;
+    background-color: #ffcc00;
+  }
+
+  .fastLongLastingParent {
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .fastLongLastingParent .fastLongLastingImage,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img {
+    position: inherit;
+  }
+
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText {
+    margin-top: 0rem;
+    padding-top: 20px;
+  }
+
+  .fastLongLastingImage {
+    background-color: #207cde;
   }
 }
