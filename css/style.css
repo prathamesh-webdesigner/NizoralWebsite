@@ -531,6 +531,100 @@ header .buyNow button {
   right: 0;
 }
 
+.product_carousel {
+  background-color: #ffcc00;
+  width: 100%;
+  height: 100vh;
+  font-family: "helveticaMedium", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.product_carousel .slider_first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.product_carousel .slider_first .slider_first_column_one {
+  color: #152b59;
+}
+.product_carousel .slider_first .round_icon_area {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(255, 204, 0, 0.6196078431);
+  margin-left: auto;
+  margin-right: -20px;
+}
+.product_carousel .slider_first .round_icon_area img {
+  width: 60%;
+}
+.product_carousel .slider_first .round_icon_area_for_clinically_proven {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(255, 204, 0, 0.6196078431);
+  margin-left: auto;
+}
+.product_carousel .slider_first .round_icon_area_for_clinically_proven img {
+  width: 60%;
+}
+.product_carousel .slider_first .fast_relief_round_icon_area {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(255, 204, 0, 0.6196078431);
+  margin-left: -20px;
+}
+.product_carousel .slider_first .fast_relief_round_icon_area img {
+  width: 60%;
+}
+.product_carousel .slider_first .triple_action_round_icon_area {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(255, 204, 0, 0.6196078431);
+  margin-left: 0;
+}
+.product_carousel .slider_first .triple_action_round_icon_area img {
+  width: 60%;
+}
+.product_carousel .slider_first .first_text_area h2 {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.product_carousel .slider_first .first_text_area p {
+  font-size: 1rem;
+  width: 80%;
+}
+.product_carousel .slider_first .product_image_area img {
+  width: 100%;
+}
+.product_carousel .discover button {
+  background-color: #152b59;
+  padding: 4px 15px;
+  color: #fff;
+}
+
 .blink_text span {
   animation: blinker 0.5s linear infinite;
 }
@@ -604,4 +698,19 @@ header .buyNow button {
 .hide-header {
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+}
+
+.carousel-indicators {
+  bottom: -60px !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 5rem !important;
+  height: 5rem !important;
 }/*# sourceMappingURL=style.css.map */
