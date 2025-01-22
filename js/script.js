@@ -135,7 +135,57 @@ setTimeout(() => {
     blinkText.style.display = 'none';
 }, 1000);
 
-// FullPage
-new fullpage("#fullPage",{
-    autoScrolling:true
-})
+
+// Header visible to invisible start
+document.onreadystatechange = function () {
+    let lastScrollPosition = 0;
+    const navbar = document.querySelector('header');
+    window.addEventListener('scroll', function (e) {
+        lastScrollPosition = window.scrollY;
+
+        if (lastScrollPosition > 100)
+            navbar.classList.add('hide-header');
+        else
+            navbar.classList.remove('hide-header');
+    });
+}
+// Header visible to invisible end
+// 100vh scrolling 
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    let currentIndex = 0;
+    let isThrottled = false; // Prevent multiple scroll events
+
+    function scrollToSection(index) {
+        if (index >= 0 && index < sections.length) {
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+            currentIndex = index;
+        }
+    }
+
+    document.addEventListener('wheel', (event) => {
+        if (isThrottled) return; // Ignore if throttled
+
+        isThrottled = true;
+        setTimeout(() => { isThrottled = false; }, 800); // Adjust throttle duration as needed
+
+        if (event.deltaY > 0) {
+            scrollToSection(currentIndex + 1);
+        } else {
+            scrollToSection(currentIndex - 1);
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (isThrottled) return; // Ignore if throttled
+
+        isThrottled = true;
+        setTimeout(() => { isThrottled = false; }, 800); // Adjust throttle duration as needed
+
+        if (event.key === 'ArrowDown') {
+            scrollToSection(currentIndex + 1);
+        } else if (event.key === 'ArrowUp') {
+            scrollToSection(currentIndex - 1);
+        }
+    });
+});

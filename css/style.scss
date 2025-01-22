@@ -34,9 +34,11 @@ body {
 header {
     background-color: $yellow_header;
     padding-bottom: 5rem;
-    position: relative;
-    /* To ensure stacking context */
+    position: fixed;
+    width: 100%;
     z-index: 1;
+    height: 180px;
+    transition: transform 0.3s ease-in-out;
 
     /* Lower priority */
     .navbar-nav {
@@ -70,6 +72,7 @@ header {
             rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: visible;
+    padding-top: 180px;
 
     .bannerTextArea {
         color: $blue_font;
@@ -117,7 +120,7 @@ header {
         width: 100%;
 
         img {
-            width: 65%;
+            width: 55%;
             position: absolute;
             bottom: 0;
             right: -50px;
@@ -720,3 +723,8 @@ header {
 }
 
 //   hover animation end
+
+.hide-header {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
