@@ -3,7 +3,8 @@
   .scientificallyBacked .scientificallyBackedYellow .scientificText p,
   .scientificallyBacked .scientificallyBackedYellow,
   .fastLongLastingParent .fastLongLasting .fastLongLastingText p,
-  .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img, .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
     width: 100%;
   }
 
@@ -52,7 +53,8 @@
     font-weight: bold;
   }
 
-  .banner .bannerTextArea h2, .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
+  .banner .bannerTextArea h2,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
     font-size: 1.5rem;
     width: 100%;
   }
@@ -103,7 +105,8 @@
     font-size: 1rem;
   }
 
-  .scientificallyBacked .scientificallyBackedImage, .toughOnDandruffButNotOnImage {
+  .scientificallyBacked .scientificallyBackedImage,
+  .toughOnDandruffButNotOnImage {
     position: inherit;
     background-color: #ffcc00;
   }
@@ -126,5 +129,65 @@
 
   .fastLongLastingImage {
     background-color: #207cde;
+  }
+
+  /* Slider  */
+  .product_carousel .slider_first {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .product_carousel .slider_first .product_image_area img {
+    width: 30%;
+  }
+
+  .product_carousel .slider_first .round_icon_area,
+  .product_carousel .slider_first .round_icon_area_for_clinically_proven,
+  .product_carousel .slider_first .fast_relief_round_icon_area,
+  .product_carousel .slider_first .triple_action_round_icon_area {
+    margin: 0 auto;
+  }
+
+  .first_text_area,
+  .product_image_area {
+    text-align: center;
+  }
+
+  .product_carousel .slider_first .slider_first_column_one {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product_carousel .slider_first .round_icon_area,
+  .product_carousel .slider_first .round_icon_area_for_clinically_proven,
+  .product_carousel .slider_first .fast_relief_round_icon_area,
+  .product_carousel .slider_first .triple_action_round_icon_area {
+    width: 70px;
+    height: 70px;
+  }
+
+  .product_carousel .slider_first .first_text_area h2 {
+    font-size: 1rem;
+  }
+
+  .product_carousel .slider_first .first_text_area p,
+  .allAboutDandruffParent .allAboutDandruff p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .long-lasting-holding_area {
+    width: 50%;
+  }
+
+  .allAboutDandruffParent .allAboutDandruffImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .allAboutDandruffParent .allAboutDandruff h3, .allAboutDandruffParent .allAboutDandruff p, .allAboutDandruffParent .allAboutDandruff button {
+    z-index: 9;
+    position: relative;
   }
 }

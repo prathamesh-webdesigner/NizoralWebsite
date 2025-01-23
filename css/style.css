@@ -538,6 +538,7 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .product_carousel .slider_first {
   display: flex;
@@ -625,6 +626,48 @@ header .buyNow button {
   color: #fff;
 }
 
+.allAboutDandruffParent {
+  background-color: #5dafae;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: "helveticaMedium", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allAboutDandruffParent .allAboutDandruff h3 {
+  font-size: 3rem;
+}
+.allAboutDandruffParent .allAboutDandruff h2 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 9;
+}
+.allAboutDandruffParent .allAboutDandruff p {
+  font-size: 1.5rem;
+  width: 30%;
+}
+.allAboutDandruffParent .allAboutDandruff button {
+  background-color: #152b59;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+.allAboutDandruffParent .allAboutDandruffImage img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .blink_text span {
   animation: blinker 0.5s linear infinite;
 }
@@ -710,7 +753,8 @@ header .buyNow button {
   bottom: -60px !important;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 5rem !important;
   height: 5rem !important;
 }/*# sourceMappingURL=style.css.map */
