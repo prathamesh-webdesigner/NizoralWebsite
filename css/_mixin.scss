@@ -8,7 +8,7 @@
 }
 
 // Round shape
-@mixin round_featureParent($top,$left) {
+@mixin round_featureParent($top, $left) {
     position: absolute;
     // top: 46%;
     // right: 6%;
@@ -59,7 +59,43 @@
     justify-content: center;
     border: 5px solid #ffcc009e;
     margin-left: $marginLeft;
-    img{
+    img {
         width: 60%;
+    }
+}
+
+@mixin air_pollution {
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .col-md-4 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+    .air_pollution_content {
+        padding: 50px;
+        h2 {
+            font-size: 8vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -5px;
+            letter-spacing: 1px;
+        }
     }
 }

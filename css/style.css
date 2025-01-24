@@ -693,37 +693,37 @@ header .buyNow button {
   width: 100%;
 }
 .banner_dandruff_education .banner_dandruff_educationBoy img {
-  width: 46%;
+  width: 50%;
   position: absolute;
-  bottom: -76px;
+  bottom: -85px;
   right: 0;
   z-index: 9;
+}
+
+.which_environmental_factors .environmentalFactorsParent {
+  color: #152b59;
+  width: 90%;
+  font-family: "helveticaMedium", sans-serif;
+}
+.which_environmental_factors .environmentalFactorsParent h2 {
+  font-size: 2rem;
+  width: 63%;
 }
 
 .environmentalFactors {
   overflow: hidden;
   font-family: "helveticaMedium", sans-serif;
 }
-.environmentalFactors .theNezroralDiffrenceParent {
-  color: #fff;
-}
-.environmentalFactors .theNezroralDiffrenceParent h2 {
-  font-size: 3rem;
-  line-height: 1;
-  letter-spacing: 1px;
-}
-.environmentalFactors .theNezroralDiffrenceParent p {
-  font-size: 1.5rem;
-  line-height: 1;
-  letter-spacing: 1px;
-}
 .environmentalFactors .externalInfluencesYellow {
   background-color: #ffcc00;
   height: 100vh;
   overflow: hidden;
 }
+.environmentalFactors .externalInfluencesYellow .externalInfluencesText {
+  color: #152b59;
+}
 .environmentalFactors .externalInfluencesYellow .externalInfluencesText h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -738,6 +738,9 @@ header .buyNow button {
 .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area {
   background-color: #ffe066;
   padding: 20px;
+}
+.environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area p {
+  font-size: 1.5rem;
 }
 .environmentalFactors .externalInfluencesYellow .externalInfluencesImage {
   display: flex;
@@ -756,7 +759,191 @@ header .buyNow button {
   width: 100%;
   height: 100vh;
   font-family: "helveticaMedium", sans-serif;
+  display: flex;
+  align-items: center;
 }
+.avoid-irritating-the-scalp .text_area {
+  width: 68%;
+  text-align: center;
+  margin: 0 auto;
+}
+.avoid-irritating-the-scalp .text_area p {
+  font-size: 2rem;
+}
+.avoid-irritating-the-scalp .text_area h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.air_pollution {
+  background-color: #ffcc00;
+  height: 100vh;
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+  overflow: hidden;
+}
+.air_pollution .col-md-4 .air_pollution_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.air_pollution .col-md-4 .air_pollution_image img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.air_pollution .air_pollution_content {
+  padding: 50px;
+}
+.air_pollution .air_pollution_content h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.extream_weather {
+  background-color: #ffcc00;
+  height: 100vh;
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.extream_weather .col-md-4 .air_pollution_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.extream_weather .col-md-4 .air_pollution_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.extream_weather .air_pollution_content {
+  padding: 50px;
+}
+.extream_weather .air_pollution_content h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.Dry-air {
+  background-color: #ffcc00;
+  height: 100vh;
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.Dry-air .col-md-4 .air_pollution_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Dry-air .col-md-4 .air_pollution_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.Dry-air .air_pollution_content {
+  padding: 50px;
+}
+.Dry-air .air_pollution_content h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.hat-scarf {
+  background-color: #ffcc00;
+  height: 100vh;
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.hat-scarf .col-md-4 .air_pollution_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hat-scarf .col-md-4 .air_pollution_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.hat-scarf .air_pollution_content {
+  padding: 50px;
+}
+.hat-scarf .air_pollution_content h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.styling-products {
+  background-color: #ffcc00;
+  height: 100vh;
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.styling-products .col-md-4 .air_pollution_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.styling-products .col-md-4 .air_pollution_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.styling-products .air_pollution_content {
+  padding: 50px;
+}
+.styling-products .air_pollution_content h2 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
 .blink_text span {
   animation: blinker 0.5s linear infinite;
 }

@@ -4,7 +4,7 @@
   .scientificallyBacked .scientificallyBackedYellow,
   .fastLongLastingParent .fastLongLasting .fastLongLastingText p,
   .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage img,
-  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p, .which_environmental_factors .environmentalFactorsParent, .which_environmental_factors .environmentalFactorsParent h2, .avoid-irritating-the-scalp .text_area {
     width: 100%;
   }
 
@@ -12,7 +12,7 @@
     display: none;
   }
 
-  .yourScalps .yourScalpsBottomParent .yourScalpsBottom p {
+  .yourScalps .yourScalpsBottomParent .yourScalpsBottom p, .bannerTextArea {
     text-align: center;
   }
 
@@ -63,12 +63,12 @@
   .banner .bannerTextArea h2,
   .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3,
   .banner_dandruff_education .bannerTextArea h2,
-  .environmentalFactors .externalInfluencesYellow .externalInfluencesText h3 {
+  .environmentalFactors .externalInfluencesYellow .externalInfluencesText h3, .avoid-irritating-the-scalp .text_area p {
     font-size: 1.5rem;
     width: 100%;
   }
 
-  .banner .bannerTextArea p {
+  .banner .bannerTextArea p, .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area p {
     font-size: 1rem;
     width: 100%;
   }
@@ -207,5 +207,12 @@
   .banner_dandruff_education {
     width: 100%;
     height: 100%;
+  }
+
+  .which_environmental_factors, .environmentalFactors .externalInfluencesYellow {
+    padding: 20px 0;
+  }
+  .air_pollution .col-md-4 .air_pollution_image img{
+    height: 50%;
   }
 }
