@@ -20,6 +20,12 @@
     padding: 0;
   }
 
+  .navbar {
+    background-color: #ffcc00 !important;
+    z-index: 9999;
+
+  }
+
   .banner,
   .scientificallyBackedYellow,
   .scientificallyBacked .scientificallyBackedYellow,
@@ -48,13 +54,16 @@
     font-weight: bold;
   }
 
-  .mo_goodbye {
+  .mo_goodbye,
+  .banner .bannerTextArea h1 {
     font-size: 4rem;
     font-weight: bold;
   }
 
   .banner .bannerTextArea h2,
-  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3,
+  .banner_dandruff_education .bannerTextArea h2,
+  .environmentalFactors .externalInfluencesYellow .externalInfluencesText h3 {
     font-size: 1.5rem;
     width: 100%;
   }
@@ -64,7 +73,8 @@
     width: 100%;
   }
 
-  .banner .bannerBoy img {
+  .banner .bannerBoy img,
+  .banner_dandruff_education .banner_dandruff_educationBoy img {
     width: 100%;
     position: relative;
     bottom: 0;
@@ -186,8 +196,16 @@
     object-fit: cover;
   }
 
-  .allAboutDandruffParent .allAboutDandruff h3, .allAboutDandruffParent .allAboutDandruff p, .allAboutDandruffParent .allAboutDandruff button {
+  .allAboutDandruffParent .allAboutDandruff h3,
+  .allAboutDandruffParent .allAboutDandruff p,
+  .allAboutDandruffParent .allAboutDandruff button {
     z-index: 9;
     position: relative;
+  }
+
+  /* dandruff Education */
+  .banner_dandruff_education {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -622,11 +622,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    .allAboutDandruff{
-        h3{
+
+    .allAboutDandruff {
+        h3 {
             font-size: 3rem;
         }
-        h2{
+
+        h2 {
             font-size: 12vw;
             text-transform: uppercase;
             font-weight: 700;
@@ -636,11 +638,13 @@ header {
             position: relative;
             z-index: 9;
         }
-        p{
+
+        p {
             font-size: 1.5rem;
             width: 30%;
         }
-        button{
+
+        button {
             background-color: $blue_font;
             color: #fff;
             border: none;
@@ -648,6 +652,7 @@ header {
             padding: 10px 20px;
         }
     }
+
     .allAboutDandruffImage {
         img {
             width: 60%;
@@ -659,7 +664,120 @@ header {
     }
 }
 
-// Animations
+// ----------------------------------------------------------------------------------------------------Dandruff Education------------------------------------------------------
+.banner_dandruff_education {
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    padding-top: 180px;
+    display: flex;
+    align-items: center;
+
+    .bannerTextArea {
+        h1 {
+            font-size: 12vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+
+    .banner_dandruff_educationBoy {
+        width: 100%;
+
+        img {
+            width: 46%;
+            position: absolute;
+            bottom: -76px;
+            right: 0;
+            z-index: 9;
+        }
+    }
+}
+
+.environmentalFactors {
+    overflow: hidden;
+    font-family: $font_family;
+
+    .theNezroralDiffrenceParent {
+        color: #fff;
+
+        h2 {
+            font-size: 3rem;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+    }
+
+    .externalInfluencesYellow {
+        background-color: $yellow_header;
+        height: 100vh;
+        overflow: hidden;
+        
+
+        .externalInfluencesText {
+            h3 {
+                font-size: 3rem;
+                line-height: 1;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 8vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -5px;
+                letter-spacing: 1px;
+            }
+
+            .light_yellow_area {
+                background-color: #ffe066;
+                padding: 20px;
+                p {}
+            }
+        }
+
+        .externalInfluencesImage {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.avoid-irritating-the-scalp{
+    width: 100%;
+    height: 100vh;
+    font-family: $font_family;
+    p{}
+    h2{}
+    span{}
+}
+
+
+// ----------------------------------------------------------------------------------------------------Animations------------------------------------------------------
 .blink_text span {
     animation: blinker 0.5s linear infinite;
 }
