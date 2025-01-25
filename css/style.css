@@ -944,6 +944,74 @@ header .buyNow button {
   letter-spacing: 1px;
 }
 
+footer {
+  background-color: #ffcc00;
+  padding: 50px 0;
+}
+footer .col-md-3 {
+  font-family: "helveticaMedium", sans-serif;
+}
+footer .col-md-3 .stada {
+  filter: brightness(0%);
+  width: 60%;
+}
+footer .col-md-3 ul {
+  padding: 0;
+}
+footer .col-md-3 ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+footer .col-md-3 ul li a {
+  color: #212427;
+  text-decoration: none;
+}
+footer .col-md-3 .social_icon {
+  display: flex;
+  gap: 2rem;
+}
+footer .col-md-3 .social_icon li a img {
+  width: 2vw;
+}
+
+.dandruff_education_carousel {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #152b59;
+}
+.dandruff_education_carousel .text_area_for_slider {
+  font-family: "helveticaMedium", sans-serif;
+}
+.dandruff_education_carousel .text_area_for_slider h2 {
+  font-size: 3vw;
+}
+.dandruff_education_carousel .text_area_for_slider h3 {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.5vw;
+}
+.dandruff_education_carousel .DE_slider_area .slider1 img {
+  width: 50%;
+}
+.dandruff_education_carousel .nizoral-product .slider-1 {
+  font-family: "helveticaMedium", sans-serif;
+  text-align: center;
+}
+.dandruff_education_carousel .nizoral-product .slider-1 img {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.dandruff_education_carousel .nizoral-product .slider-1 h2 {
+  font-size: 1.5rem;
+}
+.dandruff_education_carousel .nizoral-product .slider-1 h4 {
+  font-size: 1.1rem;
+}
+
 .blink_text span {
   animation: blinker 0.5s linear infinite;
 }
@@ -1033,4 +1101,43 @@ header .buyNow button {
 .carousel-control-prev-icon {
   width: 5rem !important;
   height: 5rem !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  width: 100%; /* Span the width of the carousel */
+  transform: translateY(-50%); /* Adjust for the top alignment */
+  display: flex;
+  justify-content: space-between; /* Push buttons to the sides */
+  align-items: center;
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  width: auto; /* Increased button width */
+  height: auto; /* Increased button height */
+}
+
+.owl-nav button.owl-prev {
+  position: absolute;
+  left: -30px; /* Adjust left arrow position */
+}
+
+.owl-nav button.owl-next {
+  position: absolute;
+  right: -30px; /* Adjust right arrow position */
+}
+
+.owl-nav span {
+  font-size: 8rem !important;
+  font-weight: 100;
+  color: #152b59;
+}
+.owl-nav span:hover {
+  color: #ffcc00;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent !important;
 }/*# sourceMappingURL=style.css.map */

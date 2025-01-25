@@ -1,3 +1,17 @@
+// Header visible to invisible start
+document.onreadystatechange = function () {
+    let lastScrollPosition = 0;
+    const navbar = document.querySelector('header');
+    window.addEventListener('scroll', function (e) {
+        lastScrollPosition = window.scrollY;
+
+        if (lastScrollPosition > 100)
+            navbar.classList.add('hide-header');
+        else
+            navbar.classList.remove('hide-header');
+    });
+}
+// Header visible to invisible end
 // Text Animation 
 function breakTheText() {
     var elements = document.querySelectorAll(".md_goodbye, .bestfriend h2, .bestfriend h3, .md_dandruffAndItching, .theNezroralDiffrenceParent h2");
@@ -136,20 +150,7 @@ setTimeout(() => {
 }, 1000);
 
 
-// Header visible to invisible start
-document.onreadystatechange = function () {
-    let lastScrollPosition = 0;
-    const navbar = document.querySelector('header');
-    window.addEventListener('scroll', function (e) {
-        lastScrollPosition = window.scrollY;
 
-        if (lastScrollPosition > 100)
-            navbar.classList.add('hide-header');
-        else
-            navbar.classList.remove('hide-header');
-    });
-}
-// Header visible to invisible end
 // 100vh scrolling 
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');

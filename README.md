@@ -53,3 +53,7 @@
         }
     }
 }
+
+Air pollution can promote dandruff. People in big cities certainly know that. The air is full of exhaust fumes, which does not only make breathing difficult. It is not good for the skin either. The skin gets less Vitamin E. Vitamin E protects the skin. 
+
+Air pollution can also irritate the scalp. Possible consequence: Itching and inflammation of the scalp and dandruff. However, we are not only exposed to air pollution outside. Scientists have found harmful gases, such as formaldehyde, in many indoor areas. For example, scientific studies reveal that the level of formaldehyde in the air may rise, if there is a lot of smoking. The active ingredient Ketoconazole 2% in Nizoral® reduces annoying redness and relieves itching of the scalp.

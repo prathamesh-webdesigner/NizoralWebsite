@@ -204,7 +204,7 @@
   }
 
   /* dandruff Education */
-  .banner_dandruff_education {
+  .banner_dandruff_education, .air_pollution .col-md-4 .air_pollution_image img, .air_pollution_image img {
     width: 100%;
     height: 100%;
   }
@@ -212,7 +212,41 @@
   .which_environmental_factors, .environmentalFactors .externalInfluencesYellow {
     padding: 20px 0;
   }
-  .air_pollution .col-md-4 .air_pollution_image img{
-    height: 50%;
+
+  .air_pollution .air_pollution_content, .extream_weather .air_pollution_content, .Dry-air .air_pollution_content, .hat-scarf .air_pollution_content, .styling-products .air_pollution_content {
+    padding: 10px;
   }
+
+  .air_pollution, .Dry-air, .hat-scarf, .styling-products {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .avoid-irritating-the-scalp .text_area h2 {
+    font-size: 8vw;
+  }
+
+  .owl-theme .owl-nav {
+    display: none;
+    /* Hide the arrows */
+  }
+
+  .dandruff_education_carousel .text_area_for_slider h2 {
+    font-size: 8vw;
+  }
+
+  .dandruff_education_carousel .text_area_for_slider h3 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 5vw;
+  }
+
+  .dandruff_education_carousel {
+    height: 100%;
+    padding: 30px 0;
+  }
+  footer .col-md-3 .social_icon li a img {
+    width: 8vw;
+}
 }

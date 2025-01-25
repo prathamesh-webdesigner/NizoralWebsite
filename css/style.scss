@@ -830,17 +830,96 @@ header {
     }
 }
 
-.extream_weather{
+.extream_weather {
     @include air_pollution;
 }
-.Dry-air{
+.Dry-air {
     @include air_pollution;
 }
-.hat-scarf{
+.hat-scarf {
     @include air_pollution;
 }
-.styling-products{
+.styling-products {
     @include air_pollution;
+}
+// ---------------------------------------------Dandruff Education End------------------------------------------------------
+
+footer{
+    background-color: $yellow_header;
+    padding: 50px 0;
+    .col-md-3{
+        font-family: $font_family;
+        .stada{
+            filter: brightness(0%);
+            width: 60%;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                margin: 15px 0;
+                a{
+                    color: $black_font;
+                    text-decoration: none;
+                }
+            }
+        }
+        .social_icon{
+            display: flex;
+            gap: 2rem;
+            li{
+                a{
+                    img{
+                        width: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+// Slider
+.dandruff_education_carousel {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue_font;
+    .text_area_for_slider {
+        font-family: $font_family;
+        h2 {
+            font-size: 3vw;
+        }
+        h3 {
+            width: 60%;
+            margin: 0 auto;
+            font-size: 1.5vw;
+        }
+    }
+    .DE_slider_area {
+        .slider1 {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .nizoral-product {
+        .slider-1 {
+            font-family: $font_family;
+            text-align: center;
+            img{
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            h4{
+                font-size: 1.1rem;
+            }
+        }
+    }
 }
 // ----------------------------------------------------------------------------------------------------Animations------------------------------------------------------
 .blink_text span {
@@ -1034,4 +1113,42 @@ header {
 .carousel-control-prev-icon {
     width: 5rem !important;
     height: 5rem !important;
+}
+
+
+.owl-nav {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    width: 100%; /* Span the width of the carousel */
+    transform: translateY(-50%); /* Adjust for the top alignment */
+    display: flex;
+    justify-content: space-between; /* Push buttons to the sides */
+    align-items: center;
+  }
+  
+  .owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  width: auto; /* Increased button width */
+  height: auto; /* Increased button height */
+}
+
+.owl-nav button.owl-prev {
+  position: absolute;
+  left: -30px; /* Adjust left arrow position */
+}
+
+.owl-nav button.owl-next {
+  position: absolute;
+  right: -30px; /* Adjust right arrow position */
+}
+.owl-nav span {
+    font-size: 8rem !important;
+    font-weight: 100;
+    color: $blue_font;
+    &:hover{
+        color: $yellow_header;
+    }
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent !important;
 }
