@@ -31,12 +31,15 @@ header {
   transition: transform 0.3s ease-in-out;
   /* Lower priority */
 }
+header .navbar-nav li {
+  background-color: #ffcc00;
+}
 header .navbar-nav li a {
   font-weight: bold;
   font-size: 18px;
 }
 header .buyNow button {
-  background-color: transparent;
+  background-color: #ffcc00;
   border: 2px solid #212427;
   font-size: 18px;
   font-size: 18px;
@@ -376,7 +379,7 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom button {
-  background-color: transparent;
+  background-color: #ffcc00;
   border: 2px solid #fff;
   padding: 8px 25px;
   font-size: 1.2rem;
@@ -624,6 +627,8 @@ header .buyNow button {
   background-color: #152b59;
   padding: 4px 15px;
   color: #fff;
+  border: none;
+  outline: none;
 }
 
 .allAboutDandruffParent {
@@ -944,6 +949,189 @@ header .buyNow button {
   letter-spacing: 1px;
 }
 
+.range_discover {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.range_discover .rangeTextArea {
+  color: #152b59;
+}
+.range_discover .rangeTextArea h1 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+.range_discover .rangeTextArea h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.range_discover .rangeTextArea p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 35%;
+}
+.range_discover .range_drops {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  right: 20px;
+  bottom: 60px;
+}
+.range_discover .range_drops img {
+  width: 18%;
+}
+
+.white_part_nizoraal_range {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.white_part_nizoraal_range .nizoral_medical_shampoo {
+  font-family: "helveticaMedium", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+}
+.white_part_nizoraal_range .nizoral_medical_shampoo .shampooImage img {
+  width: 100%;
+}
+.white_part_nizoraal_range .nizoral_medical_shampoo .range_text {
+  background-color: #ffcc00;
+  padding: 40px;
+  height: 50%;
+  width: 50%;
+  color: #152b59;
+}
+.white_part_nizoraal_range .nizoral_medical_shampoo .range_text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.white_part_nizoraal_range .whereToBuy button {
+  font-family: "helveticaMedium", sans-serif;
+  background-color: #152b59;
+  padding: 4px 15px;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.scintific_baked_formula .baked_text {
+  color: #152b59;
+  font-family: "helveticaMedium", sans-serif;
+}
+.scintific_baked_formula .baked_text h3 {
+  font-size: 3vw;
+  font-weight: normal;
+  line-height: 1;
+}
+.scintific_baked_formula .baked_text h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+.scintific_baked_formula .baked_text p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  width: 75%;
+}
+.scintific_baked_formula .scintific_image {
+  background-color: #5dafae;
+}
+.scintific_baked_formula .scintific_image img {
+  width: 100%;
+}
+
+.say_good_bye_to_dandruff_itching {
+  font-family: "helveticaMedium", sans-serif;
+  color: #152b59;
+  height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.say_good_bye_to_dandruff_itching .heading {
+  margin: 0 auto;
+  width: 50%;
+}
+.say_good_bye_to_dandruff_itching .heading h2 {
+  font-size: 6vw;
+  font-weight: 700;
+  line-height: 1;
+}
+.say_good_bye_to_dandruff_itching .heading h2 span {
+  font-size: 3vw;
+  font-weight: normal;
+  line-height: 1;
+}
+.say_good_bye_to_dandruff_itching .heading h3 {
+  font-size: 3vw;
+  font-weight: normal;
+  line-height: 1;
+}
+.say_good_bye_to_dandruff_itching .shampoo {
+  text-align: center;
+}
+.say_good_bye_to_dandruff_itching .shampoo img {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+.say_good_bye_to_dandruff_itching .shampoo h2 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.say_good_bye_to_dandruff_itching .shampoo p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.expret_advice {
+  padding: 5rem 0;
+  font-family: "helveticaMedium", sans-serif;
+  color: #152b59;
+  background-color: #3db2d8;
+}
+.expret_advice .expret_advice_text h2 {
+  font-size: 12vw;
+  font-weight: 600;
+  line-height: 1;
+}
+.expret_advice .expret_advice_text h3 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area {
+  display: flex;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area img {
+  width: 30%;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area {
+  width: 40%;
+  margin-left: 2rem;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area a {
+  color: #152b59;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 footer {
   background-color: #ffcc00;
   padding: 50px 0;
@@ -1087,23 +1275,7 @@ footer .col-md-3 .social_icon li a img {
   transition: transform 0.3s ease-in-out;
 }
 
-.carousel-indicators [data-bs-target] {
-  width: 20px !important;
-  height: 20px !important;
-  border-radius: 50% !important;
-}
-
-.carousel-indicators {
-  bottom: -60px !important;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 5rem !important;
-  height: 5rem !important;
-}
-
-.owl-nav {
+.dandruff_education_carousel .owl-nav {
   position: absolute;
   top: 50%; /* Center vertically */
   width: 100%; /* Span the width of the carousel */
@@ -1113,31 +1285,67 @@ footer .col-md-3 .social_icon li a img {
   align-items: center;
 }
 
-.owl-nav button.owl-prev,
-.owl-nav button.owl-next {
+.dandruff_education_carousel .owl-nav button.owl-prev,
+.dandruff_education_carousel .owl-nav button.owl-next {
   width: auto; /* Increased button width */
   height: auto; /* Increased button height */
 }
 
-.owl-nav button.owl-prev {
+.dandruff_education_carousel .owl-nav button.owl-prev {
   position: absolute;
   left: -30px; /* Adjust left arrow position */
 }
 
-.owl-nav button.owl-next {
+.dandruff_education_carousel .owl-nav button.owl-next {
   position: absolute;
   right: -30px; /* Adjust right arrow position */
 }
 
-.owl-nav span {
+.dandruff_education_carousel .owl-nav span {
   font-size: 8rem !important;
   font-weight: 100;
   color: #152b59;
 }
-.owl-nav span:hover {
+.dandruff_education_carousel .owl-nav span:hover {
   color: #ffcc00;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
+.dandruff_education_carousel .owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent !important;
+}
+
+.product_carousel .owl-nav {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  width: 100%; /* Span the width of the carousel */
+  transform: translateY(-50%); /* Adjust for the top alignment */
+  display: flex;
+  justify-content: space-between; /* Push buttons to the sides */
+  align-items: center;
+}
+
+.product_carousel .owl-nav button.owl-prev,
+.product_carousel .owl-nav button.owl-next {
+  width: auto; /* Increased button width */
+  height: auto; /* Increased button height */
+}
+
+.product_carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: -30px; /* Adjust left arrow position */
+}
+
+.product_carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: -30px; /* Adjust right arrow position */
+}
+
+.product_carousel .owl-nav span {
+  font-size: 8rem !important;
+  font-weight: 100;
+  color: #152b59;
+}
+
+.product_carousel .owl-theme .owl-nav [class*=owl-]:hover {
   background-color: transparent !important;
 }/*# sourceMappingURL=style.css.map */

@@ -99,3 +99,42 @@
         }
     }
 }
+@mixin bannerh1 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+}
+@mixin bannerh2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+@mixin bannerP{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+// Nizoral Range
+@mixin white_part_nizoraal_range {
+    width: 90%;
+    margin: 0 auto;
+}
+@mixin nizoral_medical_shampoo {
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+}
+@mixin shampooImage {
+    img {
+        width: 100%;
+    }
+}
+@mixin range_text($bg) {
+    background-color: $bg;
+    padding: 40px;
+    height: 50%;
+    width: 50%;
+    color: $blue_font;
+}

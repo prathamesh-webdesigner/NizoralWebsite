@@ -10,6 +10,7 @@ $blue_font: #152b59;
 $black_font: #212427;
 $skyBlue: #207cde;
 $lightGreen: #5dafae;
+$lightBlue: #3db2d8;
 $font_family: "helveticaMedium", sans-serif;
 
 * {
@@ -43,6 +44,7 @@ header {
     /* Lower priority */
     .navbar-nav {
         li {
+            background-color: $yellow_header;
             a {
                 font-weight: bold;
                 font-size: 18px;
@@ -52,7 +54,7 @@ header {
 
     .buyNow {
         button {
-            background-color: transparent;
+            background-color: $yellow_header;
             border: 2px solid $black_font;
             font-size: 18px;
             font-size: 18px;
@@ -367,7 +369,7 @@ header {
             }
 
             button {
-                background-color: transparent;
+                background-color: $yellow_header;
                 border: 2px solid #fff;
                 padding: 8px 25px;
                 font-size: 1.2rem;
@@ -613,6 +615,8 @@ header {
             background-color: $blue_font;
             padding: 4px 15px;
             color: #fff;
+            border: none;
+            outline: none;
         }
     }
 }
@@ -844,32 +848,208 @@ header {
 }
 // ---------------------------------------------Dandruff Education End------------------------------------------------------
 
-footer{
+// ---------------------------------------------Nizoral Range------------------------------------------------------
+.range_discover {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .rangeTextArea {
+        color: $blue_font;
+        h1 {
+            @include bannerh1;
+        }
+        h2 {
+            @include bannerh2;
+        }
+        p {
+            @include bannerP;
+            width: 35%;
+        }
+    }
+    .range_drops {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        right: 20px;
+        bottom: 60px;
+        img {
+            width: 18%;
+        }
+    }
+}
+.white_part_nizoraal_range {
+    @include white_part_nizoraal_range;
+    padding-bottom: 5rem;
+    .nizoral_medical_shampoo {
+        @include nizoral_medical_shampoo;
+        .shampooImage {
+            @include shampooImage;
+        }
+        .range_text {
+            @include range_text($yellow_header);
+            h2 {
+                @include bannerh2;
+            }
+        }
+    }
+    .whereToBuy {
+        button {
+            font-family: $font_family;
+            background-color: #152b59;
+            padding: 4px 15px;
+            color: #fff;
+            outline: none;
+            border: none;
+            width: 15%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.scintific_baked_formula {
+    .baked_text {
+        color: $blue_font;
+        font-family: $font_family;
+        h3 {
+            font-size: 3vw;
+            font-weight: normal;
+            line-height: 1;
+        }
+        h2 {
+            font-size: 6vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+        }
+        p {
+            font-size: 1.5rem;
+            font-weight: normal;
+            width: 75%;
+        }
+    }
+    .scintific_image {
+        background-color: $lightGreen;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.say_good_bye_to_dandruff_itching {
+    font-family: $font_family;
+    color: $blue_font;
+    height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .heading {
+        margin: 0 auto;
+        width: 50%;
+        h2 {
+            font-size: 6vw;
+            font-weight: 700;
+            line-height: 1;
+            span {
+                font-size: 3vw;
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+        h3 {
+            font-size: 3vw;
+            font-weight: normal;
+            line-height: 1;
+        }
+    }
+    .shampoo {
+        text-align: center;
+        img {
+            width: 60%;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 2.5vw;
+            font-weight: 600;
+        }
+        p {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.expret_advice {
+    padding: 5rem 0;
+    font-family: $font_family;
+    color: $blue_font;
+    background-color: $lightBlue;
+    .expret_advice_text {
+        h2 {
+            font-size: 12vw;
+            font-weight: 600;
+            line-height: 1;
+        }
+        h3 {
+            font-size: 3vw;
+            font-weight: 600;
+        }
+    }
+    .dandruff_vs_scalp {
+        
+        .dandruff_vs_scalp_area {
+            display: flex;
+            img {
+                width: 30%;
+            }
+            .text_area {
+                width: 40%;
+                margin-left: 2rem;
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                a {
+                    color: $blue_font;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------------Nizoral Range End------------------------------------------------------
+
+footer {
     background-color: $yellow_header;
     padding: 50px 0;
-    .col-md-3{
+    .col-md-3 {
         font-family: $font_family;
-        .stada{
+        .stada {
             filter: brightness(0%);
             width: 60%;
         }
-        ul{
+        ul {
             padding: 0;
-            li{
+            li {
                 list-style: none;
                 margin: 15px 0;
-                a{
+                a {
                     color: $black_font;
                     text-decoration: none;
                 }
             }
         }
-        .social_icon{
+        .social_icon {
             display: flex;
             gap: 2rem;
-            li{
-                a{
-                    img{
+            li {
+                a {
+                    img {
                         width: 2vw;
                     }
                 }
@@ -907,15 +1087,15 @@ footer{
         .slider-1 {
             font-family: $font_family;
             text-align: center;
-            img{
+            img {
                 width: 60%;
                 margin: 0 auto;
                 margin-bottom: 1rem;
             }
-            h2{
+            h2 {
                 font-size: 1.5rem;
             }
-            h4{
+            h4 {
                 font-size: 1.1rem;
             }
         }
@@ -1098,25 +1278,7 @@ footer{
     transition: transform 0.3s ease-in-out;
 }
 
-// BS overlap
-.carousel-indicators [data-bs-target] {
-    width: 20px !important;
-    height: 20px !important;
-    border-radius: 50% !important;
-}
-
-.carousel-indicators {
-    bottom: -60px !important;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    width: 5rem !important;
-    height: 5rem !important;
-}
-
-
-.owl-nav {
+.dandruff_education_carousel .owl-nav {
     position: absolute;
     top: 50%; /* Center vertically */
     width: 100%; /* Span the width of the carousel */
@@ -1124,31 +1286,68 @@ footer{
     display: flex;
     justify-content: space-between; /* Push buttons to the sides */
     align-items: center;
-  }
-  
-  .owl-nav button.owl-prev,
-.owl-nav button.owl-next {
-  width: auto; /* Increased button width */
-  height: auto; /* Increased button height */
 }
 
-.owl-nav button.owl-prev {
-  position: absolute;
-  left: -30px; /* Adjust left arrow position */
+.dandruff_education_carousel .owl-nav button.owl-prev,
+.dandruff_education_carousel .owl-nav button.owl-next {
+    width: auto; /* Increased button width */
+    height: auto; /* Increased button height */
 }
 
-.owl-nav button.owl-next {
-  position: absolute;
-  right: -30px; /* Adjust right arrow position */
+.dandruff_education_carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -30px; /* Adjust left arrow position */
 }
-.owl-nav span {
+
+.dandruff_education_carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -30px; /* Adjust right arrow position */
+}
+.dandruff_education_carousel .owl-nav span {
     font-size: 8rem !important;
     font-weight: 100;
     color: $blue_font;
-    &:hover{
+    &:hover {
         color: $yellow_header;
     }
 }
-.owl-theme .owl-nav [class*=owl-]:hover{
+.dandruff_education_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent !important;
+}
+
+
+////////////////////////////
+
+.product_carousel .owl-nav {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    width: 100%; /* Span the width of the carousel */
+    transform: translateY(-50%); /* Adjust for the top alignment */
+    display: flex;
+    justify-content: space-between; /* Push buttons to the sides */
+    align-items: center;
+}
+
+.product_carousel .owl-nav button.owl-prev,
+.product_carousel .owl-nav button.owl-next {
+    width: auto; /* Increased button width */
+    height: auto; /* Increased button height */
+}
+
+.product_carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -30px; /* Adjust left arrow position */
+}
+
+.product_carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -30px; /* Adjust right arrow position */
+}
+.product_carousel .owl-nav span {
+    font-size: 8rem !important;
+    font-weight: 100;
+    color: $blue_font;
+}
+.product_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent !important;
 }
