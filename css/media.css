@@ -75,6 +75,10 @@
     width: 100%;
   }
 
+  .theNezroralDiffrenceParent h2 span {
+    font-size: 6vw;
+  }
+
   .banner .bannerBoy img,
   .banner_dandruff_education .banner_dandruff_educationBoy img {
     width: 100%;
@@ -318,8 +322,9 @@
     display: flex;
     flex-direction: column;
   }
+
   .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area {
     width: 100%;
     margin-left: 0;
-}
+  }
 }
