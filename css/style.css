@@ -190,8 +190,8 @@ header .buyNow button {
   top: 46%;
   left: 65%;
   background-color: #fff;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   z-index: 99;
   overflow: hidden;
@@ -204,7 +204,7 @@ header .buyNow button {
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +214,7 @@ header .buyNow button {
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .text_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   text-align: center;
   background-color: #f6eab9;
   display: flex;
@@ -224,7 +224,7 @@ header .buyNow button {
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent .round_feature_sub .text_area p {
   width: 70%;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye .shampoo_image {
@@ -257,8 +257,8 @@ header .buyNow button {
   top: 36%;
   left: 12%;
   background-color: #fff;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   z-index: 99;
   overflow: hidden;
@@ -271,7 +271,7 @@ header .buyNow button {
 }
 .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +281,7 @@ header .buyNow button {
 }
 .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .text_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   text-align: center;
   background-color: #9fcbf9;
   display: flex;
@@ -291,7 +291,7 @@ header .buyNow button {
 }
 .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent .round_feature_sub .text_area p {
   width: 65%;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
 }
 .yourScalps .gentleEnoughParent .gentleEnough .gentleEnoughImage {
@@ -321,8 +321,8 @@ header .buyNow button {
   top: 46%;
   left: 12%;
   background-color: #fff;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   z-index: 99;
   overflow: hidden;
@@ -335,7 +335,7 @@ header .buyNow button {
 }
 .yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .icon_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +345,7 @@ header .buyNow button {
 }
 .yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .text_area {
   width: 100%;
-  height: 100px;
+  height: 75px;
   text-align: center;
   background-color: #b8eded;
   display: flex;
@@ -355,7 +355,7 @@ header .buyNow button {
 }
 .yourScalps .hydrateParent .hydrate .round_featureParent .round_feature_sub .text_area p {
   width: 65%;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
 }
 .yourScalps .hydrateParent .hydrate .hydrateImage {
@@ -419,7 +419,7 @@ header .buyNow button {
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText h3 {
   color: #fff;
-  font-size: 5rem;
+  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
@@ -434,7 +434,7 @@ header .buyNow button {
   letter-spacing: 1px;
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 40%;
 }
 .scientificallyBacked .scientificallyBackedImage {
@@ -466,7 +466,7 @@ header .buyNow button {
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
   color: #fff;
-  font-size: 5rem;
+  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
@@ -481,8 +481,8 @@ header .buyNow button {
   letter-spacing: 1px;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText p {
-  font-size: 2rem;
-  width: 45%;
+  font-size: 1.5rem;
+  width: 42%;
   margin-left: auto;
 }
 .fastLongLastingParent .fastLongLastingImage {
@@ -512,7 +512,7 @@ header .buyNow button {
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
   color: #fff;
-  font-size: 4.4rem;
+  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
@@ -527,7 +527,7 @@ header .buyNow button {
   letter-spacing: 1px;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 40%;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage {
@@ -623,16 +623,17 @@ header .buyNow button {
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .product_carousel .slider_first .first_text_area p {
   font-size: 1.3rem;
   width: 90%;
 }
 .product_carousel .slider_first .product_image_area {
-  width: 100%;
+  width: 70%;
 }
 .product_carousel .slider_first .product_image_area img {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .product_carousel .discover button {
