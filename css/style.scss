@@ -609,6 +609,7 @@ header {
 
         .product_image_area {
             width: 70%;
+
             img {
                 width: 80%;
                 margin: 0 auto;
@@ -978,7 +979,7 @@ header {
 .say_good_bye_to_dandruff_itching {
     font-family: $font_family;
     color: $blue_font;
-    height: 100vh;
+    height: 100%;
     padding: 40px 0;
     display: flex;
     align-items: center;
@@ -1007,23 +1008,57 @@ header {
         }
     }
 
-    .shampoo {
-        text-align: center;
+    .img_timeline {
+        margin-top: 5rem;
+        .shampoo {
+            text-align: center;
 
-        img {
-            width: 60%;
-            margin-bottom: 2rem;
+            img {
+                width: 60%;
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                font-size: 2.5vw;
+                font-weight: 600;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 1.2rem;
+            }
         }
 
-        h2 {
-            font-size: 2.5vw;
-            font-weight: 600;
-        }
+        .timeline-parent {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: -9;
+            top: -60px;
 
-        p {
-            width: 90%;
-            margin: 0 auto;
-            font-size: 1.2rem;
+            .one,
+            .two,
+            .three {
+                color: #fff;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .line {
+                border-top: 2px solid #fff;
+                flex-grow: 1;
+                height: 0;
+            }
         }
     }
 }

@@ -1068,7 +1068,7 @@ header .buyNow button {
 .say_good_bye_to_dandruff_itching {
   font-family: "helveticaMedium", sans-serif;
   color: #152b59;
-  height: 100vh;
+  height: 100%;
   padding: 40px 0;
   display: flex;
   align-items: center;
@@ -1093,21 +1093,52 @@ header .buyNow button {
   font-weight: normal;
   line-height: 1;
 }
-.say_good_bye_to_dandruff_itching .shampoo {
+.say_good_bye_to_dandruff_itching .img_timeline {
+  margin-top: 5rem;
+}
+.say_good_bye_to_dandruff_itching .img_timeline .shampoo {
   text-align: center;
 }
-.say_good_bye_to_dandruff_itching .shampoo img {
+.say_good_bye_to_dandruff_itching .img_timeline .shampoo img {
   width: 60%;
   margin-bottom: 2rem;
 }
-.say_good_bye_to_dandruff_itching .shampoo h2 {
+.say_good_bye_to_dandruff_itching .img_timeline .shampoo h2 {
   font-size: 2.5vw;
   font-weight: 600;
 }
-.say_good_bye_to_dandruff_itching .shampoo p {
+.say_good_bye_to_dandruff_itching .img_timeline .shampoo p {
   width: 90%;
   margin: 0 auto;
   font-size: 1.2rem;
+}
+.say_good_bye_to_dandruff_itching .img_timeline .timeline-parent {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -9;
+  top: -60px;
+}
+.say_good_bye_to_dandruff_itching .img_timeline .timeline-parent .one,
+.say_good_bye_to_dandruff_itching .img_timeline .timeline-parent .two,
+.say_good_bye_to_dandruff_itching .img_timeline .timeline-parent .three {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.say_good_bye_to_dandruff_itching .img_timeline .timeline-parent .line {
+  border-top: 2px solid #fff;
+  flex-grow: 1;
+  height: 0;
 }
 
 .expret_advice {

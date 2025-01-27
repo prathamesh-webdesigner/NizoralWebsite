@@ -229,7 +229,18 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row img_timeline position-relative">
+                <!-- timeline  -->
+                <div class="d-none d-md-block">
+                    <div class="timeline-parent">
+                        <div class="one">1</div>
+                        <div class="line"></div>
+                        <div class="two">2</div>
+                        <div class="line"></div>
+                        <div class="three">3</div>
+                    </div>
+                </div>
+                <!-- timeline end -->
                 <div class="col-md-4 mb-5 mb-md-0">
                     <div class="shampoo">
                         <img src="image/slider-shampoo.webp" alt="nizoral-shampoo">
@@ -391,18 +402,18 @@
         })
 
         // Header visible to invisible start
-document.onreadystatechange = function () {
-    let lastScrollPosition = 0;
-    const navbar = document.querySelector('header');
-    window.addEventListener('scroll', function (e) {
-        lastScrollPosition = window.scrollY;
+        document.onreadystatechange = function () {
+            let lastScrollPosition = 0;
+            const navbar = document.querySelector('header');
+            window.addEventListener('scroll', function (e) {
+                lastScrollPosition = window.scrollY;
 
-        if (lastScrollPosition > 100)
-            navbar.classList.add('hide-header');
-        else
-            navbar.classList.remove('hide-header');
-    });
-}
+                if (lastScrollPosition > 100)
+                    navbar.classList.add('hide-header');
+                else
+                    navbar.classList.remove('hide-header');
+            });
+        }
     </script>
     <!-- <script src="js/script.js"></script> -->
 </body>
