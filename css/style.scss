@@ -69,10 +69,12 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
     position: relative;
     overflow: visible;
     padding-top: 180px;
@@ -186,10 +188,12 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
 
     .bestfriend {
         position: absolute;
@@ -984,6 +988,7 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
+    background-color: $yellow_header;
 
     .heading {
         margin: 0 auto;
@@ -1016,6 +1021,8 @@ header {
             img {
                 width: 60%;
                 margin-bottom: 2rem;
+                z-index: 9;
+                position: relative;
             }
 
             h2 {
@@ -1037,7 +1044,7 @@ header {
             width: 80%;
             left: 50%;
             transform: translate(-50%, 0);
-            z-index: -9;
+            z-index: 9;
             top: -60px;
 
             .one,
@@ -1083,7 +1090,6 @@ header {
     }
 
     .dandruff_vs_scalp {
-
         .dandruff_vs_scalp_area {
             display: flex;
 
@@ -1111,6 +1117,19 @@ header {
 }
 
 // ---------------------------------------------Nizoral Range End------------------------------------------------------
+// ---------------------------------------------Shampoo------------------------------------------------------
+.banner-shampoo{
+    background-color: $yellow_header;
+    height: 100%;
+    font-family: $font_family;
+    padding-top: 180px;
+    .shampoo_img{
+        img{
+            width: 80%;
+        }
+    }
+}
+// ---------------------------------------------Shampoo End------------------------------------------------------
 
 footer {
     background-color: $yellow_header;
@@ -1430,7 +1449,6 @@ footer {
 .dandruff_education_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent !important;
 }
-
 
 ////////////////////////////
 

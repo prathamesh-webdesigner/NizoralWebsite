@@ -1073,6 +1073,7 @@ header .buyNow button {
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: #ffcc00;
 }
 .say_good_bye_to_dandruff_itching .heading {
   margin: 0 auto;
@@ -1102,6 +1103,8 @@ header .buyNow button {
 .say_good_bye_to_dandruff_itching .img_timeline .shampoo img {
   width: 60%;
   margin-bottom: 2rem;
+  z-index: 9;
+  position: relative;
 }
 .say_good_bye_to_dandruff_itching .img_timeline .shampoo h2 {
   font-size: 2.5vw;
@@ -1119,7 +1122,7 @@ header .buyNow button {
   width: 80%;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: -9;
+  z-index: 9;
   top: -60px;
 }
 .say_good_bye_to_dandruff_itching .img_timeline .timeline-parent .one,
@@ -1174,6 +1177,16 @@ header .buyNow button {
   color: #152b59;
   text-decoration: none;
   font-weight: bold;
+}
+
+.banner-shampoo {
+  background-color: #ffcc00;
+  height: 100%;
+  font-family: "helveticaMedium", sans-serif;
+  padding-top: 180px;
+}
+.banner-shampoo .shampoo_img img {
+  width: 80%;
 }
 
 footer {
