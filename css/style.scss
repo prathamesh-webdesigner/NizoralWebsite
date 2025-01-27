@@ -45,6 +45,7 @@ header {
     .navbar-nav {
         li {
             background-color: $yellow_header;
+
             a {
                 font-weight: bold;
                 font-size: 18px;
@@ -68,12 +69,10 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: visible;
     padding-top: 180px;
@@ -84,7 +83,7 @@ header {
         margin-top: 5rem;
 
         span {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
             line-height: 1;
         }
@@ -103,9 +102,10 @@ header {
         }
 
         h2 {
+            margin-top: -1rem;
+
             span {
-                overflow: hidden;
-                font-size: 3rem;
+                font-size: 4rem;
                 font-weight: 700;
                 line-height: 1;
                 display: inline-block;
@@ -113,7 +113,7 @@ header {
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 600;
             width: 40%;
         }
@@ -186,12 +186,10 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
 
     .bestfriend {
         position: absolute;
@@ -207,14 +205,16 @@ header {
 
         h2 {
             span {
-                font-size: 4vw;
+                font-size: 4.5vw;
                 display: inline-block;
             }
         }
 
         h3 {
+            margin-top: -2rem;
+
             span {
-                font-size: 10vw;
+                font-size: 12vw;
                 font-weight: bold;
                 display: inline-block;
             }
@@ -245,7 +245,7 @@ header {
                         @include text_area(#f6eab9);
 
                         p {
-                            @include textAreaP(55%);
+                            @include textAreaP(70%);
                         }
                     }
                 }
@@ -258,6 +258,7 @@ header {
                 transform: rotate(346deg);
                 z-index: 9;
                 position: relative;
+                bottom: -70px;
             }
         }
     }
@@ -345,6 +346,8 @@ header {
                 object-fit: cover;
                 transform: rotate(15deg);
                 z-index: 9;
+                position: relative;
+                bottom: -70px;
             }
         }
     }
@@ -363,7 +366,7 @@ header {
             box-shadow: #00000040 -1px -1px 20px 0px;
 
             p {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
                 font-weight: 500;
                 font-family: $font_family;
             }
@@ -372,7 +375,7 @@ header {
                 background-color: $yellow_header;
                 border: 2px solid #fff;
                 padding: 8px 25px;
-                font-size: 1.2rem;
+                font-size: 2rem;
                 font-weight: 500;
                 color: $black_font;
             }
@@ -385,7 +388,7 @@ header {
 
     h2 {
         span {
-            font-size: 3vw;
+            font-size: 3.5vw;
             color: $blue_font;
             display: inline-block;
         }
@@ -408,14 +411,14 @@ header {
 
             h3 {
                 color: #fff;
-                font-size: 3rem;
+                font-size: 5rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 12vw;
+                font-size: 14vw;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
@@ -425,8 +428,8 @@ header {
             }
 
             p {
-                font-size: 1.5rem;
-                width: 30%;
+                font-size: 2rem;
+                width: 40%;
             }
         }
     }
@@ -462,14 +465,14 @@ header {
 
             h3 {
                 color: #fff;
-                font-size: 3rem;
+                font-size: 5rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 12vw;
+                font-size: 14vw;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
@@ -479,8 +482,8 @@ header {
             }
 
             p {
-                font-size: 1.5rem;
-                width: 30%;
+                font-size: 2rem;
+                width: 45%;
                 margin-left: auto;
             }
         }
@@ -515,14 +518,14 @@ header {
 
             h3 {
                 color: #fff;
-                font-size: 3rem;
+                font-size: 4.4rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 12vw;
+                font-size: 14vw;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
@@ -532,8 +535,8 @@ header {
             }
 
             p {
-                font-size: 1.5rem;
-                width: 30%;
+                font-size: 2rem;
+                width: 40%;
             }
         }
     }
@@ -544,7 +547,7 @@ header {
         top: 0;
 
         img {
-            width: 65%;
+            width: 60%;
             height: auto;
             position: absolute;
             right: 0;
@@ -591,21 +594,23 @@ header {
 
         .first_text_area {
             h2 {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 line-height: 1;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
 
             p {
-                font-size: 1rem;
-                width: 80%;
+                font-size: 1.3rem;
+                width: 90%;
             }
         }
 
         .product_image_area {
+            width: 100%;
             img {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
             }
         }
     }
@@ -716,6 +721,7 @@ header {
         color: $blue_font;
         width: 90%;
         font-family: $font_family;
+
         h2 {
             font-size: 2rem;
             width: 63%;
@@ -740,6 +746,7 @@ header {
 
         .externalInfluencesText {
             color: $blue_font;
+
             h3 {
                 font-size: 2rem;
                 line-height: 1;
@@ -758,6 +765,7 @@ header {
             .light_yellow_area {
                 background-color: #ffe066;
                 padding: 20px;
+
                 p {
                     font-size: 1.5rem;
                 }
@@ -785,13 +793,16 @@ header {
     font-family: $font_family;
     display: flex;
     align-items: center;
+
     .text_area {
         width: 68%;
         text-align: center;
         margin: 0 auto;
+
         p {
             font-size: 2rem;
         }
+
         h2 {
             font-size: 3rem;
             font-weight: 600;
@@ -806,6 +817,7 @@ header {
     color: $blue_font;
     font-family: $font_family;
     overflow: hidden;
+
     .col-md-4 {
         .air_pollution_image {
             display: flex;
@@ -813,6 +825,7 @@ header {
             width: 100%;
             height: 100%;
             overflow: hidden;
+
             img {
                 width: auto;
                 height: 100%;
@@ -821,8 +834,10 @@ header {
             }
         }
     }
+
     .air_pollution_content {
         padding: 50px;
+
         h2 {
             font-size: 8vw;
             text-transform: uppercase;
@@ -837,15 +852,19 @@ header {
 .extream_weather {
     @include air_pollution;
 }
+
 .Dry-air {
     @include air_pollution;
 }
+
 .hat-scarf {
     @include air_pollution;
 }
+
 .styling-products {
     @include air_pollution;
 }
+
 // ---------------------------------------------Dandruff Education End------------------------------------------------------
 
 // ---------------------------------------------Nizoral Range------------------------------------------------------
@@ -854,19 +873,24 @@ header {
     overflow: hidden;
     display: flex;
     align-items: center;
+
     .rangeTextArea {
         color: $blue_font;
+
         h1 {
             @include bannerh1;
         }
+
         h2 {
             @include bannerh2;
         }
+
         p {
             @include bannerP;
             width: 35%;
         }
     }
+
     .range_drops {
         position: absolute;
         width: 100%;
@@ -874,26 +898,33 @@ header {
         justify-content: end;
         right: 20px;
         bottom: 60px;
+
         img {
             width: 18%;
         }
     }
 }
+
 .white_part_nizoraal_range {
     @include white_part_nizoraal_range;
     padding-bottom: 5rem;
+
     .nizoral_medical_shampoo {
         @include nizoral_medical_shampoo;
+
         .shampooImage {
             @include shampooImage;
         }
+
         .range_text {
             @include range_text($yellow_header);
+
             h2 {
                 @include bannerh2;
             }
         }
     }
+
     .whereToBuy {
         button {
             font-family: $font_family;
@@ -913,25 +944,30 @@ header {
     .baked_text {
         color: $blue_font;
         font-family: $font_family;
+
         h3 {
             font-size: 3vw;
             font-weight: normal;
             line-height: 1;
         }
+
         h2 {
             font-size: 6vw;
             text-transform: uppercase;
             font-weight: 700;
             line-height: 1;
         }
+
         p {
             font-size: 1.5rem;
             font-weight: normal;
             width: 75%;
         }
     }
+
     .scintific_image {
         background-color: $lightGreen;
+
         img {
             width: 100%;
         }
@@ -946,35 +982,43 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
+
     .heading {
         margin: 0 auto;
         width: 50%;
+
         h2 {
             font-size: 6vw;
             font-weight: 700;
             line-height: 1;
+
             span {
                 font-size: 3vw;
                 font-weight: normal;
                 line-height: 1;
             }
         }
+
         h3 {
             font-size: 3vw;
             font-weight: normal;
             line-height: 1;
         }
     }
+
     .shampoo {
         text-align: center;
+
         img {
             width: 60%;
             margin-bottom: 2rem;
         }
+
         h2 {
             font-size: 2.5vw;
             font-weight: 600;
         }
+
         p {
             width: 90%;
             margin: 0 auto;
@@ -988,31 +1032,38 @@ header {
     font-family: $font_family;
     color: $blue_font;
     background-color: $lightBlue;
+
     .expret_advice_text {
         h2 {
             font-size: 12vw;
             font-weight: 600;
             line-height: 1;
         }
+
         h3 {
             font-size: 3vw;
             font-weight: 600;
         }
     }
+
     .dandruff_vs_scalp {
-        
+
         .dandruff_vs_scalp_area {
             display: flex;
+
             img {
                 width: 30%;
             }
+
             .text_area {
                 width: 40%;
                 margin-left: 2rem;
+
                 h2 {
                     font-size: 2rem;
                     font-weight: 600;
                 }
+
                 a {
                     color: $blue_font;
                     text-decoration: none;
@@ -1022,31 +1073,39 @@ header {
         }
     }
 }
+
 // ---------------------------------------------Nizoral Range End------------------------------------------------------
 
 footer {
     background-color: $yellow_header;
     padding: 50px 0;
+
     .col-md-3 {
         font-family: $font_family;
+
         .stada {
             filter: brightness(0%);
             width: 60%;
         }
+
         ul {
             padding: 0;
+
             li {
                 list-style: none;
                 margin: 15px 0;
+
                 a {
                     color: $black_font;
                     text-decoration: none;
                 }
             }
         }
+
         .social_icon {
             display: flex;
             gap: 2rem;
+
             li {
                 a {
                     img {
@@ -1057,6 +1116,7 @@ footer {
         }
     }
 }
+
 // Slider
 .dandruff_education_carousel {
     height: 100vh;
@@ -1065,17 +1125,21 @@ footer {
     align-items: center;
     justify-content: center;
     color: $blue_font;
+
     .text_area_for_slider {
         font-family: $font_family;
+
         h2 {
             font-size: 3vw;
         }
+
         h3 {
             width: 60%;
             margin: 0 auto;
             font-size: 1.5vw;
         }
     }
+
     .DE_slider_area {
         .slider1 {
             img {
@@ -1083,24 +1147,29 @@ footer {
             }
         }
     }
+
     .nizoral-product {
         .slider-1 {
             font-family: $font_family;
             text-align: center;
+
             img {
                 width: 60%;
                 margin: 0 auto;
                 margin-bottom: 1rem;
             }
+
             h2 {
                 font-size: 1.5rem;
             }
+
             h4 {
                 font-size: 1.1rem;
             }
         }
     }
 }
+
 // ----------------------------------------------------------------------------------------------------Animations------------------------------------------------------
 .blink_text span {
     animation: blinker 0.5s linear infinite;
@@ -1280,37 +1349,48 @@ footer {
 
 .dandruff_education_carousel .owl-nav {
     position: absolute;
-    top: 50%; /* Center vertically */
-    width: 100%; /* Span the width of the carousel */
-    transform: translateY(-50%); /* Adjust for the top alignment */
+    top: 50%;
+    /* Center vertically */
+    width: 100%;
+    /* Span the width of the carousel */
+    transform: translateY(-50%);
+    /* Adjust for the top alignment */
     display: flex;
-    justify-content: space-between; /* Push buttons to the sides */
+    justify-content: space-between;
+    /* Push buttons to the sides */
     align-items: center;
 }
 
 .dandruff_education_carousel .owl-nav button.owl-prev,
 .dandruff_education_carousel .owl-nav button.owl-next {
-    width: auto; /* Increased button width */
-    height: auto; /* Increased button height */
+    width: auto;
+    /* Increased button width */
+    height: auto;
+    /* Increased button height */
 }
 
 .dandruff_education_carousel .owl-nav button.owl-prev {
     position: absolute;
-    left: -30px; /* Adjust left arrow position */
+    left: -30px;
+    /* Adjust left arrow position */
 }
 
 .dandruff_education_carousel .owl-nav button.owl-next {
     position: absolute;
-    right: -30px; /* Adjust right arrow position */
+    right: -30px;
+    /* Adjust right arrow position */
 }
+
 .dandruff_education_carousel .owl-nav span {
     font-size: 8rem !important;
     font-weight: 100;
     color: $blue_font;
+
     &:hover {
         color: $yellow_header;
     }
 }
+
 .dandruff_education_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent !important;
 }
@@ -1320,34 +1400,44 @@ footer {
 
 .product_carousel .owl-nav {
     position: absolute;
-    top: 50%; /* Center vertically */
-    width: 100%; /* Span the width of the carousel */
-    transform: translateY(-50%); /* Adjust for the top alignment */
+    top: 50%;
+    /* Center vertically */
+    width: 100%;
+    /* Span the width of the carousel */
+    transform: translateY(-50%);
+    /* Adjust for the top alignment */
     display: flex;
-    justify-content: space-between; /* Push buttons to the sides */
+    justify-content: space-between;
+    /* Push buttons to the sides */
     align-items: center;
 }
 
 .product_carousel .owl-nav button.owl-prev,
 .product_carousel .owl-nav button.owl-next {
-    width: auto; /* Increased button width */
-    height: auto; /* Increased button height */
+    width: auto;
+    /* Increased button width */
+    height: auto;
+    /* Increased button height */
 }
 
 .product_carousel .owl-nav button.owl-prev {
     position: absolute;
-    left: -30px; /* Adjust left arrow position */
+    left: -30px;
+    /* Adjust left arrow position */
 }
 
 .product_carousel .owl-nav button.owl-next {
     position: absolute;
-    right: -30px; /* Adjust right arrow position */
+    right: -30px;
+    /* Adjust right arrow position */
 }
+
 .product_carousel .owl-nav span {
     font-size: 8rem !important;
     font-weight: 100;
     color: $blue_font;
 }
+
 .product_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent !important;
 }
