@@ -69,12 +69,10 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: visible;
     padding-top: 180px;
@@ -188,12 +186,10 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
 
     .bestfriend {
         position: absolute;
@@ -1015,6 +1011,7 @@ header {
 
     .img_timeline {
         margin-top: 5rem;
+
         .shampoo {
             text-align: center;
 
@@ -1118,17 +1115,139 @@ header {
 
 // ---------------------------------------------Nizoral Range End------------------------------------------------------
 // ---------------------------------------------Shampoo------------------------------------------------------
-.banner-shampoo{
+.banner-shampoo {
     background-color: $yellow_header;
     height: 100%;
     font-family: $font_family;
     padding-top: 180px;
-    .shampoo_img{
-        img{
+    color: $blue_font;
+
+    .shampoo_img {
+        img {
             width: 80%;
         }
     }
+
+    .shampoo_text {
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        h2 {
+            line-height: 1;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .four_lists {
+            .iconFirst {
+                img {
+                    width: 80%;
+                }
+            }
+
+            .shampoo_banner_points {
+                width: 90%;
+            }
+        }
+    }
+
+    button {
+        background-color: $blue_font;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        width: 20%;
+        margin: 0 auto;
+    }
 }
+
+.stubborn_dandruff_parent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .stubborn-dandruff-part {
+        width: 100%;
+        height: 80vh;
+        .content_area {
+            font-family: $font_family;
+            color: $blue_font;
+
+            span {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            h2 {
+                font-size: 12vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        .stubborn_dandruff_image {
+            img {
+                width: 60%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 9;
+            }
+        }
+    }
+    .tenX{
+        .tenX_yellow{
+            font-family: $font_family;
+            background-color: $yellow_header;
+            width: 80%;
+            height: 80vh;
+            z-index: 9;
+            margin-left: auto;
+            color: $blue_font;
+            .tenX_content_area{
+                width: 50%;
+                margin-left: auto;
+                h2{
+                    font-size: 5rem;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+                h3{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    line-height: 1;
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+    }
+}
+
 // ---------------------------------------------Shampoo End------------------------------------------------------
 
 footer {

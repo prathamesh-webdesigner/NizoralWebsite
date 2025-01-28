@@ -1184,9 +1184,106 @@ header .buyNow button {
   height: 100%;
   font-family: "helveticaMedium", sans-serif;
   padding-top: 180px;
+  color: #152b59;
 }
 .banner-shampoo .shampoo_img img {
   width: 80%;
+}
+.banner-shampoo .shampoo_text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.banner-shampoo .shampoo_text h2 {
+  line-height: 1;
+  font-size: 1.5rem;
+}
+.banner-shampoo .shampoo_text h3 {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.banner-shampoo .shampoo_text .four_lists .iconFirst img {
+  width: 80%;
+}
+.banner-shampoo .shampoo_text .four_lists .shampoo_banner_points {
+  width: 90%;
+}
+.banner-shampoo button {
+  background-color: #152b59;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.stubborn_dandruff_parent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part {
+  width: 100%;
+  height: 80vh;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .content_area {
+  font-family: "helveticaMedium", sans-serif;
+  color: #152b59;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .content_area span {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .content_area h2 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .content_area h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .content_area p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.stubborn_dandruff_parent .stubborn-dandruff-part .stubborn_dandruff_image img {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+.stubborn_dandruff_parent .tenX .tenX_yellow {
+  font-family: "helveticaMedium", sans-serif;
+  background-color: #ffcc00;
+  width: 80%;
+  height: 80vh;
+  z-index: 9;
+  margin-left: auto;
+  color: #152b59;
+}
+.stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area {
+  width: 50%;
+  margin-left: auto;
+}
+.stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area p {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 footer {
