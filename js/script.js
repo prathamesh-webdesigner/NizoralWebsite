@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isThrottled) return; // Ignore if throttled
 
         isThrottled = true;
-        setTimeout(() => { isThrottled = false; }, 800); // Adjust throttle duration as needed
+        setTimeout(() => { isThrottled = false; }, 1500); // Adjust throttle duration as needed
 
         if (event.deltaY > 0) {
             scrollToSection(currentIndex + 1);
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isThrottled) return; // Ignore if throttled
 
         isThrottled = true;
-        setTimeout(() => { isThrottled = false; }, 800); // Adjust throttle duration as needed
+        setTimeout(() => { isThrottled = false; }, 1500); // Adjust throttle duration as needed
 
         if (event.key === 'ArrowDown') {
             scrollToSection(currentIndex + 1);

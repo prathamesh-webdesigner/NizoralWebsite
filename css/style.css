@@ -53,7 +53,7 @@ header .buyNow button {
   background: #207cde;
   background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(35, 126, 222, 0.36) 29%, rgb(35, 126, 222) 100%);
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   padding-top: 180px;
 }
 .banner .bannerTextArea {
@@ -61,10 +61,12 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
   margin-top: 5rem;
 }
-.banner .bannerTextArea span {
-  font-size: 3rem;
+.banner .bannerTextArea h3 {
+  font-size: 3.3rem;
   font-weight: 700;
   line-height: 1;
+  margin-left: 5px;
+  margin-bottom: 0;
 }
 .banner .bannerTextArea h1 {
   overflow: hidden;
@@ -74,14 +76,13 @@ header .buyNow button {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
-  margin-left: -5px;
   display: inline-block;
 }
 .banner .bannerTextArea h2 {
   margin-top: -1rem;
 }
 .banner .bannerTextArea h2 span {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 700;
   line-height: 1;
   display: inline-block;
@@ -95,10 +96,10 @@ header .buyNow button {
   width: 100%;
 }
 .banner .bannerBoy img {
-  width: 55%;
+  width: 75%;
   position: absolute;
-  bottom: 0;
-  right: -50px;
+  bottom: -17rem;
+  right: -140px;
   z-index: 9;
 }
 .banner .blinkArea {
@@ -399,7 +400,7 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
 }
 .theNezroralDiffrenceParent h2 span {
-  font-size: 3.5vw;
+  font-size: 4vw;
   color: #152b59;
   display: inline-block;
 }
@@ -454,7 +455,7 @@ header .buyNow button {
 }
 .fastLongLastingParent .fastLongLasting {
   font-family: "helveticaMedium", sans-serif;
-  background-color: #207cde;
+  background-color: #5dafae;
   width: 90%;
   height: 100vh;
   overflow: hidden;
@@ -506,12 +507,12 @@ header .buyNow button {
   width: 90%;
   height: 100vh;
   overflow: hidden;
+  color: #152b59;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText {
   margin-top: 8rem;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
-  color: #fff;
   font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
@@ -523,7 +524,6 @@ header .buyNow button {
   font-weight: 700;
   line-height: 1;
   margin-left: -5px;
-  color: #fff;
   letter-spacing: 1px;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
