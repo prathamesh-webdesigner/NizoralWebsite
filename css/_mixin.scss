@@ -110,7 +110,7 @@
     font-weight: 700;
     line-height: 1;
 }
-@mixin bannerP{
+@mixin bannerP {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -137,4 +137,13 @@
     height: 50%;
     width: 50%;
     color: $blue_font;
+}
+@mixin say_good_bye_to_dandruff_itching_Heading($width) {
+    margin: 0 auto;
+    width: $width;
+}
+@mixin say_good_bye_Heding_h2($fontSize) {
+    font-size: $fontSize;
+    font-weight: 700;
+    line-height: 1;
 }
