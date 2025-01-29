@@ -69,12 +69,10 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: visible;
     padding-top: 180px;
@@ -188,12 +186,10 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
 
     .bestfriend {
         position: absolute;
@@ -995,6 +991,7 @@ header {
 
         h2 {
             @include say_good_bye_Heding_h2(6vw);
+
             span {
                 font-size: 3vw;
                 font-weight: normal;
@@ -1179,6 +1176,7 @@ header {
     .stubborn-dandruff-part {
         width: 100%;
         height: 80vh;
+
         .content_area {
             font-family: $font_family;
             color: $blue_font;
@@ -1186,6 +1184,7 @@ header {
             flex-direction: column;
             justify-content: center;
             margin-left: 10rem;
+
             span {
                 font-size: 3rem;
                 font-weight: 700;
@@ -1222,6 +1221,7 @@ header {
             }
         }
     }
+
     .tenX {
         .tenX_yellow {
             font-family: $font_family;
@@ -1233,37 +1233,45 @@ header {
             color: $blue_font;
             display: flex;
             align-items: center;
+
             .tenX_content_area {
                 width: 50%;
                 margin-left: auto;
+
                 h2 {
                     font-size: 12vw;
                     font-weight: 700;
                     line-height: 1;
                 }
+
                 h3 {
                     font-size: 3rem;
                     font-weight: 600;
                     line-height: 1;
                 }
+
                 p {
                     font-size: 1.3rem;
                     font-weight: normal;
                 }
             }
         }
+
         .tenX_DNA_img {
             position: absolute;
             z-index: 9;
+
             img {
                 width: 60%;
             }
         }
     }
 }
+
 .say_good_bye_to_dandruff_itching {
     .heading {
         @include say_good_bye_to_dandruff_itching_Heading(60%);
+
         h2 {
             @include say_good_bye_Heding_h2(4vw);
         }
@@ -1274,33 +1282,41 @@ header {
     font-family: $font_family;
     text-align: center;
     color: $blue_font;
+
     .white_para_wraper {
         width: 70%;
         margin: 0 auto;
         padding: 6rem 0;
+
         h2 {
             font-size: 3.5vw;
             font-weight: 600;
         }
+
         p {
             font-size: 1.5rem;
         }
     }
 }
+
 .product_facts {
     font-family: $font_family;
     color: $blue_font;
     height: 100%;
     background-color: $yellow_header;
     padding: 5rem 0;
+
     .product_fact_text_wrapper {
         margin-top: 13rem;
+
         .product_fact_text {
             position: absolute;
             top: 4rem;
+
             h4 {
                 font-size: 4rem;
             }
+
             h2 {
                 font-size: 20vw;
                 font-weight: 600;
@@ -1309,25 +1325,37 @@ header {
             }
         }
     }
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
     .Text_area {
         display: flex;
         flex-direction: column;
         justify-content: end;
+
         .indicatong_group {
             .indication {
                 display: flex;
                 gap: 5px;
+
                 img {
                     width: 90%;
                 }
+
                 .poits_content {
                     width: 90%;
                 }
+
                 h2 {
                     font-weight: bold;
                 }
             }
         }
+
         button {
             background-color: $blue_font;
             color: #fff;
@@ -1346,6 +1374,7 @@ header {
     color: $blue_font;
     height: 100%;
     padding: 5rem 0;
+
     .faqs_area {
         h2 {
             font-size: 12vw;
@@ -1354,22 +1383,26 @@ header {
             line-height: 0.8;
         }
     }
-    .accordion{
-        .accordion-item{
+
+    .accordion {
+        .accordion-item {
             border: none;
             border-bottom: 1px solid $blue_font;
             outline: none;
-            button{
+
+            button {
                 font-size: 2rem;
                 font-weight: 600;
                 padding-left: 0;
                 color: $black_font;
             }
         }
-        .accordion-button:not(.collapsed){
+
+        .accordion-button:not(.collapsed) {
             background-color: transparent;
         }
-        .accordion-button:focus{
+
+        .accordion-button:focus {
             box-shadow: none;
         }
     }

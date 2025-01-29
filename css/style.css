@@ -1353,6 +1353,9 @@ header .buyNow button {
   margin-left: -13px;
   line-height: 0.8;
 }
+.product_facts .image img {
+  width: 100%;
+}
 .product_facts .Text_area {
   display: flex;
   flex-direction: column;

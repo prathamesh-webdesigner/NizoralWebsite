@@ -10,7 +10,9 @@
   .avoid-irritating-the-scalp .text_area,
   .range_discover .rangeTextArea p,
   .say_good_bye_to_dandruff_itching .shampoo p,
-  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area img {
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area img,
+  .stubborn_dandruff_parent .stubborn-dandruff-part .content_area p,
+  .white_para .white_para_wraper {
     width: 100%;
   }
 
@@ -19,7 +21,8 @@
   }
 
   .yourScalps .yourScalpsBottomParent .yourScalpsBottom p,
-  .bannerTextArea {
+  .bannerTextArea,
+  .shampoo_text {
     text-align: center;
   }
 
@@ -39,7 +42,8 @@
   .fastLongLastingParent .fastLongLasting,
   .scientificallyBacked,
   .toughOnDandruffButNotOn,
-  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow {
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow,
+  .stubborn_dandruff_parent .stubborn-dandruff-part {
     width: 100%;
     height: 100%;
   }
@@ -353,8 +357,45 @@
     flex-direction: column;
   }
 
-  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area {
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area,
+  .stubborn_dandruff_parent .stubborn-dandruff-part .content_area {
     width: 100%;
     margin-left: 0;
+  }
+
+  /* Shampoo  */
+
+  .banner-shampoo .shampoo_text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .banner-shampoo .shampoo_text .four_lists .shampoo_banner_points {
+    text-align: left;
+  }
+
+  .banner-shampoo button, .product_facts .Text_area button {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .stubborn_dandruff_parent .stubborn-dandruff-part .content_area span {
+    font-size: 2rem;
+  }
+
+  .stubborn_dandruff_parent .stubborn-dandruff-part .stubborn_dandruff_image img {
+    width: 100%;
+    position: inherit;
+  }
+
+  .stubborn_dandruff_parent .tenX .tenX_yellow,
+  .stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .white_para .white_para_wraper h2 {
+    font-size: 8vw;
   }
 }
