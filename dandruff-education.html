@@ -453,8 +453,20 @@
                 }
             }
         })
+
+        document.onreadystatechange = function () {
+            let lastScrollPosition = 0;
+            const navbar = document.querySelector('header');
+            window.addEventListener('scroll', function (e) {
+                lastScrollPosition = window.scrollY;
+
+                if (lastScrollPosition > 100)
+                    navbar.classList.add('hide-header');
+                else
+                    navbar.classList.remove('hide-header');
+            });
+        }
     </script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -98,7 +98,7 @@ header .buyNow button {
 .banner .bannerBoy img {
   width: 75%;
   position: absolute;
-  bottom: -17rem;
+  bottom: -20rem;
   right: -140px;
   z-index: 9;
 }
@@ -713,7 +713,7 @@ header .buyNow button {
 .banner_dandruff_education .banner_dandruff_educationBoy img {
   width: 50%;
   position: absolute;
-  bottom: -85px;
+  bottom: -123px;
   right: 0;
   z-index: 9;
 }
