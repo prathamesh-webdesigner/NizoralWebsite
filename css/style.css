@@ -714,7 +714,7 @@ header .buyNow button {
   width: 50%;
   position: absolute;
   bottom: -123px;
-  right: 0;
+  right: -11rem;
   z-index: 9;
 }
 
@@ -779,6 +779,7 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
   display: flex;
   align-items: center;
+  color: #152b59;
 }
 .avoid-irritating-the-scalp .text_area {
   width: 68%;
@@ -859,6 +860,11 @@ header .buyNow button {
   margin-left: -5px;
   letter-spacing: 1px;
 }
+.extream_weather .air_pollution_content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
 
 .Dry-air {
   background-color: #ffcc00;
@@ -892,6 +898,11 @@ header .buyNow button {
   line-height: 1;
   margin-left: -5px;
   letter-spacing: 1px;
+}
+.Dry-air .air_pollution_content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .hat-scarf {
@@ -927,6 +938,11 @@ header .buyNow button {
   margin-left: -5px;
   letter-spacing: 1px;
 }
+.hat-scarf .air_pollution_content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
 
 .styling-products {
   background-color: #ffcc00;
@@ -960,6 +976,11 @@ header .buyNow button {
   line-height: 1;
   margin-left: -5px;
   letter-spacing: 1px;
+}
+.styling-products .air_pollution_content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .range_discover {
@@ -1446,12 +1467,13 @@ footer .col-md-3 .social_icon li a img {
 }
 
 .dandruff_education_carousel {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #152b59;
+  padding: 8rem 0;
 }
 .dandruff_education_carousel .text_area_for_slider {
   font-family: "helveticaMedium", sans-serif;

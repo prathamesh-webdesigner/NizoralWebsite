@@ -23,10 +23,12 @@
     border: 5px solid #fff;
     box-shadow: -1px 13px 4px 1px #0000003d;
 }
+
 @mixin round_feature_sub {
     display: flex;
     flex-direction: column;
 }
+
 @mixin icon_area {
     width: 100%;
     height: 75px;
@@ -34,6 +36,7 @@
     align-items: center;
     justify-content: center;
 }
+
 @mixin text_area($bgColor) {
     width: 100%;
     height: 75px;
@@ -44,11 +47,13 @@
     justify-content: center;
     overflow: hidden;
 }
+
 @mixin textAreaP($width) {
     width: $width;
     font-size: 10px;
     font-weight: 600;
 }
+
 @mixin round_icon_area($marginLeft) {
     background-color: #fff;
     width: 100px;
@@ -59,6 +64,7 @@
     justify-content: center;
     border: 5px solid #ffcc009e;
     margin-left: $marginLeft;
+
     img {
         width: 60%;
     }
@@ -72,6 +78,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+
     .col-md-4 {
         .air_pollution_image {
             display: flex;
@@ -79,6 +86,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -87,8 +95,10 @@
             }
         }
     }
+
     .air_pollution_content {
         padding: 50px;
+
         h2 {
             font-size: 8vw;
             text-transform: uppercase;
@@ -97,28 +107,39 @@
             margin-left: -5px;
             letter-spacing: 1px;
         }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
     }
 }
+
 @mixin bannerh1 {
     font-size: 12vw;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
 }
+
 @mixin bannerh2 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
 }
+
 @mixin bannerP {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 // Nizoral Range
 @mixin white_part_nizoraal_range {
     width: 90%;
     margin: 0 auto;
 }
+
 @mixin nizoral_medical_shampoo {
     font-family: $font_family;
     display: flex;
@@ -126,11 +147,13 @@
     justify-content: center;
     margin-top: -70px;
 }
+
 @mixin shampooImage {
     img {
         width: 100%;
     }
 }
+
 @mixin range_text($bg) {
     background-color: $bg;
     padding: 40px;
@@ -138,10 +161,12 @@
     width: 50%;
     color: $blue_font;
 }
+
 @mixin say_good_bye_to_dandruff_itching_Heading($width) {
     margin: 0 auto;
     width: $width;
 }
+
 @mixin say_good_bye_Heding_h2($fontSize) {
     font-size: $fontSize;
     font-weight: 700;

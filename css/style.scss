@@ -716,7 +716,7 @@ header {
             width: 50%;
             position: absolute;
             bottom: -123px;
-            right: 0;
+            right: -11rem;
             z-index: 9;
         }
     }
@@ -799,6 +799,7 @@ header {
     font-family: $font_family;
     display: flex;
     align-items: center;
+    color: $blue_font;
 
     .text_area {
         width: 68%;
@@ -843,7 +844,7 @@ header {
 
     .air_pollution_content {
         padding: 50px;
-
+    
         h2 {
             font-size: 8vw;
             text-transform: uppercase;
@@ -1457,12 +1458,13 @@ footer {
 
 // Slider
 .dandruff_education_carousel {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $blue_font;
+    padding: 8rem 0;
 
     .text_area_for_slider {
         font-family: $font_family;
