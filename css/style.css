@@ -1226,6 +1226,7 @@ header .buyNow button {
 }
 .banner-shampoo .shampoo_text .four_lists .iconFirst img {
   width: 100%;
+  padding-right: 10px;
 }
 .banner-shampoo .shampoo_text .four_lists .shampoo_banner_points {
   width: 90%;

@@ -1,89 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nizoral</title>
-    <link rel="stylesheet" href="css/style.css?v=3">
-    <link rel="stylesheet" href="css/media.css?v=3">
-    <!-- owl carousel  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- owl carousel  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            scroll-behavior: smooth;
-            overflow: hidden;
-            /* Prevent default scrolling */
-        }
 
-        section {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            scroll-snap-align: start;
-        }
-
-        .container-custom,
-        .container-fluid {
-            width: 100%;
-            height: 100%;
-        }
-
-        body {
-            scroll-snap-type: y mandatory;
-            /* Snap scrolling */
-        }
-    </style> -->
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg pt-4">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="image/Nizoral.png" alt="Nizoral"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 gap-md-5">
-                        <li class="nav-item">
-                            <a class="nav-link sprinkles" aria-current="page" href="dandruff-education.html">Dandruff
-                                Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sprinkles" href="nizoral-range.html">Nizoral Range</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sprinkles" href="#">Scalp & Hair Hub</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sprinkles" href="#">Get to Know Your Scalp</a>
-                        </li>
-                    </ul>
-                    <div class="buyNow">
-                        <button class="px-4 py-3 sprinkles">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+<?php include 'header.php'; ?>
     <section class="banner">
         <div class="container-custom">
             <div class="row">
@@ -676,93 +592,45 @@
             <img src="image/AllAboutDandruff.webp" alt="All About Dandruff">
         </div>
     </section>
+<script>
+    // 100vh scrolling 
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    let currentIndex = 0;
+    let isThrottled = false; // Prevent multiple scroll events
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 text-center text-md-start">
-                    <img src="image/Nizoral.png" class="mb-5" alt="Nizoral">
-                </div>
-                <div class="col-md-3 col-6">
-                    <h3>Useful Links </h3>
-                    <ul>
-                        <li><a href="dandruff-education.html">Dandruff Education</a></li>
-                        <li><a href="nizoral-range.html">Nizoral Range</a></li>
-                        <li><a href="#">Scalp & Hair Hub</a></li>
-                        <li><a href="#">Scalp Quiz</a></li>
-                        <li><a href="#">Where to Buy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <img src="image/stada.webp" class="stada" alt="Stada">
-                    <ul>
-                        <li><a href="#">&#169;Stada 2025</a></li>
-                        <li><a href="#">email@example.com</a></li>
-                        <li><a href="#">002-010-66269735</a></li>
-                    </ul>
-                    <ul class="social_icon">
-                        <li><a href="#"> <img src="image/facebook.svg" alt="facebook"> </a></li>
-                        <li><a href="#"> <img src="image/youtube.svg" alt="youtube"> </a></li>
-                        <li><a href="#"> <img src="image/instagram.svg" alt="instagram"> </a></li>
-                        <li><a href="#"> <img src="image/tiktok.svg" alt="tiktok"> </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Gsap  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Gsap  -->
+    function scrollToSection(index) {
+        if (index >= 0 && index < sections.length) {
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+            currentIndex = index;
+        }
+    }
 
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    document.addEventListener('wheel', (event) => {
+        if (isThrottled) return; // Ignore if throttled
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- owl carousel  -->
+        isThrottled = true;
+        setTimeout(() => { isThrottled = false; }, 1000); // Adjust throttle duration as needed
 
-    <script src="js/script.js"></script>
+        if (event.deltaY > 0) {
+            scrollToSection(currentIndex + 1);
+        } else {
+            scrollToSection(currentIndex - 1);
+        }
+    });
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script>
-        $('.homeSlider').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            dots: false,
-            autoplay: false,
-            autoplayTimeout: 3000,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        })
-    </script>
-</body>
+    document.addEventListener('keydown', (event) => {
+        if (isThrottled) return; // Ignore if throttled
 
-</html>
+        isThrottled = true;
+        setTimeout(() => { isThrottled = false; }, 1000); // Adjust throttle duration as needed
+
+        if (event.key === 'ArrowDown') {
+            scrollToSection(currentIndex + 1);
+        } else if (event.key === 'ArrowUp') {
+            scrollToSection(currentIndex - 1);
+        }
+    });
+});
+</script>
+<?php include 'footer.php'; ?>
