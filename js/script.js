@@ -23,10 +23,10 @@ document.onreadystatechange = function () {
     dots: false,
     autoplay: true,
     smartSpeed: 1000,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 5000,
     navText: [
-        '<img src="image/prev.png" alt="Previous" style="width:40px;">', 
-        '<img src="image/next.png" alt="Next" style="width:40px;">'
+        '<img src="image/prev-thin.png" alt="Previous" style="width:40px;">', 
+        '<img src="image/next-thin.png" alt="Next" style="width:40px;">'
     ],
     responsive:{
         0:{
@@ -193,6 +193,12 @@ gsap.from(".bestfriend h2 span, .bestfriend h3 span, .theNezroralDiffrenceParent
     delay: 0.8,
     stagger: 0.1,
     scrollTrigger: ".bestfriend"
+})
+gsap.from(".round_icon_area, .round_icon_area_for_clinically_proven, .fast_relief_round_icon_area, .triple_action_round_icon_area",{
+    scale:0,
+    duration: 1,
+    delay:1,
+    scrollTrigger: ".slider_first"
 })
 // ScrollTrigger End
 

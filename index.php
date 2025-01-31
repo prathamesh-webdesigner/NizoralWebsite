@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<section class="banner">
+<section class="banner scrollSection">
     <div class="container-custom">
         <div class="row">
             <div class="bannerTextArea">
@@ -29,7 +29,7 @@
         </div>
     </div>
 </section>
-<section class="yourScalps position-relative">
+<section class="yourScalps position-relative scrollSection">
     <div class="container-fluid">
         <div class="row">
             <div class="bestfriend">
@@ -92,18 +92,19 @@
 
         </div>
 </section>
-<!-- <section class="theNezroralDiffrenceParent">
-        <div class="container-fluid">
-            <div class="row text-center p-5">
-                <h2>The Nizoral® Difference</h2>
-            </div>
-        </div>
-    </section> -->
-<section class="scientificallyBacked position-relative">
+<section class="scientificallyBacked theNezroralDiffrenceParent_main position-relative scrollSection">
     <div class="container-fluid">
         <div class="row text-center p-5 theNezroralDiffrenceParent">
             <h2>The Nizoral® Difference</h2>
         </div>
+    </div>
+</section>
+</section>
+<section class="scientificallyBacked position-relative scrollSection">
+    <div class="container-fluid">
+        <!-- <div class="row text-center p-5 theNezroralDiffrenceParent">
+            <h2>The Nizoral® Difference</h2>
+        </div> -->
         <div class="row">
             <div class="scientificallyBackedYellow">
                 <div class="container-custom">
@@ -120,7 +121,7 @@
         </div>
     </div>
 </section>
-<section class="fastLongLastingParent position-relative">
+<section class="fastLongLastingParent position-relative scrollSection">
     <div class="container-fluid">
         <div class="row">
             <div class="fastLongLasting">
@@ -140,7 +141,7 @@
         </div>
     </div>
 </section>
-<section class="toughOnDandruffButNotOn position-relative">
+<section class="toughOnDandruffButNotOn position-relative scrollSection">
     <div class="container-fluid">
         <div class="row">
             <div class="toughOnDandruffButNotOnYellow">
@@ -159,7 +160,7 @@
         </div>
     </div>
 </section>
-<section class="product_carousel">
+<section class="product_carousel scrollSection">
     <div class="container">
         <div class="row">
             <div class="owl-carousel owl-theme homeSlider">
@@ -383,7 +384,7 @@
         </div>
     </div>
 </section>
-<section class="allAboutDandruffParent position-relative">
+<section class="allAboutDandruffParent position-relative scrollSection">
     <div class="container-custom">
         <div class="row">
             <div class="allAboutDandruff">
@@ -401,96 +402,15 @@
         <img src="image/AllAboutDandruff.webp" alt="All About Dandruff">
     </div>
 </section>
-
 <script>
-
-    // 100vh scrolling 
-    // document.addEventListener('DOMContentLoaded', () => {
-    //     const sections = document.querySelectorAll('section');
-    //     let currentIndex = 0;
-    //     let isThrottled = false; // Prevent multiple scroll events
-
-    //     function scrollToSection(index) {
-    //         if (index >= 0 && index < sections.length) {
-    //             sections[index].scrollIntoView({ behavior: 'smooth' });
-    //             currentIndex = index;
-    //         }
-    //     }
-
-    //     document.addEventListener('wheel', (event) => {
-    //         if (isThrottled) return; // Ignore if throttled
-
-    //         isThrottled = true;
-    //         setTimeout(() => { isThrottled = false; }, 1000); // Adjust throttle duration as needed
-
-    //         if (event.deltaY > 0) {
-    //             scrollToSection(currentIndex + 1);
-    //         } else {
-    //             scrollToSection(currentIndex - 1);
-    //         }
-    //     });
-
-    //     document.addEventListener('keydown', (event) => {
-    //         if (isThrottled) return; // Ignore if throttled
-
-    //         isThrottled = true;
-    //         setTimeout(() => { isThrottled = false; }, 1000); // Adjust throttle duration as needed
-
-    //         if (event.key === 'ArrowDown') {
-    //             scrollToSection(currentIndex + 1);
-    //         } else if (event.key === 'ArrowUp') {
-    //             scrollToSection(currentIndex - 1);
-    //         }
-    //     });
-    // });
-
-    document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    let currentIndex = 0;
-    let isThrottled = false; // Prevent multiple scroll events
-    let isScrolling = false; // Prevent multiple scroll actions at once
-
-    function scrollToSection(index) {
-        if (index >= 0 && index < sections.length && currentIndex !== index) {
-            isScrolling = true;
-            sections[index].scrollIntoView({ behavior: 'smooth' });
-            currentIndex = index;
-            setTimeout(() => {
-                isScrolling = false; // Allow scrolling again after animation completes
-            }, 1000); // Match the time to the scroll animation duration (you can adjust this based on how long it takes)
-        }
-    }
-
-    // Handle mouse scroll
-    document.addEventListener('wheel', (event) => {
-        if (isScrolling || isThrottled) return; // Prevent scrolling if it's already in progress
-
-        isThrottled = true;
-        setTimeout(() => { isThrottled = false; }, 800); // Adjust throttle duration as needed
-
-        if (event.deltaY > 0) {
-            scrollToSection(currentIndex + 1);
+    $(document).ready(function() {
+        if (typeof $.scrollify === "function") {
+            $.scrollify({
+                section: ".scrollSection"
+            });
         } else {
-            scrollToSection(currentIndex - 1);
+            console.error("Scrollify is not loaded correctly!");
         }
     });
-
-    // Handle keyboard arrow keys
-    document.addEventListener('keydown', (event) => {
-        if (isScrolling || isThrottled) return; 
-
-        isThrottled = true;
-        setTimeout(() => { isThrottled = false; }, 800); 
-
-        if (event.key === 'ArrowDown') {
-            scrollToSection(currentIndex + 1);
-        } else if (event.key === 'ArrowUp') {
-            scrollToSection(currentIndex - 1);
-        }
-    });
-});
-
-
-
 </script>
 <?php include 'footer.php'; ?>

@@ -43,24 +43,31 @@ header {
 
     /* Lower priority */
     .navbar-nav {
+        font-family: $font_family;
         li {
             background-color: $yellow_header;
 
             a {
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 16px;
             }
+        }
+    }
+    .navbar-brand {
+        img {
+            width: 80%;
         }
     }
 
     .buyNow {
         button {
+            font-family: $font_family;
             background-color: $yellow_header;
             border: 2px solid $black_font;
             font-size: 18px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
-            padding: 12px 30px 12px 30px;
+            padding: 8px 30px;
         }
     }
 }
@@ -69,10 +76,12 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
     position: relative;
     overflow: hidden;
     padding-top: 180px;
@@ -126,7 +135,7 @@ header {
         img {
             width: 75%;
             position: absolute;
-            bottom: -20rem;
+            bottom: -16rem;
             right: -140px;
             z-index: 9;
         }
@@ -187,10 +196,12 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
 
     .bestfriend {
         position: absolute;
@@ -462,7 +473,7 @@ header {
         margin-right: 0;
 
         .fastLongLastingText {
-            margin-top: 8rem;
+            margin-top: 4rem;
 
             h3 {
                 color: #fff;
@@ -473,11 +484,11 @@ header {
             }
 
             h2 {
-                font-size: 14vw;
+                font-size: 20vw;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
-                margin-left: -5px;
+                margin-left: -14px;
                 color: #fff;
                 letter-spacing: 1px;
             }
@@ -493,7 +504,7 @@ header {
     .fastLongLastingImage {
         padding: 0;
         position: absolute;
-        top: 28%;
+        top: 32%;
 
         img {
             width: 60%;
@@ -516,7 +527,7 @@ header {
         color: $blue_font;
 
         .toughOnDandruffButNotOnText {
-            margin-top: 8rem;
+            margin-top: 4rem;
 
             h3 {
                 font-size: 3.4rem;
@@ -526,7 +537,7 @@ header {
             }
 
             h2 {
-                font-size: 14vw;
+                font-size: 17vw;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1;
@@ -536,7 +547,7 @@ header {
 
             p {
                 font-size: 1.5rem;
-                width: 40%;
+                width: 35%;
             }
         }
     }
@@ -547,10 +558,11 @@ header {
         top: 0;
 
         img {
-            width: 60%;
+            width: 80%;
             height: auto;
             position: absolute;
-            right: 0;
+            right: -20%;
+            top: 50px;
         }
     }
 }
@@ -642,7 +654,7 @@ header {
 
     .allAboutDandruff {
         h3 {
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         h2 {
@@ -650,15 +662,16 @@ header {
             text-transform: uppercase;
             font-weight: 700;
             line-height: 1;
-            margin-left: -5px;
+            margin-left: -12px;
             letter-spacing: 1px;
             position: relative;
             z-index: 9;
         }
 
         p {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             width: 30%;
+            line-height: 1.3;
         }
 
         button {
@@ -667,7 +680,7 @@ header {
             border: none;
             outline: none;
             padding: 10px 20px;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -1418,6 +1431,7 @@ header {
 footer {
     background-color: $yellow_header;
     padding: 50px 0;
+    height: auto !important;
 
     .col-md-3 {
         font-family: $font_family;
@@ -1779,4 +1793,8 @@ footer {
 
 .product_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
     background-color: transparent !important;
+}
+
+.theNezroralDiffrenceParent_main {
+    height: auto !important;
 }
