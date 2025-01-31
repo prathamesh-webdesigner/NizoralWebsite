@@ -1,0 +1,224 @@
+//
+
+.scalp-hair-hub-body {
+	background-color: $sky-blue; font-family: 'Helvetica Neue';
+
+	header {
+		z-index: 10;
+		height: 110px;
+	}
+	
+	.complete-haircare-routine { 
+		padding: 5vw 0; 
+		background-color: $blue-shade; 
+		display: block;
+		height: auto;
+		h3{ font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);}
+	
+		.discover-btn { 
+			a {
+				background-color: $blue; 
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+		 }
+			
+			.shampoo {
+				h2 { font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem); font-weight: normal; }
+				p { font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem); font-weight: normal; }
+			}
+	}
+}
+.scalp-hair-hub-blogs { padding-bottom: 5vw; }
+.banner_scalp-hair-hub{
+
+	.bannerTextArea {
+		width: 70%; padding-bottom: 5vw;
+		h1 { }
+		h2 { font-family: "helveticaMedium", sans-serif; letter-spacing: 0.05rem; 
+    		font-weight: normal; line-height: 1.5rem; color: $black;
+			font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);
+		}
+	}
+}
+
+
+
+.scalp-hair-hub-blogs{
+	.blog-navigation{
+		.nav-link{ text-transform: uppercase;}
+		.text-blue{
+			&:hover, &.active{ color: $blue; text-decoration: underline;}
+		}
+	}
+	.blogs-container{
+		.blog-visible {
+			display: block !important;
+		}
+		.col:not(.blog-visible) {
+			display: none !important;
+		}
+		.col{ 
+			.card{ border: 0; border-radius: 0;
+				.card-body{ padding: 1.5rem;}
+				.card-img-container{ width: 100%; height: 0%; padding-bottom: 67%; position: relative;}
+				.card-img{ object-fit: cover; object-position: center center; width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+			}
+			&.blog-visible{ 
+				&:nth-child(9n + 1){
+					width: 50%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2;}
+				}
+				&:nth-child(9n + 2){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 2;}
+					.card-img-container{ order: 1; padding-bottom: 110%;}
+				}
+				&:nth-child(9n + 3){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2; padding-bottom: 100%;}
+				}
+				&:nth-child(9n + 4){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 2;}
+					.card-img-container{ order: 1; padding-bottom: 110%;}
+				}
+				&:nth-child(9n + 5){
+					width: 50%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2;}
+				}
+				&:nth-child(9n + 6){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2; padding-bottom: 100%;}
+				}
+				&:nth-child(9n + 7){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 2;}
+					.card-img-container{ order: 1; padding-bottom: 110%;}
+				}
+				&:nth-child(9n + 8){
+					width: 25%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2; padding-bottom: 100%;}
+				}
+				&:nth-child(9n + 9){
+					width: 50%; flex: 0 0 auto;
+					.card-body{ order: 1;}
+					.card-img-container{ order: 2;}
+				}
+			}
+		}
+	}
+}
+.banner_scalp-hair-hub{
+	.banner_dandruff_educationBoy {
+		img { 
+			bottom: -4rem;
+			width: 55%;
+			position: absolute;
+			bottom: -85px;
+			right: -2rem;
+		} 
+	} 
+} 
+/*Media query*/
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 1181px) {
+	.scalp-hair-hub-blogs{
+		.blogs-container{
+			.col{
+				&.blog-visible{
+					.card{ 
+						.card-img{  }
+					}
+					&:nth-child(1n){
+						width: 50%; 
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) { // LG
+    
+}
+
+@media screen and (max-width: 768px) { // MD    
+	.banner_scalp-hair-hub { height: auto;
+		.bannerTextArea{ 
+			h2 {
+				font-size: 0.8rem;
+				line-height: 1rem;
+			}
+		}
+	}
+   
+}
+
+@media screen and (max-width: 576px) { // SM - Mobile
+
+	.scalp-hair-hub-body{ 
+		.complete-haircare-routine  {
+			h3{
+				font-size: 2rem;    
+				line-height: 2.5rem;
+			}
+		}
+	}
+	
+	.scalp-hair-hub-blogs {
+		.blogs-container {
+			.col{ width: 100%;
+				&:nth-child(9n + 1), &:nth-child(9n + 2), &:nth-child(9n + 3), &:nth-child(9n + 4),
+				&:nth-child(9n + 5), &:nth-child(9n + 6),&:nth-child(9n + 7), &:nth-child(9n + 8),
+				&:nth-child(9n + 9){ width: 100%;}
+			}
+			
+		}
+	}
+	.banner_scalp-hair-hub { /*padding-top: 30vw;*/
+		.bannerTextArea { width: 100%;
+			h1 { font-size: 4rem; }
+			h2 {  font-size: 1.2rem;
+				letter-spacing: normal;
+				line-height: 1.5rem;
+				br { display: none;}
+			}
+		}
+		.banner_dandruff_education { 
+			padding-top: 120px; 
+		}
+		.banner_dandruff_educationBoy{
+			img {
+				width: 100%;
+				position: relative;
+				bottom: 0;
+				right: 0;
+   
+			}
+		} 
+	}
+
+	
+    .scalp-hair-hub-blogs{
+		.blogs-container{
+			.col{
+				&.blog-visible{
+					.card{ 
+						.card-img{  }
+					}
+					&:nth-child(1n){
+						width: 100%; 
+					}
+				}
+			}
+		}
+	}
+}
