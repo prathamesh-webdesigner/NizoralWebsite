@@ -638,10 +638,12 @@ header .buyNow button {
 }
 .product_carousel .discover button {
   background-color: #152b59;
-  padding: 4px 15px;
+  padding: 10px 25px;
   color: #fff;
   border: none;
   outline: none;
+  font-size: 1.3rem;
+  margin-top: 30px;
 }
 
 .allAboutDandruffParent {
@@ -655,10 +657,10 @@ header .buyNow button {
   justify-content: center;
 }
 .allAboutDandruffParent .allAboutDandruff h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .allAboutDandruffParent .allAboutDandruff h2 {
-  font-size: 12vw;
+  font-size: 15vw;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1;
@@ -668,7 +670,7 @@ header .buyNow button {
   z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruff p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 30%;
 }
 .allAboutDandruffParent .allAboutDandruff button {
@@ -677,9 +679,10 @@ header .buyNow button {
   border: none;
   outline: none;
   padding: 10px 20px;
+  font-size: 1.8rem;
 }
 .allAboutDandruffParent .allAboutDandruffImage img {
-  width: 60%;
+  width: 65%;
   height: auto;
   position: absolute;
   top: 0;

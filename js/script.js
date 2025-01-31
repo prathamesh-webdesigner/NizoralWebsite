@@ -12,8 +12,36 @@ document.onreadystatechange = function () {
     });
 }
 
-
 // Header visible to invisible end
+
+// owl carousel 
+ // Owl Carosel
+ $('.homeSlider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 3000,
+    navText: [
+        '<img src="image/prev.png" alt="Previous" style="width:40px;">', 
+        '<img src="image/next.png" alt="Next" style="width:40px;">'
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+// owl carousel end 
+
 // Text Animation 
 function breakTheText() {
     var elements = document.querySelectorAll(".md_goodbye, .bestfriend h2, .bestfriend h3, .md_dandruffAndItching, .theNezroralDiffrenceParent h2");
