@@ -60,32 +60,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- owl carousel  -->
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=4"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-</script>
+
 </body>
 
 </html>
