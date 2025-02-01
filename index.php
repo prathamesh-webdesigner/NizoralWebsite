@@ -472,10 +472,16 @@
 <?php include 'footer.php'; ?>
 <script>
     $(document).ready(function() {
-        if (typeof $.scrollify === "function") {
+        // if (typeof $.scrollify === "function") {
+        //     $.scrollify({
+        //         section: ".scrollSection"
+        //     });
+        if ($(window).width() > 1024) { // Enable Scrollify only on larger screens
             $.scrollify({
-                section: ".scrollSection"
+                section: ".scrollSection",
+                scrollSpeed: 1100
             });
+
         } else {
             console.error("Scrollify is not loaded correctly!");
         }

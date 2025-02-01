@@ -323,7 +323,8 @@
     text-align: center;
   }
 
-  .white_part_nizoraal_range .nizoral_medical_shampoo, .product_carousel .discover button, .restore .restore_text {
+  .white_part_nizoraal_range .nizoral_medical_shampoo, .product_carousel .discover button, .restore .restore_text,
+  .banner .bannerTextArea h2 {
     margin-top: 0;
   }
 
@@ -432,8 +433,13 @@
   .prevent .prevent_text .daily_care_text {
     flex-direction: row;
   }
-  .restore .restore_text .daily_care_text img{
+
+  .restore .restore_text .daily_care_text img {
     margin-left: 0;
     width: 70%;
+  }
+
+  .banner .bannerTextArea {
+    gap: 5px;
   }
 }
