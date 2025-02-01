@@ -185,3 +185,10 @@
     letter-spacing: 10px;
     text-align: center;
 }
+
+@mixin gsap_animation {
+    display: inline-block;
+    filter: blur(3px);
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+}

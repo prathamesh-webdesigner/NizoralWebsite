@@ -4,10 +4,8 @@
         <div class="row">
             <div class="bannerTextArea">
                 <h3 class="sayAni">Say</h3>
-                <h1 class="d-none d-md-block md_goodbye mb-0">Goodbye</h1>
-                <h1 class="d-md-none mo_goodbye">Goodbye</h1>
-                <h2 class="d-none d-md-block md_dandruffAndItching">to dandruff and itching</h2>
-                <h2 class="d-md-none mo_dandruffAndItching">to dandruff and itching</h2>
+                <h1 class="d-md-block md_goodbye mb-0">Goodbye</h1>
+                <h2 class="md_dandruffAndItching">to dandruff and itching</h2>
                 <p>Nizoral® treats the cause of dandruff and itchiness for continous scalp health.</p>
             </div>
 
@@ -226,8 +224,8 @@
                                     <img src="image/long-lasting-icon.png" alt="Long Lasting">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Long-Lasting</h2>
-                                    <p>Prevents dandruff recurrence for up to 3 months.</p>
+                                    <h2>IMMEDIATE <br> RESULTS</h2>
+                                    <p>Removes loose flakes and soothes irritation from the first wash. </p>
                                 </div>
                             </div>
 
@@ -236,13 +234,13 @@
                                     <img src="image/Clinically-Proven.png" alt="Clinically Proven">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Clinically Proven</h2>
-                                    <p>Backed by science to treat dandruff and seborrheic dermatitis.</p>
+                                    <h2>INNOVATIVE FORMULA</h2>
+                                    <p>Features Crinipan PMC Green to rebalance the scalp microbiome.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="product_image_area">
-                            <img src="image/shampoo.webp" alt="Shampoo">
+                            <img src="image/DailyCare.webp" alt="DailyCare">
                         </div>
                         <div class="slider_first_column_one">
                             <div class="long-lasting-holding_area">
@@ -250,8 +248,8 @@
                                     <img src="image/Fast-relief.png" alt="Fast-relief">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Fast Relief</h2>
-                                    <p>Starts working from the first wash to relieve itching and flaking.</p>
+                                    <h2>DAILY USE </h2>
+                                    <p>Gentle enough for everyday care to maintain scalp health.</p>
                                 </div>
                             </div>
 
@@ -260,9 +258,9 @@
                                     <img src="image/triple-action.png" alt="Triple-action">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Triple Action</h2>
-                                    <p>Combines anti-fungal,<br> anti-inflammatory, and<br> anti-proliferative
-                                        effects.
+                                    <h2>MOISTURIZING <br>CARE</h2>
+                                    <p>Hydrates the scalp and hair for
+                                        a healthier look and feel.
                                     </p>
                                 </div>
                             </div>
@@ -280,8 +278,9 @@
                                     <img src="image/long-lasting-icon.png" alt="Long Lasting">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Long-Lasting</h2>
-                                    <p>Prevents dandruff recurrence for up to 3 months.</p>
+                                    <h2>HYDRATES <br>HAIR</h2>
+                                    <p>Restores moisture for
+                                        soft, manageable hair.</p>
                                 </div>
                             </div>
 
@@ -290,13 +289,14 @@
                                     <img src="image/Clinically-Proven.png" alt="Clinically Proven">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Clinically Proven</h2>
-                                    <p>Backed by science to treat dandruff and seborrheic dermatitis.</p>
+                                    <h2>LIGHTWEIGHT <br>FORMULA
+                                    </h2>
+                                    <p>Non-greasy and perfect for regular use.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="product_image_area">
-                            <img src="image/shampoo.webp" alt="Shampoo">
+                            <img src="image/care.webp" alt="Care">
                         </div>
                         <div class="slider_first_column_one">
                             <div class="long-lasting-holding_area">
@@ -304,8 +304,9 @@
                                     <img src="image/Fast-relief.png" alt="Fast-relief">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Fast Relief</h2>
-                                    <p>Starts working from the first wash to relieve itching and flaking.</p>
+                                    <h2>SOOTHES <br>IRRITATION </h2>
+                                    <p>SOOTHES IRRITATION
+                                        Relieves dryness and calms sensitive scalps.</p>
                                 </div>
                             </div>
 
@@ -314,63 +315,9 @@
                                     <img src="image/triple-action.png" alt="Triple-action">
                                 </div>
                                 <div class="first_text_area">
-                                    <h2>Triple Action</h2>
-                                    <p>Combines anti-fungal,<br> anti-inflammatory, and<br> anti-proliferative
-                                        effects.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="discover d-flex justify-content-center">
-                        <button>Discover</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider_first">
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area">
-                                    <img src="image/long-lasting-icon.png" alt="Long Lasting">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2>Long-Lasting</h2>
-                                    <p>Prevents dandruff recurrence for up to 3 months.</p>
-                                </div>
-                            </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area_for_clinically_proven">
-                                    <img src="image/Clinically-Proven.png" alt="Clinically Proven">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2>Clinically Proven</h2>
-                                    <p>Backed by science to treat dandruff and seborrheic dermatitis.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_image_area">
-                            <img src="image/shampoo.webp" alt="Shampoo">
-                        </div>
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="fast_relief_round_icon_area">
-                                    <img src="image/Fast-relief.png" alt="Fast-relief">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2>Fast Relief</h2>
-                                    <p>Starts working from the first wash to relieve itching and flaking.</p>
-                                </div>
-                            </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="triple_action_round_icon_area">
-                                    <img src="image/triple-action.png" alt="Triple-action">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2>Triple Action</h2>
-                                    <p>Combines anti-fungal,<br> anti-inflammatory, and<br> anti-proliferative
-                                        effects.
+                                    <h2>SUPPORTS <br>
+                                        SCALP HEALTH</h2>
+                                    <p>Enhances scalp balance with natural ingredients.
                                     </p>
                                 </div>
                             </div>
@@ -521,6 +468,8 @@
     </div>
 </section>
 
+
+<?php include 'footer.php'; ?>
 <script>
     $(document).ready(function() {
         if (typeof $.scrollify === "function") {
@@ -532,4 +481,3 @@
         }
     });
 </script>
-<?php include 'footer.php'; ?>

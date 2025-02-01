@@ -90,42 +90,40 @@ header {
         color: $blue_font;
         font-family: $font_family;
         margin-top: 5rem;
-
+        display: flex;
+        flex-direction: column;
         h3 {
             font-size: 3.3rem;
             font-weight: 700;
             line-height: 1;
             margin-left: 5px;
             margin-bottom: 0;
+            @include gsap_animation;
         }
 
         h1 {
             overflow: hidden;
-
-            span {
-                font-size: 12vw;
-                text-transform: uppercase;
-                font-weight: 700;
-                line-height: 1;
-                display: inline-block;
-            }
+            font-size: 12vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            @include gsap_animation;
         }
 
         h2 {
             margin-top: -1rem;
-
-            span {
-                font-size: 3.3rem;
-                font-weight: 700;
-                line-height: 1;
-                display: inline-block;
-            }
+            font-size: 3.3rem;
+            font-weight: 700;
+            line-height: 1;
+            @include gsap_animation;
         }
 
         p {
             font-size: 1.5rem;
             font-weight: 600;
             width: 40%;
+            display: inline-block;
+            @include gsap_animation;
         }
     }
 
@@ -138,6 +136,7 @@ header {
             bottom: -16rem;
             right: -140px;
             z-index: 9;
+            opacity: 0;
         }
     }
 
@@ -216,20 +215,16 @@ header {
         z-index: 9;
 
         h2 {
-            span {
-                font-size: 4.5vw;
-                display: inline-block;
-            }
+            font-size: 4.5vw;
+            display: inline-block;
+            @include gsap_animation;
         }
 
         h3 {
             margin-top: -2rem;
-
-            span {
-                font-size: 12vw;
-                font-weight: bold;
-                display: inline-block;
-            }
+            font-size: 12vw;
+            font-weight: bold;
+            @include gsap_animation;
         }
     }
 
@@ -399,9 +394,8 @@ header {
     font-family: $font_family;
 
     h2 {
-        span {
-            @include theNezroralDiffrenceParent_h2;
-        }
+        @include theNezroralDiffrenceParent_h2;
+        @include gsap_animation;
     }
 }
 
@@ -1542,7 +1536,8 @@ header {
             img {
                 width: 40%;
                 margin: 0 auto;
-                margin-left: 16rem;            }
+                margin-left: 16rem;
+            }
         }
         .daily_care_img {
             width: 100%;

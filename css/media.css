@@ -95,7 +95,7 @@
     width: 100%;
   }
 
-  .theNezroralDiffrenceParent h2 span, .hairCareRoutine .hairCareRoutineHeading h2 {
+  .theNezroralDiffrenceParent h2, .hairCareRoutine .hairCareRoutineHeading h2 {
     font-size: 6vw;
   }
 
@@ -115,12 +115,12 @@
     padding: 20px 0;
   }
 
-  .yourScalps .bestfriend h2 span,
+  .yourScalps .bestfriend h2,
   .fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
     font-size: 1.5rem;
   }
 
-  .yourScalps .bestfriend h3 span {
+  .yourScalps .bestfriend h3 {
     font-size: 2.5rem;
     font-weight: bold;
   }
