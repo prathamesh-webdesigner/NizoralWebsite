@@ -459,10 +459,10 @@ header .buyNow button {
   height: 100vh;
   overflow: hidden;
   margin-top: -4rem;
+  background-color: #5dafae;
 }
 .fastLongLastingParent .fastLongLasting {
   font-family: "helveticaMedium", sans-serif;
-  background-color: #5dafae;
   width: 90%;
   height: 100vh;
   overflow: hidden;
@@ -1447,6 +1447,135 @@ header .buyNow button {
 }
 .faqs .accordion .accordion-button:focus {
   box-shadow: none;
+}
+
+.hairCareRoutine {
+  height: auto !important;
+}
+.hairCareRoutine .hairCareRoutineHeading {
+  font-family: "helveticaMedium", sans-serif;
+}
+.hairCareRoutine .hairCareRoutineHeading h2 {
+  font-size: 4vw;
+  color: #152b59;
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.treat_parent {
+  background-color: #ffcc00;
+  height: 100vh;
+  font-family: "helveticaMedium", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.treat_parent .treat_text {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.treat_parent .treat_text h2 {
+  font-size: 19vw;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: -12px;
+  letter-spacing: 10px;
+  color: #fff;
+  text-align: center;
+}
+.treat_parent .treat_text p {
+  font-size: 1.2rem;
+  color: #212427;
+  width: 36%;
+  margin-left: 6rem;
+}
+.treat_parent .treat_text .shampoo_drop {
+  width: 26%;
+  margin-left: 6rem;
+}
+.treat_parent .treat_text .treat_image {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+.treat_parent .treat_text .treat_image img {
+  width: 92%;
+}
+
+.prevent {
+  background-color: #207cde;
+  height: 100vh;
+  font-family: "helveticaMedium", sans-serif;
+  color: #fff;
+}
+.prevent .prevent_area h2 {
+  font-size: 19vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.prevent .prevent_text {
+  display: flex;
+  gap: 40px;
+  margin-top: -13rem;
+  margin-left: 8rem;
+}
+.prevent .prevent_text .daily_care_img .daily_care_product {
+  width: 100%;
+}
+.prevent .prevent_text .daily_care_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.prevent .prevent_text .daily_care_text p {
+  font-size: 1.2rem;
+  width: 45%;
+  line-height: 1.2;
+}
+.prevent .prevent_text .daily_care_text .blue-drop {
+  width: 30%;
+}
+
+.restore {
+  background-color: #ffcc00;
+  height: 100vh;
+  font-family: "helveticaMedium", sans-serif;
+}
+.restore .restore_area h2 {
+  font-size: 19vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #fff;
+}
+.restore .restore_text {
+  margin-top: -14rem;
+}
+.restore .restore_text .daily_care_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.restore .restore_text .daily_care_text p {
+  font-size: 1.2rem;
+  width: 60%;
+  line-height: 1.2;
+}
+.restore .restore_text .daily_care_text img {
+  width: 40%;
+  margin: 0 auto;
+  margin-left: 16rem;
+}
+.restore .restore_text .daily_care_img {
+  width: 100%;
+}
+.restore .restore_text .daily_care_img img {
+  width: 70%;
 }
 
 footer {

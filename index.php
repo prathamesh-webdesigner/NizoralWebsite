@@ -402,6 +402,125 @@
         <img src="image/AllAboutDandruff.webp" alt="All About Dandruff">
     </div>
 </section>
+<section class="scientificallyBacked hairCareRoutine position-relative scrollSection">
+    <div class="container-fluid">
+        <div class="row text-center p-5 hairCareRoutineHeading">
+            <h2>A complete scalp and haircare routine</h2>
+        </div>
+    </div>
+</section>
+<section class="treat_parent position-relative scrollSection">
+    <div class="container">
+        <div class="row">
+            <div class="treat_text">
+                <h2>TREAT</h2>
+                <p>Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
+                <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
+                <div class="treat_image">
+                    <img src="image/shampoo/top-img.png" alt="Shampoo">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="prevent position-relative scrollSection pt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="prevent_area">
+                <h2>PREVENT</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="prevent_text">
+                <div class="daily_care_img">
+                    <img src="image/daily-care-slider-cropped.webp" class="daily_care_product" alt="Daily-care">
+                </div>
+                <div class="daily_care_text">
+                    <p>Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
+                    <img src="image/blue_drop.webp" class="blue-drop" alt="Daily-care">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="restore position-relative scrollSection pt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="restore_area">
+                <h2>RESTORE</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row restore_text">
+            <div class="d-flex align-items-md-end">
+                <div class="daily_care_text">
+                    <p>Rebalance and soothe your scalp with Nizoral® Scalp Tonic, leaving it refreshed and moisturized.</p>
+                    <img src="image/sky_blue_drop.webp" class="blue-drop" alt="Daily-care">
+                </div>
+                <div class="daily_care_img">
+                    <img src="image/scap-tonic-slider.webp" class="daily_care_product" alt="Daily-care">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="expret_advice scrollSection">
+    <div class="container">
+        <div class="row">
+            <div class="expret_advice_text">
+                <h2>EXPERT ADVICE</h2>
+                <h3>for a Healthier Scalp & Hair</h3>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="dandruff_vs_scalp">
+                <div class="dandruff_vs_scalp_area">
+                    <!-- <div class="img_area"> -->
+                    <img src="image/whatsDiffrence.webp" alt="dandruff">
+                    <!-- </div> -->
+                    <div class="text_area">
+                        <h2>Dandruff vs. Dry Scalp: <br>
+                            What's the Difference?</h2>
+                        <p>Find out what are the most common causes of dandruff, what is the difference between
+                            dandruff scalp and dry scalp, what to avoid in case of...</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+
+                <div class="dandruff_vs_scalp_area justify-content-end my-5">
+                    <!-- <div class="img_area"> -->
+                    <img src="image/Stress-management.webp" alt="stress-management">
+                    <!-- </div> -->
+                    <div class="text_area">
+                        <h2>Dandruff & Stress Tips For Stress Management </h2>
+                        <p>Modern living has brought with it lots of new pressures, and life can feel very
+                            fast-paced at times. Work commitments and financial respon...</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+
+                <div class="dandruff_vs_scalp_area">
+                    <!-- <div class="img_area"> -->
+                    <img src="image/flakyScalp.webp" alt="flakyScalp">
+                    <!-- </div> -->
+                    <div class="text_area">
+                        <h2>How to deal with dry and flaky scalp? </h2>
+                        <p>Although dandruff and dry scalp have similar symptoms, they are not identical problems.
+                            Flaky scalp does not necessarily mean that you suffe...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
     $(document).ready(function() {
         if (typeof $.scrollify === "function") {

@@ -172,3 +172,16 @@
     font-weight: 700;
     line-height: 1;
 }
+@mixin theNezroralDiffrenceParent_h2 {
+    font-size: 4vw;
+    color: $blue_font;
+    display: inline-block;
+}
+
+@mixin prevent_areaH2 {
+    font-size: 19vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-align: center;
+}

@@ -400,9 +400,7 @@ header {
 
     h2 {
         span {
-            font-size: 4vw;
-            color: $blue_font;
-            display: inline-block;
+            @include theNezroralDiffrenceParent_h2;
         }
     }
 }
@@ -462,10 +460,9 @@ header {
     height: 100vh;
     overflow: hidden;
     margin-top: -4rem;
-
+    background-color: $lightGreen;
     .fastLongLasting {
         font-family: $font_family;
-        background-color: $lightGreen;
         width: 90%;
         height: 100vh;
         overflow: hidden;
@@ -1427,6 +1424,136 @@ header {
 }
 
 // ---------------------------------------------Shampoo End------------------------------------------------------
+// ---------------------------------------------A complete scalp and haircare routine------------------------------------------------------
+
+.hairCareRoutine {
+    height: auto !important;
+    .hairCareRoutineHeading {
+        font-family: $font_family;
+        h2 {
+            @include theNezroralDiffrenceParent_h2;
+            width: 45%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// ---------------------------------------------A complete scalp and haircare routine End------------------------------------------------------
+// ---------------------------------------------TREAT------------------------------------------------------
+
+.treat_parent {
+    background-color: $yellow_header;
+    height: 100vh;
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    .treat_text {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        h2 {
+            font-size: 19vw;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -12px;
+            letter-spacing: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+            color: $black_font;
+            width: 36%;
+            margin-left: 6rem;
+        }
+        .shampoo_drop {
+            width: 26%;
+            margin-left: 6rem;
+        }
+        .treat_image {
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            img {
+                width: 92%;
+            }
+        }
+    }
+}
+
+.prevent {
+    background-color: $skyBlue;
+    height: 100vh;
+    font-family: $font_family;
+    color: #fff;
+    .prevent_area {
+        h2 {
+            @include prevent_areaH2;
+        }
+    }
+    .prevent_text {
+        display: flex;
+        gap: 40px;
+        margin-top: -13rem;
+        margin-left: 8rem;
+        .daily_care_img {
+            .daily_care_product {
+                width: 100%;
+            }
+        }
+        .daily_care_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            p {
+                font-size: 1.2rem;
+                width: 45%;
+                line-height: 1.2;
+            }
+            .blue-drop {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.restore {
+    background-color: $yellow_header;
+    height: 100vh;
+    font-family: $font_family;
+    .restore_area {
+        h2 {
+            @include prevent_areaH2;
+            color: #fff;
+        }
+    }
+    .restore_text {
+        margin-top: -14rem;
+        .daily_care_text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            p {
+                font-size: 1.2rem;
+                width: 60%;
+                line-height: 1.2;
+            }
+            img {
+                width: 40%;
+                margin: 0 auto;
+                margin-left: 16rem;            }
+        }
+        .daily_care_img {
+            width: 100%;
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+// ---------------------------------------------TREAT END------------------------------------------------------
 
 footer {
     background-color: $yellow_header;
