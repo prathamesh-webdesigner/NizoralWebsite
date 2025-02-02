@@ -68,6 +68,10 @@
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
 
+.display-xlg {
+  font-size: clamp(10.688rem, 17.188vw - 0.313rem, 20.313rem);
+}
+
 .display-lg {
   font-size: clamp(7.625rem, 12.081vw - 0.122rem, 14.375rem);
 }
@@ -537,6 +541,27 @@
   .article-details-body .article-details-banner .banner_dandruff_educationBoy img {
     bottom: 0;
     width: 100%;
+  }
+}
+.banner-buy-online .banner-buy-online-img {
+  bottom: 0;
+}
+
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
   }
 }
 

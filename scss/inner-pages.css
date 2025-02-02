@@ -68,6 +68,10 @@
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
 
+.display-xlg {
+  font-size: clamp(10.688rem, 17.188vw - 0.313rem, 20.313rem);
+}
+
 .display-lg {
   font-size: clamp(7.625rem, 12.081vw - 0.122rem, 14.375rem);
 }
@@ -175,10 +179,8 @@
   position: relative;
 }
 .scalp-hair-hub-blogs .blogs-container .col .card .card-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
+  object-fit: cover;
+  object-position: center center;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -540,4 +542,27 @@
     bottom: 0;
     width: 100%;
   }
-}/*# sourceMappingURL=inner-pages.css.map */
+}
+.banner-buy-online .banner-buy-online-img {
+  bottom: 0;
+}
+
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+
+/*# sourceMappingURL=inner-pages.css.map */
