@@ -72,7 +72,7 @@
                             <a class="nav-link sprinkles" href="nizoral-range.php">Nizoral Range</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sprinkles" href="#">Scalp & Hair Hub</a>
+                            <a class="nav-link sprinkles" href="scalp-hair-hub.html">Scalp & Hair Hub</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link sprinkles" href="#">Get to Know Your Scalp</a>
