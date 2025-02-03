@@ -70,6 +70,12 @@
   margin: 0 auto;
 }
 
+.page-xs-container {
+  width: 31%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .display-xl {
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
@@ -102,6 +108,10 @@
   font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);
 }
 
+.body-mlg {
+  font-size: clamp(1.188rem, 1.897vw - 0.027rem, 2.25rem);
+}
+
 .body-md {
   font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);
 }
@@ -112,6 +122,11 @@
 
 .btn-blue {
   background: #1a2b56;
+}
+
+.btn-blue-border {
+  background: #ffffff;
+  border: 1px solid #1a2b56;
 }
 
 .scalp-hair-hub-body {
@@ -568,6 +583,31 @@
 }
 .locate-pharmacy .location {
   margin-bottom: 4rem;
+}
+
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+.banner-quiz .bannerTextArea {
+  width: 45%;
+}
+.banner-quiz .banner_dandruff_educationBoy img {
+  width: 75%;
+  bottom: -200px;
 }
 
 /*Media query*/

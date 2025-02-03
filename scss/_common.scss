@@ -46,6 +46,7 @@ $baby-pink  : #fffae5;
 .page-lg-container{ margin: 0 auto;}
 .page-md-container{ width: 78%; max-width: 1514px; margin: 0 auto;}
 .page-sm-container{ width: 65%; max-width: 1248px; margin: 0 auto;}
+.page-xs-container{ width: 31%; max-width: 600px; margin: 0 auto;}
 
 // Font sizes
 
@@ -62,8 +63,10 @@ $baby-pink  : #fffae5;
 
 .body-xl{ font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);} // 71px
 .body-lg{ font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);} // 48px
+.body-mlg{ font-size: clamp(1.188rem, 1.897vw - 0.027rem, 2.25rem);} // 36px
 .body-md{ font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);} // 30px
 .body-sm{ font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);} // 24px
 .body-xs{}
 
 .btn-blue { background: $blue;}
+.btn-blue-border { background: $white; border: 1px solid $blue;}

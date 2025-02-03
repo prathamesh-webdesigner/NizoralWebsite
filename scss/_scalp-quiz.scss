@@ -1,0 +1,30 @@
+.banner-quiz {
+    .bannerTextArea { width: 45%;}    
+    .banner_dandruff_educationBoy { 
+        img { width: 75%; bottom: -200px; }
+     }
+}
+/*Media query*/
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 1181px) {
+	
+}
+
+@media screen and (max-width: 992px) { // LG
+    
+}
+
+@media screen and (max-width: 768px) { // MD    
+    .heading-lg {font-size: 3rem;} 
+    .heading-xl {font-size: 5rem;} 
+}
+
+@media screen and (max-width: 576px) { // SM - Mobile
+    .heading-lg {font-size: 3rem;} 
+    .heading-xl {font-size: 5rem;} 
+}
+
+
+
