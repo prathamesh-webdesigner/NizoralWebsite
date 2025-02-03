@@ -1,5 +1,9 @@
-.banner-buy-online {
-    .banner-buy-online-img { bottom: 0; }
+.banner-buy-online { height: 100%; padding-bottom: 10%;
+    .banner-buy-online-img { bottom: -80%; right: 0; width: 50%; }
+}
+
+.locate-pharmacy { padding: 8rem 0;
+    .location { margin-bottom: 4rem; }
 }
 
 /*Media query*/

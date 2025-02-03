@@ -544,7 +544,9 @@
   }
 }
 .banner-buy-online .banner-buy-online-img {
-  bottom: 0;
+  bottom: -80%;
+  right: 0;
+  width: 50%;
 }
 
 /*Media query*/

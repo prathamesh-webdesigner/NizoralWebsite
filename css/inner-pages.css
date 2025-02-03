@@ -64,6 +64,12 @@
   margin: 0 auto;
 }
 
+.page-sm-container {
+  width: 65%;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
 .display-xl {
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
@@ -102,6 +108,10 @@
 
 .body-sm {
   font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);
+}
+
+.btn-blue {
+  background: #1a2b56;
 }
 
 .scalp-hair-hub-body {
@@ -543,8 +553,21 @@
     width: 100%;
   }
 }
+.banner-buy-online {
+  height: 100%;
+  padding-bottom: 10%;
+}
 .banner-buy-online .banner-buy-online-img {
-  bottom: 0;
+  bottom: -80%;
+  right: 0;
+  width: 50%;
+}
+
+.locate-pharmacy {
+  padding: 8rem 0;
+}
+.locate-pharmacy .location {
+  margin-bottom: 4rem;
 }
 
 /*Media query*/

@@ -45,6 +45,7 @@ $baby-pink  : #fffae5;
 
 .page-lg-container{ margin: 0 auto;}
 .page-md-container{ width: 78%; max-width: 1514px; margin: 0 auto;}
+.page-sm-container{ width: 65%; max-width: 1248px; margin: 0 auto;}
 
 // Font sizes
 
@@ -64,3 +65,5 @@ $baby-pink  : #fffae5;
 .body-md{ font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);} // 30px
 .body-sm{ font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);} // 24px
 .body-xs{}
+
+.btn-blue { background: $blue;}
