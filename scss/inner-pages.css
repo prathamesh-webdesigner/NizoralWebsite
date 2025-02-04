@@ -64,6 +64,18 @@
   margin: 0 auto;
 }
 
+.page-sm-container {
+  width: 65%;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.page-xs-container {
+  width: 31%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .display-xl {
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
@@ -96,12 +108,25 @@
   font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);
 }
 
+.body-mlg {
+  font-size: clamp(1.188rem, 1.897vw - 0.027rem, 2.25rem);
+}
+
 .body-md {
   font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);
 }
 
 .body-sm {
   font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);
+}
+
+.btn-blue {
+  background: #1a2b56;
+}
+
+.btn-blue-border {
+  background: #ffffff;
+  border: 1px solid #1a2b56;
 }
 
 .scalp-hair-hub-body {
@@ -179,8 +204,10 @@
   position: relative;
 }
 .scalp-hair-hub-blogs .blogs-container .col .card .card-img {
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -543,10 +570,21 @@
     width: 100%;
   }
 }
+.banner-buy-online {
+  height: 100%;
+  padding-bottom: 10%;
+}
 .banner-buy-online .banner-buy-online-img {
   bottom: -80%;
   right: 0;
   width: 50%;
+}
+
+.locate-pharmacy {
+  padding: 8rem 0;
+}
+.locate-pharmacy .location {
+  margin-bottom: 4rem;
 }
 
 /*Media query*/
@@ -566,5 +604,28 @@
     font-size: 5rem;
   }
 }
+.banner-quiz .bannerTextArea {
+  width: 45%;
+}
+.banner-quiz .banner_dandruff_educationBoy img {
+  width: 75%;
+  bottom: -200px;
+}
 
-/*# sourceMappingURL=inner-pages.css.map */
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heading-lg {
+    font-size: 3rem;
+  }
+  .heading-xl {
+    font-size: 5rem;
+  }
+}/*# sourceMappingURL=inner-pages.css.map */

@@ -331,7 +331,7 @@
         </div>
     </div>
 </section>
-<section class="allAboutDandruffParent position-relative scrollSection">
+<section class="allAboutDandruffParent position-relative scrollSection">    
     <div class="container-custom">
         <div class="row">
             <div class="allAboutDandruff">
@@ -349,7 +349,7 @@
         <img src="image/AllAboutDandruff.webp" alt="All About Dandruff">
     </div>
 </section>
-<section class="scientificallyBacked hairCareRoutine position-relative scrollSection">
+<section class="scientificallyBacked hairCareRoutine position-relative scrollSection" id="hairCareRoutine">
     <div class="container-fluid">
         <div class="row text-center p-5 hairCareRoutineHeading">
             <h2>A complete scalp and haircare routine</h2>
@@ -360,7 +360,7 @@
     <div class="container">
         <div class="row">
             <div class="treat_text">
-                <h2>TREAT</h2>
+                <h2 class="treat_hed">TREAT</h2>
                 <p>Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
                 <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
                 <div class="treat_image">
@@ -479,7 +479,8 @@
         if ($(window).width() > 1024) { // Enable Scrollify only on larger screens
             $.scrollify({
                 section: ".scrollSection",
-                scrollSpeed: 1100
+                scrollSpeed: 100,
+                // scrollbars: false,
             });
 
         } else {

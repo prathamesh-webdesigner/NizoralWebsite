@@ -44,6 +44,7 @@ header {
     /* Lower priority */
     .navbar-nav {
         font-family: $font_family;
+
         li {
             background-color: $yellow_header;
 
@@ -53,6 +54,7 @@ header {
             }
         }
     }
+
     .navbar-brand {
         img {
             width: 80%;
@@ -76,12 +78,10 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: hidden;
     padding-top: 180px;
@@ -92,6 +92,7 @@ header {
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
+
         h3 {
             font-size: 3.3rem;
             font-weight: 700;
@@ -195,12 +196,10 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
 
     .bestfriend {
         position: absolute;
@@ -455,6 +454,7 @@ header {
     overflow: hidden;
     margin-top: -4rem;
     background-color: $lightGreen;
+
     .fastLongLasting {
         font-family: $font_family;
         width: 90%;
@@ -1422,12 +1422,15 @@ header {
 
 .hairCareRoutine {
     height: auto !important;
+
     .hairCareRoutineHeading {
         font-family: $font_family;
+
         h2 {
             @include theNezroralDiffrenceParent_h2;
             width: 45%;
             margin: 0 auto;
+            @include gsap_animation;
         }
     }
 }
@@ -1441,10 +1444,12 @@ header {
     font-family: $font_family;
     display: flex;
     align-items: center;
+
     .treat_text {
         position: relative;
         width: 80%;
         margin: 0 auto;
+
         h2 {
             font-size: 19vw;
             font-weight: 700;
@@ -1454,20 +1459,24 @@ header {
             color: #fff;
             text-align: center;
         }
+
         p {
             font-size: 1.2rem;
             color: $black_font;
             width: 36%;
             margin-left: 6rem;
         }
+
         .shampoo_drop {
             width: 26%;
             margin-left: 6rem;
         }
+
         .treat_image {
             position: absolute;
             bottom: 0%;
             right: 0%;
+
             img {
                 width: 92%;
             }
@@ -1480,30 +1489,36 @@ header {
     height: 100vh;
     font-family: $font_family;
     color: #fff;
+
     .prevent_area {
         h2 {
             @include prevent_areaH2;
         }
     }
+
     .prevent_text {
         display: flex;
         gap: 40px;
         margin-top: -13rem;
         margin-left: 8rem;
+
         .daily_care_img {
             .daily_care_product {
                 width: 100%;
             }
         }
+
         .daily_care_text {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+
             p {
                 font-size: 1.2rem;
                 width: 45%;
                 line-height: 1.2;
             }
+
             .blue-drop {
                 width: 30%;
             }
@@ -1515,32 +1530,39 @@ header {
     background-color: $yellow_header;
     height: 100vh;
     font-family: $font_family;
+
     .restore_area {
         h2 {
             @include prevent_areaH2;
             color: #fff;
         }
     }
+
     .restore_text {
         margin-top: -14rem;
+
         .daily_care_text {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: end;
+
             p {
                 font-size: 1.2rem;
                 width: 60%;
                 line-height: 1.2;
             }
+
             img {
                 width: 40%;
                 margin: 0 auto;
                 margin-left: 16rem;
             }
         }
+
         .daily_care_img {
             width: 100%;
+
             img {
                 width: 70%;
             }

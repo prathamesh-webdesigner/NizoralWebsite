@@ -1491,6 +1491,11 @@ header .buyNow button {
   display: inline-block;
   width: 45%;
   margin: 0 auto;
+  display: inline-block;
+  filter: blur(3px);
+  opacity: 1;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
 }
 
 .treat_parent {

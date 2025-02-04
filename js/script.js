@@ -118,7 +118,7 @@ gsap.to(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching, .banne
 });
 
 gsap.to(".bannerBoy img", {
-    x:-50,
+    x: -50,
     duration: 1,
     delay: 1.4,
     opacity: 1,
@@ -144,7 +144,7 @@ gsap.to(".theNezroralDiffrenceParent h2", {
     filter: "blur(0px)",
     opacity: 1,
     ease: "power2.out",
-    scrollTrigger: ".scientificallyBacked"
+    scrollTrigger: ".theNezroralDiffrenceParent_main"
 });
 
 // gsap.from(".bannerBoy img", {
@@ -222,6 +222,38 @@ gsap.from(".round_icon_area, .round_icon_area_for_clinically_proven, .fast_relie
     delay: 1,
     scrollTrigger: ".slider_first"
 })
+gsap.to(".allAboutDandruffImage img", {
+    top: "-15%",
+    duration: 2,
+    delay: 1,
+    scrollTrigger: ".allAboutDandruffParent"
+})
+gsap.to(".hairCareRoutineHeading h2", {
+    filter: "blur(0px)",  // Removes blur gradually
+    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    duration: 1.5,
+    delay: 1,
+    filter: "blur(0px)",
+    opacity: 1,
+    ease: "power2.out",
+    scrollTrigger: "#hairCareRoutine"
+});
+// treat_parent
+gsap.from(".treat_hed", {
+    y: -100, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.2, // Duration of animation
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: "#hairCareRoutine", // Element that triggers the animation
+        scroller: "body", // Scroll context
+        start: "top 0%", // When to start the animation
+        end: "top 50%", // When animation completes
+        scrub: false, // No scrub, plays once
+        markers: true // Debug markers (remove when done)
+    }
+});
+
 // ScrollTrigger End
 
 // Blink Animation 
