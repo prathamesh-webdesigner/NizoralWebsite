@@ -78,10 +78,12 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
     position: relative;
     overflow: hidden;
     padding-top: 180px;
@@ -196,10 +198,12 @@ header {
 
 .yourScalps {
     overflow: hidden;
-    background: linear-gradient(295deg,
-            rgba(35, 126, 222, 1) 0%,
-            rgb(35 126 222 / 36%) 29%,
-            rgba(35, 126, 222, 1) 100%);
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
 
     .bestfriend {
         position: absolute;
@@ -440,11 +444,13 @@ header {
     .scientificallyBackedImage {
         padding: 0;
         position: absolute;
-        top: 45%;
+        top: 32%;
+        left: 10%;
 
         img {
-            width: 90%;
+            width: 80%;
             height: auto;
+            margin-top: -20px;
         }
     }
 }
@@ -483,12 +489,16 @@ header {
                 color: #fff;
                 letter-spacing: 1px;
             }
-
-            p {
-                font-size: 1.5rem;
-                width: 42%;
-                margin-left: auto;
+            div{
+                width: 92%;
+                p {
+                    font-size: 1.5rem;
+                    width: 37%;
+                    margin-left: auto;
+                }
             }
+
+            
         }
     }
 
@@ -549,11 +559,11 @@ header {
         top: 0;
 
         img {
-            width: 80%;
+            width: 90%;
             height: auto;
             position: absolute;
             right: -20%;
-            top: 50px;
+            top: 20px;
         }
     }
 }
@@ -1449,6 +1459,8 @@ header {
         position: relative;
         width: 80%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
 
         h2 {
             font-size: 19vw;
@@ -1465,6 +1477,7 @@ header {
             color: $black_font;
             width: 36%;
             margin-left: 6rem;
+            @include gsap_animation;
         }
 
         .shampoo_drop {
@@ -1517,6 +1530,7 @@ header {
                 font-size: 1.2rem;
                 width: 45%;
                 line-height: 1.2;
+                @include gsap_animation;
             }
 
             .blue-drop {
@@ -1541,7 +1555,7 @@ header {
     .restore_text {
         margin-top: -14rem;
 
-        .daily_care_text {
+        .restore_para {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -1551,6 +1565,7 @@ header {
                 font-size: 1.2rem;
                 width: 60%;
                 line-height: 1.2;
+                @include gsap_animation;
             }
 
             img {

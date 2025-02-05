@@ -24,6 +24,7 @@ $('.homeSlider').owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 5000,
+    autoplayHoverPause:true,
     navText: [
         '<img src="image/prev-thin.png" alt="Previous" style="width:40px;">',
         '<img src="image/next-thin.png" alt="Next" style="width:40px;">'
@@ -48,6 +49,7 @@ $('.nizoral-product').owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 3000,
+    autoplayHoverPause:true,
     navText: [
         '<img src="image/prev.png" alt="Previous" style="width:40px;">',
         '<img src="image/next.png" alt="Next" style="width:40px;">'
@@ -110,12 +112,13 @@ $('.nizoral-product').owlCarousel({
 gsap.to(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching, .bannerBoy img", {
     filter: "blur(0px)",  // Removes blur gradually
     clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
-    duration: 1.5,
+    duration: 2,
     delay: 1.5,
     filter: "blur(0px)",
     opacity: 1,
     ease: "power2.out"
 });
+
 
 gsap.to(".bannerBoy img", {
     x: -50,
@@ -140,7 +143,7 @@ gsap.to(".theNezroralDiffrenceParent h2", {
     filter: "blur(0px)",  // Removes blur gradually
     clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
     duration: 1.5,
-    delay: 1.5,
+    delay: 0.5,
     filter: "blur(0px)",
     opacity: 1,
     ease: "power2.out",
@@ -224,9 +227,16 @@ gsap.from(".round_icon_area, .round_icon_area_for_clinically_proven, .fast_relie
 })
 gsap.to(".allAboutDandruffImage img", {
     top: "-15%",
-    duration: 2,
-    delay: 1,
-    scrollTrigger: ".allAboutDandruffParent"
+    duration: 1.5,
+    delay: 0,
+    scrollTrigger: {
+        trigger: ".allAboutDandruffParent",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
 })
 gsap.to(".hairCareRoutineHeading h2", {
     filter: "blur(0px)",  // Removes blur gradually
@@ -242,18 +252,172 @@ gsap.to(".hairCareRoutineHeading h2", {
 gsap.from(".treat_hed", {
     y: -100, // Moves text up before revealing
     opacity: 0, // Starts with invisible text
-    duration: 1.2, // Duration of animation
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: ".treat_parent"
+});
+gsap.from(".shampoo_drop", {
+    x: -200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: ".treat_parent"
+});
+gsap.from(".treat_shampoo_image", {
+    x: 200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: ".treat_parent"
+});
+gsap.to(".treat_text p", {
+    filter: "blur(0px)",  // Removes blur gradually
+    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    duration: 1.5,
+    delay: 0.5,
+    filter: "blur(0px)",
+    opacity: 1,
+    ease: "power2.out",
+    scrollTrigger: ".treat_parent"
+});
+// Prevent 
+gsap.from(".prevent_area h2", {
+    y: -100, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
     ease: "power2.out", // Smooth easing effect
     scrollTrigger: {
-        trigger: "#hairCareRoutine", // Element that triggers the animation
-        scroller: "body", // Scroll context
-        start: "top 0%", // When to start the animation
-        end: "top 50%", // When animation completes
-        scrub: false, // No scrub, plays once
-        markers: true // Debug markers (remove when done)
+        trigger: ".prevent",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
     }
 });
-
+gsap.from(".daily_care_product", {
+    x: -200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: ".prevent",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+gsap.from(".blue-drop", {
+    x: 200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: ".prevent",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+gsap.to(".daily_care_text p", {
+    filter: "blur(0px)",  // Removes blur gradually
+    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    duration: 1.5,
+    delay: 0.5,
+    filter: "blur(0px)",
+    opacity: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".prevent",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+// Restore
+gsap.from(".restore_area h2", {
+    y: -100, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: ".restore",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+gsap.from(".restore_product", {
+    x: 200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: ".restore",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+gsap.from(".restore-drop", {
+    x: -200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: {
+        trigger: ".restore",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+gsap.to(".restore_para p", {
+    filter: "blur(0px)",  // Removes blur gradually
+    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    duration: 1.5,
+    delay: 0.5,
+    filter: "blur(0px)",
+    opacity: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".restore",
+        scroller: "body",
+        start: "top 50",
+        end: "top 50%",
+        scrub: false,
+        markers: false,
+    }
+});
+// Expert Advice 
+gsap.from(".expret_advice_wrapper", {
+    y: 200, // Moves text up before revealing
+    opacity: 0, // Starts with invisible text
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out", // Smooth easing effect
+    scrollTrigger: ".expret_advice"
+});
 // ScrollTrigger End
 
 // Blink Animation 

@@ -364,7 +364,7 @@
                 <p>Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
                 <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
                 <div class="treat_image">
-                    <img src="image/shampoo/top-img.png" alt="Shampoo">
+                    <img src="image/shampoo/top-img.png" alt="Shampoo" class="treat_shampoo_image">
                 </div>
             </div>
 
@@ -404,12 +404,12 @@
     <div class="container">
         <div class="row restore_text">
             <div class="d-flex align-items-md-end">
-                <div class="daily_care_text">
+                <div class="restore_para">
                     <p>Rebalance and soothe your scalp with Nizoral® Scalp Tonic, leaving it refreshed and moisturized.</p>
-                    <img src="image/sky_blue_drop.webp" class="blue-drop" alt="Daily-care">
+                    <img src="image/sky_blue_drop.webp" class="restore-drop" alt="Daily-care">
                 </div>
                 <div class="daily_care_img">
-                    <img src="image/scap-tonic-slider.webp" class="daily_care_product" alt="Daily-care">
+                    <img src="image/scap-tonic-slider.webp" class="restore_product" alt="Daily-care">
                 </div>
             </div>
 
@@ -417,7 +417,7 @@
     </div>
 </section>
 <section class="expret_advice scrollSection">
-    <div class="container">
+    <div class="container expret_advice_wrapper">
         <div class="row">
             <div class="expret_advice_text">
                 <h2>EXPERT ADVICE</h2>
@@ -479,7 +479,7 @@
         if ($(window).width() > 1024) { // Enable Scrollify only on larger screens
             $.scrollify({
                 section: ".scrollSection",
-                scrollSpeed: 100,
+                scrollSpeed: 800,
                 // scrollbars: false,
             });
 
