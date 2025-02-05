@@ -1218,6 +1218,7 @@ header .buyNow button {
   font-family: "helveticaMedium", sans-serif;
   color: #152b59;
   background-color: #3db2d8;
+  height: auto !important;
 }
 .expret_advice .expret_advice_text h2 {
   font-size: 12vw;

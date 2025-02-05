@@ -1088,6 +1088,7 @@ header {
     font-family: $font_family;
     color: $blue_font;
     background-color: $lightBlue;
+    height: auto !important;
 
     .expret_advice_text {
         h2 {

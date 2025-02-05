@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nizoral</title>
-    <link rel="stylesheet" href="css/style.css?v=7">
-    <link rel="stylesheet" href="css/media.css?v=7">
+    <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/media.css?v=8">
     <link rel="stylesheet" href="css/inner-pages.css">
     <!-- owl carousel  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
