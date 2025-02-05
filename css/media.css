@@ -14,7 +14,7 @@
   .stubborn_dandruff_parent .stubborn-dandruff-part .content_area p,
   .white_para .white_para_wraper, .scientificallyBacked .scientificallyBackedImage img,
   .fastLongLastingParent .fastLongLastingImage img, .hairCareRoutine .hairCareRoutineHeading h2,
-  .restore .restore_text .daily_care_img img {
+  .restore .restore_text .daily_care_img img, .fastLongLastingParent .fastLongLasting .fastLongLastingText div p, .restore .restore_text .restore_para p {
     width: 100%;
   }
 
@@ -442,4 +442,9 @@
   .banner .bannerTextArea {
     gap: 5px;
   }
+  .restore .restore_text .restore_para img {
+    width: 62%;
+    margin: 0 auto;
+    margin-left: 0;
+}
 }
