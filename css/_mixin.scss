@@ -188,7 +188,6 @@
 
 @mixin gsap_animation {
     display: inline-block;
-    filter: blur(3px);
-    opacity: 1;
-    clip-path: inset(0 100% 0 0);
+    // filter: blur(0px);
+    // clip-path: inset(0 0% 0 0);
 }
