@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nizoral</title>
-    <link rel="stylesheet" href="css/style.css?v=9">
-    <link rel="stylesheet" href="css/media.css?v=9">
-    <link rel="stylesheet" href="css/inner-pages.css">
     <!-- owl carousel  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -19,6 +16,10 @@
     <!-- owl carousel  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="css/style.css?v=9">
+    <link rel="stylesheet" href="css/media.css?v=9">
+    <link rel="stylesheet" href="css/inner-pages.css">
 
     <!-- <style>
         html,
@@ -72,14 +73,14 @@
                             <a class="nav-link sprinkles" href="nizoral-range.php">Nizoral Range</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sprinkles" href="scalp-hair-hub.html">Scalp & Hair Hub</a>
+                            <a class="nav-link sprinkles" href="scalp-hair-hub.php">Scalp & Hair Hub</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sprinkles" href="#">Get to Know Your Scalp</a>
+                            <a class="nav-link sprinkles" href="scalp-quiz-1.php">Get to Know Your Scalp</a>
                         </li>
                     </ul>
                     <div class="buyNow">
-                        <button class="sprinkles">BUY NOW</button>
+                        <button class="sprinkles"><a href="buy-online.php" class="text-blue text-decoration-none">BUY NOW</a></button>
                     </div>
                 </div>
             </div>
