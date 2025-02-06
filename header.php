@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nizoral</title>
-    <link rel="stylesheet" href="css/style.css?v=9">
-    <link rel="stylesheet" href="css/media.css?v=9">
-    <link rel="stylesheet" href="css/inner-pages.css">
     <!-- owl carousel  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -19,6 +16,10 @@
     <!-- owl carousel  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="css/style.css?v=9">
+    <link rel="stylesheet" href="css/media.css?v=9">
+    <link rel="stylesheet" href="css/inner-pages.css">
 
     <!-- <style>
         html,
