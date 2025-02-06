@@ -9,9 +9,9 @@
                 <ul>
                     <li><a href="dandruff-education.php">Dandruff Education</a></li>
                     <li><a href="nizoral-range.php">Nizoral Range</a></li>
-                    <li><a href="#">Scalp & Hair Hub</a></li>
-                    <li><a href="#">Scalp Quiz</a></li>
-                    <li><a href="#">Where to Buy</a></li>
+                    <li><a href="scalp-hair-hub.php">Scalp & Hair Hub</a></li>
+                    <li><a href="scalp-quiz-1.php">Scalp Quiz</a></li>
+                    <li><a href="buy-online.php">Where to Buy</a></li>
                 </ul>
             </div>
             <div class="col-md-3 col-6">

@@ -73,14 +73,14 @@
                             <a class="nav-link sprinkles" href="nizoral-range.php">Nizoral Range</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sprinkles" href="scalp-hair-hub.html">Scalp & Hair Hub</a>
+                            <a class="nav-link sprinkles" href="scalp-hair-hub.php">Scalp & Hair Hub</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sprinkles" href="#">Get to Know Your Scalp</a>
+                            <a class="nav-link sprinkles" href="scalp-quiz-1.php">Get to Know Your Scalp</a>
                         </li>
                     </ul>
                     <div class="buyNow">
-                        <button class="sprinkles">BUY NOW</button>
+                        <button class="sprinkles"><a href="buy-online.php" class="text-blue text-decoration-none">BUY NOW</a></button>
                     </div>
                 </div>
             </div>
