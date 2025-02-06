@@ -78,55 +78,128 @@ function initBanner() {
         }
     });		
     tl_banner
-        .fromTo(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching, .bannerBoy img",
+        
+        .fromTo(".blink_text span", { opacity: 0.6,}, { opacity: 0, duration: 0.5, stagger: { each: 0.05, from: "random" }, ease: "power2.out", repeat: 2})
+        .to(".blink_text span", { opacity: 0, stagger: { each: 0.05, from: "random" }, duration: 0.3})
+
+        .fromTo(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching",
             {
                 opacity: 0,
                 filter: "blur(3px)",
                 clipPath: "inset(0 100% 0 0)", 
+                y: 50
             } ,
             {
-                filter: "blur(0px)",  // Removes blur gradually
-                clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
-                duration: 2,
                 opacity: 1,
-                ease: "power2.out"
+                filter: "blur(0px)",  
+                clipPath: "inset(0 0% 0 0)",
+                y: 0,
+                duration: 1,
+                stagger: { each: 0.3, },
+                ease: "power2.out",
+            },
+            'bannerText'
+        )
+        .from(".bannerBoy img", { opacity: 0, duration: 0.8, x: "100%", ease: "power2.out"}, 'bannerText')
+        .to(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching",
+            
+            {
+                opacity: 0,
+                filter: "blur(0px)",  
+                clipPath: "inset(0 0% 0 0)",
+                y: '-300',
+                duration: 1,
+                delay: 2,
+                stagger: { each: 0.2, },
+                ease: "power2.out",
             }
         )
+        .to(".bannerBoy img", { opacity: 0, duration: 1, x: "100%", ease: "power2.out", onComplete: function(){
+                document.querySelector("header").classList.add("header-collapsed");
+            }
+        }, '-=0.5')
+    ;
+        // Your scalp animation
+    tl_banner
+        .fromTo(".bestfriend h2, .bestfriend h3", 
+            {
+                opacity: 0,
+                filter: "blur(3px)",
+                clipPath: "inset(0 100% 0 0)", 
+                y: '50vh'
+            } ,
+            {
+                opacity: 1,
+                filter: "blur(0px)",  
+                clipPath: "inset(0 0% 0 0)",
+                y: 0,
+                duration: 1,
+                stagger: { each: 0.3, },
+                ease: "power2.out",
+            }
+        )
+        // Shampoo
+        .from(".shampoo_image", {
+            y: "100%",
+            x: "80%",
+            opacity: 0,
+            duration: 1,
+        }, 'yourScalp')
+
+        .from(".sayGoodbyeParent .section-bg", {
+            // y:"100%",
+            clipPath: "inset(100% 0 0 0)",
+            duration: 0.4,
+        }, 'yourScalp+=1')
+        
+        // Shampoo end
+        // Daily Care
+        .from(".gentleEnoughImage", {
+            y: "100%",
+            opacity: 0,
+            duration: 1,
+        }, 'yourScalp')
+        .from(".gentleEnoughParent .section-bg", {
+            clipPath: "inset(100% 0 0 0)",
+            duration: 0.4,
+        }, 'yourScalp+=1')
+        
+        // Daily care end
+        // Care
+        .from(".hydrateImage", {
+            y: "100%",
+            x: "-80%",
+            opacity: 0,
+            duration: 1,
+        }, 'yourScalp')
+        .from(".hydrateParent .section-bg", {
+            clipPath: "inset(100% 0 0 0)",
+            duration: 0.4,
+        }, 'yourScalp+=1')
+        
+        // Care end
+        // Round Feature 
+        .from(".round_featureParent", {
+            scale: 0,
+           
+            duration: 1,
+        })
+        // Round Feature End
+        .from(".yourScalpsBottomParent", {
+            clipPath: "inset(70% 0 0 0)",
+            opacity: 0,
+            y: 0,
+            duration: 1,
+        })
     ;
         	
     
 }
 initBanner();
 /* 
-gsap.to(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching, .bannerBoy img", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
-    duration: 2,
-    delay: 1.5,
-    filter: "blur(0px)",
-    opacity: 1,
-    ease: "power2.out"
-});
 
 
-gsap.to(".bannerBoy img", {
-    x: -50,
-    duration: 1,
-    delay: 1.4,
-    opacity: 1,
-    ease: "power2.out"
-});
 
-gsap.to(".bestfriend h2, .bestfriend h3", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
-    duration: 1.5,
-    delay: 1.5,
-    filter: "blur(0px)",
-    opacity: 1,
-    ease: "power2.out",
-    scrollTrigger: ".bestfriend"
-});
 
 
 // ScrollTrigger 
@@ -407,10 +480,10 @@ gsap.from(".expret_advice_wrapper", {
 
 // Blink Animation 
 // Remove the blinking element after 2 seconds
-setTimeout(() => {
-    const blinkText = document.getElementById('blinkText');
-    blinkText.style.display = 'none';
-}, 1000);
+// setTimeout(() => {
+//     const blinkText = document.getElementById('blinkText');
+//     blinkText.style.display = 'none';
+// }, 1000);
 
 
 

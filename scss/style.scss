@@ -1,0 +1,1970 @@
+@import "mixin";
+
+@font-face {
+    font-family: helveticaMedium;
+    src: url(../font/HelveticaNeue-Medium.woff);
+}
+
+$yellow_header: #ffcc00;
+$blue_font: #152b59;
+$black_font: #212427;
+$skyBlue: #207cde;
+$lightGreen: #5dafae;
+$lightBlue: #3db2d8;
+$font_family: "helveticaMedium", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font_family;
+    color: $black_font;
+    overflow-x: hidden;
+}
+
+.container-custom {
+    max-width: 90%;
+    /* Adjust this percentage as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: $yellow_header;
+    padding-bottom: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: clamp(9.625rem, 11.875vw + 0.125rem, 14.375rem);
+    transition: transform 0.3s ease-in-out;
+
+    /* Lower priority */
+    .navbar-nav {
+        font-family: $font_family;
+
+        li {
+            background-color: $yellow_header;
+
+            a {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 80%;
+        }
+    }
+
+    .buyNow {
+        button {
+            font-family: $font_family;
+            background-color: $yellow_header;
+            border: 2px solid $black_font;
+            font-size: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 30px;
+        }
+    }
+
+    &.header-collapsed { background-color: transparent; z-index: 100;
+        .navbar-nav, .buyNow {
+            display: none !important; // Hide the navigation links and Buy Now button
+        }
+    
+        .navbar-toggler {
+            display: block !important; // Ensure the hamburger menu is visible
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: $skyBlue;
+    background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    padding-top: 180px;
+
+    .bannerTextArea {
+        color: $blue_font;
+        font-family: $font_family;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 3.3rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: 5px;
+            margin-bottom: 0;
+            @include gsap_animation;
+        }
+
+        h1 {
+            overflow: hidden;
+            font-size: 12vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            @include gsap_animation;
+        }
+
+        h2 {
+            margin-top: -1rem;
+            font-size: 3.3rem;
+            font-weight: 700;
+            line-height: 1;
+            @include gsap_animation;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: 40%;
+            display: inline-block;
+            @include gsap_animation;
+        }
+    }
+
+    .bannerBoy {
+        width: 100%;
+
+        img {
+            width: 75%;
+            position: absolute;
+            bottom: -16rem;
+            right: -140px;
+            z-index: 9;
+            // opacity: 0;
+        }
+    }
+
+    .blinkArea {
+        width: 100%;
+
+        .blink_text {
+            font-family: $font_family;
+            font-size: 5rem;
+            color: #fff;
+            font-weight: 600;
+            opacity: 0.4;
+
+            span:nth-child(1) {
+                position: absolute;
+                top: 10%;
+            }
+
+            span:nth-child(2) {
+                position: absolute;
+                bottom: 10%;
+            }
+
+            span:nth-child(3) {
+                position: absolute;
+                right: 10%;
+                top: 10%;
+            }
+
+            span:nth-child(4) {
+                position: absolute;
+                right: 20%;
+                bottom: 10%;
+            }
+
+            span:nth-child(5) {
+                position: absolute;
+                right: 42%;
+                bottom: 30%;
+            }
+
+            span:nth-child(6) {
+                position: absolute;
+                right: 10%;
+                bottom: 50%;
+            }
+
+            span:nth-child(7) {
+                position: absolute;
+                left: 20%;
+                bottom: 50%;
+            }
+        }
+    }
+}
+
+.yourScalps {
+    overflow: hidden; left: 0; top: 0; min-height: 100%; width: 100%;
+    /* background: linear-gradient(
+        295deg,
+        rgba(35, 126, 222, 1) 0%,
+        rgb(35 126 222 / 36%) 29%,
+        rgba(35, 126, 222, 1) 100%
+    ); */
+
+    .bestfriend {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40px;
+        margin-inline: auto;
+        width: fit-content;
+        color: #fff;
+        font-family: $font_family;
+        text-align: center;
+        z-index: 2;
+
+        h2 {
+            font-size: 4.5vw;
+            display: inline-block;
+            @include gsap_animation;
+        }
+
+        h3 {
+            margin-top: -2rem;
+            font-size: 12vw;
+            font-weight: bold;
+            @include gsap_animation;
+        }
+    }
+
+    .sayGoodbyeParent {
+        @include yourScalps(transparent); position: relative;
+        .section-bg{ background-color: $yellow_header; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        .sayGoodbye {
+            height: 100%; z-index: 5;
+
+            .round_featureParent {
+                @include round_featureParent(46%, 65%);
+
+                .round_feature_sub {
+                    @include round_feature_sub;
+
+                    .icon_area {
+                        @include icon_area;
+
+                        img {
+                            width: 60px;
+                        }
+                    }
+
+                    .text_area {
+                        @include text_area(#f6eab9);
+
+                        p {
+                            @include textAreaP(70%);
+                        }
+                    }
+                }
+            }
+
+            .shampoo_image {
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+                transform: rotate(346deg);
+                z-index: 9;
+                position: relative;
+                bottom: -70px;
+            }
+        }
+    }
+
+    .gentleEnoughParent {
+        @include yourScalps(transparent);
+        justify-content: center; position: relative;
+        .section-bg{ background-color: $skyBlue; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        .gentleEnough {
+            height: 100%;
+            display: flex;
+            align-items: end;
+            margin: 0;
+
+            .round_featureParent {
+                @include round_featureParent(36%, 12%);
+
+                .round_feature_sub {
+                    @include round_feature_sub;
+
+                    .icon_area {
+                        @include icon_area;
+
+                        img {
+                            width: 60px;
+                        }
+                    }
+
+                    .text_area {
+                        @include text_area(#9fcbf9);
+
+                        p {
+                            @include textAreaP(65%);
+                        }
+                    }
+                }
+            }
+
+            .gentleEnoughImage {
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+                z-index: 9;
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    .hydrateParent {
+        @include yourScalps(transparent);
+        justify-content: end;
+        .section-bg{ background-color: $lightGreen; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        .hydrate {
+            height: 100%;
+            display: flex;
+            justify-content: right;
+
+            .round_featureParent {
+                @include round_featureParent(46%, 12%);
+
+                .round_feature_sub {
+                    @include round_feature_sub;
+
+                    .icon_area {
+                        @include icon_area;
+
+                        img {
+                            width: 60px;
+                        }
+                    }
+
+                    .text_area {
+                        @include text_area(#b8eded);
+
+                        p {
+                            @include textAreaP(65%);
+                        }
+                    }
+                }
+            }
+
+            .hydrateImage {
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+                transform: rotate(15deg);
+                z-index: 9;
+                position: relative;
+                bottom: -70px;
+            }
+        }
+    }
+
+    .yourScalpsBottomParent {
+        // margin-top: -8rem;
+        position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10;
+        .yourScalpsBottom {
+            background-color: $yellow_header;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9;
+            box-shadow: #00000040 -1px -1px 20px 0px;
+
+            p {
+                font-size: 1.7rem;
+                font-weight: 500;
+                font-family: $font_family;
+            }
+
+            button {
+                background-color: $yellow_header;
+                border: 2px solid #fff;
+                padding: 8px 25px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $black_font;
+            }
+        }
+    }
+}
+
+.theNezroralDiffrenceParent {
+    font-family: $font_family;
+
+    h2 {
+        @include theNezroralDiffrenceParent_h2;
+        @include gsap_animation;
+    }
+}
+
+.scientificallyBacked {
+    // height: 100vh;
+    overflow: hidden;
+
+    .scientificallyBackedYellow {
+        font-family: $font_family;
+        background-color: $yellow_header;
+        width: 90%;
+        height: 100vh;
+        overflow: hidden;
+
+        .scientificText {
+            margin-top: 3rem;
+
+            h3 {
+                color: #fff;
+                font-size: 3.4rem;
+                line-height: 1;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 14vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -5px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 40%;
+            }
+        }
+    }
+
+    .scientificallyBackedImage {
+        padding: 0;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+
+        img {
+            width: 80%;
+            height: auto;
+            margin-top: -20px;
+        }
+    }
+}
+
+.fastLongLastingParent {
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -4rem;
+    background-color: $lightGreen;
+
+    .fastLongLasting {
+        font-family: $font_family;
+        width: 90%;
+        height: 100vh;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: 0;
+
+        .fastLongLastingText {
+            margin-top: 4rem;
+
+            h3 {
+                color: #fff;
+                font-size: 3.4rem;
+                line-height: 1;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 20vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -14px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+            div{
+                width: 92%;
+                p {
+                    font-size: 1.5rem;
+                    width: 37%;
+                    margin-left: auto;
+                }
+            }
+
+            
+        }
+    }
+
+    .fastLongLastingImage {
+        padding: 0;
+        position: absolute;
+        top: 32%;
+
+        img {
+            width: 60%;
+            height: 100%;
+            transform: scaleX(-1);
+        }
+    }
+}
+
+.toughOnDandruffButNotOn {
+    height: 100vh;
+    overflow: hidden;
+
+    .toughOnDandruffButNotOnYellow {
+        font-family: $font_family;
+        background-color: $yellow_header;
+        width: 90%;
+        height: 100vh;
+        overflow: hidden;
+        color: $blue_font;
+
+        .toughOnDandruffButNotOnText {
+            margin-top: 4rem;
+
+            h3 {
+                font-size: 3.4rem;
+                line-height: 1;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 17vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -5px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 35%;
+            }
+        }
+    }
+
+    .toughOnDandruffButNotOnImage {
+        padding: 0;
+        position: absolute;
+        top: 0;
+
+        img {
+            width: 90%;
+            height: auto;
+            position: absolute;
+            right: -20%;
+            top: 20px;
+        }
+    }
+}
+
+.product_carousel {
+    background-color: $yellow_header;
+    width: 100%;
+    height: 100vh;
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .slider_first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .slider_first_column_one {
+            color: $blue_font;
+        }
+
+        .round_icon_area {
+            @include round_icon_area(auto);
+            margin-right: -20px;
+        }
+
+        .round_icon_area_for_clinically_proven {
+            @include round_icon_area(auto);
+        }
+
+        .fast_relief_round_icon_area {
+            @include round_icon_area(-20px);
+        }
+
+        .triple_action_round_icon_area {
+            @include round_icon_area(0);
+        }
+
+        .first_text_area {
+            h2 {
+                font-size: 2rem;
+                line-height: 1;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.3rem;
+                width: 90%;
+            }
+        }
+
+        .product_image_area {
+            width: 70%;
+
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .discover {
+        button {
+            background-color: $blue_font;
+            padding: 10px 25px;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 1.3rem;
+            margin-top: 30px;
+        }
+    }
+}
+
+.allAboutDandruffParent {
+    background-color: $lightGreen;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .allAboutDandruff {
+        h3 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 15vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -12px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 9;
+        }
+
+        p {
+            font-size: 1.5rem;
+            width: 30%;
+            line-height: 1.3;
+        }
+
+        button {
+            background-color: $blue_font;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .allAboutDandruffImage {
+        img {
+            width: 65%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------Dandruff Education------------------------------------------------------
+.banner_dandruff_education {
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    padding-top: 180px;
+    display: flex;
+    align-items: center;
+
+    .bannerTextArea {
+        h1 {
+            font-size: 12vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+
+    .banner_dandruff_educationBoy {
+        width: 100%;
+
+        img {
+            width: 50%;
+            position: absolute;
+            bottom: -123px;
+            right: -11rem;
+            z-index: 9;
+        }
+    }
+}
+
+.which_environmental_factors {
+    .environmentalFactorsParent {
+        color: $blue_font;
+        width: 90%;
+        font-family: $font_family;
+
+        h2 {
+            font-size: 2rem;
+            width: 63%;
+        }
+
+        // p {
+        //     font-size: 1.5rem;
+        //     line-height: 1;
+        //     letter-spacing: 1px;
+        // }
+    }
+}
+
+.environmentalFactors {
+    overflow: hidden;
+    font-family: $font_family;
+
+    .externalInfluencesYellow {
+        background-color: $yellow_header;
+        height: 100vh;
+        overflow: hidden;
+
+        .externalInfluencesText {
+            color: $blue_font;
+
+            h3 {
+                font-size: 2rem;
+                line-height: 1;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 8vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                margin-left: -5px;
+                letter-spacing: 1px;
+            }
+
+            .light_yellow_area {
+                background-color: #ffe066;
+                padding: 20px;
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .externalInfluencesImage {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.avoid-irritating-the-scalp {
+    width: 100%;
+    height: 100vh;
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    color: $blue_font;
+
+    .text_area {
+        width: 68%;
+        text-align: center;
+        margin: 0 auto;
+
+        p {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.air_pollution {
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+
+    .col-md-4 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: auto;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            font-size: 8vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -5px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.extream_weather {
+    @include air_pollution;
+}
+
+.Dry-air {
+    @include air_pollution;
+}
+
+.hat-scarf {
+    @include air_pollution;
+}
+
+.styling-products {
+    @include air_pollution;
+}
+
+// ---------------------------------------------Dandruff Education End------------------------------------------------------
+
+// ---------------------------------------------Nizoral Range------------------------------------------------------
+.range_discover {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .rangeTextArea {
+        color: $blue_font;
+
+        h1 {
+            @include bannerh1;
+        }
+
+        h2 {
+            @include bannerh2;
+        }
+
+        p {
+            @include bannerP;
+            width: 35%;
+        }
+    }
+
+    .range_drops {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        right: 20px;
+        bottom: 60px;
+
+        img {
+            width: 18%;
+        }
+    }
+}
+
+.white_part_nizoraal_range {
+    @include white_part_nizoraal_range;
+    padding-bottom: 5rem;
+
+    .nizoral_medical_shampoo {
+        @include nizoral_medical_shampoo;
+
+        .shampooImage {
+            @include shampooImage;
+        }
+
+        .range_text {
+            @include range_text($yellow_header);
+
+            h2 {
+                @include bannerh2;
+            }
+        }
+    }
+
+    .whereToBuy {
+        button {
+            font-family: $font_family;
+            background-color: #152b59;
+            padding: 4px 15px;
+            color: #fff;
+            outline: none;
+            border: none;
+            width: 15%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.scintific_baked_formula {
+    .baked_text {
+        color: $blue_font;
+        font-family: $font_family;
+
+        h3 {
+            font-size: 3vw;
+            font-weight: normal;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 6vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: normal;
+            width: 75%;
+        }
+    }
+
+    .scintific_image {
+        background-color: $lightGreen;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.say_good_bye_to_dandruff_itching {
+    font-family: $font_family;
+    color: $blue_font;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: $yellow_header;
+
+    .heading {
+        @include say_good_bye_to_dandruff_itching_Heading(50%);
+
+        h2 {
+            @include say_good_bye_Heding_h2(6vw);
+
+            span {
+                font-size: 3vw;
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+
+        h3 {
+            font-size: 3vw;
+            font-weight: normal;
+            line-height: 1;
+        }
+    }
+
+    .img_timeline {
+        margin-top: 5rem;
+
+        .shampoo {
+            text-align: center;
+
+            img {
+                width: 60%;
+                margin-bottom: 2rem;
+                z-index: 9;
+                position: relative;
+            }
+
+            h2 {
+                font-size: 2.5vw;
+                font-weight: 600;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 1.2rem;
+            }
+        }
+
+        .timeline-parent {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 9;
+            top: -60px;
+
+            .one,
+            .two,
+            .three {
+                color: #fff;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                font-size: 3rem;
+            }
+
+            .line {
+                border-top: 2px solid #fff;
+                flex-grow: 1;
+                height: 0;
+            }
+        }
+    }
+}
+
+.expret_advice {
+    padding: 5rem 0;
+    font-family: $font_family;
+    color: $blue_font;
+    background-color: $lightBlue;
+    height: auto !important;
+
+    .expret_advice_text {
+        h2 {
+            font-size: 12vw;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        h3 {
+            font-size: 3vw;
+            font-weight: 600;
+        }
+    }
+
+    .dandruff_vs_scalp {
+        .dandruff_vs_scalp_area {
+            display: flex;
+
+            img {
+                width: 30%;
+            }
+
+            .text_area {
+                width: 40%;
+                margin-left: 2rem;
+
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                a {
+                    color: $blue_font;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// ---------------------------------------------Nizoral Range End------------------------------------------------------
+// ---------------------------------------------Shampoo------------------------------------------------------
+.banner-shampoo {
+    background-color: $yellow_header;
+    height: 100%;
+    font-family: $font_family;
+    padding-top: 180px;
+    color: $blue_font;
+
+    .shampoo_img {
+        img {
+            width: 90%;
+        }
+    }
+
+    .shampoo_text {
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        h2 {
+            line-height: 1;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .four_lists {
+            .iconFirst {
+                img {
+                    width: 100%;
+                    padding-right: 10px;
+                }
+            }
+
+            .shampoo_banner_points {
+                width: 90%;
+            }
+        }
+    }
+
+    button {
+        background-color: $blue_font;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        width: 20%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+}
+
+.stubborn_dandruff_parent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .stubborn-dandruff-part {
+        width: 100%;
+        height: 80vh;
+
+        .content_area {
+            font-family: $font_family;
+            color: $blue_font;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10rem;
+
+            span {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            h2 {
+                font-size: 12vw;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: normal;
+                width: 55%;
+            }
+        }
+
+        .stubborn_dandruff_image {
+            img {
+                width: 50%;
+                position: absolute;
+                right: -170px;
+                top: 0;
+                z-index: 9;
+            }
+        }
+    }
+
+    .tenX {
+        .tenX_yellow {
+            font-family: $font_family;
+            background-color: $yellow_header;
+            width: 90%;
+            height: 80vh;
+            z-index: 9;
+            margin-left: 10rem;
+            color: $blue_font;
+            display: flex;
+            align-items: center;
+
+            .tenX_content_area {
+                width: 50%;
+                margin-left: auto;
+
+                h2 {
+                    font-size: 12vw;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+
+                h3 {
+                    font-size: 3rem;
+                    font-weight: 600;
+                    line-height: 1;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .tenX_DNA_img {
+            position: absolute;
+            z-index: 9;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.say_good_bye_to_dandruff_itching {
+    .heading {
+        @include say_good_bye_to_dandruff_itching_Heading(60%);
+
+        h2 {
+            @include say_good_bye_Heding_h2(4vw);
+        }
+    }
+}
+
+.white_para {
+    font-family: $font_family;
+    text-align: center;
+    color: $blue_font;
+
+    .white_para_wraper {
+        width: 70%;
+        margin: 0 auto;
+        padding: 6rem 0;
+
+        h2 {
+            font-size: 3.5vw;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.product_facts {
+    font-family: $font_family;
+    color: $blue_font;
+    height: 100%;
+    background-color: $yellow_header;
+    padding: 5rem 0;
+
+    .product_fact_text_wrapper {
+        margin-top: 13rem;
+
+        .product_fact_text {
+            position: absolute;
+            top: 4rem;
+
+            h4 {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 20vw;
+                font-weight: 600;
+                margin-left: -13px;
+                line-height: 0.8;
+            }
+        }
+    }
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .Text_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .indicatong_group {
+            .indication {
+                display: flex;
+                gap: 5px;
+
+                img {
+                    width: 90%;
+                }
+
+                .poits_content {
+                    width: 90%;
+                }
+
+                h2 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        button {
+            background-color: $blue_font;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            width: 40%;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.faqs {
+    font-family: $font_family;
+    color: $blue_font;
+    height: 100%;
+    padding: 5rem 0;
+
+    .faqs_area {
+        h2 {
+            font-size: 12vw;
+            font-weight: 600;
+            margin-left: -10px;
+            line-height: 0.8;
+        }
+    }
+
+    .accordion {
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid $blue_font;
+            outline: none;
+
+            button {
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 0;
+                color: $black_font;
+            }
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+// ---------------------------------------------Shampoo End------------------------------------------------------
+// ---------------------------------------------A complete scalp and haircare routine------------------------------------------------------
+
+.hairCareRoutine {
+    height: auto !important;
+
+    .hairCareRoutineHeading {
+        font-family: $font_family;
+
+        h2 {
+            @include theNezroralDiffrenceParent_h2;
+            width: 45%;
+            margin: 0 auto;
+            @include gsap_animation;
+        }
+    }
+}
+
+// ---------------------------------------------A complete scalp and haircare routine End------------------------------------------------------
+// ---------------------------------------------TREAT------------------------------------------------------
+
+.treat_parent {
+    background-color: $yellow_header;
+    height: 100vh;
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+
+    .treat_text {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 19vw;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -12px;
+            letter-spacing: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $black_font;
+            width: 36%;
+            margin-left: 6rem;
+            @include gsap_animation;
+        }
+
+        .shampoo_drop {
+            width: 26%;
+            margin-left: 6rem;
+        }
+
+        .treat_image {
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+
+            img {
+                width: 92%;
+            }
+        }
+    }
+}
+
+.prevent {
+    background-color: $skyBlue;
+    height: 100vh;
+    font-family: $font_family;
+    color: #fff;
+
+    .prevent_area {
+        h2 {
+            @include prevent_areaH2;
+        }
+    }
+
+    .prevent_text {
+        display: flex;
+        gap: 40px;
+        margin-top: -13rem;
+        margin-left: 8rem;
+
+        .daily_care_img {
+            .daily_care_product {
+                width: 100%;
+            }
+        }
+
+        .daily_care_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            p {
+                font-size: 1.2rem;
+                width: 45%;
+                line-height: 1.2;
+                @include gsap_animation;
+            }
+
+            .blue-drop {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.restore {
+    background-color: $yellow_header;
+    height: 100vh;
+    font-family: $font_family;
+
+    .restore_area {
+        h2 {
+            @include prevent_areaH2;
+            color: #fff;
+        }
+    }
+
+    .restore_text {
+        margin-top: -14rem;
+
+        .restore_para {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            p {
+                font-size: 1.2rem;
+                width: 60%;
+                line-height: 1.2;
+                @include gsap_animation;
+            }
+
+            img {
+                width: 40%;
+                margin: 0 auto;
+                margin-left: 16rem;
+            }
+        }
+
+        .daily_care_img {
+            width: 100%;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+// ---------------------------------------------TREAT END------------------------------------------------------
+
+footer {
+    background-color: $yellow_header;
+    padding: 50px 0;
+    height: auto !important;
+
+    .col-md-3 {
+        font-family: $font_family;
+
+        .stada {
+            filter: brightness(0%);
+            width: 60%;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin: 15px 0;
+
+                a {
+                    color: $black_font;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .social_icon {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                a {
+                    img {
+                        width: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Slider
+.dandruff_education_carousel {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue_font;
+    padding: 8rem 0;
+
+    .text_area_for_slider {
+        font-family: $font_family;
+
+        h2 {
+            font-size: 3vw;
+        }
+
+        h3 {
+            width: 60%;
+            margin: 0 auto;
+            font-size: 1.5vw;
+        }
+    }
+
+    .DE_slider_area {
+        .slider1 {
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    .nizoral-product {
+        .slider-1 {
+            font-family: $font_family;
+            text-align: center;
+
+            img {
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------Animations------------------------------------------------------
+.blink_text span {
+    // animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+//   hover animation
+.sprinkles {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sprinkles:before,
+.sprinkles:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+}
+
+.sprinkles:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, $blue_font 20%, transparent 30%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, $blue_font 15%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%);
+    background-size:
+        10% 10%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        10% 10%,
+        15% 15%,
+        10% 10%,
+        18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+    0% {
+        background-position:
+            5% 90%,
+            10% 90%,
+            10% 90%,
+            15% 90%,
+            25% 90%,
+            25% 90%,
+            40% 90%,
+            55% 90%,
+            70% 90%;
+    }
+
+    50% {
+        background-position:
+            0% 80%,
+            0% 20%,
+            10% 40%,
+            20% 0%,
+            30% 30%,
+            22% 50%,
+            50% 50%,
+            65% 20%,
+            90% 30%;
+    }
+
+    100% {
+        background-position:
+            0% 70%,
+            0% 10%,
+            10% 30%,
+            20% -10%,
+            30% 20%,
+            22% 40%,
+            50% 40%,
+            65% 10%,
+            90% 20%;
+        background-size:
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%;
+    }
+}
+
+.sprinkles:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, $blue_font 15%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%),
+        radial-gradient(circle, $blue_font 20%, transparent 20%);
+    background-size:
+        15% 15%,
+        20% 20%,
+        18% 18%,
+        20% 20%,
+        15% 15%,
+        20% 20%,
+        18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+    0% {
+        background-position:
+            10% -10%,
+            30% 10%,
+            55% -10%,
+            70% -10%,
+            85% -10%,
+            70% -10%,
+            70% 0%;
+    }
+
+    50% {
+        background-position:
+            0% 80%,
+            20% 80%,
+            45% 60%,
+            60% 100%,
+            75% 70%,
+            95% 60%,
+            105% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 90%,
+            20% 90%,
+            45% 70%,
+            60% 110%,
+            75% 80%,
+            95% 70%,
+            110% 10%;
+        background-size:
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%;
+    }
+}
+
+//   hover animation end
+
+.hide-header {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dandruff_education_carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    width: 100%;
+    /* Span the width of the carousel */
+    transform: translateY(-50%);
+    /* Adjust for the top alignment */
+    display: flex;
+    justify-content: space-between;
+    /* Push buttons to the sides */
+    align-items: center;
+}
+
+.dandruff_education_carousel .owl-nav button.owl-prev,
+.dandruff_education_carousel .owl-nav button.owl-next {
+    width: auto;
+    /* Increased button width */
+    height: auto;
+    /* Increased button height */
+}
+
+.dandruff_education_carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -30px;
+    /* Adjust left arrow position */
+}
+
+.dandruff_education_carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -30px;
+    /* Adjust right arrow position */
+}
+
+.dandruff_education_carousel .owl-nav span {
+    font-size: 8rem !important;
+    font-weight: 100;
+    color: $blue_font;
+
+    &:hover {
+        color: $yellow_header;
+    }
+}
+
+.dandruff_education_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent !important;
+}
+
+////////////////////////////
+
+.product_carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    width: 100%;
+    /* Span the width of the carousel */
+    transform: translateY(-50%);
+    /* Adjust for the top alignment */
+    display: flex;
+    justify-content: space-between;
+    /* Push buttons to the sides */
+    align-items: center;
+}
+
+.product_carousel .owl-nav button.owl-prev,
+.product_carousel .owl-nav button.owl-next {
+    width: auto;
+    /* Increased button width */
+    height: auto;
+    /* Increased button height */
+}
+
+.product_carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -30px;
+    /* Adjust left arrow position */
+}
+
+.product_carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -30px;
+    /* Adjust right arrow position */
+}
+
+.product_carousel .owl-nav span {
+    font-size: 8rem !important;
+    font-weight: 100;
+    color: $blue_font;
+}
+
+.product_carousel .owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent !important;
+}
+
+.theNezroralDiffrenceParent_main {
+    height: auto !important;
+}

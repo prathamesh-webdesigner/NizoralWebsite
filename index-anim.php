@@ -26,69 +26,72 @@
             </div>
         </div>
     </div>
-</section>
-<section class="yourScalps position-relative scrollSection">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="bestfriend">
-                <h2>Your Scalp's</h2>
-                <h3>BEST FRIEND</h3>
-            </div>
-            <div class="col-md-4 sayGoodbyeParent">
-                <div class="sayGoodbye">
-                    <img src="image/shampoo.webp" class="shampoo_image" alt="Nizoral Shampoo">
-                    <div class="round_featureParent">
-                        <div class="round_feature_sub">
-                            <div class="icon_area">
-                                <img src="image/hair.png" alt="Hair">
-                            </div>
-                            <div class="text_area">
-                                <p>Say Goodbye to Dandruff Starting Day 1</p>
+    <section class="yourScalps position-absolute">
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="bestfriend">
+                    <h2>Your Scalp's</h2>
+                    <h3>BEST FRIEND</h3>
+                </div>
+                <div class="col-md-4 sayGoodbyeParent">
+                    <div class="sayGoodbye">
+                        <img src="image/shampoo.webp" class="shampoo_image" alt="Nizoral Shampoo">
+                        <div class="round_featureParent">
+                            <div class="round_feature_sub">
+                                <div class="icon_area">
+                                    <img src="image/hair.png" alt="Hair">
+                                </div>
+                                <div class="text_area">
+                                    <p>Say Goodbye to Dandruff Starting Day 1</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="section-bg"></div>
                 </div>
-            </div>
-            <div class="col-md-4 gentleEnoughParent">
-                <div class="gentleEnough">
-                    <img src="image/DailyCare.webp" class="gentleEnoughImage" alt="Nizoral Daily Care">
-                    <div class="round_featureParent">
-                        <div class="round_feature_sub">
-                            <div class="icon_area">
-                                <img src="image/washing.png" alt="Hair">
-                            </div>
-                            <div class="text_area">
-                                <p>Gentle Enough for Every Day. Powerful Enough for Results.</p>
+                <div class="col-md-4 gentleEnoughParent">
+                    <div class="gentleEnough">
+                        <img src="image/DailyCare.webp" class="gentleEnoughImage" alt="Nizoral Daily Care">
+                        <div class="round_featureParent">
+                            <div class="round_feature_sub">
+                                <div class="icon_area">
+                                    <img src="image/washing.png" alt="Hair">
+                                </div>
+                                <div class="text_area">
+                                    <p>Gentle Enough for Every Day. Powerful Enough for Results.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="section-bg"></div>
                 </div>
-            </div>
-            <div class="col-md-4 hydrateParent">
-                <div class="hydrate">
-                    <img src="image/care.webp" class="hydrateImage" alt="Nizoral Care">
-                    <div class="round_featureParent">
-                        <div class="round_feature_sub">
-                            <div class="icon_area">
-                                <img src="image/hydrating.png" alt="Hair">
-                            </div>
-                            <div class="text_area">
-                                <p>Hydrate, Restore, and Protect</p>
+                <div class="col-md-4 hydrateParent">
+                    <div class="hydrate">
+                        <img src="image/care.webp" class="hydrateImage" alt="Nizoral Care">
+                        <div class="round_featureParent">
+                            <div class="round_feature_sub">
+                                <div class="icon_area">
+                                    <img src="image/hydrating.png" alt="Hair">
+                                </div>
+                                <div class="text_area">
+                                    <p>Hydrate, Restore, and Protect</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="section-bg"></div>
                 </div>
             </div>
-        </div>
-        <div class="row yourScalpsBottomParent">
-            <div class="yourScalpsBottom">
-                <p>From care to treatment, say goodbye to stubborn dandruff and hello to healthier hair and
-                    scalp.
-                </p>
-                <button class="sprinkles">LEARN MORE</button>
+            <div class="row g-0 yourScalpsBottomParent">
+                <div class="yourScalpsBottom">
+                    <p>From care to treatment, say goodbye to stubborn dandruff and hello to healthier hair and
+                        scalp.
+                    </p>
+                    <button class="sprinkles">LEARN MORE</button>
+                </div>
+    
             </div>
-
-        </div>
+    </section>
 </section>
 <section class="scientificallyBacked theNezroralDiffrenceParent_main position-relative scrollSection">
     <div class="container-fluid">

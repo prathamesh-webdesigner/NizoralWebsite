@@ -27,7 +27,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  height: 180px;
+  height: clamp(9.625rem, 11.875vw + 0.125rem, 14.375rem);
   transition: transform 0.3s ease-in-out;
   /* Lower priority */
 }
@@ -53,6 +53,16 @@ header .buyNow button {
   font-weight: 500;
   padding: 8px 30px;
 }
+header.header-collapsed {
+  background-color: transparent;
+  z-index: 100;
+}
+header.header-collapsed .navbar-nav, header.header-collapsed .buyNow {
+  display: none !important;
+}
+header.header-collapsed .navbar-toggler {
+  display: block !important;
+}
 
 .banner {
   width: 100%;
@@ -77,10 +87,6 @@ header .buyNow button {
   margin-left: 5px;
   margin-bottom: 0;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .banner .bannerTextArea h1 {
   overflow: hidden;
@@ -89,10 +95,6 @@ header .buyNow button {
   font-weight: 700;
   line-height: 1;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .banner .bannerTextArea h2 {
   margin-top: -1rem;
@@ -100,10 +102,6 @@ header .buyNow button {
   font-weight: 700;
   line-height: 1;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .banner .bannerTextArea p {
   font-size: 1.5rem;
@@ -111,10 +109,6 @@ header .buyNow button {
   width: 40%;
   display: inline-block;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .banner .bannerBoy {
   width: 100%;
@@ -125,7 +119,6 @@ header .buyNow button {
   bottom: -16rem;
   right: -140px;
   z-index: 9;
-  opacity: 0;
 }
 .banner .blinkArea {
   width: 100%;
@@ -173,7 +166,16 @@ header .buyNow button {
 
 .yourScalps {
   overflow: hidden;
-  background: linear-gradient(295deg, rgb(35, 126, 222) 0%, rgba(35, 126, 222, 0.36) 29%, rgb(35, 126, 222) 100%);
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  /* background: linear-gradient(
+      295deg,
+      rgba(35, 126, 222, 1) 0%,
+      rgb(35 126 222 / 36%) 29%,
+      rgba(35, 126, 222, 1) 100%
+  ); */
 }
 .yourScalps .bestfriend {
   position: absolute;
@@ -181,42 +183,44 @@ header .buyNow button {
   right: 0;
   top: 40px;
   margin-inline: auto;
-  width: -moz-fit-content;
   width: fit-content;
   color: #fff;
   font-family: "helveticaMedium", sans-serif;
   text-align: center;
-  z-index: 9;
+  z-index: 2;
 }
 .yourScalps .bestfriend h2 {
   font-size: 4.5vw;
   display: inline-block;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .yourScalps .bestfriend h3 {
   margin-top: -2rem;
   font-size: 12vw;
   font-weight: bold;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .yourScalps .sayGoodbyeParent {
-  background-color: #ffcc00;
+  background-color: transparent;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
   position: relative;
+  position: relative;
+}
+.yourScalps .sayGoodbyeParent .section-bg {
+  background-color: #ffcc00;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye {
   height: 100%;
+  z-index: 5;
 }
 .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent {
   position: absolute;
@@ -263,21 +267,30 @@ header .buyNow button {
 .yourScalps .sayGoodbyeParent .sayGoodbye .shampoo_image {
   width: 100%;
   height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotate(346deg);
   z-index: 9;
   position: relative;
   bottom: -70px;
 }
 .yourScalps .gentleEnoughParent {
-  background-color: #207cde;
+  background-color: transparent;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
   position: relative;
   justify-content: center;
+  position: relative;
+}
+.yourScalps .gentleEnoughParent .section-bg {
+  background-color: #207cde;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .yourScalps .gentleEnoughParent .gentleEnough {
   height: 100%;
@@ -330,19 +343,27 @@ header .buyNow button {
 .yourScalps .gentleEnoughParent .gentleEnough .gentleEnoughImage {
   width: 100%;
   height: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 9;
   transform: scale(1.4);
 }
 .yourScalps .hydrateParent {
-  background-color: #5dafae;
+  background-color: transparent;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
   position: relative;
   justify-content: end;
+}
+.yourScalps .hydrateParent .section-bg {
+  background-color: #5dafae;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .yourScalps .hydrateParent .hydrate {
   height: 100%;
@@ -394,15 +415,18 @@ header .buyNow button {
 .yourScalps .hydrateParent .hydrate .hydrateImage {
   width: 100%;
   height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotate(15deg);
   z-index: 9;
   position: relative;
   bottom: -70px;
 }
 .yourScalps .yourScalpsBottomParent {
-  margin-top: -8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom {
   background-color: #ffcc00;
@@ -436,10 +460,6 @@ header .buyNow button {
   color: #152b59;
   display: inline-block;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 
 .scientificallyBacked {
@@ -816,8 +836,7 @@ header .buyNow button {
 .environmentalFactors .externalInfluencesYellow .externalInfluencesImage img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .avoid-irritating-the-scalp {
@@ -1498,10 +1517,6 @@ header .buyNow button {
   width: 45%;
   margin: 0 auto;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 
 .treat_parent {
@@ -1533,10 +1548,6 @@ header .buyNow button {
   width: 36%;
   margin-left: 6rem;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .treat_parent .treat_text .shampoo_drop {
   width: 26%;
@@ -1583,10 +1594,6 @@ header .buyNow button {
   width: 45%;
   line-height: 1.2;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .prevent .prevent_text .daily_care_text .blue-drop {
   width: 30%;
@@ -1619,10 +1626,6 @@ header .buyNow button {
   width: 60%;
   line-height: 1.2;
   display: inline-block;
-  filter: blur(3px);
-  opacity: 1;
-  -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
 }
 .restore .restore_text .restore_para img {
   width: 40%;
@@ -1704,10 +1707,6 @@ footer .col-md-3 .social_icon li a img {
 }
 .dandruff_education_carousel .nizoral-product .slider-1 h4 {
   font-size: 1.1rem;
-}
-
-.blink_text span {
-  animation: blinker 0.5s linear infinite;
 }
 
 @keyframes blinker {
@@ -1874,4 +1873,6 @@ footer .col-md-3 .social_icon li a img {
 
 .theNezroralDiffrenceParent_main {
   height: auto !important;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

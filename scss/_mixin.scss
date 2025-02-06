@@ -1,0 +1,193 @@
+@mixin yourScalps($bgColor) {
+    background-color: $bgColor;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+// Round shape
+@mixin round_featureParent($top, $left) {
+    position: absolute;
+    // top: 46%;
+    // right: 6%;
+    top: $top;
+    left: $left;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 99;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: -1px 13px 4px 1px #0000003d;
+}
+
+@mixin round_feature_sub {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin icon_area {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin text_area($bgColor) {
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    background-color: $bgColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@mixin textAreaP($width) {
+    width: $width;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+@mixin round_icon_area($marginLeft) {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffcc009e;
+    margin-left: $marginLeft;
+
+    img {
+        width: 60%;
+    }
+}
+
+@mixin air_pollution {
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .col-md-4 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            font-size: 8vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: -5px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+}
+
+@mixin bannerh1 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@mixin bannerh2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@mixin bannerP {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+// Nizoral Range
+@mixin white_part_nizoraal_range {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin nizoral_medical_shampoo {
+    font-family: $font_family;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+@mixin shampooImage {
+    img {
+        width: 100%;
+    }
+}
+
+@mixin range_text($bg) {
+    background-color: $bg;
+    padding: 40px;
+    height: 50%;
+    width: 50%;
+    color: $blue_font;
+}
+
+@mixin say_good_bye_to_dandruff_itching_Heading($width) {
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin say_good_bye_Heding_h2($fontSize) {
+    font-size: $fontSize;
+    font-weight: 700;
+    line-height: 1;
+}
+@mixin theNezroralDiffrenceParent_h2 {
+    font-size: 4vw;
+    color: $blue_font;
+    display: inline-block;
+}
+
+@mixin prevent_areaH2 {
+    font-size: 19vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+@mixin gsap_animation {
+    display: inline-block;
+    // filter: blur(0px);
+    // clip-path: inset(0 0% 0 0);
+}
