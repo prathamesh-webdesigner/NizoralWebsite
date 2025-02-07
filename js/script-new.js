@@ -1,5 +1,5 @@
 // Header visible to invisible start
-document.onreadystatechange = function () {
+/* document.onreadystatechange = function () {
     let lastScrollPosition = 0;
     const navbar = document.querySelector('header');
     window.addEventListener('scroll', function (e) {
@@ -10,7 +10,7 @@ document.onreadystatechange = function () {
         else
             navbar.classList.remove('hide-header');
     });
-}
+} */
 
 // Header visible to invisible end
 
