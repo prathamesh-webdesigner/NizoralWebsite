@@ -74,7 +74,7 @@ header {
     }
 
     &.header-collapsed { background-color: transparent; z-index: 100;
-        .navbar-nav, .buyNow {
+        .navbar-nav, .buyNow, .navbar-collapse {
             display: none !important; // Hide the navigation links and Buy Now button
         }
     
@@ -1695,9 +1695,9 @@ footer {
 }
 
 // ----------------------------------------------------------------------------------------------------Animations------------------------------------------------------
-.blink_text span {
-    // animation: blinker 0.5s linear infinite;
-}
+// .blink_text span {
+//     // animation: blinker 0.5s linear infinite;
+// }
 
 @keyframes blinker {
     50% {

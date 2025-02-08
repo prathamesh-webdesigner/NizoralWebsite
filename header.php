@@ -51,6 +51,60 @@
             /* Snap scrolling */
         }
     </style> -->
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            background-color: #ffcc00;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+            box-shadow: -3px -3px 12px 2px #ffffff52;
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #212427;
+            display: block;
+            transition: 0.3s
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        header.header-collapsed .navbar-nav,
+        header.header-collapsed .navbar-collapse {
+            display: none !important;
+        }
+
+        header.header-collapsed .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,9 +112,9 @@
         <nav class="navbar navbar-expand-lg pt-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php"><img src="image/Nizoral.png" alt="Nizoral"></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler d-lg-none sprinkles" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="openSideNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -80,9 +134,29 @@
                         </li>
                     </ul>
                     <div class="buyNow">
-                    <button class="sprinkles"><a href="buy-online.php" class="text-blue text-decoration-none">BUY NOW</a></button>
+                        <button class="sprinkles"><a href="buy-online.php" class="text-blue text-decoration-none">BUY NOW</a></button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="dandruff-education.php">Dandruff Education</a>
+        <a href="nizoral-range.php">Nizoral Range</a>
+        <a href="scalp-hair-hub.php">Scalp & Hair Hub</a>
+        <a href="scalp-quiz-1.php">Get to Know Your Scalp</a>
+        <a href="buy-online.php">BUY NOW</a>
+    </div>
+
+    <script>
+        function openSideNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
