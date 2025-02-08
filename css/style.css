@@ -57,7 +57,7 @@ header.header-collapsed {
   background-color: transparent;
   z-index: 100;
 }
-header.header-collapsed .navbar-nav, header.header-collapsed .buyNow {
+header.header-collapsed .navbar-nav, header.header-collapsed .buyNow, header.header-collapsed .navbar-collapse {
   display: none !important;
 }
 header.header-collapsed .navbar-toggler {
@@ -1873,6 +1873,59 @@ footer .col-md-3 .social_icon li a img {
 
 .theNezroralDiffrenceParent_main {
   height: auto !important;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #ffcc00;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: -3px -3px 12px 2px rgba(255, 255, 255, 0.3215686275);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #212427;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header.header-collapsed .navbar-nav,
+header.header-collapsed .navbar-collapse {
+  display: none !important;
+}
+
+header.header-collapsed .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */
