@@ -65,13 +65,21 @@
         <a href="buy-online.php">BUY NOW</a>
     </div>
 
-    <script>
+    <!-- <script>
         function openSideNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            let sidenav = document.getElementById("mySidenav");
+            sidenav.style.width = "250px";
+            setTimeout(() => {
+                sidenav.classList.add("open"); // Add class after transition
+            }, 300);
         }
 
         /* Set the width of the side navigation to 0 */
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            let sidenav = document.getElementById("mySidenav");
+            sidenav.classList.remove("open"); // Remove class before closing
+            setTimeout(() => {
+                sidenav.style.width = "0";
+            }, 100);
         }
-    </script>
+    </script> -->

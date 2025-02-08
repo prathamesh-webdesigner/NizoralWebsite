@@ -73,11 +73,15 @@ header {
         }
     }
 
-    &.header-collapsed { background-color: transparent; z-index: 100;
-        .navbar-nav, .buyNow, .navbar-collapse {
+    &.header-collapsed {
+        background-color: transparent;
+        z-index: 100;
+        .navbar-nav,
+        .buyNow,
+        .navbar-collapse {
             display: none !important; // Hide the navigation links and Buy Now button
         }
-    
+
         .navbar-toggler {
             display: block !important; // Ensure the hamburger menu is visible
         }
@@ -106,8 +110,6 @@ header {
         flex-direction: column;
 
         h3 {
-            font-size: 3.3rem;
-            font-weight: 700;
             line-height: 1;
             margin-left: 5px;
             margin-bottom: 0;
@@ -116,24 +118,18 @@ header {
 
         h1 {
             overflow: hidden;
-            font-size: 12vw;
             text-transform: uppercase;
-            font-weight: 700;
             line-height: 1;
             @include gsap_animation;
         }
 
         h2 {
             margin-top: -1rem;
-            font-size: 3.3rem;
-            font-weight: 700;
             line-height: 1;
             @include gsap_animation;
         }
 
         p {
-            font-size: 1.5rem;
-            font-weight: 600;
             width: 40%;
             display: inline-block;
             @include gsap_animation;
@@ -207,7 +203,11 @@ header {
 }
 
 .yourScalps {
-    overflow: hidden; left: 0; top: 0; min-height: 100%; width: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    width: 100%;
     /* background: linear-gradient(
         295deg,
         rgba(35, 126, 222, 1) 0%,
@@ -228,24 +228,31 @@ header {
         z-index: 2;
 
         h2 {
-            font-size: 4.5vw;
             display: inline-block;
             @include gsap_animation;
         }
 
         h3 {
             margin-top: -2rem;
-            font-size: 12vw;
-            font-weight: bold;
             @include gsap_animation;
         }
     }
 
     .sayGoodbyeParent {
-        @include yourScalps(transparent); position: relative;
-        .section-bg{ background-color: $yellow_header; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        @include yourScalps(transparent);
+        position: relative;
+        .section-bg {
+            background-color: $yellow_header;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
         .sayGoodbye {
-            height: 100%; z-index: 5;
+            height: 100%;
+            z-index: 5;
 
             .round_featureParent {
                 @include round_featureParent(46%, 65%);
@@ -285,8 +292,17 @@ header {
 
     .gentleEnoughParent {
         @include yourScalps(transparent);
-        justify-content: center; position: relative;
-        .section-bg{ background-color: $skyBlue; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        justify-content: center;
+        position: relative;
+        .section-bg {
+            background-color: $skyBlue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
         .gentleEnough {
             height: 100%;
             display: flex;
@@ -330,7 +346,15 @@ header {
     .hydrateParent {
         @include yourScalps(transparent);
         justify-content: end;
-        .section-bg{ background-color: $lightGreen; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;}
+        .section-bg {
+            background-color: $lightGreen;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
         .hydrate {
             height: 100%;
             display: flex;
@@ -374,7 +398,11 @@ header {
 
     .yourScalpsBottomParent {
         // margin-top: -8rem;
-        position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
         .yourScalpsBottom {
             background-color: $yellow_header;
             padding: 2rem 0;
@@ -386,8 +414,6 @@ header {
             box-shadow: #00000040 -1px -1px 20px 0px;
 
             p {
-                font-size: 1.7rem;
-                font-weight: 500;
                 font-family: $font_family;
             }
 
@@ -395,8 +421,6 @@ header {
                 background-color: $yellow_header;
                 border: 2px solid #fff;
                 padding: 8px 25px;
-                font-size: 1.5rem;
-                font-weight: 500;
                 color: $black_font;
             }
         }
@@ -407,7 +431,7 @@ header {
     font-family: $font_family;
 
     h2 {
-        @include theNezroralDiffrenceParent_h2;
+        color: $blue_font;
         @include gsap_animation;
     }
 }
@@ -428,16 +452,13 @@ header {
 
             h3 {
                 color: #fff;
-                font-size: 3.4rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 14vw;
                 text-transform: uppercase;
-                font-weight: 700;
                 line-height: 1;
                 margin-left: -5px;
                 color: #fff;
@@ -445,7 +466,6 @@ header {
             }
 
             p {
-                font-size: 1.5rem;
                 width: 40%;
             }
         }
@@ -484,31 +504,25 @@ header {
 
             h3 {
                 color: #fff;
-                font-size: 3.4rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 20vw;
                 text-transform: uppercase;
-                font-weight: 700;
                 line-height: 1;
                 margin-left: -14px;
                 color: #fff;
                 letter-spacing: 1px;
             }
-            div{
+            div {
                 width: 92%;
                 p {
-                    font-size: 1.5rem;
                     width: 37%;
                     margin-left: auto;
                 }
             }
-
-            
         }
     }
 
@@ -541,23 +555,18 @@ header {
             margin-top: 4rem;
 
             h3 {
-                font-size: 3.4rem;
                 line-height: 1;
                 display: inline-block;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 17vw;
                 text-transform: uppercase;
-                font-weight: 700;
-                line-height: 1;
-                margin-left: -5px;
+                line-height: 0.9;
                 letter-spacing: 1px;
             }
 
             p {
-                font-size: 1.5rem;
                 width: 35%;
             }
         }
@@ -617,15 +626,12 @@ header {
 
         .first_text_area {
             h2 {
-                font-size: 2rem;
                 line-height: 1;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                font-weight: bold;
             }
 
             p {
-                font-size: 1.3rem;
                 width: 90%;
             }
         }
@@ -647,8 +653,8 @@ header {
             color: #fff;
             border: none;
             outline: none;
-            font-size: 1.3rem;
             margin-top: 30px;
+            text-transform: uppercase;
         }
     }
 }
@@ -664,15 +670,9 @@ header {
     justify-content: center;
 
     .allAboutDandruff {
-        h3 {
-            font-size: 3rem;
-        }
-
         h2 {
-            font-size: 15vw;
             text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1;
+            line-height: 0.8;
             margin-left: -12px;
             letter-spacing: 1px;
             position: relative;
@@ -680,7 +680,6 @@ header {
         }
 
         p {
-            font-size: 1.5rem;
             width: 30%;
             line-height: 1.3;
         }
@@ -691,7 +690,7 @@ header {
             border: none;
             outline: none;
             padding: 10px 20px;
-            font-size: 1.5rem;
+            z-index: 9;
         }
     }
 
@@ -1102,14 +1101,7 @@ header {
 
     .expret_advice_text {
         h2 {
-            font-size: 12vw;
-            font-weight: 600;
-            line-height: 1;
-        }
-
-        h3 {
-            font-size: 3vw;
-            font-weight: 600;
+            line-height: 0.9;
         }
     }
 
@@ -1124,16 +1116,9 @@ header {
             .text_area {
                 width: 40%;
                 margin-left: 2rem;
-
-                h2 {
-                    font-size: 2rem;
-                    font-weight: 600;
-                }
-
                 a {
                     color: $blue_font;
                     text-decoration: none;
-                    font-weight: bold;
                 }
             }
         }
@@ -1448,7 +1433,7 @@ header {
         font-family: $font_family;
 
         h2 {
-            @include theNezroralDiffrenceParent_h2;
+            color: $blue_font;
             width: 45%;
             margin: 0 auto;
             @include gsap_animation;
@@ -1474,8 +1459,6 @@ header {
         flex-direction: column;
 
         h2 {
-            font-size: 19vw;
-            font-weight: 700;
             line-height: 1;
             margin-left: -12px;
             letter-spacing: 10px;
@@ -1484,16 +1467,15 @@ header {
         }
 
         p {
-            font-size: 1.2rem;
             color: $black_font;
             width: 36%;
-            margin-left: 6rem;
+            margin-left: 4.4rem;
             @include gsap_animation;
         }
 
         .shampoo_drop {
             width: 26%;
-            margin-left: 6rem;
+            margin-left: 4.4rem;
         }
 
         .treat_image {
@@ -1516,7 +1498,9 @@ header {
 
     .prevent_area {
         h2 {
-            @include prevent_areaH2;
+            line-height: 1;
+            letter-spacing: 10px;
+            text-align: center;
         }
     }
 
@@ -1538,7 +1522,6 @@ header {
             justify-content: flex-end;
 
             p {
-                font-size: 1.2rem;
                 width: 45%;
                 line-height: 1.2;
                 @include gsap_animation;
@@ -1558,7 +1541,9 @@ header {
 
     .restore_area {
         h2 {
-            @include prevent_areaH2;
+            line-height: 1;
+            letter-spacing: 10px;
+            text-align: center;
             color: #fff;
         }
     }
@@ -1573,7 +1558,6 @@ header {
             align-items: end;
 
             p {
-                font-size: 1.2rem;
                 width: 60%;
                 line-height: 1.2;
                 @include gsap_animation;
@@ -1977,10 +1961,12 @@ footer {
     top: 0;
     right: 0;
     background-color: #ffcc00;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    overflow: hidden;
     padding-top: 60px;
     transition: 0.5s;
     box-shadow: -3px -3px 12px 2px #ffffff52;
+    white-space: nowrap;
 }
 
 /* The navigation menu links */
@@ -1990,7 +1976,9 @@ footer {
     font-size: 18px;
     color: #212427;
     display: block;
-    transition: 0.3s
+    // transition: 0.3s;
+    transition: color 0.3s; /* Smooth hover effect */
+    visibility: hidden; /* Initially hide text */
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -2020,4 +2008,7 @@ header.header-collapsed .navbar-toggler {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+.sidenav.open a {
+    visibility: visible;
 }

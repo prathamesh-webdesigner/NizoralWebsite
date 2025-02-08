@@ -24,7 +24,7 @@ $('.homeSlider').owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 5000,
-    autoplayHoverPause:true,
+    autoplayHoverPause: true,
     navText: [
         '<img src="image/prev-thin.png" alt="Previous" style="width:40px;">',
         '<img src="image/next-thin.png" alt="Next" style="width:40px;">'
@@ -49,7 +49,7 @@ $('.nizoral-product').owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 3000,
-    autoplayHoverPause:true,
+    autoplayHoverPause: true,
     navText: [
         '<img src="image/prev.png" alt="Previous" style="width:40px;">',
         '<img src="image/next.png" alt="Next" style="width:40px;">'
@@ -68,30 +68,30 @@ $('.nizoral-product').owlCarousel({
 });
 // owl carousel end 
 
-function initBanner() { 
+function initBanner() {
     // Banner	
     let tl_banner = gsap.timeline({
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: ".banner",
             scrub: false,
             pin: false,
         }
-    });		
+    });
     tl_banner
-        
-        .fromTo(".blink_text span", { opacity: 0.6,}, { opacity: 0, duration: 0.5, stagger: { each: 0.05, from: "random" }, ease: "power2.out", repeat: 2})
-        .to(".blink_text span", { opacity: 0, stagger: { each: 0.05, from: "random" }, duration: 0.3})
+
+        .fromTo(".blink_text span", { opacity: 0.6, }, { opacity: 0, duration: 0.5, stagger: { each: 0.05, from: "random" }, ease: "power2.out", repeat: 2 })
+        .to(".blink_text span", { opacity: 0, stagger: { each: 0.05, from: "random" }, duration: 0.3 })
 
         .fromTo(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching",
             {
                 opacity: 0,
                 filter: "blur(3px)",
-                clipPath: "inset(0 100% 0 0)", 
+                clipPath: "inset(0 100% 0 0)",
                 y: 50
-            } ,
+            },
             {
                 opacity: 1,
-                filter: "blur(0px)",  
+                filter: "blur(0px)",
                 clipPath: "inset(0 0% 0 0)",
                 y: 0,
                 duration: 1,
@@ -100,12 +100,12 @@ function initBanner() {
             },
             'bannerText'
         )
-        .from(".bannerBoy img", { opacity: 0, duration: 0.8, x: "100%", ease: "power2.out"}, 'bannerText')
+        .from(".bannerBoy img", { opacity: 0, duration: 0.8, x: "100%", ease: "power2.out" }, 'bannerText')
         .to(".sayAni, .bannerTextArea p, .md_goodbye, .md_dandruffAndItching",
-            
+
             {
                 opacity: 0,
-                filter: "blur(0px)",  
+                filter: "blur(0px)",
                 clipPath: "inset(0 0% 0 0)",
                 y: '-300',
                 duration: 1,
@@ -114,23 +114,24 @@ function initBanner() {
                 ease: "power2.out",
             }
         )
-        .to(".bannerBoy img", { opacity: 0, duration: 1, x: "100%", ease: "power2.out", onComplete: function(){
+        .to(".bannerBoy img", {
+            opacity: 0, duration: 1, x: "100%", ease: "power2.out", onComplete: function () {
                 document.querySelector("header").classList.add("header-collapsed");
             }
         }, '-=0.5')
-    ;
-        // Your scalp animation
+        ;
+    // Your scalp animation
     tl_banner
-        .fromTo(".bestfriend h2, .bestfriend h3", 
+        .fromTo(".bestfriend h2, .bestfriend h3",
             {
                 opacity: 0,
                 filter: "blur(3px)",
-                clipPath: "inset(0 100% 0 0)", 
+                clipPath: "inset(0 100% 0 0)",
                 y: '50vh'
-            } ,
+            },
             {
                 opacity: 1,
-                filter: "blur(0px)",  
+                filter: "blur(0px)",
                 clipPath: "inset(0 0% 0 0)",
                 y: 0,
                 duration: 1,
@@ -151,7 +152,7 @@ function initBanner() {
             clipPath: "inset(100% 0 0 0)",
             duration: 0.4,
         }, 'yourScalp+=1')
-        
+
         // Shampoo end
         // Daily Care
         .from(".gentleEnoughImage", {
@@ -163,7 +164,7 @@ function initBanner() {
             clipPath: "inset(100% 0 0 0)",
             duration: 0.4,
         }, 'yourScalp+=1')
-        
+
         // Daily care end
         // Care
         .from(".hydrateImage", {
@@ -176,12 +177,12 @@ function initBanner() {
             clipPath: "inset(100% 0 0 0)",
             duration: 0.4,
         }, 'yourScalp+=1')
-        
+
         // Care end
         // Round Feature 
         .from(".round_featureParent", {
             scale: 0,
-           
+
             duration: 1,
         })
         // Round Feature End
@@ -191,9 +192,9 @@ function initBanner() {
             y: 0,
             duration: 1,
         })
-    ;
-        	
-    
+        ;
+
+
 }
 initBanner();
 /* 
@@ -486,4 +487,20 @@ gsap.from(".expret_advice_wrapper", {
 // }, 1000);
 
 
+// SideBar 
+function openSideNav() {
+    let sidenav = document.getElementById("mySidenav");
+    sidenav.style.width = "250px";
+    setTimeout(() => {
+        sidenav.classList.add("open"); // Add class after transition
+    }, 300);
+}
 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    let sidenav = document.getElementById("mySidenav");
+    sidenav.classList.remove("open"); // Remove class before closing
+    setTimeout(() => {
+        sidenav.style.width = "0";
+    }, 100);
+}

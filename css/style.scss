@@ -397,7 +397,6 @@ header {
     font-family: $font_family;
 
     h2 {
-        @include theNezroralDiffrenceParent_h2;
         @include gsap_animation;
     }
 }

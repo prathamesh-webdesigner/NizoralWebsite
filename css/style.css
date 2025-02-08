@@ -57,7 +57,9 @@ header.header-collapsed {
   background-color: transparent;
   z-index: 100;
 }
-header.header-collapsed .navbar-nav, header.header-collapsed .buyNow, header.header-collapsed .navbar-collapse {
+header.header-collapsed .navbar-nav,
+header.header-collapsed .buyNow,
+header.header-collapsed .navbar-collapse {
   display: none !important;
 }
 header.header-collapsed .navbar-toggler {
@@ -81,8 +83,6 @@ header.header-collapsed .navbar-toggler {
   flex-direction: column;
 }
 .banner .bannerTextArea h3 {
-  font-size: 3.3rem;
-  font-weight: 700;
   line-height: 1;
   margin-left: 5px;
   margin-bottom: 0;
@@ -90,22 +90,16 @@ header.header-collapsed .navbar-toggler {
 }
 .banner .bannerTextArea h1 {
   overflow: hidden;
-  font-size: 12vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
   display: inline-block;
 }
 .banner .bannerTextArea h2 {
   margin-top: -1rem;
-  font-size: 3.3rem;
-  font-weight: 700;
   line-height: 1;
   display: inline-block;
 }
 .banner .bannerTextArea p {
-  font-size: 1.5rem;
-  font-weight: 600;
   width: 40%;
   display: inline-block;
   display: inline-block;
@@ -190,14 +184,11 @@ header.header-collapsed .navbar-toggler {
   z-index: 2;
 }
 .yourScalps .bestfriend h2 {
-  font-size: 4.5vw;
   display: inline-block;
   display: inline-block;
 }
 .yourScalps .bestfriend h3 {
   margin-top: -2rem;
-  font-size: 12vw;
-  font-weight: bold;
   display: inline-block;
 }
 .yourScalps .sayGoodbyeParent {
@@ -439,16 +430,12 @@ header.header-collapsed .navbar-toggler {
   box-shadow: rgba(0, 0, 0, 0.2509803922) -1px -1px 20px 0px;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom p {
-  font-size: 1.7rem;
-  font-weight: 500;
   font-family: "helveticaMedium", sans-serif;
 }
 .yourScalps .yourScalpsBottomParent .yourScalpsBottom button {
   background-color: #ffcc00;
   border: 2px solid #fff;
   padding: 8px 25px;
-  font-size: 1.5rem;
-  font-weight: 500;
   color: #212427;
 }
 
@@ -456,9 +443,7 @@ header.header-collapsed .navbar-toggler {
   font-family: "helveticaMedium", sans-serif;
 }
 .theNezroralDiffrenceParent h2 {
-  font-size: 4vw;
   color: #152b59;
-  display: inline-block;
   display: inline-block;
 }
 
@@ -477,22 +462,18 @@ header.header-collapsed .navbar-toggler {
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText h3 {
   color: #fff;
-  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText h2 {
-  font-size: 14vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
   margin-left: -5px;
   color: #fff;
   letter-spacing: 1px;
 }
 .scientificallyBacked .scientificallyBackedYellow .scientificText p {
-  font-size: 1.5rem;
   width: 40%;
 }
 .scientificallyBacked .scientificallyBackedImage {
@@ -526,15 +507,12 @@ header.header-collapsed .navbar-toggler {
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
   color: #fff;
-  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText h2 {
-  font-size: 20vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
   margin-left: -14px;
   color: #fff;
@@ -544,7 +522,6 @@ header.header-collapsed .navbar-toggler {
   width: 92%;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText div p {
-  font-size: 1.5rem;
   width: 37%;
   margin-left: auto;
 }
@@ -575,21 +552,16 @@ header.header-collapsed .navbar-toggler {
   margin-top: 4rem;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
-  font-size: 3.4rem;
   line-height: 1;
   display: inline-block;
   letter-spacing: 1px;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h2 {
-  font-size: 17vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
-  margin-left: -5px;
+  line-height: 0.9;
   letter-spacing: 1px;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText p {
-  font-size: 1.5rem;
   width: 35%;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnImage {
@@ -682,14 +654,11 @@ header.header-collapsed .navbar-toggler {
   width: 60%;
 }
 .product_carousel .slider_first .first_text_area h2 {
-  font-size: 2rem;
   line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .product_carousel .slider_first .first_text_area p {
-  font-size: 1.3rem;
   width: 90%;
 }
 .product_carousel .slider_first .product_image_area {
@@ -705,8 +674,8 @@ header.header-collapsed .navbar-toggler {
   color: #fff;
   border: none;
   outline: none;
-  font-size: 1.3rem;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .allAboutDandruffParent {
@@ -719,21 +688,15 @@ header.header-collapsed .navbar-toggler {
   align-items: center;
   justify-content: center;
 }
-.allAboutDandruffParent .allAboutDandruff h3 {
-  font-size: 3rem;
-}
 .allAboutDandruffParent .allAboutDandruff h2 {
-  font-size: 15vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.8;
   margin-left: -12px;
   letter-spacing: 1px;
   position: relative;
   z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruff p {
-  font-size: 1.5rem;
   width: 30%;
   line-height: 1.3;
 }
@@ -743,7 +706,7 @@ header.header-collapsed .navbar-toggler {
   border: none;
   outline: none;
   padding: 10px 20px;
-  font-size: 1.5rem;
+  z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruffImage img {
   width: 65%;
@@ -1240,13 +1203,7 @@ header.header-collapsed .navbar-toggler {
   height: auto !important;
 }
 .expret_advice .expret_advice_text h2 {
-  font-size: 12vw;
-  font-weight: 600;
-  line-height: 1;
-}
-.expret_advice .expret_advice_text h3 {
-  font-size: 3vw;
-  font-weight: 600;
+  line-height: 0.9;
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area {
   display: flex;
@@ -1258,14 +1215,9 @@ header.header-collapsed .navbar-toggler {
   width: 40%;
   margin-left: 2rem;
 }
-.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area a {
   color: #152b59;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .banner-shampoo {
@@ -1511,9 +1463,7 @@ header.header-collapsed .navbar-toggler {
   font-family: "helveticaMedium", sans-serif;
 }
 .hairCareRoutine .hairCareRoutineHeading h2 {
-  font-size: 4vw;
   color: #152b59;
-  display: inline-block;
   width: 45%;
   margin: 0 auto;
   display: inline-block;
@@ -1534,8 +1484,6 @@ header.header-collapsed .navbar-toggler {
   flex-direction: column;
 }
 .treat_parent .treat_text h2 {
-  font-size: 19vw;
-  font-weight: 700;
   line-height: 1;
   margin-left: -12px;
   letter-spacing: 10px;
@@ -1543,15 +1491,14 @@ header.header-collapsed .navbar-toggler {
   text-align: center;
 }
 .treat_parent .treat_text p {
-  font-size: 1.2rem;
   color: #212427;
   width: 36%;
-  margin-left: 6rem;
+  margin-left: 4.4rem;
   display: inline-block;
 }
 .treat_parent .treat_text .shampoo_drop {
   width: 26%;
-  margin-left: 6rem;
+  margin-left: 4.4rem;
 }
 .treat_parent .treat_text .treat_image {
   position: absolute;
@@ -1569,8 +1516,6 @@ header.header-collapsed .navbar-toggler {
   color: #fff;
 }
 .prevent .prevent_area h2 {
-  font-size: 19vw;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: 10px;
   text-align: center;
@@ -1590,7 +1535,6 @@ header.header-collapsed .navbar-toggler {
   justify-content: flex-end;
 }
 .prevent .prevent_text .daily_care_text p {
-  font-size: 1.2rem;
   width: 45%;
   line-height: 1.2;
   display: inline-block;
@@ -1605,8 +1549,6 @@ header.header-collapsed .navbar-toggler {
   font-family: "helveticaMedium", sans-serif;
 }
 .restore .restore_area h2 {
-  font-size: 19vw;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: 10px;
   text-align: center;
@@ -1622,7 +1564,6 @@ header.header-collapsed .navbar-toggler {
   align-items: end;
 }
 .restore .restore_text .restore_para p {
-  font-size: 1.2rem;
   width: 60%;
   line-height: 1.2;
   display: inline-block;
@@ -1883,10 +1824,11 @@ footer .col-md-3 .social_icon li a img {
   top: 0;
   right: 0;
   background-color: #ffcc00;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 60px;
   transition: 0.5s;
   box-shadow: -3px -3px 12px 2px rgba(255, 255, 255, 0.3215686275);
+  white-space: nowrap;
 }
 
 /* The navigation menu links */
@@ -1896,7 +1838,8 @@ footer .col-md-3 .social_icon li a img {
   font-size: 18px;
   color: #212427;
   display: block;
-  transition: 0.3s;
+  transition: color 0.3s; /* Smooth hover effect */
+  visibility: hidden; /* Initially hide text */
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -1926,6 +1869,10 @@ header.header-collapsed .navbar-toggler {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.sidenav.open a {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
