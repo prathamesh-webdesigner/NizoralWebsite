@@ -25,31 +25,31 @@
         <section class="quiz-section my-5">
             <div class="page-md-container">
                 <div class="col-md-12 mb-4 mb-md-5 bg-yellow p-3 p-md-5">
-                    <h2 class="body-lg font-bold">Your scalp is oily…</h2>
-                    <p class="body-sm">
+                    <h2 class="body-lg font-bold text-blue">Your scalp is oily…</h2>
+                    <p class="body-sm text-blue">
                         From your results it looks like you are prone to suffering from an oily scalp. Nizoral® has a range of solutions available to help treat, prevent and restore am oily scalp to its natural, healthy condition
                     </p>
                 </div>
 
                 <div class="col-md-11 mb-4 mb-md-5">
-                    <h2 class="body-lg font-bold">Why do I have an oily scalp and how can I treat it?</h2>
-                    <p class="body-sm">
+                    <h2 class="body-lg font-bold text-blue">Why do I have an oily scalp and how can I treat it?</h2>
+                    <p class="body-sm text-blue">
                         An oily scalp is the main cause of dandruff, many people think dandruff is a dry scalp condition. However dandruff is an oily condition and typically you will suffer from larger, oily flakes of skin that are white or yellow in colour. Around 50% of the population suffer from oily dandruff and you need to treat the cause of this dandruff and prevent it from returning.
                     </p>
                 </div>
 
                 <div class="col-md-11 mb-4 mb-md-5">
-                    <h2 class="body-lg font-bold">Why do I have an oily scalp and how can I treat it?</h2>
-                    <p class="body-sm">
+                    <h2 class="body-lg font-bold text-blue">Why do I have an oily scalp and how can I treat it?</h2>
+                    <p class="body-sm text-blue">
                         An oily scalp is the main cause of dandruff, many people think dandruff is a dry scalp condition. However dandruff is an oily condition and typically you will suffer from larger, oily flakes of skin that are white or yellow in colour. Around 50% of the population suffer from oily dandruff and you need to treat the cause of this dandruff and prevent it from returning.
                     </p>
                 </div>
 
                 <div class="col-md-11 mb-4 mb-md-5">
-                    <h2 class="body-lg font-bold">
+                    <h2 class="body-lg font-bold text-blue">
                         Lifestyle factors that may trigger dandruff can be managed by making small day to day changes.
                     </h2>
-                    <p class="body-sm">
+                    <p class="body-sm text-blue">
                         An oily scalp is the main cause of dandruff, many people think dandruff is a dry scalp condition. However dandruff is an oily condition and typically you will suffer from larger, oily flakes of skin that are white or yellow in colour. Around 50% of the population suffer from oily dandruff and you need to treat the cause of this dandruff and prevent it from returning.
                     </p>
                 </div>
@@ -67,38 +67,38 @@
                             <div class="d-flex align-items-center g-0 h-100 p-4">
                                 <div class="card-body text-blue">
                                     <ul class="list-group">
-                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3">
-                                            <span class="pr-md body-sm me-3 mt-1">
+                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3 text-blue">
+                                            <span class="pr-md body-sm me-3 mt-2">
                                                 <i class="fa-solid fa-circle-check"></i>
                                             </span>
-                                            <span class="body-mlg">
+                                            <span class="body-mlg text-blue">
                                                 Gently massage the scalp when washing to loosen flakes.
                                             </span>
                                         </li>
 
-                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3">
-                                            <span class="pr-md body-sm me-3 mt-1">
+                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3 text-blue">
+                                            <span class="pr-md body-sm me-3 mt-2">
                                                 <i class="fa-solid fa-circle-check"></i>
                                             </span>
-                                            <span class="body-mlg">
+                                            <span class="body-mlg text-blue">
                                                 Eat a balanced diet containing vitamins and minerals such as zinc and vitamin D.
                                             </span>
                                         </li>
 
-                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3">
-                                            <span class="pr-md body-sm me-3 mt-1">
+                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3 text-blue">
+                                            <span class="pr-md body-sm me-3 mt-2">
                                                 <i class="fa-solid fa-circle-check"></i>
                                             </span>
-                                            <span class="body-mlg">
+                                            <span class="body-mlg text-blue">
                                                 Take time to look after your mental health and manage stress.
                                             </span>
                                         </li>
 
-                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3">
-                                            <span class="pr-md body-sm me-3 mt-1">
+                                        <li class="list-group-item bg-transparent border-0 d-flex mb-3 text-blue">
+                                            <span class="pr-md body-sm me-3 mt-2">
                                                 <i class="fa-solid fa-circle-check"></i>
                                             </span>
-                                            <span class="body-mlg">
+                                            <span class="body-mlg text-blue">
                                                 Nizoral has a range of products designed to treat, prevent and restore an oily scalp.
                                             </span>
                                         </li>

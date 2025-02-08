@@ -81,5 +81,9 @@ $baby-pink  : #fffae5;
 .body-sm{ font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);} // 24px
 .body-xs{}
 
-.btn-blue { background: $blue;}
-.btn-blue-border { background: $white; border: 1px solid $blue;}
+.btn-blue { background: $blue;
+    &:hover, &:focus { background: $white; border: 1px solid $blue; color: $blue !important; }
+}
+.btn-blue-border { background: $white; border: 1px solid $blue;
+    &:hover, &:focus { background: $blue; border: 1px solid transparent; color: $white !important; }
+}

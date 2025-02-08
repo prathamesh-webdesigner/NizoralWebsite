@@ -183,10 +183,20 @@
 .btn-blue {
   background: #1a2b56;
 }
+.btn-blue:hover, .btn-blue:focus {
+  background: #ffffff;
+  border: 1px solid #1a2b56;
+  color: #1a2b56 !important;
+}
 
 .btn-blue-border {
   background: #ffffff;
   border: 1px solid #1a2b56;
+}
+.btn-blue-border:hover, .btn-blue-border:focus {
+  background: #1a2b56;
+  border: 1px solid transparent;
+  color: #ffffff !important;
 }
 
 .scalp-hair-hub-body {
@@ -643,6 +653,9 @@
 }
 .locate-pharmacy .location {
   margin-bottom: 4rem;
+}
+.locate-pharmacy .location .location-img {
+  width: 65%;
 }
 
 /*Media query*/
