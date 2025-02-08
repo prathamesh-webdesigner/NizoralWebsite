@@ -3,7 +3,9 @@
 }
 
 .locate-pharmacy { padding: 8rem 0;
-    .location { margin-bottom: 4rem; }
+    .location { margin-bottom: 4rem; 
+        .location-img { width: 65%;}
+    }
 }
 
 /*Media query*/

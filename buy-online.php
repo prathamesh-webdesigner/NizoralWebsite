@@ -19,13 +19,13 @@
                 <hr class="my-0">
                 <div class="row g-0 mt-4">
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/1.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/1.png" class="img-fluid location-img" alt="img">
                     </div>
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/2.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/2.png" class="img-fluid location-img" alt="img">
                     </div>
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/3.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/3.png" class="img-fluid location-img" alt="img">
                     </div>
                 </div>
             </div>
@@ -35,13 +35,13 @@
                 <hr class="my-0">
                 <div class="row g-0 mt-4">
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/4.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/4.png" class="img-fluid location-img" alt="img">
                     </div>
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/5.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/5.png" class="img-fluid location-img" alt="img">
                     </div>
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/6.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/6.png" class="img-fluid location-img" alt="img">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <hr class="my-0">
                 <div class="row g-0 mt-4">
                     <div class="col-sm-3">
-                        <img src="image/buy-now/locate-pharmacy/7.png" class="img-fluid" alt="img">
+                        <img src="image/buy-now/locate-pharmacy/7.png" class="img-fluid location-img" alt="img">
                     </div>
                 </div>
             </div>
@@ -65,4 +65,4 @@
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'header.php'; ?>
