@@ -718,15 +718,13 @@ header {
 
     .bannerTextArea {
         h1 {
-            font-size: 12vw;
             text-transform: uppercase;
-            font-weight: 700;
             line-height: 1;
+            margin-left: -5px;
+            letter-spacing: -2px;
         }
 
         h2 {
-            font-size: 3rem;
-            font-weight: 700;
             line-height: 1;
         }
     }
@@ -735,10 +733,10 @@ header {
         width: 100%;
 
         img {
-            width: 50%;
+            width: 75%;
             position: absolute;
-            bottom: -123px;
-            right: -11rem;
+            bottom: -65%;
+            right: -15rem;
             z-index: 9;
         }
     }
@@ -747,19 +745,14 @@ header {
 .which_environmental_factors {
     .environmentalFactorsParent {
         color: $blue_font;
-        width: 90%;
         font-family: $font_family;
 
         h2 {
-            font-size: 2rem;
-            width: 63%;
+            width: 80%;
         }
-
-        // p {
-        //     font-size: 1.5rem;
-        //     line-height: 1;
-        //     letter-spacing: 1px;
-        // }
+        p {
+            line-height: 1.2;
+        }
     }
 }
 
@@ -776,27 +769,21 @@ header {
             color: $blue_font;
 
             h3 {
-                font-size: 2rem;
                 line-height: 1;
                 letter-spacing: 1px;
             }
 
             h2 {
-                font-size: 8vw;
                 text-transform: uppercase;
-                font-weight: 700;
                 line-height: 1;
                 margin-left: -5px;
-                letter-spacing: 1px;
+                letter-spacing: -4px;
             }
 
             .light_yellow_area {
                 background-color: #ffe066;
                 padding: 20px;
-
-                p {
-                    font-size: 1.5rem;
-                }
+                width: 75%;
             }
         }
 
@@ -824,17 +811,14 @@ header {
     color: $blue_font;
 
     .text_area {
-        width: 68%;
+        width: 82%;
         text-align: center;
         margin: 0 auto;
-
         p {
-            font-size: 2rem;
+            line-height: 1.2;
         }
 
         h2 {
-            font-size: 3rem;
-            font-weight: 600;
             margin-top: 3rem;
         }
     }
@@ -868,30 +852,196 @@ header {
         padding: 50px;
 
         h2 {
-            font-size: 8vw;
             text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1;
+            line-height: 0.9;
             margin-left: -5px;
-            letter-spacing: 1px;
+            letter-spacing: -4px;
+        }
+        p {
+            line-height: 1.2;
         }
     }
 }
 
 .extream_weather {
-    @include air_pollution;
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .col-md-5 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-left: -5px;
+            letter-spacing: -4px;
+        }
+
+        h3 {
+            line-height: 1;
+        }
+        p {
+            line-height: 1.2;
+        }
+    }
 }
 
 .Dry-air {
-    @include air_pollution;
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .col-md-5 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-left: -5px;
+            letter-spacing: -4px;
+        }
+
+        h3 {
+            line-height: 1;
+        }
+        p {
+            line-height: 1.2;
+        }
+    }
 }
 
 .hat-scarf {
-    @include air_pollution;
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .col-md-5 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-left: -5px;
+            letter-spacing: -4px;
+            width: 80%;
+        }
+
+        h3 {
+            line-height: 1;
+        }
+        p {
+            line-height: 1.2;
+        }
+    }
 }
 
 .styling-products {
-    @include air_pollution;
+    background-color: $yellow_header;
+    height: 100vh;
+    color: $blue_font;
+    font-family: $font_family;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .col-md-5 {
+        .air_pollution_image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .air_pollution_content {
+        padding: 50px;
+
+        h2 {
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-left: -5px;
+            letter-spacing: -4px;
+        }
+
+        h3 {
+            line-height: 1;
+        }
+        p {
+            line-height: 1.2;
+        }
+    }
 }
 
 // ---------------------------------------------Dandruff Education End------------------------------------------------------
@@ -907,16 +1057,17 @@ header {
         color: $blue_font;
 
         h1 {
-            @include bannerh1;
+            line-height: 0.8;
+            margin-left: -10px;
         }
 
         h2 {
-            @include bannerh2;
+            line-height: 1;
         }
 
         p {
-            @include bannerP;
-            width: 35%;
+            width: 40%;
+            line-height: 1.2;
         }
     }
 
@@ -929,7 +1080,7 @@ header {
         bottom: 60px;
 
         img {
-            width: 18%;
+            width: 16%;
         }
     }
 }
@@ -949,7 +1100,10 @@ header {
             @include range_text($yellow_header);
 
             h2 {
-                @include bannerh2;
+                line-height: 1;
+            }
+            p{
+                line-height: 1.2;
             }
         }
     }
@@ -958,13 +1112,15 @@ header {
         button {
             font-family: $font_family;
             background-color: #152b59;
-            padding: 4px 15px;
+            padding: 8px 15px;
             color: #fff;
             outline: none;
             border: none;
-            width: 15%;
+            width: 20%;
             margin: 0 auto;
             margin-top: 2rem;
+            text-transform: uppercase;
+            z-index: 100;
         }
     }
 }
@@ -975,22 +1131,18 @@ header {
         font-family: $font_family;
 
         h3 {
-            font-size: 3vw;
-            font-weight: normal;
             line-height: 1;
         }
 
         h2 {
-            font-size: 6vw;
             text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1;
+            line-height: 0.8;
+            margin-left: -4px;
         }
 
         p {
-            font-size: 1.5rem;
-            font-weight: normal;
-            width: 75%;
+            width: 70%;
+            line-height: 1.2;
         }
     }
 
@@ -1017,11 +1169,9 @@ header {
         @include say_good_bye_to_dandruff_itching_Heading(50%);
 
         h2 {
-            @include say_good_bye_Heding_h2(6vw);
+            line-height: 1;
 
             span {
-                font-size: 3vw;
-                font-weight: normal;
                 line-height: 1;
             }
         }
@@ -1047,14 +1197,13 @@ header {
             }
 
             h2 {
-                font-size: 2.5vw;
                 font-weight: 600;
             }
 
             p {
                 width: 90%;
                 margin: 0 auto;
-                font-size: 1.2rem;
+                line-height: 1.2;
             }
         }
 
@@ -1120,6 +1269,9 @@ header {
                     color: $blue_font;
                     text-decoration: none;
                 }
+                p{
+                    line-height: 1.2;
+                }
             }
         }
     }
@@ -1142,19 +1294,15 @@ header {
 
     .shampoo_text {
         h1 {
-            font-size: 3rem;
-            font-weight: 700;
             line-height: 1;
         }
 
         h2 {
             line-height: 1;
-            font-size: 1.5rem;
         }
 
         h3 {
-            font-size: 1.5rem;
-            line-height: 1;
+            line-height: 1.2;
         }
 
         .four_lists {
@@ -1167,6 +1315,9 @@ header {
 
             .shampoo_banner_points {
                 width: 90%;
+                p{
+                    line-height: 1.2;
+                }
             }
         }
     }
@@ -1201,28 +1352,22 @@ header {
             margin-left: 10rem;
 
             span {
-                font-size: 3rem;
-                font-weight: 700;
                 line-height: 1;
             }
 
             h2 {
-                font-size: 12vw;
                 text-transform: uppercase;
-                font-weight: 700;
                 line-height: 1;
+                margin-left: -10px;
             }
 
             h3 {
-                font-size: 3rem;
-                font-weight: 700;
                 line-height: 1;
             }
 
             p {
-                font-size: 1.3rem;
-                font-weight: normal;
                 width: 55%;
+                line-height: 1.2;
             }
         }
 
@@ -1254,20 +1399,15 @@ header {
                 margin-left: auto;
 
                 h2 {
-                    font-size: 12vw;
-                    font-weight: 700;
                     line-height: 1;
                 }
 
                 h3 {
-                    font-size: 3rem;
-                    font-weight: 600;
                     line-height: 1;
                 }
 
                 p {
-                    font-size: 1.3rem;
-                    font-weight: normal;
+                    line-height: 1.2;
                 }
             }
         }
@@ -1288,7 +1428,7 @@ header {
         @include say_good_bye_to_dandruff_itching_Heading(60%);
 
         h2 {
-            @include say_good_bye_Heding_h2(4vw);
+            line-height: 1;
         }
     }
 }
@@ -1299,17 +1439,17 @@ header {
     color: $blue_font;
 
     .white_para_wraper {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         padding: 6rem 0;
 
         h2 {
-            font-size: 3.5vw;
-            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 1.5rem;
         }
 
         p {
-            font-size: 1.5rem;
+            line-height: 1.2;
         }
     }
 }
@@ -1329,14 +1469,12 @@ header {
             top: 4rem;
 
             h4 {
-                font-size: 4rem;
+                line-height: 1;
             }
 
             h2 {
-                font-size: 20vw;
-                font-weight: 600;
                 margin-left: -13px;
-                line-height: 0.8;
+                line-height: 0.9;
             }
         }
     }
@@ -1363,10 +1501,9 @@ header {
 
                 .poits_content {
                     width: 90%;
-                }
-
-                h2 {
-                    font-weight: bold;
+                    p{
+                        line-height: 1.2;
+                    }
                 }
             }
         }
@@ -1392,24 +1529,21 @@ header {
 
     .faqs_area {
         h2 {
-            font-size: 12vw;
-            font-weight: 600;
             margin-left: -10px;
-            line-height: 0.8;
+            line-height: 0.9;
         }
     }
 
     .accordion {
+        color: $blue_font !important;
         .accordion-item {
             border: none;
             border-bottom: 1px solid $blue_font;
             outline: none;
 
             button {
-                font-size: 2rem;
-                font-weight: 600;
                 padding-left: 0;
-                color: $black_font;
+                color: $blue_font !important;
             }
         }
 
@@ -1636,15 +1770,14 @@ footer {
 
     .text_area_for_slider {
         font-family: $font_family;
-
-        h2 {
-            font-size: 3vw;
-        }
+        margin-bottom: 1rem;
+        // h2 {
+        //     font-size: 3vw;
+        // }
 
         h3 {
-            width: 60%;
+            width: 70%;
             margin: 0 auto;
-            font-size: 1.5vw;
         }
     }
 
@@ -1666,13 +1799,8 @@ footer {
                 margin: 0 auto;
                 margin-bottom: 1rem;
             }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            h4 {
-                font-size: 1.1rem;
+            p {
+                line-height: 1.2;
             }
         }
     }

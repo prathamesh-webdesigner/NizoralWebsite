@@ -727,35 +727,34 @@ header.header-collapsed .navbar-toggler {
   align-items: center;
 }
 .banner_dandruff_education .bannerTextArea h1 {
-  font-size: 12vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
+  margin-left: -5px;
+  letter-spacing: -2px;
 }
 .banner_dandruff_education .bannerTextArea h2 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
 }
 .banner_dandruff_education .banner_dandruff_educationBoy {
   width: 100%;
 }
 .banner_dandruff_education .banner_dandruff_educationBoy img {
-  width: 50%;
+  width: 75%;
   position: absolute;
-  bottom: -123px;
-  right: -11rem;
+  bottom: -65%;
+  right: -15rem;
   z-index: 9;
 }
 
 .which_environmental_factors .environmentalFactorsParent {
   color: #152b59;
-  width: 90%;
   font-family: "helveticaMedium", sans-serif;
 }
 .which_environmental_factors .environmentalFactorsParent h2 {
-  font-size: 2rem;
-  width: 63%;
+  width: 80%;
+}
+.which_environmental_factors .environmentalFactorsParent p {
+  line-height: 1.2;
 }
 
 .environmentalFactors {
@@ -771,24 +770,19 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
 }
 .environmentalFactors .externalInfluencesYellow .externalInfluencesText h3 {
-  font-size: 2rem;
   line-height: 1;
   letter-spacing: 1px;
 }
 .environmentalFactors .externalInfluencesYellow .externalInfluencesText h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
 }
 .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area {
   background-color: #ffe066;
   padding: 20px;
-}
-.environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area p {
-  font-size: 1.5rem;
+  width: 75%;
 }
 .environmentalFactors .externalInfluencesYellow .externalInfluencesImage {
   display: flex;
@@ -811,16 +805,14 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
 }
 .avoid-irritating-the-scalp .text_area {
-  width: 68%;
+  width: 82%;
   text-align: center;
   margin: 0 auto;
 }
 .avoid-irritating-the-scalp .text_area p {
-  font-size: 2rem;
+  line-height: 1.2;
 }
 .avoid-irritating-the-scalp .text_area h2 {
-  font-size: 3rem;
-  font-weight: 600;
   margin-top: 3rem;
 }
 
@@ -848,12 +840,13 @@ header.header-collapsed .navbar-toggler {
   padding: 50px;
 }
 .air_pollution .air_pollution_content h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
+}
+.air_pollution .air_pollution_content p {
+  line-height: 1.2;
 }
 
 .extream_weather {
@@ -865,14 +858,14 @@ header.header-collapsed .navbar-toggler {
   display: flex;
   align-items: center;
 }
-.extream_weather .col-md-4 .air_pollution_image {
+.extream_weather .col-md-5 .air_pollution_image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.extream_weather .col-md-4 .air_pollution_image img {
+.extream_weather .col-md-5 .air_pollution_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -882,17 +875,16 @@ header.header-collapsed .navbar-toggler {
   padding: 50px;
 }
 .extream_weather .air_pollution_content h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
 }
 .extream_weather .air_pollution_content h3 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
+}
+.extream_weather .air_pollution_content p {
+  line-height: 1.2;
 }
 
 .Dry-air {
@@ -904,14 +896,14 @@ header.header-collapsed .navbar-toggler {
   display: flex;
   align-items: center;
 }
-.Dry-air .col-md-4 .air_pollution_image {
+.Dry-air .col-md-5 .air_pollution_image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.Dry-air .col-md-4 .air_pollution_image img {
+.Dry-air .col-md-5 .air_pollution_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -921,17 +913,16 @@ header.header-collapsed .navbar-toggler {
   padding: 50px;
 }
 .Dry-air .air_pollution_content h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
 }
 .Dry-air .air_pollution_content h3 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
+}
+.Dry-air .air_pollution_content p {
+  line-height: 1.2;
 }
 
 .hat-scarf {
@@ -943,14 +934,14 @@ header.header-collapsed .navbar-toggler {
   display: flex;
   align-items: center;
 }
-.hat-scarf .col-md-4 .air_pollution_image {
+.hat-scarf .col-md-5 .air_pollution_image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.hat-scarf .col-md-4 .air_pollution_image img {
+.hat-scarf .col-md-5 .air_pollution_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -960,17 +951,17 @@ header.header-collapsed .navbar-toggler {
   padding: 50px;
 }
 .hat-scarf .air_pollution_content h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
+  width: 80%;
 }
 .hat-scarf .air_pollution_content h3 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
+}
+.hat-scarf .air_pollution_content p {
+  line-height: 1.2;
 }
 
 .styling-products {
@@ -982,14 +973,14 @@ header.header-collapsed .navbar-toggler {
   display: flex;
   align-items: center;
 }
-.styling-products .col-md-4 .air_pollution_image {
+.styling-products .col-md-5 .air_pollution_image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.styling-products .col-md-4 .air_pollution_image img {
+.styling-products .col-md-5 .air_pollution_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -999,17 +990,16 @@ header.header-collapsed .navbar-toggler {
   padding: 50px;
 }
 .styling-products .air_pollution_content h2 {
-  font-size: 8vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -5px;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
 }
 .styling-products .air_pollution_content h3 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
+}
+.styling-products .air_pollution_content p {
+  line-height: 1.2;
 }
 
 .range_discover {
@@ -1022,20 +1012,15 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
 }
 .range_discover .rangeTextArea h1 {
-  font-size: 12vw;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.8;
+  margin-left: -10px;
 }
 .range_discover .rangeTextArea h2 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
 }
 .range_discover .rangeTextArea p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 35%;
+  width: 40%;
+  line-height: 1.2;
 }
 .range_discover .range_drops {
   position: absolute;
@@ -1046,7 +1031,7 @@ header.header-collapsed .navbar-toggler {
   bottom: 60px;
 }
 .range_discover .range_drops img {
-  width: 18%;
+  width: 16%;
 }
 
 .white_part_nizoraal_range {
@@ -1067,25 +1052,28 @@ header.header-collapsed .navbar-toggler {
 .white_part_nizoraal_range .nizoral_medical_shampoo .range_text {
   background-color: #ffcc00;
   padding: 40px;
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
   color: #152b59;
 }
 .white_part_nizoraal_range .nizoral_medical_shampoo .range_text h2 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
+}
+.white_part_nizoraal_range .nizoral_medical_shampoo .range_text p {
+  line-height: 1.2;
 }
 .white_part_nizoraal_range .whereToBuy button {
   font-family: "helveticaMedium", sans-serif;
   background-color: #152b59;
-  padding: 4px 15px;
+  padding: 8px 15px;
   color: #fff;
   outline: none;
   border: none;
-  width: 15%;
+  width: 20%;
   margin: 0 auto;
   margin-top: 2rem;
+  text-transform: uppercase;
+  z-index: 100;
 }
 
 .scintific_baked_formula .baked_text {
@@ -1093,20 +1081,16 @@ header.header-collapsed .navbar-toggler {
   font-family: "helveticaMedium", sans-serif;
 }
 .scintific_baked_formula .baked_text h3 {
-  font-size: 3vw;
-  font-weight: normal;
   line-height: 1;
 }
 .scintific_baked_formula .baked_text h2 {
-  font-size: 6vw;
   text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 0.8;
+  margin-left: -4px;
 }
 .scintific_baked_formula .baked_text p {
-  font-size: 1.5rem;
-  font-weight: normal;
-  width: 75%;
+  width: 70%;
+  line-height: 1.2;
 }
 .scintific_baked_formula .scintific_image {
   background-color: #5dafae;
@@ -1130,13 +1114,9 @@ header.header-collapsed .navbar-toggler {
   width: 50%;
 }
 .say_good_bye_to_dandruff_itching .heading h2 {
-  font-size: 6vw;
-  font-weight: 700;
   line-height: 1;
 }
 .say_good_bye_to_dandruff_itching .heading h2 span {
-  font-size: 3vw;
-  font-weight: normal;
   line-height: 1;
 }
 .say_good_bye_to_dandruff_itching .heading h3 {
@@ -1157,13 +1137,12 @@ header.header-collapsed .navbar-toggler {
   position: relative;
 }
 .say_good_bye_to_dandruff_itching .img_timeline .shampoo h2 {
-  font-size: 2.5vw;
   font-weight: 600;
 }
 .say_good_bye_to_dandruff_itching .img_timeline .shampoo p {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.2rem;
+  line-height: 1.2;
 }
 .say_good_bye_to_dandruff_itching .img_timeline .timeline-parent {
   display: flex;
@@ -1219,6 +1198,9 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
   text-decoration: none;
 }
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area p {
+  line-height: 1.2;
+}
 
 .banner-shampoo {
   background-color: #ffcc00;
@@ -1231,17 +1213,13 @@ header.header-collapsed .navbar-toggler {
   width: 90%;
 }
 .banner-shampoo .shampoo_text h1 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
 }
 .banner-shampoo .shampoo_text h2 {
   line-height: 1;
-  font-size: 1.5rem;
 }
 .banner-shampoo .shampoo_text h3 {
-  font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 .banner-shampoo .shampoo_text .four_lists .iconFirst img {
   width: 100%;
@@ -1249,6 +1227,9 @@ header.header-collapsed .navbar-toggler {
 }
 .banner-shampoo .shampoo_text .four_lists .shampoo_banner_points {
   width: 90%;
+}
+.banner-shampoo .shampoo_text .four_lists .shampoo_banner_points p {
+  line-height: 1.2;
 }
 .banner-shampoo button {
   background-color: #152b59;
@@ -1279,25 +1260,19 @@ header.header-collapsed .navbar-toggler {
   margin-left: 10rem;
 }
 .stubborn_dandruff_parent .stubborn-dandruff-part .content_area span {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
 }
 .stubborn_dandruff_parent .stubborn-dandruff-part .content_area h2 {
-  font-size: 12vw;
   text-transform: uppercase;
-  font-weight: 700;
   line-height: 1;
+  margin-left: -10px;
 }
 .stubborn_dandruff_parent .stubborn-dandruff-part .content_area h3 {
-  font-size: 3rem;
-  font-weight: 700;
   line-height: 1;
 }
 .stubborn_dandruff_parent .stubborn-dandruff-part .content_area p {
-  font-size: 1.3rem;
-  font-weight: normal;
   width: 55%;
+  line-height: 1.2;
 }
 .stubborn_dandruff_parent .stubborn-dandruff-part .stubborn_dandruff_image img {
   width: 50%;
@@ -1322,18 +1297,13 @@ header.header-collapsed .navbar-toggler {
   margin-left: auto;
 }
 .stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area h2 {
-  font-size: 12vw;
-  font-weight: 700;
   line-height: 1;
 }
 .stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area h3 {
-  font-size: 3rem;
-  font-weight: 600;
   line-height: 1;
 }
 .stubborn_dandruff_parent .tenX .tenX_yellow .tenX_content_area p {
-  font-size: 1.3rem;
-  font-weight: normal;
+  line-height: 1.2;
 }
 .stubborn_dandruff_parent .tenX .tenX_DNA_img {
   position: absolute;
@@ -1348,8 +1318,6 @@ header.header-collapsed .navbar-toggler {
   width: 60%;
 }
 .say_good_bye_to_dandruff_itching .heading h2 {
-  font-size: 4vw;
-  font-weight: 700;
   line-height: 1;
 }
 
@@ -1359,16 +1327,16 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
 }
 .white_para .white_para_wraper {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 6rem 0;
 }
 .white_para .white_para_wraper h2 {
-  font-size: 3.5vw;
-  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1.5rem;
 }
 .white_para .white_para_wraper p {
-  font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 .product_facts {
@@ -1386,13 +1354,11 @@ header.header-collapsed .navbar-toggler {
   top: 4rem;
 }
 .product_facts .product_fact_text_wrapper .product_fact_text h4 {
-  font-size: 4rem;
+  line-height: 1;
 }
 .product_facts .product_fact_text_wrapper .product_fact_text h2 {
-  font-size: 20vw;
-  font-weight: 600;
   margin-left: -13px;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 .product_facts .image img {
   width: 100%;
@@ -1412,8 +1378,8 @@ header.header-collapsed .navbar-toggler {
 .product_facts .Text_area .indicatong_group .indication .poits_content {
   width: 90%;
 }
-.product_facts .Text_area .indicatong_group .indication h2 {
-  font-weight: bold;
+.product_facts .Text_area .indicatong_group .indication .poits_content p {
+  line-height: 1.2;
 }
 .product_facts .Text_area button {
   background-color: #152b59;
@@ -1433,10 +1399,11 @@ header.header-collapsed .navbar-toggler {
   padding: 5rem 0;
 }
 .faqs .faqs_area h2 {
-  font-size: 12vw;
-  font-weight: 600;
   margin-left: -10px;
-  line-height: 0.8;
+  line-height: 0.9;
+}
+.faqs .accordion {
+  color: #152b59 !important;
 }
 .faqs .accordion .accordion-item {
   border: none;
@@ -1444,10 +1411,8 @@ header.header-collapsed .navbar-toggler {
   outline: none;
 }
 .faqs .accordion .accordion-item button {
-  font-size: 2rem;
-  font-weight: 600;
   padding-left: 0;
-  color: #212427;
+  color: #152b59 !important;
 }
 .faqs .accordion .accordion-button:not(.collapsed) {
   background-color: transparent;
@@ -1622,14 +1587,11 @@ footer .col-md-3 .social_icon li a img {
 }
 .dandruff_education_carousel .text_area_for_slider {
   font-family: "helveticaMedium", sans-serif;
-}
-.dandruff_education_carousel .text_area_for_slider h2 {
-  font-size: 3vw;
+  margin-bottom: 1rem;
 }
 .dandruff_education_carousel .text_area_for_slider h3 {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
-  font-size: 1.5vw;
 }
 .dandruff_education_carousel .DE_slider_area .slider1 img {
   width: 50%;
@@ -1643,11 +1605,8 @@ footer .col-md-3 .social_icon li a img {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
-.dandruff_education_carousel .nizoral-product .slider-1 h2 {
-  font-size: 1.5rem;
-}
-.dandruff_education_carousel .nizoral-product .slider-1 h4 {
-  font-size: 1.1rem;
+.dandruff_education_carousel .nizoral-product .slider-1 p {
+  line-height: 1.2;
 }
 
 @keyframes blinker {

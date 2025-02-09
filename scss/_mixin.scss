@@ -100,17 +100,13 @@
         padding: 50px;
 
         h2 {
-            font-size: 8vw;
             text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1;
+            line-height: 0.9;
             margin-left: -5px;
-            letter-spacing: 1px;
+            letter-spacing: -4px;
         }
 
         h3 {
-            font-size: 3rem;
-            font-weight: 700;
             line-height: 1;
         }
     }
@@ -157,8 +153,8 @@
 @mixin range_text($bg) {
     background-color: $bg;
     padding: 40px;
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     color: $blue_font;
 }
 
