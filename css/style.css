@@ -26,7 +26,7 @@ header {
   padding-bottom: 5rem;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   height: clamp(9.625rem, 11.875vw + 0.125rem, 14.375rem);
   transition: transform 0.3s ease-in-out;
   /* Lower priority */

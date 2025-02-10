@@ -213,6 +213,12 @@
   display: block;
   height: auto;
 }
+.scalp-hair-hub-body .complete-haircare-routine .shampoo img {
+  width: 60%;
+  margin-bottom: 2rem;
+  z-index: 9;
+  position: relative;
+}
 .scalp-hair-hub-body .complete-haircare-routine h3 {
   font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);
 }
@@ -249,6 +255,7 @@
 
 .scalp-hair-hub-blogs .blog-navigation .nav-link {
   text-transform: uppercase;
+  padding: 0.5rem;
 }
 .scalp-hair-hub-blogs .blog-navigation .text-blue:hover, .scalp-hair-hub-blogs .blog-navigation .text-blue.active {
   color: #1a2b56;
@@ -406,6 +413,32 @@
   .scalp-hair-hub-body .complete-haircare-routine h3 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent {
+    width: 20%;
+    height: 241vw;
+    flex-direction: column;
+    left: 12%;
+    top: 0;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .one,
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .two,
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .three {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 3rem;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .line {
+    border-bottom: 2px solid #fff;
+    width: 2px;
+    background: #fff;
   }
   .scalp-hair-hub-blogs .blogs-container .col {
     width: 100%;

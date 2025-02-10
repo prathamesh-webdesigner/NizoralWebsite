@@ -200,9 +200,19 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row img_timeline position-relative">
+                    <!-- timeline  -->
+                    <div>
+                        <div class="timeline-parent">
+                            <div class="one">1</div>
+                            <div class="line"></div>
+                            <div class="two">2</div>
+                            <div class="line"></div>
+                            <div class="three">3</div>
+                        </div>
+                    </div>
 
-                    <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="col-sm-4 col-md-4 mb-5 mb-md-0">
                         <div class="shampoo">
                             <img src="image/slider-shampoo.webp" alt="nizoral-shampoo">
                             <h2 class="body-lg">TREAT</h2>
@@ -211,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="col-sm-4 col-md-4 mb-5 mb-md-0">
                         <div class="shampoo">
                             <img src="image/daily-care-slider.webp" alt="Daily Care">
                             <h2 class="body-lg">PREVENT</h2>
@@ -222,7 +232,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="col-sm-4 col-md-4 mb-5 mb-md-0">
                         <div class="shampoo">
                             <img src="image/scap-tonic-slider.webp" alt="scalp-tonic">
                             <h2 class="body-lg">RESTORE</h2>
