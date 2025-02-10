@@ -790,8 +790,33 @@
   height: 20px;
   background-color: #1a2b56;
 }
-.cosmatic-problem ul li li:last-child::after {
+.cosmatic-problem ul li:last-child::after {
   display: none;
+}
+
+.antifungalParent {
+  color: #1a2b56;
+  padding: 5rem 0;
+}
+.antifungalParent .antifungal_agent h2 {
+  line-height: 0.9;
+  width: 120%;
+}
+.antifungalParent img {
+  width: 45%;
+}
+
+.info_fungi {
+  background-color: #00b4dc;
+  color: #1a2b56;
+  padding: 5rem 0;
+}
+.info_fungi h2 {
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
+.info_fungi p {
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=inner-pages.css.map */

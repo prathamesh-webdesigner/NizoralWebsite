@@ -52,9 +52,37 @@
                 height: 20px; // Adjust height as needed
                 background-color: $blue;
             }
-            li:last-child::after {
-                display: none; // Removes separator from the last item
-            }
+            
         }
+        li:last-child::after {
+            display: none; // Removes separator from the last item
+        }
+    }
+}
+
+.antifungalParent{
+    color: $blue;
+    padding: 5rem 0;
+    .antifungal_agent{
+        h2{
+            line-height: 0.9;
+            width: 120%;
+        }
+    }
+    img{
+        width: 45%;
+    }
+}
+
+.info_fungi{
+    background-color: $blue-shade;
+    color: $blue;
+    padding: 5rem 0;
+    h2{
+        line-height: 0.9;
+        letter-spacing: -5px;
+    }
+    p{
+        line-height: 1.2;
     }
 }
