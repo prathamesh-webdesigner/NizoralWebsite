@@ -1052,8 +1052,8 @@ header.header-collapsed .navbar-toggler {
 .white_part_nizoraal_range .nizoral_medical_shampoo .range_text {
   background-color: #ffcc00;
   padding: 40px;
-  height: 60%;
-  width: 60%;
+  height: auto;
+  width: auto;
   color: #152b59;
 }
 .white_part_nizoraal_range .nizoral_medical_shampoo .range_text h2 {

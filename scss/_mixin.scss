@@ -153,8 +153,8 @@
 @mixin range_text($bg) {
     background-color: $bg;
     padding: 40px;
-    height: 60%;
-    width: 60%;
+    height: auto;
+    width: auto;
     color: $blue_font;
 }
 
@@ -165,7 +165,7 @@
 
 @mixin say_good_bye_Heding_h2($fontSize) {
     font-size: $fontSize;
-    font-weight: 700;
+    font-weight: 700; 
     line-height: 1;
 }
 @mixin theNezroralDiffrenceParent_h2 {

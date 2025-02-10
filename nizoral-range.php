@@ -26,9 +26,9 @@
     <div class="container">
         <div class="row mb-5 mb-md-0">
             <div class="nizoral_medical_shampoo">
-                <div class="shampooImage">
+                <!-- <div class="shampooImage"> -->
                     <img src="image/slider-shampoo-cropped.webp" alt="shampoo">
-                </div>
+                <!-- </div> -->
                 <div class="range_text">
                     <h2 class="body-xl font-bold">Nizoral® <br>
                         2% Medical Shampoo</h2>
@@ -48,17 +48,17 @@
                     <p class="body-md">Hydrates and protects your scalp, keeping flake-free with a formula designed for daily use.
                     </p>
                 </div>
-                <div class="shampooImage order-1 order-md-2">
-                    <img src="image/daily-care-slider-cropped.webp" alt="shampoo">
-                </div>
+                <!-- <div class="shampooImage"> -->
+                    <img src="image/daily-care-slider-cropped.webp" alt="shampoo" class="order-1 order-md-2">
+                <!-- </div> -->
             </div>
         </div>
 
         <div class="row mb-5 mb-md-0">
             <div class="nizoral_medical_shampoo">
-                <div class="shampooImage">
+                <!-- <div class="shampooImage"> -->
                     <img src="image/scap-tonic-slider.webp" alt="shampoo">
-                </div>
+                <!-- </div> -->
                 <div class="range_text" style="background-color: #5dafae;">
                     <h2 class="body-xl font-bold">Nizoral® <br> Care Scalp Tonic</h2>
                     <h3 class="body-mslg font-bold">Hydrate and Soothe Your Scalp. </h3>
