@@ -1642,11 +1642,10 @@ header {
         display: flex;
         gap: 40px;
         margin-top: -13rem;
-        margin-left: 8rem;
 
         .daily_care_img {
             .daily_care_product {
-                width: 100%;
+                width: 95%;
             }
         }
 
@@ -1656,13 +1655,12 @@ header {
             justify-content: flex-end;
 
             p {
-                width: 45%;
                 line-height: 1.2;
                 @include gsap_animation;
             }
 
             .blue-drop {
-                width: 30%;
+                width: 50%;
             }
         }
     }

@@ -164,170 +164,172 @@
 <section class="product_carousel scrollSection">
     <div class="container">
         <div class="row">
-            <div class="owl-carousel owl-theme homeSlider">
-                <div class="item">
-                    <div class="slider_first">
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area">
-                                    <img src="image/long-lasting-icon.png" alt="Long Lasting">
+            <div class="col-md-10 offset-md-1">
+                <div class="owl-carousel owl-theme homeSlider">
+                    <div class="item">
+                        <div class="slider_first">
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area">
+                                        <img src="image/long-lasting-icon.png" alt="Long Lasting">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">Long-Lasting</h2>
+                                        <p class="body-sm">Prevents dandruff recurrence for up to 3 months.</p>
+                                    </div>
                                 </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">Long-Lasting</h2>
-                                    <p class="body-sm">Prevents dandruff recurrence for up to 3 months.</p>
+
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area_for_clinically_proven">
+                                        <img src="image/Clinically-Proven.png" alt="Clinically Proven">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">Clinically Proven</h2>
+                                        <p class="body-sm">Backed by science to treat dandruff and seborrheic dermatitis.</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area_for_clinically_proven">
-                                    <img src="image/Clinically-Proven.png" alt="Clinically Proven">
+                            <div class="product_image_area">
+                                <img src="image/shampoo.webp" alt="Shampoo">
+                            </div>
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="fast_relief_round_icon_area">
+                                        <img src="image/Fast-relief.png" alt="Fast-relief">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">Fast Relief</h2>
+                                        <p class="body-sm">Starts working from the first wash to relieve itching and flaking.</p>
+                                    </div>
                                 </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">Clinically Proven</h2>
-                                    <p class="body-sm">Backed by science to treat dandruff and seborrheic dermatitis.</p>
+
+                                <div class="long-lasting-holding_area">
+                                    <div class="triple_action_round_icon_area">
+                                        <img src="image/triple-action.png" alt="Triple-action">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">Triple Action</h2>
+                                        <p class="body-sm">Combines anti-fungal,<br> anti-inflammatory, and<br> anti-proliferative
+                                            effects.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product_image_area">
-                            <img src="image/shampoo.webp" alt="Shampoo">
-                        </div>
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="fast_relief_round_icon_area">
-                                    <img src="image/Fast-relief.png" alt="Fast-relief">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">Fast Relief</h2>
-                                    <p class="body-sm">Starts working from the first wash to relieve itching and flaking.</p>
-                                </div>
-                            </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="triple_action_round_icon_area">
-                                    <img src="image/triple-action.png" alt="Triple-action">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">Triple Action</h2>
-                                    <p class="body-sm">Combines anti-fungal,<br> anti-inflammatory, and<br> anti-proliferative
-                                        effects.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="discover d-flex justify-content-center">
+                            <button class="sprinkles body-md">Discover</button>
                         </div>
                     </div>
-                    <div class="discover d-flex justify-content-center">
-                        <button class="sprinkles body-md">Discover</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider_first">
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area">
-                                    <img src="image/long-lasting-icon.png" alt="Long Lasting">
+                    <div class="item">
+                        <div class="slider_first">
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area">
+                                        <img src="image/long-lasting-icon.png" alt="Long Lasting">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">IMMEDIATE <br> RESULTS</h2>
+                                        <p class="body-sm">Removes loose flakes and soothes irritation from the first wash. </p>
+                                    </div>
                                 </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">IMMEDIATE <br> RESULTS</h2>
-                                    <p class="body-sm">Removes loose flakes and soothes irritation from the first wash. </p>
-                                </div>
-                            </div>
 
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area_for_clinically_proven">
-                                    <img src="image/Clinically-Proven.png" alt="Clinically Proven">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">INNOVATIVE FORMULA</h2>
-                                    <p class="body-sm">Features Crinipan PMC Green to rebalance the scalp microbiome.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_image_area">
-                            <img src="image/DailyCare.webp" alt="DailyCare">
-                        </div>
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="fast_relief_round_icon_area">
-                                    <img src="image/Fast-relief.png" alt="Fast-relief">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">DAILY USE </h2>
-                                    <p class="body-sm">Gentle enough for everyday care to maintain scalp health.</p>
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area_for_clinically_proven">
+                                        <img src="image/Clinically-Proven.png" alt="Clinically Proven">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">INNOVATIVE FORMULA</h2>
+                                        <p class="body-sm">Features Crinipan PMC Green to rebalance the scalp microbiome.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="product_image_area">
+                                <img src="image/DailyCare.webp" alt="DailyCare">
+                            </div>
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="fast_relief_round_icon_area">
+                                        <img src="image/Fast-relief.png" alt="Fast-relief">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">DAILY USE </h2>
+                                        <p class="body-sm">Gentle enough for everyday care to maintain scalp health.</p>
+                                    </div>
+                                </div>
 
-                            <div class="long-lasting-holding_area">
-                                <div class="triple_action_round_icon_area">
-                                    <img src="image/triple-action.png" alt="Triple-action">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">MOISTURIZING <br>CARE</h2>
-                                    <p class="body-sm">Hydrates the scalp and hair for
-                                        a healthier look and feel.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="discover d-flex justify-content-center">
-                        <button class="sprinkles body-md">Discover</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider_first">
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area">
-                                    <img src="image/long-lasting-icon.png" alt="Long Lasting">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">HYDRATES <br>HAIR</h2>
-                                    <p class="body-sm">Restores moisture for
-                                        soft, manageable hair.</p>
-                                </div>
-                            </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="round_icon_area_for_clinically_proven">
-                                    <img src="image/Clinically-Proven.png" alt="Clinically Proven">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">LIGHTWEIGHT <br>FORMULA
-                                    </h2>
-                                    <p class="body-sm">Non-greasy and perfect for regular use.</p>
+                                <div class="long-lasting-holding_area">
+                                    <div class="triple_action_round_icon_area">
+                                        <img src="image/triple-action.png" alt="Triple-action">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">MOISTURIZING <br>CARE</h2>
+                                        <p class="body-sm">Hydrates the scalp and hair for
+                                            a healthier look and feel.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product_image_area">
-                            <img src="image/care.webp" alt="Care">
-                        </div>
-                        <div class="slider_first_column_one">
-                            <div class="long-lasting-holding_area">
-                                <div class="fast_relief_round_icon_area">
-                                    <img src="image/Fast-relief.png" alt="Fast-relief">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">SOOTHES <br>IRRITATION </h2>
-                                    <p class="body-sm">SOOTHES IRRITATION
-                                        Relieves dryness and calms sensitive scalps.</p>
-                                </div>
-                            </div>
-
-                            <div class="long-lasting-holding_area">
-                                <div class="triple_action_round_icon_area">
-                                    <img src="image/triple-action.png" alt="Triple-action">
-                                </div>
-                                <div class="first_text_area">
-                                    <h2 class="body-lg font-bold">SUPPORTS <br>
-                                        SCALP HEALTH</h2>
-                                    <p class="body-sm">Enhances scalp balance with natural ingredients.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="discover d-flex justify-content-center">
+                            <button class="sprinkles body-md">Discover</button>
                         </div>
                     </div>
-                    <div class="discover d-flex justify-content-center">
-                        <button class="sprinkles body-md">Discover</button>
+                    <div class="item">
+                        <div class="slider_first">
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area">
+                                        <img src="image/long-lasting-icon.png" alt="Long Lasting">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">HYDRATES <br>HAIR</h2>
+                                        <p class="body-sm">Restores moisture for
+                                            soft, manageable hair.</p>
+                                    </div>
+                                </div>
+
+                                <div class="long-lasting-holding_area">
+                                    <div class="round_icon_area_for_clinically_proven">
+                                        <img src="image/Clinically-Proven.png" alt="Clinically Proven">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">LIGHTWEIGHT <br>FORMULA
+                                        </h2>
+                                        <p class="body-sm">Non-greasy and perfect for regular use.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_image_area">
+                                <img src="image/care.webp" alt="Care">
+                            </div>
+                            <div class="slider_first_column_one">
+                                <div class="long-lasting-holding_area">
+                                    <div class="fast_relief_round_icon_area">
+                                        <img src="image/Fast-relief.png" alt="Fast-relief">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">SOOTHES <br>IRRITATION </h2>
+                                        <p class="body-sm">SOOTHES IRRITATION
+                                            Relieves dryness and calms sensitive scalps.</p>
+                                    </div>
+                                </div>
+
+                                <div class="long-lasting-holding_area">
+                                    <div class="triple_action_round_icon_area">
+                                        <img src="image/triple-action.png" alt="Triple-action">
+                                    </div>
+                                    <div class="first_text_area">
+                                        <h2 class="body-lg font-bold">SUPPORTS <br>
+                                            SCALP HEALTH</h2>
+                                        <p class="body-sm">Enhances scalp balance with natural ingredients.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discover d-flex justify-content-center">
+                            <button class="sprinkles body-md">Discover</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -384,13 +386,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="prevent_text">
-                <div class="daily_care_img">
-                    <img src="image/daily-care-slider-cropped.webp" class="daily_care_product" alt="Daily-care">
-                </div>
-                <div class="daily_care_text">
-                    <p class="body-sm">Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
-                    <img src="image/blue_drop.webp" class="blue-drop" alt="Daily-care">
+            <div class="prevent_text col-md-8 offset-md-2">
+                <div class="row g-0">
+                    <div class="daily_care_img col-md-6">
+                        <img src="image/daily-care-slider-cropped.webp" class="daily_care_product" alt="Daily-care">
+                    </div>
+                    <div class="daily_care_text col-md-6">
+                        <p class="body-sm">Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
+                        <img src="image/blue_drop.webp" class="blue-drop" alt="Daily-care">
+                    </div>
                 </div>
             </div>
         </div>

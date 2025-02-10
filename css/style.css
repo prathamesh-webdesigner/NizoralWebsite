@@ -1489,10 +1489,9 @@ header.header-collapsed .navbar-toggler {
   display: flex;
   gap: 40px;
   margin-top: -13rem;
-  margin-left: 8rem;
 }
 .prevent .prevent_text .daily_care_img .daily_care_product {
-  width: 100%;
+  width: 95%;
 }
 .prevent .prevent_text .daily_care_text {
   display: flex;
@@ -1500,12 +1499,11 @@ header.header-collapsed .navbar-toggler {
   justify-content: flex-end;
 }
 .prevent .prevent_text .daily_care_text p {
-  width: 45%;
   line-height: 1.2;
   display: inline-block;
 }
 .prevent .prevent_text .daily_care_text .blue-drop {
-  width: 30%;
+  width: 50%;
 }
 
 .restore {

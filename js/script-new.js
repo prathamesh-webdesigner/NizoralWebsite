@@ -73,8 +73,18 @@ function initBanner() {
     let tl_banner = gsap.timeline({
         scrollTrigger: {
             trigger: ".banner",
+            start: "top center", // Adjust as needed
+            toggleActions: "restart none none none", // Restart on enter
             scrub: false,
             pin: false,
+            onEnter: () => {
+                console.log("Entered banner section!");
+                // tl_banner.restart();
+            },
+            onEnterBack: () => {
+                console.log("Re-entered banner from bottom!");
+                tl_banner.restart();
+            }
         }
     });
     tl_banner
