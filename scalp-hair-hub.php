@@ -1,4 +1,9 @@
 <?php include 'header.php'; ?>
+<style>
+    header{
+        height: auto !important;
+    }
+</style>
     <div class="scalp-hair-hub-body">
         <section class="banner_dandruff_education banner_scalp-hair-hub position-relative">
             <div class="container-custom">

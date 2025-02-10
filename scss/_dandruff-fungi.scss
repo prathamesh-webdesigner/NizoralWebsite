@@ -1,0 +1,44 @@
+// Dandruff fungi Page
+.banner-fungi {
+    color: $blue;
+    background-color: $yellow;
+    height: 100vh;
+    padding-top: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    .content{
+        h2{
+            width: 60%;
+            line-height: 1;
+        }
+        h1{
+            line-height: 0.8;
+            margin-left: -4px;
+        }
+    }
+
+    img {
+        width: 95%;
+        position: absolute;
+        top: -9%;
+        transform: scale(1.2);
+        left: 0;
+
+    }
+
+}
+
+.cosmatic-problem{
+    padding: 50px;
+    color: $blue;
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        // li{
+            
+        // }
+    }
+}
+
