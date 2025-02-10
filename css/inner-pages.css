@@ -92,6 +92,10 @@
   font-size: clamp(11.875rem, 18.75vw - 0.125rem, 22.375rem);
 }
 
+.display-mxxl {
+  font-size: clamp(12.5rem, 15.848vw + 2.357rem, 21.375rem);
+}
+
 .display-xlg {
   font-size: clamp(10.688rem, 17.188vw - 0.313rem, 20.313rem);
 }
@@ -732,6 +736,40 @@
   .heading-xl {
     font-size: 5rem;
   }
+}
+.banner-fungi {
+  color: #1a2b56;
+  background-color: #ffc900;
+  height: 100vh;
+  padding-top: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.banner-fungi .content h2 {
+  width: 60%;
+  line-height: 1;
+}
+.banner-fungi .content h1 {
+  line-height: 0.8;
+  margin-left: -4px;
+}
+.banner-fungi img {
+  width: 95%;
+  position: absolute;
+  top: -9%;
+  transform: scale(1.2);
+  left: 0;
+}
+
+.cosmatic-problem {
+  padding: 50px;
+  color: #1a2b56;
+}
+.cosmatic-problem ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=inner-pages.css.map */
