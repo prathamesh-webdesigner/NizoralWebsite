@@ -771,5 +771,27 @@
   list-style: none;
   gap: 30px;
 }
+.cosmatic-problem ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cosmatic-problem ul li a {
+  text-decoration: none;
+  color: #1a2b56;
+}
+.cosmatic-problem ul li::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #1a2b56;
+}
+.cosmatic-problem ul li li:last-child::after {
+  display: none;
+}
 
 /*# sourceMappingURL=inner-pages.css.map */

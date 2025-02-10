@@ -26,10 +26,10 @@
             <p class="body-sm">The causes of dandruff are manifold. Sensitive scalp may react to hair products, nutrition or hormonal
                 and seasonal changes. However, various skin diseases can also be the cause.</p>
             <ul>
-                <li><a href="#">Dandruff</a></li>
-                <li><a href="#">Fungus</a></li>
-                <li><a href="#">Dermatitis</a></li>
-                <li><a href="#">Skin</a></li>
+                <li class="body-md"><a href="#">Dandruff</a></li>
+                <li class="body-md"><a href="#">Fungus</a></li>
+                <li class="body-md"><a href="#">Dermatitis</a></li>
+                <li class="body-md"><a href="#">Skin</a></li>
             </ul>
         </div>
     </div>
