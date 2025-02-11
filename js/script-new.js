@@ -278,14 +278,14 @@ gsap.from(".yourScalpsBottomParent", {
 // ----------------- Top banner ends---------------------
 
 gsap.to(".theNezroralDiffrenceParent h2", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
-    duration: 1.5,
-    delay: 0.5,
-    filter: "blur(0px)",
     opacity: 1,
+    filter: "blur(0px)",
+    clipPath: "inset(0 0% 0 0)",
+    y: 0,
+    duration: 1,
+    stagger: { each: 0.3, },
     ease: "power2.out",
-    scrollTrigger: ".theNezroralDiffrenceParent_main"
+    scrollTrigger: ".scientificText p",
 });
 
 gsap.from(".round_icon_area, .round_icon_area_for_clinically_proven, .fast_relief_round_icon_area, .triple_action_round_icon_area", {
@@ -318,166 +318,122 @@ gsap.to(".hairCareRoutineHeading h2", {
     scrollTrigger: "#hairCareRoutine"
 });
 // treat_parent
-gsap.from(".treat_hed", {
-    y: -100, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
-    duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: ".treat_parent"
+let treat = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".treat_parent",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+    }
 });
-gsap.from(".shampoo_drop", {
-    x: -200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+
+treat.from(".treat_hed", {
+    y: -100,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: ".treat_parent"
-});
-gsap.from(".treat_shampoo_image", {
-    x: 200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+    ease: "power2.out"
+})
+.from(".shampoo_drop", {
+    x: -200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: ".treat_parent"
-});
-gsap.to(".treat_text p", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    ease: "power2.out"
+}, "-=1") // Overlapping animation (starts 1s before previous ends)
+.from(".treat_shampoo_image", {
+    x: 200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    filter: "blur(0px)",
+    ease: "power2.out"
+}, "-=1") // Overlapping with the previous animation
+.to(".treat_text p", {
     opacity: 1,
+    filter: "blur(0px)",
+    clipPath: "inset(0 0% 0 0)",
+    y: 0,
+    duration: 1,
+    stagger: { each: 0.3, },
     ease: "power2.out",
-    scrollTrigger: ".treat_parent"
-});
+}, "-=1"); // Starts before the previous animation ends
+
 // Prevent 
-gsap.from(".prevent_area h2", {
-    y: -100, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
-    duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
+let prevent = gsap.timeline({
     scrollTrigger: {
         trigger: ".prevent",
         scroller: "body",
         start: "top 50",
         end: "top 50%",
         scrub: false,
-        markers: false,
+        markers: false
     }
 });
-gsap.from(".daily_care_product", {
-    x: -200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+
+prevent.from(".prevent_area h2", {
+    y: -100,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: {
-        trigger: ".prevent",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
-gsap.from(".blue-drop", {
-    x: 200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+    ease: "power2.out"
+})
+.from(".daily_care_product", {
+    x: -200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: {
-        trigger: ".prevent",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
-gsap.to(".daily_care_text p", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    ease: "power2.out"
+}, "-=1")
+.from(".blue-drop", {
+    x: 200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    filter: "blur(0px)",
+    ease: "power2.out"
+}, "-=1") 
+.to(".daily_care_text p", {
     opacity: 1,
+    filter: "blur(0px)",
+    clipPath: "inset(0 0% 0 0)",
+    y: 0,
+    duration: 1,
+    stagger: { each: 0.3, },
     ease: "power2.out",
-    scrollTrigger: {
-        trigger: ".prevent",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
+}, "-=1");
+
 // Restore
-gsap.from(".restore_area h2", {
-    y: -100, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
-    duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
+let restore = gsap.timeline({
     scrollTrigger: {
         trigger: ".restore",
         scroller: "body",
         start: "top 50",
         end: "top 50%",
         scrub: false,
-        markers: false,
+        markers: false
     }
 });
-gsap.from(".restore_product", {
-    x: 200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+
+restore.from(".restore_area h2", {
+    y: -100,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: {
-        trigger: ".restore",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
-gsap.from(".restore-drop", {
-    x: -200, // Moves text up before revealing
-    opacity: 0, // Starts with invisible text
+    ease: "power2.out"
+})
+.from(".restore_product", {
+    x: 200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    ease: "power2.out", // Smooth easing effect
-    scrollTrigger: {
-        trigger: ".restore",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
-gsap.to(".restore_para p", {
-    filter: "blur(0px)",  // Removes blur gradually
-    clipPath: "inset(0 0% 0 0)", // Reveals text from left to right
+    ease: "power2.out"
+}, "-=1") // Overlapping animation
+.from(".restore-drop", {
+    x: -200,
+    opacity: 0,
     duration: 1.5,
-    delay: 0.5,
-    filter: "blur(0px)",
+    ease: "power2.out"
+}, "-=1") // Overlapping with the previous animation
+.to(".restore_para p", {
     opacity: 1,
+    filter: "blur(0px)",
+    clipPath: "inset(0 0% 0 0)",
+    y: 0,
+    duration: 1,
+    stagger: { each: 0.3, },
     ease: "power2.out",
-    scrollTrigger: {
-        trigger: ".restore",
-        scroller: "body",
-        start: "top 50",
-        end: "top 50%",
-        scrub: false,
-        markers: false,
-    }
-});
+}, "-=1"); // Starts before the previous animation ends
+
 // Expert Advice 
 gsap.from(".expret_advice_wrapper", {
     y: 200, // Moves text up before revealing

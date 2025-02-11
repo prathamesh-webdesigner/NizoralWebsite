@@ -76,6 +76,7 @@ header {
     &.header-collapsed {
         background-color: transparent;
         z-index: 100;
+
         .navbar-nav,
         .buyNow,
         .navbar-collapse {
@@ -92,12 +93,10 @@ header {
     width: 100%;
     height: 100vh;
     background: $skyBlue;
-    background: linear-gradient(
-        295deg,
-        rgba(35, 126, 222, 1) 0%,
-        rgb(35 126 222 / 36%) 29%,
-        rgba(35, 126, 222, 1) 100%
-    );
+    background: linear-gradient(295deg,
+            rgba(35, 126, 222, 1) 0%,
+            rgb(35 126 222 / 36%) 29%,
+            rgba(35, 126, 222, 1) 100%);
     position: relative;
     overflow: hidden;
     padding-top: 180px;
@@ -241,6 +240,7 @@ header {
     .sayGoodbyeParent {
         @include yourScalps(transparent);
         position: relative;
+
         .section-bg {
             background-color: $yellow_header;
             position: absolute;
@@ -250,6 +250,7 @@ header {
             height: 100%;
             z-index: 0;
         }
+
         .sayGoodbye {
             height: 100%;
             z-index: 5;
@@ -294,6 +295,7 @@ header {
         @include yourScalps(transparent);
         justify-content: center;
         position: relative;
+
         .section-bg {
             background-color: $skyBlue;
             position: absolute;
@@ -303,6 +305,7 @@ header {
             height: 100%;
             z-index: 0;
         }
+
         .gentleEnough {
             height: 100%;
             display: flex;
@@ -346,6 +349,7 @@ header {
     .hydrateParent {
         @include yourScalps(transparent);
         justify-content: end;
+
         .section-bg {
             background-color: $lightGreen;
             position: absolute;
@@ -355,6 +359,7 @@ header {
             height: 100%;
             z-index: 0;
         }
+
         .hydrate {
             height: 100%;
             display: flex;
@@ -403,6 +408,7 @@ header {
         left: 0;
         width: 100%;
         z-index: 10;
+
         .yourScalpsBottom {
             background-color: $yellow_header;
             padding: 2rem 0;
@@ -432,7 +438,9 @@ header {
 
     h2 {
         color: $blue_font;
-        @include gsap_animation;
+        display: inline-block;
+        filter: blur(0px);
+        clip-path: inset(0 100% 0 0);
     }
 }
 
@@ -516,8 +524,10 @@ header {
                 color: #fff;
                 letter-spacing: 1px;
             }
+
             div {
                 width: 92%;
+
                 p {
                     width: 37%;
                     margin-left: auto;
@@ -737,7 +747,7 @@ header {
             position: absolute;
             bottom: -65%;
             right: -15rem;
-            z-index: 9;
+            z-index: 100;
         }
     }
 }
@@ -750,6 +760,7 @@ header {
         h2 {
             width: 80%;
         }
+
         p {
             line-height: 1.2;
         }
@@ -814,6 +825,7 @@ header {
         width: 82%;
         text-align: center;
         margin: 0 auto;
+
         p {
             line-height: 1.2;
         }
@@ -857,6 +869,7 @@ header {
             margin-left: -5px;
             letter-spacing: -4px;
         }
+
         p {
             line-height: 1.2;
         }
@@ -902,6 +915,7 @@ header {
         h3 {
             line-height: 1;
         }
+
         p {
             line-height: 1.2;
         }
@@ -947,6 +961,7 @@ header {
         h3 {
             line-height: 1;
         }
+
         p {
             line-height: 1.2;
         }
@@ -993,6 +1008,7 @@ header {
         h3 {
             line-height: 1;
         }
+
         p {
             line-height: 1.2;
         }
@@ -1038,6 +1054,7 @@ header {
         h3 {
             line-height: 1;
         }
+
         p {
             line-height: 1.2;
         }
@@ -1102,7 +1119,8 @@ header {
             h2 {
                 line-height: 1;
             }
-            p{
+
+            p {
                 line-height: 1.2;
             }
         }
@@ -1265,11 +1283,13 @@ header {
             .text_area {
                 width: 40%;
                 margin-left: 2rem;
+
                 a {
                     color: $blue_font;
                     text-decoration: none;
                 }
-                p{
+
+                p {
                     line-height: 1.2;
                 }
             }
@@ -1315,7 +1335,8 @@ header {
 
             .shampoo_banner_points {
                 width: 90%;
-                p{
+
+                p {
                     line-height: 1.2;
                 }
             }
@@ -1501,7 +1522,8 @@ header {
 
                 .poits_content {
                     width: 90%;
-                    p{
+
+                    p {
                         line-height: 1.2;
                     }
                 }
@@ -1536,6 +1558,7 @@ header {
 
     .accordion {
         color: $blue_font !important;
+
         .accordion-item {
             border: none;
             border-bottom: 1px solid $blue_font;
@@ -1604,7 +1627,10 @@ header {
             color: $black_font;
             width: 36%;
             margin-left: 4.4rem;
-            @include gsap_animation;
+            // @include gsap_animation;
+            display: inline-block;
+            filter: blur(0px);
+            clip-path: inset(0 100% 0 0);
         }
 
         .shampoo_drop {
@@ -1656,7 +1682,10 @@ header {
 
             p {
                 line-height: 1.2;
-                @include gsap_animation;
+                // @include gsap_animation;
+                display: inline-block;
+                filter: blur(0px);
+                clip-path: inset(0 100% 0 0);
             }
 
             .blue-drop {
@@ -1692,7 +1721,10 @@ header {
             p {
                 width: 60%;
                 line-height: 1.2;
-                @include gsap_animation;
+                // @include gsap_animation;
+                display: inline-block;
+                filter: blur(0px);
+                clip-path: inset(0 100% 0 0);
             }
 
             img {
@@ -1797,6 +1829,7 @@ footer {
                 margin: 0 auto;
                 margin-bottom: 1rem;
             }
+
             p {
                 line-height: 1.2;
             }
@@ -2103,8 +2136,10 @@ footer {
     color: #212427;
     display: block;
     // transition: 0.3s;
-    transition: color 0.3s; /* Smooth hover effect */
-    visibility: hidden; /* Initially hide text */
+    transition: color 0.3s;
+    /* Smooth hover effect */
+    visibility: hidden;
+    /* Initially hide text */
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -2135,6 +2170,7 @@ header.header-collapsed .navbar-toggler {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 .sidenav.open a {
     visibility: visible;
 }

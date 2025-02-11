@@ -445,6 +445,8 @@ header.header-collapsed .navbar-toggler {
 .theNezroralDiffrenceParent h2 {
   color: #152b59;
   display: inline-block;
+  filter: blur(0px);
+  clip-path: inset(0 100% 0 0);
 }
 
 .scientificallyBacked {
@@ -743,7 +745,7 @@ header.header-collapsed .navbar-toggler {
   position: absolute;
   bottom: -65%;
   right: -15rem;
-  z-index: 9;
+  z-index: 100;
 }
 
 .which_environmental_factors .environmentalFactorsParent {
@@ -1460,6 +1462,8 @@ header.header-collapsed .navbar-toggler {
   width: 36%;
   margin-left: 4.4rem;
   display: inline-block;
+  filter: blur(0px);
+  clip-path: inset(0 100% 0 0);
 }
 .treat_parent .treat_text .shampoo_drop {
   width: 26%;
@@ -1501,6 +1505,8 @@ header.header-collapsed .navbar-toggler {
 .prevent .prevent_text .daily_care_text p {
   line-height: 1.2;
   display: inline-block;
+  filter: blur(0px);
+  clip-path: inset(0 100% 0 0);
 }
 .prevent .prevent_text .daily_care_text .blue-drop {
   width: 50%;
@@ -1530,6 +1536,8 @@ header.header-collapsed .navbar-toggler {
   width: 60%;
   line-height: 1.2;
   display: inline-block;
+  filter: blur(0px);
+  clip-path: inset(0 100% 0 0);
 }
 .restore .restore_text .restore_para img {
   width: 40%;
@@ -1795,8 +1803,10 @@ footer .col-md-3 .social_icon li a img {
   font-size: 18px;
   color: #212427;
   display: block;
-  transition: color 0.3s; /* Smooth hover effect */
-  visibility: hidden; /* Initially hide text */
+  transition: color 0.3s;
+  /* Smooth hover effect */
+  visibility: hidden;
+  /* Initially hide text */
 }
 
 /* When you mouse over the navigation links, change their color */
