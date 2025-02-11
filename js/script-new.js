@@ -285,7 +285,7 @@ gsap.to(".theNezroralDiffrenceParent h2", {
     duration: 1,
     stagger: { each: 0.3, },
     ease: "power2.out",
-    scrollTrigger: ".scientificText p",
+    scrollTrigger: ".theNezroralDiffrenceParent",
 });
 
 gsap.from(".round_icon_area, .round_icon_area_for_clinically_proven, .fast_relief_round_icon_area, .triple_action_round_icon_area", {
