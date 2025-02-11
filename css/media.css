@@ -12,10 +12,14 @@
   .say_good_bye_to_dandruff_itching .shampoo p,
   .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area img,
   .stubborn_dandruff_parent .stubborn-dandruff-part .content_area p,
-  .white_para .white_para_wraper, .scientificallyBacked .scientificallyBackedImage img,
-  .fastLongLastingParent .fastLongLastingImage img, .hairCareRoutine .hairCareRoutineHeading h2,
-  .restore .restore_text .daily_care_img img, .fastLongLastingParent .fastLongLasting .fastLongLastingText div p, .restore .restore_text .restore_para p,
-  .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area {
+  .white_para .white_para_wraper,
+  .scientificallyBacked .scientificallyBackedImage img,
+  .fastLongLastingParent .fastLongLastingImage img,
+  .hairCareRoutine .hairCareRoutineHeading h2,
+  .restore .restore_text .daily_care_img img,
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText div p,
+  .restore .restore_text .restore_para p,
+  .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area, .treat_parent .treat_text {
     width: 100%;
   }
 
@@ -46,8 +50,16 @@
   .scientificallyBacked,
   .toughOnDandruffButNotOn,
   .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow,
-  .stubborn_dandruff_parent .stubborn-dandruff-part, .yourScalps, .fastLongLastingParent, .toughOnDandruffButNotOn,
-  .product_carousel, .allAboutDandruffParent, .treat_parent, .prevent, .restore, .expret_advice {
+  .stubborn_dandruff_parent .stubborn-dandruff-part,
+  .yourScalps,
+  .fastLongLastingParent,
+  .toughOnDandruffButNotOn,
+  .product_carousel,
+  .allAboutDandruffParent,
+  .treat_parent,
+  .prevent,
+  .restore,
+  .expret_advice {
     width: 100%;
     height: auto !important;
   }
@@ -91,13 +103,14 @@
 
   .banner .bannerTextArea p,
   .environmentalFactors .externalInfluencesYellow .externalInfluencesText .light_yellow_area p,
-  .prevent .prevent_text .daily_care_text p, .restore .restore_text .daily_care_text p {
+  .restore .restore_text .daily_care_text p {
     font-size: 1rem;
     width: 100%;
   }
 
-  .theNezroralDiffrenceParent h2, .hairCareRoutine .hairCareRoutineHeading h2 {
-    font-size: 6vw;
+  .theNezroralDiffrenceParent h2,
+  .hairCareRoutine .hairCareRoutineHeading h2 {
+    font-size: 2rem;
   }
 
   .banner .bannerBoy img,
@@ -117,7 +130,8 @@
   }
 
   .yourScalps .bestfriend h2,
-  .fastLongLastingParent .fastLongLasting .fastLongLastingText h3 {
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText h3,
+  .scientificallyBacked .scientificallyBackedYellow .scientificText h3 {
     font-size: 1.5rem;
   }
 
@@ -137,8 +151,9 @@
     margin-top: 3rem;
   }
 
-  .scientificallyBacked .scientificallyBackedYellow .scientificText h3,
-  .scientificallyBacked .scientificallyBackedYellow .scientificText p {
+  .scientificallyBacked .scientificallyBackedYellow .scientificText p, 
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area p, 
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area a{
     font-size: 1rem;
   }
 
@@ -209,7 +224,8 @@
     width: 100%;
   }
 
-  .allAboutDandruffParent .allAboutDandruff p {
+  .allAboutDandruffParent .allAboutDandruff p,
+  .treat_parent .treat_text p {
     font-size: 1rem;
     width: 100%;
   }
@@ -220,7 +236,7 @@
 
   .allAboutDandruffParent .allAboutDandruffImage img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
 
@@ -236,7 +252,8 @@
   .air_pollution .col-md-4 .air_pollution_image img,
   .air_pollution_image img,
   .white_part_nizoraal_range .nizoral_medical_shampoo .range_text,
-  .say_good_bye_to_dandruff_itching, .product_carousel {
+  .say_good_bye_to_dandruff_itching,
+  .product_carousel {
     width: 100%;
     height: 100%;
   }
@@ -311,7 +328,7 @@
     width: 80%;
   }
 
-  .white_part_nizoraal_range .nizoral_medical_shampoo .range_text h2 {
+  .white_part_nizoraal_range .nizoral_medical_shampoo .range_text h2, .expret_advice .expret_advice_text h3, .dandruff_vs_scalp_area .text_area h2 {
     font-size: 1.5rem;
   }
 
@@ -320,11 +337,14 @@
     padding: 20px;
   }
 
-  .shampooImage, .daily_care_img {
+  .shampooImage,
+  .daily_care_img {
     text-align: center;
   }
 
-  .white_part_nizoraal_range .nizoral_medical_shampoo, .product_carousel .discover button, .restore .restore_text,
+  .white_part_nizoraal_range .nizoral_medical_shampoo,
+  .product_carousel .discover button,
+  .restore .restore_text,
   .banner .bannerTextArea h2 {
     margin-top: 0;
   }
@@ -349,8 +369,7 @@
   }
 
   .say_good_bye_to_dandruff_itching .heading h2 span,
-  .say_good_bye_to_dandruff_itching .heading h3,
-  .expret_advice .expret_advice_text h3 {
+  .say_good_bye_to_dandruff_itching .heading h3 {
     font-size: 6vw;
   }
 
@@ -366,7 +385,8 @@
   .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area,
   .stubborn_dandruff_parent .stubborn-dandruff-part .content_area,
   .fastLongLastingParent .fastLongLasting .fastLongLastingText h2,
-  .allAboutDandruffParent .allAboutDandruff h2, .treat_parent .treat_text p {
+  .allAboutDandruffParent .allAboutDandruff h2,
+  .treat_parent .treat_text p {
     width: 100%;
     margin-left: 0;
   }
@@ -382,12 +402,15 @@
     text-align: left;
   }
 
-  .banner-shampoo button, .product_facts .Text_area button, .prevent .prevent_text .daily_care_img .daily_care_product {
+  .banner-shampoo button,
+  .product_facts .Text_area button,
+  .prevent .prevent_text .daily_care_img .daily_care_product {
     width: 60%;
     font-size: 1rem;
   }
 
-  .stubborn_dandruff_parent .stubborn-dandruff-part .content_area span, .allAboutDandruffParent .allAboutDandruff h3 {
+  .stubborn_dandruff_parent .stubborn-dandruff-part .content_area span,
+  .allAboutDandruffParent .allAboutDandruff h3 {
     font-size: 2rem;
   }
 
@@ -408,18 +431,18 @@
     font-size: 8vw;
   }
 
-  .product_carousel, .allAboutDandruffParent, .treat_parent, .prevent, .restore {
+  .product_carousel,
+  .allAboutDandruffParent,
+  .treat_parent,
+  .prevent,
+  .restore {
     padding: 10px 0;
   }
 
-  .product_carousel .discover button, .allAboutDandruffParent .allAboutDandruff button {
+  .product_carousel .discover button,
+  .allAboutDandruffParent .allAboutDandruff button {
     padding: 8px 20px;
     font-size: 1rem;
-  }
-
-  .prevent .prevent_area h2, .restore .restore_area h2 {
-    font-size: 12vw;
-    letter-spacing: 4px;
   }
 
   .prevent .prevent_text {
@@ -432,7 +455,7 @@
   }
 
   .prevent .prevent_text .daily_care_text {
-    flex-direction: row;
+    align-items: center;
   }
 
   .restore .restore_text .daily_care_text img {
@@ -443,9 +466,43 @@
   .banner .bannerTextArea {
     gap: 5px;
   }
+
   .restore .restore_text .restore_para img {
     width: 62%;
     margin: 0 auto;
     margin-left: 0;
+  }
+
+  .scientificallyBacked .scientificallyBackedYellow .scientificText h2,
+  .fastLongLastingParent .fastLongLasting .fastLongLastingText h2,
+  .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h2,
+  .allAboutDandruffParent .allAboutDandruff h2,
+  .treat_parent .treat_text h2,
+  .expret_advice .expret_advice_text h2,
+  .prevent .prevent_area h2,
+  .restore .restore_area h2 {
+    font-size: 3rem;
+  }
+
+  .treat_parent .treat_text h2,
+  .prevent .prevent_area h2,
+  .restore .restore_area h2 {
+    letter-spacing: 0px;
+  }
+
+  .prevent .prevent_text .daily_care_text p, .restore .restore_text .restore_text_wrap .restore_para p, .treat_parent .treat_text p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .restore .restore_text .restore_text_wrap .restore_para img, .treat_parent .treat_text .shampoo_drop{
+    margin: 0 auto;
+    width: 50%;
+  }
+  .restore .restore_text .restore_text_wrap {
+    flex-direction: column;
+}
+.restore .restore_text .restore_text_wrap .restore_para{
+  align-items: center;
 }
 }

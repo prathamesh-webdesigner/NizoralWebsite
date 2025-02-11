@@ -356,7 +356,7 @@
 </section>
 <section class="scientificallyBacked hairCareRoutine position-relative scrollSection" id="hairCareRoutine">
     <div class="container-fluid">
-        <div class="row text-center p-5 hairCareRoutineHeading">
+        <div class="row text-center py-5 hairCareRoutineHeading">
             <h2 class="heading-md">A complete scalp and haircare routine</h2>
         </div>
     </div>
@@ -410,7 +410,7 @@
     </div>
     <div class="container">
         <div class="row restore_text">
-            <div class="d-flex align-items-md-end">
+            <div class="restore_text_wrap">
                 <div class="restore_para">
                     <p class="body-sm">Rebalance and soothe your scalp with Nizoral® Scalp Tonic, leaving it refreshed and moisturized.</p>
                     <img src="image/sky_blue_drop.webp" class="restore-drop" alt="Daily-care">
