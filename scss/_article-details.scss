@@ -1,33 +1,40 @@
 
-.article-details-body { font-family: 'Helvetica Neue';
-    header { z-index: 99; height: 120px;} 
+
 	.article-details-banner { height: auto; min-height: 100vh;
         .container-custom {
             max-width: 90%;
             margin-left: 10vw;
+            padding-bottom: 1vw;
             .bannerTextArea {
-                h1 {letter-spacing: 5px; margin: 0; font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);}
+                h1 { margin: 0; font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);}
                 h2 { margin-bottom: 0; font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);}
                 h3  { font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);}
                 p { width: 47%;}
             }
         }
         .banner_dandruff_educationBoy{
-            img{ bottom: 0; width: 45%; }
+            img{ bottom: 0; width: 45%; right: 0; }
         }
     }
+   
 	.article_nizoral_product { height: auto;
-		.heading {  width: 90%; 
-			h2 { line-height: 3.8rem; font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);}
-			h3 { line-height: 2rem; font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);}
+		.heading {  width: 97%; 
+			h2 { line-height: 4.2rem; font-weight: bold; font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);}
+			h3 { line-height: 2rem; font-weight: bold; font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);}
 		}
 		.shampoo {
-			h2 { font-size: 1.5rem; font-weight: normal; }
-			h4 { font-size: 1rem; font-weight: normal; }
+           img {
+                width: 60%;
+                margin-bottom: 2rem;
+                z-index: 9;
+                position: relative;
+            }
+			h2 {  font-weight: bold; }
+			h4 {  font-weight: normal; }
 			hr { border: 1px solid $white; opacity: 0.6; }
 		}
 	}
-}
+
 
 .article-copy-container{
     padding: 6vw 0; color: $blue;
@@ -55,8 +62,6 @@
     .heading-lg {font-size: 3rem;} 
     .heading-xl {font-size: 5rem;} 
 
-	.article-details-body { font-family: 'Helvetica Neue';
-        header { z-index: 99; height: 120px;} 
         .article-details-banner { 
             height: auto; 
             min-height: auto; 
@@ -95,20 +100,19 @@
        
     }
    
-}
+
 
 @media screen and (max-width: 576px) { // SM - Mobile
     .heading-lg {font-size: 3rem;} 
     .heading-xl {font-size: 5rem;} 
 
-    .article-details-body { font-family: 'Helvetica Neue';
-        header { z-index: 99; height: 120px;} 
-        .article-details-banner { height: auto; min-height: auto;
-            .container-custom { margin-left: 5vw;
+
+        .article-details-banner { height: auto; min-height: auto; padding-bottom: 0;
+            .container-custom { margin-left: 5vw; margin-top: 5rem; padding-bottom: 0;
                 .bannerTextArea {
                     h1 {letter-spacing: 5px; margin: 0; font-size: 7rem;}
                     h2 { margin-bottom: 0; font-size: 2rem; text-align: center; width: 50%;} 
-                    h3  { font-size: 2rem;}
+                    h3  { font-size: 1.5rem !important;}
                     p { width: 90%;}
                 }
             }
@@ -116,10 +120,16 @@
                 img{ bottom: 0; width: 100%; }
             }
         }
-      
+        .article_nizoral_product { height: auto;
+            .heading {  width: 97%; 
+                h2 {font-size: 1.5rem;}
+                h3 { font-size: 0.8rem; }
+            }
             
         }
-    }
+            
+        }
+    
 
 
 

@@ -4,10 +4,10 @@
         <div class="container-custom">
             <div class="row">
                 <div class="bannerTextArea">
-                    <h2 class="dandruff_caused_by body-xl">How to</h2>
-                    <h1 class="external_factors display-xl">Deal</h1>
-                    <h3 class="body-xl">with dry and flaky scalp?</h3>
-                    <p class="">Although dandruff and dry scalp have similar symptoms, they are not identical problems. Flaky scalp does not necessarily mean that you suffer from dandruff. Therefore, dry scalp also requires different care. Learn how to treat itchy, flaky scalp effectively.
+                    <h2 class="dandruff_caused_by font-bold body-xl">How to</h2>
+                    <h1 class="external_factors font-bold display-xl">Deal</h1>
+                    <h3 class="body-xl font-bold">with dry and flaky scalp?</h3>
+                    <p class="body-md font-bold">Although dandruff and dry scalp have similar symptoms, they are not identical problems. Flaky scalp does not necessarily mean that you suffer from dandruff. Therefore, dry scalp also requires different care. Learn how to treat itchy, flaky scalp effectively.
                     </p>
                 </div>
 
@@ -146,12 +146,12 @@
     <section class="say_good_bye_to_dandruff_itching article_nizoral_product bg-sky-blue">
         <div class="container">
             <div class="row">
-                <div class="heading text-center">
-                    <h2 class="heading-md">
+                <div class="heading text-center pb-3">
+                    <h2 class="heading-md font-bold">
                         Already tried everything for dandruff? <br>
                         It’s time for Nizoral®
                     </h2>
-                    <h3 class="body-lg">
+                    <h3 class="body-lg font-bold">
                         Nizoral is a clinically proven solution for dandruff, <br>treating the cause and symptoms.
                     </h3>
                 </div>
@@ -160,7 +160,7 @@
             <div class="row">
 
                 <div class="col-md-4 mb-5 mb-md-0">
-                    <div class="shampoo">
+                    <div class="shampoo text-center px-4">
                         <img src="image/slider-shampoo.webp" alt="Nizoral-shampoo">
                         <h2 class="body-md">Nizoral®<br>
                             2% Medical Shampoo</h2>
@@ -173,7 +173,7 @@
                 </div>
 
                 <div class="col-md-4 mb-5 mb-md-0">
-                    <div class="shampoo">
+                    <div class="shampoo text-center px-4">
                         <img src="image/daily-care-slider.webp" alt="Daily Care">
                         <h2 class="body-md">Nizoral®<br>
                             Gentle Enough for Every Day</h2>
@@ -185,7 +185,7 @@
                 </div>
 
                 <div class="col-md-4 mb-5 mb-md-0">
-                    <div class="shampoo">
+                    <div class="shampoo text-center px-4">
                         <img src="image/scap-tonic-slider.webp" alt="scalp-tonic">
                         <h2 class="body-md">Nizoral® Care<br>
                             Scalp Tonic</h2>
@@ -200,4 +200,4 @@
             
         </div>
     </section>
-    <?php include 'header.php'; ?>
+    <?php include 'footer.php'; ?>
