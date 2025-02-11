@@ -33,7 +33,7 @@
                     <h2 class="heading-lmd">Your Scalp's</h2>
                     <h3 class="display-xlg font-bold">BEST FRIEND</h3>
                 </div>
-                <div class="col-md-4 sayGoodbyeParent">
+                <div class="col-4 sayGoodbyeParent">
                     <div class="sayGoodbye">
                         <img src="image/shampoo.webp" class="shampoo_image" alt="Nizoral Shampoo">
                         <div class="round_featureParent">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="section-bg"></div>
                 </div>
-                <div class="col-md-4 gentleEnoughParent">
+                <div class="col-4 gentleEnoughParent">
                     <div class="gentleEnough">
                         <img src="image/DailyCare.webp" class="gentleEnoughImage" alt="Nizoral Daily Care">
                         <div class="round_featureParent">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="section-bg"></div>
                 </div>
-                <div class="col-md-4 hydrateParent">
+                <div class="col-4 hydrateParent">
                     <div class="hydrate">
                         <img src="image/care.webp" class="hydrateImage" alt="Nizoral Care">
                         <div class="round_featureParent">

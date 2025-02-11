@@ -38,7 +38,7 @@
   }
 
   .navbar {
-    background-color: #ffcc00 !important;
+    /* background-color: #ffcc00 !important; */
     z-index: 9999;
 
   }
@@ -71,7 +71,7 @@
   .yourScalps .sayGoodbyeParent,
   .yourScalps .gentleEnoughParent,
   .yourScalps .hydrateParent {
-    height: auto;
+    height: calc(100vh - 130px);
   }
 
   .yourScalps .gentleEnoughParent .gentleEnough .round_featureParent,
@@ -80,6 +80,15 @@
     left: 2%;
   }
 
+  .yourScalps .sayGoodbyeParent .sayGoodbye .shampoo_image,
+  .yourScalps .gentleEnoughParent .gentleEnough .gentleEnoughImage,
+  .yourScalps .hydrateParent .hydrate .hydrateImage
+  {
+    height: auto; object-fit: contain;  position: absolute; bottom: 3rem; left: 0;
+  }
+  .yourScalps .gentleEnoughParent .gentleEnough .gentleEnoughImage{
+    transform: scale(1);
+  }
   .bannerTextArea h3 {
     font-size: 2rem !important;
     font-weight: bold;
@@ -142,8 +151,8 @@
 
   .yourScalps .sayGoodbyeParent .sayGoodbye .round_featureParent {
     position: absolute;
-    top: 0%;
-    left: 45%;
+    top: 6%;
+    left: 0%;
   }
 
   /* scientificallyBacked */
