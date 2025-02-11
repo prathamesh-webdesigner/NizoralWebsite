@@ -62,8 +62,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- owl carousel  -->
 
-<script src="js/script.js?v=12"></script>
-<script src="js/scalp-hair-hub.js?v=12"></script>
+<script src="js/script.js?v=13"></script>
+<script src="js/scalp-hair-hub.js?v=13"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

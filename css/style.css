@@ -551,7 +551,7 @@ header.header-collapsed .navbar-toggler {
   color: #152b59;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .toughOnDandruffButNotOn .toughOnDandruffButNotOnYellow .toughOnDandruffButNotOnText h3 {
   line-height: 1;
@@ -1526,20 +1526,24 @@ header.header-collapsed .navbar-toggler {
 .restore .restore_text {
   margin-top: -14rem;
 }
-.restore .restore_text .restore_para {
+.restore .restore_text .restore_text_wrap {
+  display: flex;
+  align-items: end;
+}
+.restore .restore_text .restore_text_wrap .restore_para {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.restore .restore_text .restore_para p {
+.restore .restore_text .restore_text_wrap .restore_para p {
   width: 60%;
   line-height: 1.2;
   display: inline-block;
   filter: blur(0px);
   clip-path: inset(0 100% 0 0);
 }
-.restore .restore_text .restore_para img {
+.restore .restore_text .restore_text_wrap .restore_para img {
   width: 40%;
   margin: 0 auto;
   margin-left: 16rem;
