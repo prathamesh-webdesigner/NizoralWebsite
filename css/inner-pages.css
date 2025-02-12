@@ -698,22 +698,6 @@
 }
 
 /*Media query*/
-@media screen and (max-width: 768px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
 .banner-quiz .bannerTextArea {
   width: 45%;
 }
@@ -723,22 +707,6 @@
 }
 
 /*Media query*/
-@media screen and (max-width: 768px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
 .banner-fungi {
   color: #1a2b56;
   background-color: #ffc900;
