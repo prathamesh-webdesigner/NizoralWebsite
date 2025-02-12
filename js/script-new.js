@@ -82,7 +82,8 @@ function initBanner() {
                 // tl_banner.restart();
             },
             onEnterBack: () => {
-                console.log("Re-entered banner from bottom!");
+                console.log("Remove header class");
+                document.querySelector("header").classList.remove("header-collapsed");
                 tl_banner.restart();
             }
         }
@@ -206,9 +207,11 @@ function initBanner() {
 
 
 }
-if($('.banner').length) {
+if (document.querySelector('.banner')) {
+    // Banner initialise
     initBanner();
 }
+
 /* 
 
 

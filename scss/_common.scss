@@ -59,7 +59,7 @@ $baby-pink  : #fffae5;
 .display-lmlg{ font-size: clamp(10.25rem, 15.96vw + 0.036rem, 19.188rem); } // 307px
 .display-mlg{ font-size: clamp(9.875rem, 15.402vw + 0.018rem, 18.5rem); } // 296px
 .display-slg{ font-size: clamp(9.563rem, 14.955vw - 0.009rem, 17.938rem); } // 287px
-.display-xlg{ font-size: clamp(8.188rem, 12.946vw - 0.098rem, 15.438rem); } // 247px
+.display-xslg{ font-size: clamp(8.188rem, 12.946vw - 0.098rem, 15.438rem); } // 247px
 .display-lg{ font-size: clamp(7.625rem, 12.081vw - 0.122rem, 14.375rem); } // 230px
 .display-md{ font-size: clamp(7.313rem, 11.496vw - 0.045rem, 13.75rem);} //220px
 
@@ -81,6 +81,12 @@ $baby-pink  : #fffae5;
 .body-md{ font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);} // 30px
 .body-sm{ font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);} // 24px
 // .body-xs{}
+
+// ----- Letter spacing
+.letter-spacing-20{ letter-spacing: -0.02em; }
+.letter-spacing-25{ letter-spacing: -0.024em; }
+.letter-spacing-40{ letter-spacing: -0.04em; }
+.letter-spacing-60{ letter-spacing: -0.06em; }
 
 .btn-blue { background: $blue;
     &:hover, &:focus { background: $white; border: 1px solid $blue; color: $blue !important; }

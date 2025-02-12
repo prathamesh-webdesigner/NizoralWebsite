@@ -87,7 +87,7 @@ header {
         }
 
         .navbar-toggler {
-            display: block !important; background-color: $yellow_header; padding: 8px; border-radius: 50%;
+            display: block !important; padding: 8px; border-radius: 50%;
         }
     }
 }
@@ -235,7 +235,7 @@ header {
         }
 
         h3 {
-            margin-top: -2rem;
+            margin-top: -2rem; 
             @include gsap_animation;
         }
     }
@@ -465,7 +465,6 @@ header {
                 color: #fff;
                 line-height: 1;
                 display: inline-block;
-                letter-spacing: 1px;
             }
 
             h2 {
@@ -473,7 +472,6 @@ header {
                 line-height: 1;
                 margin-left: -5px;
                 color: #fff;
-                letter-spacing: 1px;
             }
 
             p {
@@ -517,7 +515,6 @@ header {
                 color: #fff;
                 line-height: 1;
                 display: inline-block;
-                letter-spacing: 1px;
             }
 
             h2 {
@@ -525,7 +522,6 @@ header {
                 line-height: 1;
                 margin-left: -14px;
                 color: #fff;
-                letter-spacing: 1px;
             }
 
             div {
@@ -570,13 +566,12 @@ header {
             h3 {
                 line-height: 1;
                 display: inline-block;
-                letter-spacing: 1px;
             }
 
             h2 {
                 text-transform: uppercase;
                 line-height: 0.9;
-                letter-spacing: 1px;
+                
             }
 
             p {
@@ -640,7 +635,7 @@ header {
         .first_text_area {
             h2 {
                 line-height: 1;
-                letter-spacing: 1px;
+                
                 text-transform: uppercase;
             }
 
@@ -687,7 +682,7 @@ header {
             text-transform: uppercase;
             line-height: 0.8;
             margin-left: -12px;
-            letter-spacing: 1px;
+            
             position: relative;
             z-index: 9;
         }
@@ -784,7 +779,7 @@ header {
 
             h3 {
                 line-height: 1;
-                letter-spacing: 1px;
+                
             }
 
             h2 {

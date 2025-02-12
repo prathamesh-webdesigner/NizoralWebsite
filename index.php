@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
 <section class="banner scrollSection">
-    <div class="container-custom">
+<div class="container-custom">
         <div class="row">
             <div class="bannerTextArea">
-                <h3 class="sayAni body-xl font-bold">Say</h3>
-                <h1 class="d-md-block md_goodbye mb-0 display-lg font-bold">Goodbye</h1>
-                <h2 class="md_dandruffAndItching body-xl font-bold">to dandruff and itching</h2>
-                <p class="body-mslg font-bold">Nizoral® treats the cause of dandruff and itchiness for continous scalp health.</p>
+                <h3 class="sayAni body-xl font-bold letter-spacing-25">Say</h3>
+                <h1 class="d-md-block md_goodbye mb-0 display-lg font-bold letter-spacing-20">Goodbye</h1>
+                <h2 class="md_dandruffAndItching body-xl font-bold letter-spacing-25">to dandruff and itching</h2>
+                <p class="body-mslg font-bold letter-spacing-20">Nizoral® treats the cause of dandruff and itchiness for continous scalp health.</p>
             </div>
 
             <div class="bannerBoy">
@@ -30,8 +30,8 @@
         <div class="container-fluid g-0">
             <div class="row g-0">
                 <div class="bestfriend">
-                    <h2 class="heading-lmd">Your Scalp's</h2>
-                    <h3 class="display-xlg font-bold">BEST FRIEND</h3>
+                    <h2 class="heading-lmd letter-spacing-40">Your Scalp's</h2>
+                    <h3 class="display-xslg font-bold letter-spacing-40">BEST FRIEND</h3>
                 </div>
                 <div class="col-4 sayGoodbyeParent">
                     <div class="sayGoodbye">
@@ -110,9 +110,9 @@
             <div class="scientificallyBackedYellow">
                 <div class="container-custom">
                     <div class="scientificText">
-                        <h3 class="body-mxl">Scientifically Backed</h3>
-                        <h2 class="display-xlg font-bold">Formulas</h2>
-                        <p class="body-md">Proven active ingredients designed to tackle dandruff and care for your scalp.</p>
+                        <h3 class="body-mxl mb-0 lh-1">Scientifically Backed</h3>
+                        <h2 class="display-slg font-bold letter-spacing-40 lh-1">Formulas</h2>
+                        <p class="body-md lh-1">Proven active ingredients designed to tackle dandruff and care for your scalp.</p>
                     </div>
                 </div>
             </div>
@@ -128,10 +128,10 @@
             <div class="fastLongLasting">
                 <div class="container-custom">
                     <div class="fastLongLastingText">
-                        <h3 class="body-mxl">Fast & long-lasting</h3>
-                        <h2 class="display-lxl font-bold">Relief</h2>
+                        <h3 class="body-mxl lh-1">Fast & long-lasting</h3>
+                        <h2 class="display-lxl font-bold lh-1">Relief</h2>
                         <div class="d-flex text-white">
-                            <p class="body-md">Effective from day 1 and delivers relief that lasts up to 3 months</p>
+                            <p class="body-md lh-1">Effective from day 1 and delivers relief that lasts up to 3 months</p>
                         </div>
                     </div>
                 </div>
@@ -149,9 +149,9 @@
                 <div class="container-custom">
                     <div class="toughOnDandruffButNotOnText">
                         <h3 class="body-mxl">Tough on dandruff but not on</h3>
-                        <h2 class="display-mxl font-bold">your <br>
+                        <h2 class="display-mxl font-bold letter-spacing-60">your <br>
                             hair</h2>
-                        <p class="body-md">Effectively eliminates dandruff while being kind to your hair and scalp.</p>
+                        <p class="body-md lh-1">Effectively eliminates dandruff while being kind to your hair and scalp.</p>
                     </div>
                 </div>
             </div>
@@ -366,7 +366,7 @@
         <div class="row">
             <div class="treat_text">
                 <h2 class="treat_hed display-lmxl font-bold">TREAT</h2>
-                <p class="body-sm">Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
+                <p class="body-sm lh-1">Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
                 <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
                 <div class="treat_image">
                     <img src="image/shampoo/top-img.png" alt="Shampoo" class="treat_shampoo_image">
@@ -377,7 +377,7 @@
     </div>
 </section>
 <section class="prevent position-relative scrollSection d-flex align-items-center justify-content-center">
-    <div class="text-center">
+    <div class="">
         <div class="container-fluid g-0">
             <div class="row">
                 <div class="prevent_area">
@@ -392,8 +392,8 @@
                         <div class="daily_care_img col-md-6">
                             <img src="image/daily-care-slider-cropped.webp" class="daily_care_product" alt="Daily-care">
                         </div>
-                        <div class="daily_care_text col-md-6">
-                            <p class="body-sm">Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
+                        <div class="daily_care_text col-md-6 ps-4">
+                            <p class="body-sm text-start">Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
                             <img src="image/blue_drop.webp" class="blue-drop" alt="Daily-care">
                         </div>
                     </div>
@@ -403,7 +403,7 @@
     </div>
 </section>
 <section class="restore position-relative scrollSection d-flex align-items-center justify-content-center">
-    <div class="text-center">
+    <div class="">
         <div class="container-fluid">
             <div class="row">
                 <div class="restore_area">
@@ -431,7 +431,7 @@
     <div class="container expret_advice_wrapper">
         <div class="row">
             <div class="expret_advice_text">
-                <h2 class="display-lmlg font-bold">EXPERT ADVICE</h2>
+                <h2 class="display-lmlg font-bold letter-spacing-40">EXPERT ADVICE</h2>
                 <h3 class="heading-sm font-bold">for a Healthier Scalp & Hair</h3>
             </div>
         </div>
@@ -443,7 +443,7 @@
                     <img src="image/whatsDiffrence.webp" alt="dandruff">
                     <!-- </div> -->
                     <div class="text_area">
-                        <h2 class="body-mlg font-bold">Dandruff vs. Dry Scalp: <br>
+                        <h2 class="body-mlg font-bold letter-spacing-25">Dandruff vs. Dry Scalp: <br>
                             What's the Difference?</h2>
                         <p class="body-sm font-bold">Find out what are the most common causes of dandruff, what is the difference between
                             dandruff scalp and dry scalp, what to avoid in case of...</p>
@@ -456,7 +456,7 @@
                     <img src="image/Stress-management.webp" alt="stress-management">
                     <!-- </div> -->
                     <div class="text_area">
-                        <h2 class="body-mlg font-bold">Dandruff & Stress Tips For Stress Management </h2>
+                        <h2 class="body-mlg font-bold letter-spacing-25">Dandruff & Stress Tips For Stress Management </h2>
                         <p class="body-sm font-bold">Modern living has brought with it lots of new pressures, and life can feel very
                             fast-paced at times. Work commitments and financial respon...</p>
                         <a class="body-sm font-bold" href="#">Read more</a>
@@ -468,7 +468,7 @@
                     <img src="image/flakyScalp.webp" alt="flakyScalp">
                     <!-- </div> -->
                     <div class="text_area">
-                        <h2 class="body-mlg font-bold">How to deal with dry and flaky scalp? </h2>
+                        <h2 class="body-mlg font-bold letter-spacing-25">How to deal with dry and flaky scalp? </h2>
                         <p class="body-sm font-bold">Although dandruff and dry scalp have similar symptoms, they are not identical problems.
                             Flaky scalp does not necessarily mean that you suffe...</p>
                     </div>

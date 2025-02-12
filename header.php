@@ -22,10 +22,7 @@
     <link rel="stylesheet" href="css/media.css?v=13">
     <link rel="stylesheet" href="css/inner-pages.css?v=13">
     <style>
-        header.header-collapsed .navbar-toggler {
-            background: none;
-        }
-
+        
         .banner_dandruff_education .banner_dandruff_educationBoy img {
             bottom: -75%;
         }
