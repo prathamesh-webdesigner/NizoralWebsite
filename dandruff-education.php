@@ -293,4 +293,4 @@
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'footer-new.php'; ?>

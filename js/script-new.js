@@ -206,7 +206,9 @@ function initBanner() {
 
 
 }
-initBanner();
+if($('.banner').length) {
+    initBanner();
+}
 /* 
 
 

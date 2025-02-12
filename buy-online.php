@@ -65,4 +65,4 @@
         </div>
     </section>
 
-    <?php include 'header.php'; ?>
+    <?php include 'footer-new.php'; ?>
