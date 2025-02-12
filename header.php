@@ -33,7 +33,7 @@
                     aria-expanded="false" aria-label="Toggle navigation" onclick="openSideNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 gap-md-5">
                         <li class="nav-item">
                             <a class="nav-link sprinkles" aria-current="page" href="dandruff-education.php">Dandruff
@@ -49,7 +49,7 @@
                             <a class="nav-link sprinkles" href="scalp-quiz-1.php">Get to Know Your Scalp</a>
                         </li>
                     </ul>
-                    <div class="buyNow">
+                    <div class="buyNow py-2">
                         <button class="sprinkles"><a href="buy-online.php" class="text-blue text-decoration-none">BUY NOW</a></button>
                     </div>
                 </div>

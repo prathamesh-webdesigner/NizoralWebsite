@@ -227,11 +227,10 @@ body {
 }
 
 header {
-  padding-bottom: 5rem;
+  background-color: #ffcc00;
   position: fixed;
   width: 100%;
   z-index: 101;
-  height: clamp(9.625rem, 11.875vw + 0.125rem, 14.375rem);
   transition: transform 0.3s ease-in-out;
   /* Lower priority */
 }
@@ -258,6 +257,9 @@ header.header-collapsed {
   background-color: transparent;
   z-index: 100;
 }
+header.header-collapsed .navbar-brand {
+  visibility: hidden;
+}
 header.header-collapsed .navbar-nav,
 header.header-collapsed .buyNow,
 header.header-collapsed .navbar-collapse {
@@ -265,6 +267,9 @@ header.header-collapsed .navbar-collapse {
 }
 header.header-collapsed .navbar-toggler {
   display: block !important;
+  background-color: #ffcc00;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 .banner {
