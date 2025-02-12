@@ -1,4 +1,5 @@
 @import "mixin";
+@import "common";
 
 @font-face {
     font-family: helveticaMedium;
@@ -11,7 +12,7 @@ $black_font: #212427;
 $skyBlue: #207cde;
 $lightGreen: #5dafae;
 $lightBlue: #3db2d8;
-$font_family: "helveticaMedium", sans-serif;
+$font_family: "Helvetica Neue", sans-serif;
 
 * {
     margin: 0;
@@ -33,11 +34,11 @@ body {
 }
 
 header {
-    background-color: $yellow_header;
+    // background-color: $yellow_header;
     padding-bottom: 5rem;
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 101;
     height: clamp(9.625rem, 11.875vw + 0.125rem, 14.375rem);
     transition: transform 0.3s ease-in-out;
 
@@ -46,7 +47,7 @@ header {
         font-family: $font_family;
 
         li {
-            background-color: $yellow_header;
+            // background-color: $yellow_header;
 
             a {
                 font-weight: bold;

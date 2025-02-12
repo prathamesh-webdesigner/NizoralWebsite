@@ -80,12 +80,48 @@
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
 
+.display-lxl {
+  font-size: clamp(13.188rem, 20.647vw - 0.027rem, 24.75rem);
+}
+
+.display-lmxl {
+  font-size: clamp(12.563rem, 19.643vw - 0.009rem, 23.563rem);
+}
+
+.display-mxl {
+  font-size: clamp(11.875rem, 18.75vw - 0.125rem, 22.375rem);
+}
+
+.display-mxxl {
+  font-size: clamp(12.5rem, 15.848vw + 2.357rem, 21.375rem);
+}
+
 .display-xlg {
   font-size: clamp(10.688rem, 17.188vw - 0.313rem, 20.313rem);
 }
 
+.display-lmlg {
+  font-size: clamp(10.25rem, 15.96vw + 0.036rem, 19.188rem);
+}
+
+.display-mlg {
+  font-size: clamp(9.875rem, 15.402vw + 0.018rem, 18.5rem);
+}
+
+.display-slg {
+  font-size: clamp(9.563rem, 14.955vw - 0.009rem, 17.938rem);
+}
+
+.display-xlg {
+  font-size: clamp(8.188rem, 12.946vw - 0.098rem, 15.438rem);
+}
+
 .display-lg {
   font-size: clamp(7.625rem, 12.081vw - 0.122rem, 14.375rem);
+}
+
+.display-md {
+  font-size: clamp(7.313rem, 11.496vw - 0.045rem, 13.75rem);
 }
 
 .heading-xl {
@@ -96,12 +132,36 @@
   font-size: clamp(4.875rem, 7.606vw - 0.003rem, 9.125rem);
 }
 
+.heading-mlg {
+  font-size: clamp(4.5rem, 7.143vw - 0.071rem, 8.5rem);
+}
+
+.heading-slg {
+  font-size: clamp(4.063rem, 6.362vw - 0.009rem, 7.625rem);
+}
+
+.heading-lmd {
+  font-size: clamp(3rem, 4.688vw + 0rem, 5.625rem);
+}
+
 .heading-md {
   font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);
 }
 
+.heading-sm {
+  font-size: clamp(2.5rem, 3.906vw + 0rem, 4.688rem);
+}
+
 .body-xl {
   font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);
+}
+
+.body-mxl {
+  font-size: clamp(2.188rem, 3.571vw - 0.098rem, 4.188rem);
+}
+
+.body-sxl {
+  font-size: clamp(2rem, 3.125vw + 0rem, 3.75rem);
 }
 
 .body-lg {
@@ -110,6 +170,10 @@
 
 .body-mlg {
   font-size: clamp(1.188rem, 1.897vw - 0.027rem, 2.25rem);
+}
+
+.body-mslg {
+  font-size: clamp(1.063rem, 1.786vw - 0.08rem, 2.063rem);
 }
 
 .body-md {
@@ -123,44 +187,54 @@
 .btn-blue {
   background: #1a2b56;
 }
+.btn-blue:hover, .btn-blue:focus {
+  background: #ffffff;
+  border: 1px solid #1a2b56;
+  color: #1a2b56 !important;
+}
 
 .btn-blue-border {
   background: #ffffff;
   border: 1px solid #1a2b56;
+}
+.btn-blue-border:hover, .btn-blue-border:focus {
+  background: #1a2b56;
+  border: 1px solid transparent;
+  color: #ffffff !important;
 }
 
 .scalp-hair-hub-body {
   background-color: #3db2d8;
   font-family: "Helvetica Neue";
 }
-
 .scalp-hair-hub-body header {
-  z-index: 10;
-  height: 110px;
+  /* z-index: 10;
+  height: 110px; */
 }
-
 .scalp-hair-hub-body .complete-haircare-routine {
   padding: 5vw 0;
   background-color: #00b4dc;
   display: block;
   height: auto;
 }
-
+.scalp-hair-hub-body .complete-haircare-routine .shampoo img {
+  width: 60%;
+  margin-bottom: 2rem;
+  z-index: 9;
+  position: relative;
+}
 .scalp-hair-hub-body .complete-haircare-routine h3 {
   font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);
 }
-
 .scalp-hair-hub-body .complete-haircare-routine .discover-btn a {
   background-color: #1a2b56;
   font-weight: normal;
   letter-spacing: 1px;
 }
-
 .scalp-hair-hub-body .complete-haircare-routine .shampoo h2 {
   font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);
   font-weight: normal;
 }
-
 .scalp-hair-hub-body .complete-haircare-routine .shampoo p {
   font-size: clamp(0.813rem, 1.23vw + 0.023rem, 1.5rem);
   font-weight: normal;
@@ -174,9 +248,8 @@
   width: 70%;
   padding-bottom: 5vw;
 }
-
 .banner_scalp-hair-hub .bannerTextArea h2 {
-  font-family: "helveticaMedium", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   letter-spacing: 0.05rem;
   font-weight: normal;
   line-height: 1.5rem;
@@ -186,41 +259,33 @@
 
 .scalp-hair-hub-blogs .blog-navigation .nav-link {
   text-transform: uppercase;
+  padding: 0.5rem;
 }
-
 .scalp-hair-hub-blogs .blog-navigation .text-blue:hover, .scalp-hair-hub-blogs .blog-navigation .text-blue.active {
   color: #1a2b56;
   text-decoration: underline;
 }
-
 .scalp-hair-hub-blogs .blogs-container .blog-visible {
   display: block !important;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col:not(.blog-visible) {
   display: none !important;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col .card {
   border: 0;
   border-radius: 0;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col .card .card-body {
   padding: 1.5rem;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col .card .card-img-container {
   width: 100%;
   height: 0%;
   padding-bottom: 67%;
   position: relative;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col .card .card-img {
-  -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center center;
   object-position: center center;
   width: 100%;
   height: 100%;
@@ -228,126 +293,99 @@
   left: 0;
   top: 0;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+1) {
   width: 50%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+1) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+1) .card-img-container {
   order: 2;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+2) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+2) .card-body {
   order: 2;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+2) .card-img-container {
   order: 1;
   padding-bottom: 110%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+3) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+3) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+3) .card-img-container {
   order: 2;
   padding-bottom: 100%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+4) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+4) .card-body {
   order: 2;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+4) .card-img-container {
   order: 1;
   padding-bottom: 110%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+5) {
   width: 50%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+5) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+5) .card-img-container {
   order: 2;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+6) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+6) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+6) .card-img-container {
   order: 2;
   padding-bottom: 100%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+7) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+7) .card-body {
   order: 2;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+7) .card-img-container {
   order: 1;
   padding-bottom: 110%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+8) {
   width: 25%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+8) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+8) .card-img-container {
   order: 2;
   padding-bottom: 100%;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+9) {
   width: 50%;
   flex: 0 0 auto;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+9) .card-body {
   order: 1;
 }
-
 .scalp-hair-hub-blogs .blogs-container .col.blog-visible:nth-child(9n+9) .card-img-container {
   order: 2;
 }
@@ -379,6 +417,32 @@
   .scalp-hair-hub-body .complete-haircare-routine h3 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent {
+    width: 20%;
+    height: 241vw;
+    flex-direction: column;
+    left: 12%;
+    top: 0;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .one,
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .two,
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .three {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 3rem;
+  }
+  .scalp-hair-hub-body .complete-haircare-routine .img_timeline .timeline-parent .line {
+    border-bottom: 2px solid #fff;
+    width: 2px;
+    background: #fff;
   }
   .scalp-hair-hub-blogs .blogs-container .col {
     width: 100%;
@@ -414,78 +478,64 @@
     width: 100%;
   }
 }
-.article-details-body {
-  font-family: "Helvetica Neue";
-}
-
-.article-details-body header {
-  z-index: 99;
-  height: 120px;
-}
-
-.article-details-body .article-details-banner {
+.article-details-banner {
   height: auto;
   min-height: 100vh;
 }
-
-.article-details-body .article-details-banner .container-custom {
+.article-details-banner .container-custom {
   max-width: 90%;
   margin-left: 10vw;
+  padding-bottom: 1vw;
 }
-
-.article-details-body .article-details-banner .container-custom .bannerTextArea h1 {
-  letter-spacing: 5px;
+.article-details-banner .container-custom .bannerTextArea h1 {
   margin: 0;
   font-size: clamp(14.25rem, 22.595vw - 0.239rem, 26.875rem);
 }
-
-.article-details-body .article-details-banner .container-custom .bannerTextArea h2 {
+.article-details-banner .container-custom .bannerTextArea h2 {
   margin-bottom: 0;
   font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);
 }
-
-.article-details-body .article-details-banner .container-custom .bannerTextArea h3 {
+.article-details-banner .container-custom .bannerTextArea h3 {
   font-size: clamp(2.375rem, 3.691vw + 0.008rem, 4.438rem);
 }
-
-.article-details-body .article-details-banner .container-custom .bannerTextArea p {
+.article-details-banner .container-custom .bannerTextArea p {
   width: 47%;
 }
-
-.article-details-body .article-details-banner .banner_dandruff_educationBoy img {
+.article-details-banner .banner_dandruff_educationBoy img {
   bottom: 0;
   width: 45%;
+  right: 0;
 }
 
-.article-details-body .article_nizoral_product {
+.article_nizoral_product {
   height: auto;
 }
-
-.article-details-body .article_nizoral_product .heading {
-  width: 90%;
+.article_nizoral_product .heading {
+  width: 97%;
 }
-
-.article-details-body .article_nizoral_product .heading h2 {
-  line-height: 3.8rem;
+.article_nizoral_product .heading h2 {
+  line-height: 4.2rem;
+  font-weight: bold;
   font-size: clamp(2.563rem, 4.139vw - 0.091rem, 4.875rem);
 }
-
-.article-details-body .article_nizoral_product .heading h3 {
+.article_nizoral_product .heading h3 {
   line-height: 2rem;
+  font-weight: bold;
   font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);
 }
-
-.article-details-body .article_nizoral_product .shampoo h2 {
-  font-size: 1.5rem;
+.article_nizoral_product .shampoo img {
+  width: 60%;
+  margin-bottom: 2rem;
+  z-index: 9;
+  position: relative;
+}
+.article_nizoral_product .shampoo h2 {
+  font-weight: bold;
+}
+.article_nizoral_product .shampoo h4 {
   font-weight: normal;
 }
-
-.article-details-body .article_nizoral_product .shampoo h4 {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.article-details-body .article_nizoral_product .shampoo hr {
+.article_nizoral_product .shampoo hr {
   border: 1px solid #ffffff;
   opacity: 0.6;
 }
@@ -499,7 +549,6 @@
   min-height: 100vh;
   overflow: hidden;
 }
-
 .image-banner-card .card-img {
   width: 100%;
   height: 100%;
@@ -513,74 +562,67 @@
   .heading-xl {
     font-size: 5rem;
   }
-  .article-details-body {
-    font-family: "Helvetica Neue";
-  }
-  .article-details-body header {
-    z-index: 99;
-    height: 120px;
-  }
-  .article-details-body .article-details-banner {
+  .article-details-banner {
     height: auto;
     min-height: auto;
     padding-top: 30vw;
     padding-bottom: 5vw;
   }
-  .article-details-body .article-details-banner .container-custom {
+  .article-details-banner .container-custom {
     max-width: 100%;
     margin-left: 6vw;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h1 {
+  .article-details-banner .container-custom .bannerTextArea h1 {
     letter-spacing: 5px;
     margin: 0;
     font-size: 10rem;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h2 {
+  .article-details-banner .container-custom .bannerTextArea h2 {
     margin-bottom: 0;
     font-size: 2rem;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h3 {
+  .article-details-banner .container-custom .bannerTextArea h3 {
     font-size: 2rem;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea p {
+  .article-details-banner .container-custom .bannerTextArea p {
     width: 57%;
   }
-  .article-details-body .article-details-banner .banner_dandruff_educationBoy img {
+  .article-details-banner .banner_dandruff_educationBoy img {
     bottom: 0;
     width: 55%;
     right: -7px;
   }
-  .article-details-body .article_nizoral_product {
+  .article_nizoral_product {
     height: auto;
   }
-  .article-details-body .article_nizoral_product .heading {
+  .article_nizoral_product .heading {
     width: 90%;
   }
-  .article-details-body .article_nizoral_product .heading h2 {
+  .article_nizoral_product .heading h2 {
     line-height: normal;
     font-size: 2rem;
   }
-  .article-details-body .article_nizoral_product .heading h3 {
+  .article_nizoral_product .heading h3 {
     line-height: normal;
     font-size: 1rem;
   }
-  .article-details-body .article_nizoral_product .shampoo h2 {
+  .article_nizoral_product .shampoo h2 {
     font-size: 1rem;
     font-weight: normal;
   }
-  .article-details-body .article_nizoral_product .shampoo h4 {
+  .article_nizoral_product .shampoo h4 {
     font-size: 0.7rem;
     font-weight: normal;
   }
-  .article-details-body .article_nizoral_product .shampoo hr {
+  .article_nizoral_product .shampoo hr {
     border: 1px solid #ffffff;
     opacity: 0.6;
   }
-  .article-details-body .article_nizoral_product .shampoo p {
+  .article_nizoral_product .shampoo p {
     font-size: 0.7rem;
     font-weight: normal;
   }
-  .article-details-body .image-banner-card {
+  .image-banner-card {
     min-height: auto;
   }
 }
@@ -591,47 +633,54 @@
   .heading-xl {
     font-size: 5rem;
   }
-  .article-details-body {
-    font-family: "Helvetica Neue";
-  }
-  .article-details-body header {
-    z-index: 99;
-    height: 120px;
-  }
-  .article-details-body .article-details-banner {
+  .article-details-banner {
     height: auto;
     min-height: auto;
+    padding-bottom: 0;
   }
-  .article-details-body .article-details-banner .container-custom {
+  .article-details-banner .container-custom {
     margin-left: 5vw;
+    margin-top: 5rem;
+    padding-bottom: 0;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h1 {
+  .article-details-banner .container-custom .bannerTextArea h1 {
     letter-spacing: 5px;
     margin: 0;
     font-size: 7rem;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h2 {
+  .article-details-banner .container-custom .bannerTextArea h2 {
     margin-bottom: 0;
     font-size: 2rem;
     text-align: center;
     width: 50%;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea h3 {
-    font-size: 2rem;
+  .article-details-banner .container-custom .bannerTextArea h3 {
+    font-size: 1.5rem !important;
   }
-  .article-details-body .article-details-banner .container-custom .bannerTextArea p {
+  .article-details-banner .container-custom .bannerTextArea p {
     width: 90%;
   }
-  .article-details-body .article-details-banner .banner_dandruff_educationBoy img {
+  .article-details-banner .banner_dandruff_educationBoy img {
     bottom: 0;
     width: 100%;
+  }
+  .article_nizoral_product {
+    height: auto;
+  }
+  .article_nizoral_product .heading {
+    width: 97%;
+  }
+  .article_nizoral_product .heading h2 {
+    font-size: 1.5rem;
+  }
+  .article_nizoral_product .heading h3 {
+    font-size: 0.8rem;
   }
 }
 .banner-buy-online {
   height: 100%;
   padding-bottom: 10%;
 }
-
 .banner-buy-online .banner-buy-online-img {
   bottom: -80%;
   right: 0;
@@ -641,53 +690,103 @@
 .locate-pharmacy {
   padding: 8rem 0;
 }
-
 .locate-pharmacy .location {
   margin-bottom: 4rem;
 }
+.locate-pharmacy .location .location-img {
+  width: 65%;
+}
 
 /*Media query*/
-@media screen and (max-width: 768px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-}
 .banner-quiz .bannerTextArea {
   width: 45%;
 }
-
 .banner-quiz .banner_dandruff_educationBoy img {
   width: 75%;
   bottom: -200px;
 }
 
 /*Media query*/
-@media screen and (max-width: 768px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
+.banner-fungi {
+  color: #1a2b56;
+  background-color: #ffc900;
+  height: 100vh;
+  padding-top: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
-@media screen and (max-width: 576px) {
-  .heading-lg {
-    font-size: 3rem;
-  }
-  .heading-xl {
-    font-size: 5rem;
-  }
-} 
+.banner-fungi .content h2 {
+  width: 60%;
+  line-height: 1;
+}
+.banner-fungi .content h1 {
+  line-height: 0.8;
+  margin-left: -4px;
+}
+.banner-fungi img {
+  width: 95%;
+  position: absolute;
+  top: -9%;
+  transform: scale(1.2);
+  left: 0;
+}
+
+.cosmatic-problem {
+  padding: 50px;
+  color: #1a2b56;
+}
+.cosmatic-problem ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.cosmatic-problem ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cosmatic-problem ul li a {
+  text-decoration: none;
+  color: #1a2b56;
+}
+.cosmatic-problem ul li::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #1a2b56;
+}
+.cosmatic-problem ul li:last-child::after {
+  display: none;
+}
+
+.antifungalParent {
+  color: #1a2b56;
+  padding: 5rem 0;
+}
+.antifungalParent .antifungal_agent h2 {
+  line-height: 0.9;
+  width: 120%;
+}
+.antifungalParent img {
+  width: 45%;
+}
+
+.info_fungi {
+  background-color: #00b4dc;
+  color: #1a2b56;
+  padding: 5rem 0;
+}
+.info_fungi h2 {
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
+.info_fungi p {
+  line-height: 1.2;
+}
 
 /*# sourceMappingURL=inner-pages.css.map */

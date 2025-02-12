@@ -4,8 +4,8 @@
 	background-color: $sky-blue; font-family: 'Helvetica Neue';
 
 	header {
-		z-index: 10;
-		height: 110px;
+		/* z-index: 10;
+		height: 110px; */
 	}
 	
 	.complete-haircare-routine { 
@@ -45,7 +45,7 @@
 	.bannerTextArea {
 		width: 70%; padding-bottom: 5vw;
 		h1 { }
-		h2 { font-family: "helveticaMedium", sans-serif; letter-spacing: 0.05rem; 
+		h2 { font-family: "Helvetica Neue", sans-serif; letter-spacing: 0.05rem; 
     		font-weight: normal; line-height: 1.5rem; color: $black;
 			font-size: clamp(1rem, 1.566vw - 0.004rem, 1.875rem);
 		}
