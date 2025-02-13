@@ -1,5 +1,12 @@
 @font-face {
   font-family: "Helvetica Neue";
+  src: url("../font/HelveticaNeue-Roman.woff2") format("woff2"), url("../font/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
   src: url("../font/HelveticaNeue-Medium.woff2") format("woff2"), url("../font/HelveticaNeue-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -12,6 +19,11 @@
   font-style: normal;
   font-display: swap;
 }
+.font-reg {
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+}
+
 .font-medium {
   font-family: "Helvetica Neue";
   font-weight: 500;
@@ -219,6 +231,12 @@
   color: #ffffff !important;
 }
 
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .page-sm-container {
+    width: 85%;
+  }
+}
 @font-face {
   font-family: helveticaMedium;
   src: url(../font/HelveticaNeue-Medium.woff);
@@ -236,7 +254,7 @@ body {
 }
 
 .container-custom {
-  max-width: 90%;
+  width: 90%;
   /* Adjust this percentage as needed */
   margin-left: auto;
   margin-right: auto;
@@ -700,20 +718,20 @@ header.header-collapsed .navbar-toggler {
 .scientificallyBacked .scientificallyBackedImage {
   padding: 0;
   position: absolute;
-  top: 32%;
-  left: 10%;
+  top: 40%;
+  left: 0;
 }
 .scientificallyBacked .scientificallyBackedImage img {
-  width: 80%;
+  width: 98%;
   height: auto;
-  margin-top: -20px;
+  margin-top: -81px;
 }
 
 .fastLongLastingParent {
   height: 100vh;
   overflow: hidden;
-  margin-top: -4rem;
-  background-color: #5dafae;
+  margin-top: 0;
+  /*background-color: $lightGreen;*/
 }
 .fastLongLastingParent .fastLongLasting {
   font-family: "Helvetica Neue", sans-serif;
@@ -722,6 +740,7 @@ header.header-collapsed .navbar-toggler {
   overflow: hidden;
   margin-left: auto;
   margin-right: 0;
+  background-color: #3bb1af;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText {
   margin-top: 4rem;
@@ -739,6 +758,8 @@ header.header-collapsed .navbar-toggler {
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText div {
   width: 92%;
+  position: relative;
+  z-index: 2;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText div p {
   width: 37%;
@@ -747,10 +768,10 @@ header.header-collapsed .navbar-toggler {
 .fastLongLastingParent .fastLongLastingImage {
   padding: 0;
   position: absolute;
-  top: 32%;
+  top: 35%;
 }
 .fastLongLastingParent .fastLongLastingImage img {
-  width: 60%;
+  width: 70%;
   height: 100%;
   transform: scaleX(-1);
 }
@@ -904,6 +925,9 @@ header.header-collapsed .navbar-toggler {
   align-items: center;
   justify-content: center;
 }
+.allAboutDandruffParent .container-custom {
+  width: 86%;
+}
 .allAboutDandruffParent .allAboutDandruff h2 {
   text-transform: uppercase;
   line-height: 0.8;
@@ -912,7 +936,7 @@ header.header-collapsed .navbar-toggler {
   z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruff p {
-  width: 30%;
+  width: 32%;
   line-height: 1.3;
 }
 .allAboutDandruffParent .allAboutDandruff button {
@@ -924,10 +948,10 @@ header.header-collapsed .navbar-toggler {
   z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruffImage img {
-  width: 65%;
+  width: 64%;
   height: auto;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -1396,17 +1420,19 @@ header.header-collapsed .navbar-toggler {
   height: auto !important;
 }
 .expret_advice .expret_advice_text h2 {
-  line-height: 0.9;
+  line-height: 0.83;
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area {
   display: flex;
+  width: 60%;
+  align-items: flex-start;
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area img {
-  width: 30%;
+  width: 40%;
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area {
-  width: 40%;
-  margin-left: 2rem;
+  width: 58%;
+  margin-left: 2%;
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area a {
   color: #152b59;
@@ -1414,6 +1440,12 @@ header.header-collapsed .navbar-toggler {
 }
 .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area .text_area p {
   line-height: 1.2;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(2) {
+  margin-left: 40%;
+}
+.expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(3) {
+  margin-left: 7%;
 }
 
 .banner-shampoo {
@@ -1683,11 +1715,11 @@ header.header-collapsed .navbar-toggler {
 }
 .treat_parent .treat_text .treat_image {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
+  bottom: -1%;
+  right: -1%;
 }
 .treat_parent .treat_text .treat_image img {
-  width: 92%;
+  width: 77%;
 }
 
 .prevent {
@@ -2056,6 +2088,16 @@ header.header-collapsed .navbar-toggler {
 
 .sidenav.open a {
   visibility: visible;
+}
+
+@media only screen and (max-width: 1024px) {
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area {
+    width: 100%;
+  }
+  .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(2), .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(3) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
