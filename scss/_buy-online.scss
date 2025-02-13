@@ -1,4 +1,4 @@
-.banner-buy-online { height: 100%; padding-bottom: 10%;
+.banner-buy-online { height: 100%; overflow: hidden; padding: 8rem 0;
     .banner-buy-online-img { bottom: -80%; right: 0; width: 50%; }
 }
 
@@ -23,6 +23,22 @@
 }
 
 @media screen and (max-width: 576px) { // SM - Mobile
+    .locate-pharmacy { padding: 4rem 0;}
+    .banner-buy-online {  padding: 8rem 0 5rem; 
+        h1 {
+            &.body-xl { font-size: 1.5rem;}
+        }
+        h2 {
+            &.display-xlg { font-size: 5rem;}
+        }
+        .banner-buy-online-img { bottom: -115%; }
+    }
+}
+
+@media screen and (max-width: 375px) { // XM - Mobile
+    .banner-buy-online {  padding: 8rem 0 3rem; 
+        .banner-buy-online-img { bottom: -80%; }
+    }
 }
 
 

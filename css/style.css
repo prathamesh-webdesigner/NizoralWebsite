@@ -231,6 +231,12 @@
   color: #ffffff !important;
 }
 
+/*Media query*/
+@media screen and (max-width: 768px) {
+  .page-sm-container {
+    width: 85%;
+  }
+}
 @font-face {
   font-family: helveticaMedium;
   src: url(../font/HelveticaNeue-Medium.woff);
