@@ -94,3 +94,23 @@ $baby-pink  : #fffae5;
 .btn-blue-border { background: $white; border: 1px solid $blue;
     &:hover, &:focus { background: $blue; border: 1px solid transparent; color: $white !important; }
 } 
+
+
+/*Media query*/
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 1181px) {
+	
+}
+
+@media screen and (max-width: 992px) {  // LG
+}
+
+@media screen and (max-width: 768px) { // MD    
+    .page-sm-container{ width: 85%;}
+}
+
+@media screen and (max-width: 576px) { // SM - Mobile
+    
+}
