@@ -342,7 +342,7 @@
             <div class="allAboutDandruff">
                 <h3 class="body-mxl">All About</h3>
                 <h2 class="display-mlg font-bold">DANDRUFF</h2>
-                <P class="body-md">Dandruff is a common chronic skin condition that affects the scalp. As the scalp is typically
+                <P class="body-md font-reg">Dandruff is a common chronic skin condition that affects the scalp. As the scalp is typically
                     covered in hair and we can’t see the exact condition of our skin, dandruff manifests itself by
                     white flakes of dead skin that fall from the scalp onto the shoulders.
                 </P>
@@ -368,8 +368,8 @@
                 <h2 class="treat_hed display-lmxl font-bold">TREAT</h2>
                 <p class="body-sm lh-1">Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
                 <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
-                <div class="treat_image">
-                    <img src="image/shampoo/top-img.png" alt="Shampoo" class="treat_shampoo_image">
+                <div class="treat_image text-center">
+                    <img src="image/shampoo/top-img.png" alt="Shampoo" class="treat_shampoo_image ">
                 </div>
             </div>
 
@@ -445,7 +445,7 @@
                     <div class="text_area">
                         <h2 class="body-mlg font-bold letter-spacing-25">Dandruff vs. Dry Scalp: <br>
                             What's the Difference?</h2>
-                        <p class="body-sm font-bold">Find out what are the most common causes of dandruff, what is the difference between
+                        <p class="body-sm font-bold mb-0">Find out what are the most common causes of dandruff, what is the difference between
                             dandruff scalp and dry scalp, what to avoid in case of...</p>
                         <a class="body-sm font-bold" href="#">Read more</a>
                     </div>
@@ -457,7 +457,7 @@
                     <!-- </div> -->
                     <div class="text_area">
                         <h2 class="body-mlg font-bold letter-spacing-25">Dandruff & Stress Tips For Stress Management </h2>
-                        <p class="body-sm font-bold">Modern living has brought with it lots of new pressures, and life can feel very
+                        <p class="body-sm font-bold mb-0">Modern living has brought with it lots of new pressures, and life can feel very
                             fast-paced at times. Work commitments and financial respon...</p>
                         <a class="body-sm font-bold" href="#">Read more</a>
                     </div>
