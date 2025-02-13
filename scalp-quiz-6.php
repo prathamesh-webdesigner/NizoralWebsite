@@ -23,39 +23,45 @@
         </section>
 
         <section class="quiz-section my-5">
-            <div class="page-md-container">
-               <p class="font-bold body-mlg text-blue text-center">
-                If you condition is very severe and troublesome please contact a <br>
-                dermatologist, doctor or pharmacists for further advice.
-               </p>
+            <div class="row g-0">
+                <div class="col-10 mx-auto">
+                    <p class="font-bold body-mlg text-blue text-center">
+                        If you condition is very severe and troublesome please contact a <br>
+                        dermatologist, doctor or pharmacists for further advice.
+                    </p>
 
-               <div class="progress">
-                <div class="progress-bar bg-seagreen" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-seagreen" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
-              <div class="quiz-info my-5">
-                <div class="quiz-info-img mb-3">
-                    <div class="page-xs-container">
-                        <img src="image/quiz/6.jpg" class="img-fluid" alt="img 06">
+                    <div class="quiz-info my-5">
+                        <div class="quiz-info-img mb-3">
+                            <div class="row g-0">
+                                <div class="col-10 col-md-8 col-lg-4 mx-auto">
+                                    <img src="image/quiz/6.jpg" class="img-fluid" alt="img 06">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-bold body-mlg text-blue text-center mb-2">
+                            How often do you wash your hair?
+                        </p>
+                        <div class="quiz-info-control mt-4">
+                            <div class="row g-0">
+                                <div class="col-10 col-md-8 col-lg-4 mx-auto">
+                                    <a href="scalp-quiz-result.php" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2">
+                                        Every day or every other day
+                                    </a>
+                                    <a href="#" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2 my-2">
+                                        A couple of times a week
+                                    </a>
+                                    <a href="#" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2">
+                                        Once a week or less
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="font-bold body-mlg text-blue text-center mb-2">
-                    How often do you wash your hair?
-                </p>
-                <div class="quiz-info-control mt-4">
-                    <div class="page-xs-container">
-                        <a href="scalp-quiz-result.php" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2">
-                            Every day or every other day
-                        </a>
-                        <a href="#" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2 my-2">
-                            A couple of times a week
-                        </a>
-                        <a href="#" class="text-decoration-none font-medium body-md btn-blue-border text-blue d-block text-center p-2">
-                            Once a week or less
-                        </a>
-                    </div>
-                </div>
-              </div>
             </div>
         </section>
 
