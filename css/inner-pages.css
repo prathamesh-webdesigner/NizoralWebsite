@@ -233,7 +233,7 @@
 
 /*Media query*/
 @media screen and (max-width: 768px) {
-  .page-sm-container {
+  .page-sm-container, .page-md-container {
     width: 85%;
   }
 }
@@ -767,6 +767,28 @@
 }
 
 /*Media query*/
+@media screen and (max-width: 576px) {
+  .banner-quiz .container-custom {
+    max-width: 100%;
+  }
+  .banner-quiz .bannerTextArea {
+    width: 100%;
+  }
+  .banner-quiz .bannerTextArea .body-xl {
+    font-size: 1.2rem;
+  }
+  .banner-quiz .bannerTextArea .display-xlg {
+    font-size: 6rem;
+    margin: 1rem 0 0.5rem;
+  }
+  .banner-quiz .bannerTextArea .body-md {
+    font-size: 1rem;
+  }
+  .banner-quiz .banner_dandruff_educationBoy img {
+    width: 100%;
+    bottom: 0% !important;
+  }
+}
 .banner-fungi {
   color: #1a2b56;
   background-color: #ffc900;

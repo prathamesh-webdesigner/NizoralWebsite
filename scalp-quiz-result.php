@@ -58,13 +58,13 @@
 
         <section class="image-banner-card row g-0 my-5">
             <div class="col">
-                <div class="card h-100 rounded-0 border-0 bg-yellow" >
+                <div class="card h-100 rounded-0 border-0 bg-yellow">
                     <div class="row g-0 h-100">
                         <div class="col-md-6">
                             <img src="image/article-banner-img01.jpg" class="card-img img-fluid rounded-0 object-fit-cover" alt="...">
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex align-items-center g-0 h-100 p-4">
+                            <div class="d-flex align-items-center g-0 h-100 p-md-4">
                                 <div class="card-body text-blue">
                                     <ul class="list-group">
                                         <li class="list-group-item bg-transparent border-0 d-flex mb-3 text-blue">

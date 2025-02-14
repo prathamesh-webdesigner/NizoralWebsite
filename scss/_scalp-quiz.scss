@@ -20,6 +20,17 @@
 }
 
 @media screen and (max-width: 576px) { // SM - Mobile
+    .banner-quiz {
+        .container-custom {max-width: 100%;}
+        .bannerTextArea { width: 100%;
+            .body-xl {font-size: 1.2rem;}
+            .display-xlg { font-size: 6rem; margin: 1rem 0 .5rem}
+            .body-md { font-size: 1rem;}
+        }    
+        .banner_dandruff_educationBoy { 
+            img { width: 100%; bottom: 0% !important; }
+         }
+    }
 }
 
 
