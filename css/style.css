@@ -757,12 +757,11 @@ header.header-collapsed .navbar-toggler {
   color: #fff;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText div {
-  width: 92%;
   position: relative;
   z-index: 2;
 }
 .fastLongLastingParent .fastLongLasting .fastLongLastingText div p {
-  width: 37%;
+  width: 33%;
   margin-left: auto;
 }
 .fastLongLastingParent .fastLongLastingImage {
@@ -771,7 +770,7 @@ header.header-collapsed .navbar-toggler {
   top: 35%;
 }
 .fastLongLastingParent .fastLongLastingImage img {
-  width: 70%;
+  width: 67%;
   height: 100%;
   transform: scaleX(-1);
 }
@@ -948,11 +947,12 @@ header.header-collapsed .navbar-toggler {
   z-index: 9;
 }
 .allAboutDandruffParent .allAboutDandruffImage img {
-  width: 64%;
+  width: 68%;
   height: auto;
   position: absolute;
   bottom: 0;
   right: 0;
+  top: -6% !important;
 }
 
 .banner_dandruff_education {
@@ -1695,7 +1695,7 @@ header.header-collapsed .navbar-toggler {
   flex-direction: column;
 }
 .treat_parent .treat_text h2 {
-  line-height: 1;
+  line-height: 0.9;
   margin-left: -12px;
   letter-spacing: 10px;
   color: #fff;
@@ -1703,8 +1703,8 @@ header.header-collapsed .navbar-toggler {
 }
 .treat_parent .treat_text p {
   color: #212427;
-  width: 36%;
-  margin-left: 4.4rem;
+  width: 42%;
+  padding-left: 3rem;
   display: inline-block;
   filter: blur(0px);
   clip-path: inset(0 100% 0 0);
@@ -1715,11 +1715,11 @@ header.header-collapsed .navbar-toggler {
 }
 .treat_parent .treat_text .treat_image {
   position: absolute;
-  bottom: -1%;
-  right: -1%;
+  top: 13%;
+  right: -9%;
 }
 .treat_parent .treat_text .treat_image img {
-  width: 77%;
+  width: 70%;
 }
 
 .prevent {
@@ -1729,28 +1729,35 @@ header.header-collapsed .navbar-toggler {
   color: #fff;
 }
 .prevent .prevent_area h2 {
-  line-height: 1;
-  letter-spacing: 10px;
+  line-height: 0.7;
   text-align: center;
+  padding-top: 5rem;
 }
 .prevent .prevent_text {
+  /*display: flex;
+  gap: 40px;*/
+  margin-top: -10rem;
+}
+.prevent .prevent_text .daily_care_img {
   display: flex;
-  gap: 40px;
-  margin-top: -13rem;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .prevent .prevent_text .daily_care_img .daily_care_product {
-  width: 95%;
+  width: 100%;
 }
 .prevent .prevent_text .daily_care_text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .prevent .prevent_text .daily_care_text p {
   line-height: 1.2;
   display: inline-block;
   filter: blur(0px);
   clip-path: inset(0 100% 0 0);
+  width: 80%;
+  padding-top: 7rem;
 }
 .prevent .prevent_text .daily_care_text .blue-drop {
   width: 50%;
@@ -1763,12 +1770,11 @@ header.header-collapsed .navbar-toggler {
 }
 .restore .restore_area h2 {
   line-height: 1;
-  letter-spacing: 10px;
   text-align: center;
   color: #fff;
 }
 .restore .restore_text {
-  margin-top: -14rem;
+  width: 100%;
 }
 .restore .restore_text .restore_text_wrap {
   display: flex;
@@ -1793,10 +1799,13 @@ header.header-collapsed .navbar-toggler {
   margin-left: 16rem;
 }
 .restore .restore_text .daily_care_img {
-  width: 100%;
+  width: 85%;
+  position: absolute;
+  top: -66%;
+  right: 0;
 }
 .restore .restore_text .daily_care_img img {
-  width: 70%;
+  width: 100%;
 }
 
 footer {
@@ -2097,6 +2106,37 @@ header.header-collapsed .navbar-toggler {
   .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(2), .expret_advice .dandruff_vs_scalp .dandruff_vs_scalp_area:nth-child(3) {
     margin-left: 0;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .scientificallyBacked .scientificallyBackedImage img {
+    margin-top: 0;
+  }
+  .fastLongLastingParent .fastLongLastingImage {
+    background-color: #3bb1af;
+  }
+  .toughOnDandruffButNotOn {
+    border-bottom: 1rem solid #ffffff;
+  }
+  .treat_parent .treat_text p {
+    width: 100%;
+    padding-left: 0rem;
+    font-size: 1rem;
+  }
+  .treat_parent .treat_text h2 {
+    padding-top: 1rem;
+  }
+  .treat_parent .treat_text .shampoo_drop {
+    width: 26%;
+    margin-left: 4.4rem;
+  }
+  .treat_parent .treat_text .treat_image {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .treat_parent .treat_text .treat_image img {
+    width: 70%;
   }
 }
 

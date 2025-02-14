@@ -130,7 +130,7 @@
                     <div class="fastLongLastingText">
                         <h3 class="body-mxl lh-1">Fast & long-lasting</h3>
                         <h2 class="display-lxl font-bold lh-1">Relief</h2>
-                        <div class="d-flex text-white">
+                        <div class="d-flex justify-content-end text-white">
                             <p class="body-md lh-1">Effective from day 1 and delivers relief that lasts up to 3 months</p>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
         </div>
     </div>
     <div class="allAboutDandruffImage">
-        <img src="image/AllAboutDandruff.webp" alt="All About Dandruff">
+        <img src="image/AllAboutDandruff.png" alt="All About Dandruff">
     </div>
 </section>
 <section class="scientificallyBacked hairCareRoutine position-relative scrollSection" id="hairCareRoutine">
@@ -369,30 +369,28 @@
                 <p class="body-sm lh-1">Start with Nizoral® 2% Medical Shampoo to tackle dandruff and relieve itching and flaking from the first wash</p>
                 <img src="image/yellow-drop.webp" class="shampoo_drop" alt="Shampoo">
                 <div class="treat_image text-center">
-                    <img src="image/shampoo/top-img.png" alt="Shampoo" class="treat_shampoo_image ">
+                    <img src="image/shampoo/slider-shampoo.png" alt="Shampoo" class="treat_shampoo_image ">
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-<section class="prevent position-relative scrollSection d-flex align-items-center justify-content-center">
-    <div class="">
+<section class="prevent position-relative scrollSection">
+    <div class="row">
         <div class="container-fluid g-0">
-            <div class="row">
-                <div class="prevent_area">
-                    <h2 class="display-lmxl font-bold">PREVENT</h2>
-                </div>
+            <div class="prevent_area">
+                <h2 class="display-lmxl font-bold">PREVENT</h2>
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="prevent_text col-md-8 offset-md-2">
+            <div class="row justify-content-center">
+                <div class="prevent_text col-md-7">
                     <div class="row g-0">
-                        <div class="daily_care_img col-md-6">
-                            <img src="image/daily-care-slider-cropped.webp" class="daily_care_product" alt="Daily-care">
+                        <div class="daily_care_img col-md-7">
+                            <img src="image/prevent-daily_care_product.png" class="daily_care_product" alt="Daily-care">
                         </div>
-                        <div class="daily_care_text col-md-6 ps-4">
+                        <div class="daily_care_text col-md-5 ps-4">
                             <p class="body-sm text-start">Maintain a healthy, flake-free scalp with Nizoral® Daily Care Shampoo, designed for everyday use.</p>
                             <img src="image/blue_drop.webp" class="blue-drop" alt="Daily-care">
                         </div>
@@ -402,30 +400,35 @@
         </div>
     </div>
 </section>
-<section class="restore position-relative scrollSection d-flex align-items-center justify-content-center">
-    <div class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="restore_area">
-                    <h2 class="display-lmxl font-bold">RESTORE</h2>
-                </div>
+<section class="restore treat_parent position-relative scrollSection">
+    <div class="row">
+        <div class="container-fluid g-0">
+            <div class="restore_area">
+                <h2 class="display-lmxl font-bold">RESTORE</h2>
             </div>
         </div>
         <div class="container">
-            <div class="row restore_text">
-                <div class="restore_text_wrap">
-                    <div class="restore_para">
-                        <p class="body-sm">Rebalance and soothe your scalp with Nizoral® Scalp Tonic, leaving it refreshed and moisturized.</p>
-                        <img src="image/sky_blue_drop.webp" class="restore-drop" alt="Daily-care">
-                    </div>
-                    <div class="daily_care_img">
-                        <img src="image/scap-tonic-slider.webp" class="restore_product" alt="Daily-care">
+            <div class="row restore_text justify-content-center">
+                <div class="prevent_text col-md-7">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="daily_care_text ps-4">
+                                <p class="body-sm">Rebalance and soothe your scalp with Nizoral® Scalp Tonic, leaving it refreshed and moisturized.</p>
+                                <img src="image/sky_blue_drop.webp" class="restore-drop w-50" alt="Daily-care">
+                            </div>
+                        </div>
+                        <div class="col-md-7 position-relative">
+                            <div class="daily_care_img">
+                                <img src="image/scap-tonic-slider.png" class="daily_care_product" alt="Daily-care">
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+       
 </section>
 <section class="expret_advice scrollSection">
     <div class="container expret_advice_wrapper">

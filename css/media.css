@@ -499,7 +499,7 @@
     letter-spacing: 0px;
   }
 
-  .prevent .prevent_text .daily_care_text p, .restore .restore_text .restore_text_wrap .restore_para p, .treat_parent .treat_text p {
+  .prevent .prevent_text .daily_care_text p, .restore .restore_text .restore_text_wrap .restore_para p {
     text-align: center;
     font-size: 1.5rem;
     width: 100%;

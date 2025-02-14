@@ -527,11 +527,11 @@ header {
             }
 
             div {
-                width: 92%;
+                //width: 92%; 
                 position: relative;
                 z-index: 2;
                 p {
-                    width: 37%;
+                    width: 33%;
                     margin-left: auto;
                 }
             }
@@ -544,7 +544,7 @@ header {
         top: 35%;
 
         img {
-            width: 70%;
+            width: 67%;
             height: 100%;
             transform: scaleX(-1);
         }
@@ -709,11 +709,12 @@ header {
 
     .allAboutDandruffImage {
         img {
-            width: 64%;
+            width: 68%;
             height: auto;
             position: absolute;
             bottom: 0;
             right: 0;
+            top: -6% !important;
         }
     }
 }
@@ -1621,7 +1622,7 @@ header {
         flex-direction: column;
 
         h2 {
-            line-height: 1;
+            line-height: 0.9;
             margin-left: -12px;
             letter-spacing: 10px;
             color: #fff;
@@ -1630,8 +1631,8 @@ header {
 
         p {
             color: $black_font;
-            width: 36%;
-            margin-left: 4.4rem;
+            width: 42%;
+            padding-left: 3rem;
             // @include gsap_animation;
             display: inline-block;
             filter: blur(0px);
@@ -1645,11 +1646,11 @@ header {
 
         .treat_image {
             position: absolute;
-            bottom: -1%;
-            right: -1%;
+            top: 13%;
+            right: -9%;
 
             img {
-                width: 77%;
+                width: 70%;
             }
         }
     }
@@ -1663,27 +1664,31 @@ header {
 
     .prevent_area {
         h2 {
-            line-height: 1;
-            letter-spacing: 10px;
+            line-height: 0.7;
+            //letter-spacing: 10px;
             text-align: center;
+            padding-top: 5rem;
         }
     }
 
     .prevent_text {
-        display: flex;
-        gap: 40px;
-        margin-top: -13rem;
+        /*display: flex;
+        gap: 40px;*/
+        margin-top: -10rem;
 
         .daily_care_img {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             .daily_care_product {
-                width: 95%;
+                width: 100%;
             }
         }
 
         .daily_care_text {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
 
             p {
                 line-height: 1.2;
@@ -1691,6 +1696,8 @@ header {
                 display: inline-block;
                 filter: blur(0px);
                 clip-path: inset(0 100% 0 0);
+                width: 80%;
+                padding-top: 7rem;
             }
 
             .blue-drop {
@@ -1708,14 +1715,15 @@ header {
     .restore_area {
         h2 {
             line-height: 1;
-            letter-spacing: 10px;
+           // letter-spacing: 10px;
             text-align: center;
             color: #fff;
         }
     }
-
+   
     .restore_text {
-        margin-top: -14rem;
+        width: 100%;
+        //margin-top: -14rem;
 
         .restore_text_wrap {
             display: flex;
@@ -1744,10 +1752,13 @@ header {
         }
 
         .daily_care_img {
-            width: 100%;
+            width: 85%;
+            position: absolute;
+            top: -66%;
+            right: 0;
 
             img {
-                width: 70%;
+                width: 100%;
             }
         }
     }
@@ -2194,4 +2205,55 @@ header.header-collapsed .navbar-toggler {
             }
         }
     } 
+}
+
+@media only screen and (max-width: 576px) {
+
+.scientificallyBacked {
+    .scientificallyBackedImage {
+  
+        img {
+            margin-top: 0;
+        }
+    }
+}
+
+.fastLongLastingParent {
+    .fastLongLastingImage {
+      background-color: $tellblue;
+    }
+}
+
+.toughOnDandruffButNotOn {
+    border-bottom: 1rem solid $white;
+}
+
+.treat_parent {
+
+    .treat_text {
+        p {
+            width: 100%;
+            padding-left: 0rem;
+            font-size: 1rem;
+        }
+        h2{ 
+            padding-top: 1rem;
+        }
+        .shampoo_drop {
+            width: 26%;
+            margin-left: 4.4rem;
+        }
+
+        .treat_image {
+            position: absolute;
+            top: 0;
+            right: 0%;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
 }
